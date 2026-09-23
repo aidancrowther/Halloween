@@ -1,0 +1,25 @@
+(
+    lights: [
+        Light(
+            pin: Physical(PhysicalPin(28)),
+        ),
+        Light(
+            pin: Physical(PhysicalPin(27)),
+        ),
+        Light(
+            pin: Physical(PhysicalPin(16)),
+        ),
+        Light(
+            pin: Physical(PhysicalPin(18)),
+        ),
+        Light(
+            pin: Physical(PhysicalPin(22)),
+        ),
+        Light(
+            pin: Physical(PhysicalPin(24)),
+        ),
+        Light(
+            pin: Physical(PhysicalPin(26)),
+        ),
+    ],
+)

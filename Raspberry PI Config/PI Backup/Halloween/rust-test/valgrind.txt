@@ -1,0 +1,282 @@
+==20954== Memcheck, a memory error detector
+==20954== Copyright (C) 2002-2011, and GNU GPL'd, by Julian Seward et al.
+==20954== Using Valgrind-3.7.0 and LibVEX; rerun with -h for copyright info
+==20954== Command: ./rusty-halloween-pi-zero-debug
+==20954== Parent PID: 11374
+==20954== 
+--20954-- WARNING: Serious error when reading debug info
+--20954-- When reading debug info from /usr/lib/arm-linux-gnueabihf/ld-2.28.so:
+--20954-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--20954-- WARNING: Serious error when reading debug info
+--20954-- When reading debug info from /usr/lib/arm-linux-gnueabihf/ld-2.28.so:
+--20954-- Last block truncated in .debug_info; ignoring
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x401A5D0: index (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x401A5D4: index (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x4007F0C: _dl_dst_count (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x4008154: expand_dynamic_string_token (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x401AA80: strlen (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x401AA84: strlen (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x4017F90: malloc (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x4017F9C: malloc (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x401B5C8: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x401B5E8: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x401B5F8: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x401B614: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x401B63C: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x401B63C: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x401B664: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x401B678: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x401B67C: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x401B688: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x40180CC: calloc (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x4017FD0: malloc (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x401A16C: mmap (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Syscall param mmap2(start) contains uninitialised byte(s)
+==20954==    at 0x401A180: mmap (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Syscall param mmap2(length) contains uninitialised byte(s)
+==20954==    at 0x401A180: mmap (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Syscall param mmap2(offset) contains uninitialised byte(s)
+==20954==    at 0x401A180: mmap (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x4017F6C: malloc (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x400BC9C: _dl_new_object (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x401B5D4: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x401B610: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x400BC48: _dl_new_object (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x400BC64: _dl_new_object (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x401AA14: strdup (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x401B638: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x401B638: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x401B660: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x4008CEC: _dl_map_object (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Syscall param openat(filename) contains uninitialised byte(s)
+==20954==    at 0x4019F58: __open64_nocancel (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x401810C: free (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x400BA50: _dl_new_object (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x400BA68: _dl_new_object (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x400BA88: _dl_new_object (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x400BA8C: _dl_new_object (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x400BAAC: _dl_new_object (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x400BB1C: _dl_new_object (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x400BB30: _dl_new_object (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x400BB74: _dl_new_object (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x400BB8C: _dl_new_object (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x401AA30: strlen (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x401AA48: strlen (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x401B608: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x400BC68: _dl_new_object (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x4005FD0: _dl_map_object_from_fd (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x4005FFC: _dl_map_object_from_fd (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x4006008: _dl_map_object_from_fd (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x4006088: _dl_map_object_from_fd (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x40060D4: _dl_map_object_from_fd (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x40060D8: _dl_map_object_from_fd (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x4006264: _dl_map_object_from_fd (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x40062F8: _dl_map_object_from_fd (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x4006314: _dl_map_object_from_fd (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x400634C: _dl_map_object_from_fd (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x4006C90: _dl_map_object_from_fd (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x400640C: _dl_map_object_from_fd (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x4011020: _dl_name_match_p (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x4011034: _dl_name_match_p (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x401A620: strcmp (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x4011028: _dl_name_match_p (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x4013688: _dl_get_origin (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x401B654: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x401B658: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x401B65C: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x401B668: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x401B66C: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x401369C: _dl_get_origin (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x40081F8: expand_dynamic_string_token (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x40081B0: expand_dynamic_string_token (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x4007FE0: _dl_dst_substitute (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x401A67C: strcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x4008064: _dl_dst_substitute (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x4009138: _dl_map_object (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x401B770: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x401B684: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x401B688: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x401B68C: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x4006218: _dl_map_object_from_fd (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x4006258: _dl_map_object_from_fd (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Conditional jump or move depends on uninitialised value(s)
+==20954==    at 0x401B644: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x401B644: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+==20954== Use of uninitialised value of size 4
+==20954==    at 0x401B8C0: memcpy (in /usr/lib/arm-linux-gnueabihf/ld-2.28.so)
+==20954== 
+--20954-- WARNING: Serious error when reading debug info
+--20954-- When reading debug info from /usr/lib/arm-linux-gnueabihf/librt-2.28.so:
+--20954-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--20954-- WARNING: Serious error when reading debug info
+--20954-- When reading debug info from /usr/lib/arm-linux-gnueabihf/librt-2.28.so:
+--20954-- Last block truncated in .debug_info; ignoring

@@ -1,0 +1,1 @@
+This project contains files for the DMX controlled pin-spot lights. This includes the moving heads themselves, as well as the converter box that acts as a go between from the DMX input to the serial format expected by them.

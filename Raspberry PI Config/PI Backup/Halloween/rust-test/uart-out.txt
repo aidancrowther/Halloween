@@ -1,0 +1,941 @@
+Starting Tokio console...
+Starting config...
+Starting socket...
+Starting dashboard...
+Starting lights...
+Starting projector...
+Starting audio...
+Starting shows...
+Found shows: ["This_Is_Halloween_From_Tim_Burton_s_The_Nightmare_Before_Christmas"]
+Loading song: This_Is_Halloween_From_Tim_Burton_s_The_Nightmare_Before_Christmas
+Starting the reciever thread
+Starting show worker...
+Starting queue worker...
+Joining...
+MessageSendPack {
+    header: HeaderPack {
+        projector_id: 15,
+        point_count: 0,
+        home: true,
+        enable: true,
+        configuration_mode: false,
+        draw_boundary: false,
+        oneshot: false,
+        speed_profile: 0,
+        _reserved: Reserved - always 0,
+        checksum: false,
+    },
+    draw_instructions: [],
+}
+HeaderPack {
+    projector_id: 15,
+    point_count: 0,
+    home: true,
+    enable: true,
+    configuration_mode: false,
+    draw_boundary: false,
+    oneshot: false,
+    speed_profile: 0,
+    _reserved: Reserved - always 0,
+    checksum: false,
+}
+FrameSendPack {
+    header: [
+        240,
+        12,
+        0,
+        0,
+    ],
+    draw_instructions: [],
+}
+Projector command received
+Audio command received
+Playing sound: This_Is_Halloween_From_Tim_Burton_s_The_Nightmare_Before_Christmas
+MessageSendPack {
+    header: HeaderPack {
+        projector_id: 1,
+        point_count: 10,
+        home: false,
+        enable: true,
+        configuration_mode: false,
+        draw_boundary: false,
+        oneshot: false,
+        speed_profile: 1,
+        _reserved: Reserved - always 0,
+        checksum: false,
+    },
+    draw_instructions: [],
+}
+HeaderPack {
+    projector_id: 1,
+    point_count: 10,
+    home: false,
+    enable: true,
+    configuration_mode: false,
+    draw_boundary: false,
+    oneshot: false,
+    speed_profile: 1,
+    _reserved: Reserved - always 0,
+    checksum: true,
+}
+FrameSendPack {
+    header: [
+        16,
+        164,
+        16,
+        1,
+    ],
+    draw_instructions: [],
+}
+MessageSendPack {
+    header: HeaderPack {
+        projector_id: 2,
+        point_count: 10,
+        home: false,
+        enable: true,
+        configuration_mode: false,
+        draw_boundary: false,
+        oneshot: false,
+        speed_profile: 1,
+        _reserved: Reserved - always 0,
+        checksum: false,
+    },
+    draw_instructions: [],
+}
+HeaderPack {
+    projector_id: 2,
+    point_count: 10,
+    home: false,
+    enable: true,
+    configuration_mode: false,
+    draw_boundary: false,
+    oneshot: false,
+    speed_profile: 1,
+    _reserved: Reserved - always 0,
+    checksum: true,
+}
+FrameSendPack {
+    header: [
+        32,
+        164,
+        16,
+        1,
+    ],
+    draw_instructions: [],
+}
+MessageSendPack {
+    header: HeaderPack {
+        projector_id: 3,
+        point_count: 4,
+        home: false,
+        enable: true,
+        configuration_mode: false,
+        draw_boundary: false,
+        oneshot: false,
+        speed_profile: 1,
+        _reserved: Reserved - always 0,
+        checksum: false,
+    },
+    draw_instructions: [],
+}
+HeaderPack {
+    projector_id: 3,
+    point_count: 4,
+    home: false,
+    enable: true,
+    configuration_mode: false,
+    draw_boundary: false,
+    oneshot: false,
+    speed_profile: 1,
+    _reserved: Reserved - always 0,
+    checksum: true,
+}
+FrameSendPack {
+    header: [
+        48,
+        68,
+        16,
+        1,
+    ],
+    draw_instructions: [],
+}
+MessageSendPack {
+    header: HeaderPack {
+        projector_id: 4,
+        point_count: 10,
+        home: false,
+        enable: true,
+        configuration_mode: false,
+        draw_boundary: false,
+        oneshot: false,
+        speed_profile: 1,
+        _reserved: Reserved - always 0,
+        checksum: false,
+    },
+    draw_instructions: [],
+}
+HeaderPack {
+    projector_id: 4,
+    point_count: 10,
+    home: false,
+    enable: true,
+    configuration_mode: false,
+    draw_boundary: false,
+    oneshot: false,
+    speed_profile: 1,
+    _reserved: Reserved - always 0,
+    checksum: true,
+}
+FrameSendPack {
+    header: [
+        64,
+        164,
+        16,
+        1,
+    ],
+    draw_instructions: [],
+}
+Projector command received
+Projector command received
+Projector command received
+Projector command received
+MessageSendPack {
+    header: HeaderPack {
+        projector_id: 1,
+        point_count: 1,
+        home: false,
+        enable: true,
+        configuration_mode: false,
+        draw_boundary: false,
+        oneshot: false,
+        speed_profile: 0,
+        _reserved: Reserved - always 0,
+        checksum: false,
+    },
+    draw_instructions: [],
+}
+HeaderPack {
+    projector_id: 1,
+    point_count: 1,
+    home: false,
+    enable: true,
+    configuration_mode: false,
+    draw_boundary: false,
+    oneshot: false,
+    speed_profile: 0,
+    _reserved: Reserved - always 0,
+    checksum: true,
+}
+FrameSendPack {
+    header: [
+        16,
+        20,
+        0,
+        1,
+    ],
+    draw_instructions: [],
+}
+MessageSendPack {
+    header: HeaderPack {
+        projector_id: 2,
+        point_count: 1,
+        home: false,
+        enable: true,
+        configuration_mode: false,
+        draw_boundary: false,
+        oneshot: false,
+        speed_profile: 0,
+        _reserved: Reserved - always 0,
+        checksum: false,
+    },
+    draw_instructions: [],
+}
+HeaderPack {
+    projector_id: 2,
+    point_count: 1,
+    home: false,
+    enable: true,
+    configuration_mode: false,
+    draw_boundary: false,
+    oneshot: false,
+    speed_profile: 0,
+    _reserved: Reserved - always 0,
+    checksum: true,
+}
+FrameSendPack {
+    header: [
+        32,
+        20,
+        0,
+        1,
+    ],
+    draw_instructions: [],
+}
+MessageSendPack {
+    header: HeaderPack {
+        projector_id: 3,
+        point_count: 1,
+        home: false,
+        enable: true,
+        configuration_mode: false,
+        draw_boundary: false,
+        oneshot: false,
+        speed_profile: 0,
+        _reserved: Reserved - always 0,
+        checksum: false,
+    },
+    draw_instructions: [],
+}
+HeaderPack {
+    projector_id: 3,
+    point_count: 1,
+    home: false,
+    enable: true,
+    configuration_mode: false,
+    draw_boundary: false,
+    oneshot: false,
+    speed_profile: 0,
+    _reserved: Reserved - always 0,
+    checksum: false,
+}
+FrameSendPack {
+    header: [
+        48,
+        20,
+        0,
+        0,
+    ],
+    draw_instructions: [],
+}
+MessageSendPack {
+    header: HeaderPack {
+        projector_id: 4,
+        point_count: 1,
+        home: false,
+        enable: true,
+        configuration_mode: false,
+        draw_boundary: false,
+        oneshot: false,
+        speed_profile: 0,
+        _reserved: Reserved - always 0,
+        checksum: false,
+    },
+    draw_instructions: [],
+}
+HeaderPack {
+    projector_id: 4,
+    point_count: 1,
+    home: false,
+    enable: true,
+    configuration_mode: false,
+    draw_boundary: false,
+    oneshot: false,
+    speed_profile: 0,
+    _reserved: Reserved - always 0,
+    checksum: true,
+}
+FrameSendPack {
+    header: [
+        64,
+        20,
+        0,
+        1,
+    ],
+    draw_instructions: [],
+}
+Projector command received
+Projector command received
+Projector command received
+Projector command received
+MessageSendPack {
+    header: HeaderPack {
+        projector_id: 2,
+        point_count: 10,
+        home: false,
+        enable: true,
+        configuration_mode: false,
+        draw_boundary: false,
+        oneshot: false,
+        speed_profile: 1,
+        _reserved: Reserved - always 0,
+        checksum: false,
+    },
+    draw_instructions: [],
+}
+HeaderPack {
+    projector_id: 2,
+    point_count: 10,
+    home: false,
+    enable: true,
+    configuration_mode: false,
+    draw_boundary: false,
+    oneshot: false,
+    speed_profile: 1,
+    _reserved: Reserved - always 0,
+    checksum: true,
+}
+FrameSendPack {
+    header: [
+        32,
+        164,
+        16,
+        1,
+    ],
+    draw_instructions: [],
+}
+MessageSendPack {
+    header: HeaderPack {
+        projector_id: 4,
+        point_count: 10,
+        home: false,
+        enable: true,
+        configuration_mode: false,
+        draw_boundary: false,
+        oneshot: false,
+        speed_profile: 1,
+        _reserved: Reserved - always 0,
+        checksum: false,
+    },
+    draw_instructions: [],
+}
+HeaderPack {
+    projector_id: 4,
+    point_count: 10,
+    home: false,
+    enable: true,
+    configuration_mode: false,
+    draw_boundary: false,
+    oneshot: false,
+    speed_profile: 1,
+    _reserved: Reserved - always 0,
+    checksum: true,
+}
+FrameSendPack {
+    header: [
+        64,
+        164,
+        16,
+        1,
+    ],
+    draw_instructions: [],
+}
+Projector command received
+Projector command received
+MessageSendPack {
+    header: HeaderPack {
+        projector_id: 2,
+        point_count: 1,
+        home: false,
+        enable: true,
+        configuration_mode: false,
+        draw_boundary: false,
+        oneshot: false,
+        speed_profile: 0,
+        _reserved: Reserved - always 0,
+        checksum: false,
+    },
+    draw_instructions: [],
+}
+HeaderPack {
+    projector_id: 2,
+    point_count: 1,
+    home: false,
+    enable: true,
+    configuration_mode: false,
+    draw_boundary: false,
+    oneshot: false,
+    speed_profile: 0,
+    _reserved: Reserved - always 0,
+    checksum: true,
+}
+FrameSendPack {
+    header: [
+        32,
+        20,
+        0,
+        1,
+    ],
+    draw_instructions: [],
+}
+MessageSendPack {
+    header: HeaderPack {
+        projector_id: 4,
+        point_count: 1,
+        home: false,
+        enable: true,
+        configuration_mode: false,
+        draw_boundary: false,
+        oneshot: false,
+        speed_profile: 0,
+        _reserved: Reserved - always 0,
+        checksum: false,
+    },
+    draw_instructions: [],
+}
+HeaderPack {
+    projector_id: 4,
+    point_count: 1,
+    home: false,
+    enable: true,
+    configuration_mode: false,
+    draw_boundary: false,
+    oneshot: false,
+    speed_profile: 0,
+    _reserved: Reserved - always 0,
+    checksum: true,
+}
+FrameSendPack {
+    header: [
+        64,
+        20,
+        0,
+        1,
+    ],
+    draw_instructions: [],
+}
+Projector command received
+Projector command received
+MessageSendPack {
+    header: HeaderPack {
+        projector_id: 1,
+        point_count: 5,
+        home: false,
+        enable: true,
+        configuration_mode: false,
+        draw_boundary: false,
+        oneshot: false,
+        speed_profile: 0,
+        _reserved: Reserved - always 0,
+        checksum: false,
+    },
+    draw_instructions: [],
+}
+HeaderPack {
+    projector_id: 1,
+    point_count: 5,
+    home: false,
+    enable: true,
+    configuration_mode: false,
+    draw_boundary: false,
+    oneshot: false,
+    speed_profile: 0,
+    _reserved: Reserved - always 0,
+    checksum: false,
+}
+FrameSendPack {
+    header: [
+        16,
+        84,
+        0,
+        0,
+    ],
+    draw_instructions: [],
+}
+MessageSendPack {
+    header: HeaderPack {
+        projector_id: 3,
+        point_count: 25,
+        home: false,
+        enable: true,
+        configuration_mode: false,
+        draw_boundary: false,
+        oneshot: false,
+        speed_profile: 0,
+        _reserved: Reserved - always 0,
+        checksum: false,
+    },
+    draw_instructions: [],
+}
+HeaderPack {
+    projector_id: 3,
+    point_count: 25,
+    home: false,
+    enable: true,
+    configuration_mode: false,
+    draw_boundary: false,
+    oneshot: false,
+    speed_profile: 0,
+    _reserved: Reserved - always 0,
+    checksum: false,
+}
+FrameSendPack {
+    header: [
+        49,
+        148,
+        0,
+        0,
+    ],
+    draw_instructions: [],
+}
+Projector command received
+Projector command received
+MessageSendPack {
+    header: HeaderPack {
+        projector_id: 1,
+        point_count: 1,
+        home: false,
+        enable: true,
+        configuration_mode: false,
+        draw_boundary: false,
+        oneshot: false,
+        speed_profile: 0,
+        _reserved: Reserved - always 0,
+        checksum: false,
+    },
+    draw_instructions: [],
+}
+HeaderPack {
+    projector_id: 1,
+    point_count: 1,
+    home: false,
+    enable: true,
+    configuration_mode: false,
+    draw_boundary: false,
+    oneshot: false,
+    speed_profile: 0,
+    _reserved: Reserved - always 0,
+    checksum: true,
+}
+FrameSendPack {
+    header: [
+        16,
+        20,
+        0,
+        1,
+    ],
+    draw_instructions: [],
+}
+MessageSendPack {
+    header: HeaderPack {
+        projector_id: 3,
+        point_count: 1,
+        home: false,
+        enable: true,
+        configuration_mode: false,
+        draw_boundary: false,
+        oneshot: false,
+        speed_profile: 0,
+        _reserved: Reserved - always 0,
+        checksum: false,
+    },
+    draw_instructions: [],
+}
+HeaderPack {
+    projector_id: 3,
+    point_count: 1,
+    home: false,
+    enable: true,
+    configuration_mode: false,
+    draw_boundary: false,
+    oneshot: false,
+    speed_profile: 0,
+    _reserved: Reserved - always 0,
+    checksum: false,
+}
+FrameSendPack {
+    header: [
+        48,
+        20,
+        0,
+        0,
+    ],
+    draw_instructions: [],
+}
+Projector command received
+Projector command received
+MessageSendPack {
+    header: HeaderPack {
+        projector_id: 2,
+        point_count: 3,
+        home: false,
+        enable: true,
+        configuration_mode: false,
+        draw_boundary: false,
+        oneshot: false,
+        speed_profile: 1,
+        _reserved: Reserved - always 0,
+        checksum: false,
+    },
+    draw_instructions: [],
+}
+HeaderPack {
+    projector_id: 2,
+    point_count: 3,
+    home: false,
+    enable: true,
+    configuration_mode: false,
+    draw_boundary: false,
+    oneshot: false,
+    speed_profile: 1,
+    _reserved: Reserved - always 0,
+    checksum: true,
+}
+FrameSendPack {
+    header: [
+        32,
+        52,
+        16,
+        1,
+    ],
+    draw_instructions: [],
+}
+MessageSendPack {
+    header: HeaderPack {
+        projector_id: 4,
+        point_count: 3,
+        home: false,
+        enable: true,
+        configuration_mode: false,
+        draw_boundary: false,
+        oneshot: false,
+        speed_profile: 1,
+        _reserved: Reserved - always 0,
+        checksum: false,
+    },
+    draw_instructions: [],
+}
+HeaderPack {
+    projector_id: 4,
+    point_count: 3,
+    home: false,
+    enable: true,
+    configuration_mode: false,
+    draw_boundary: false,
+    oneshot: false,
+    speed_profile: 1,
+    _reserved: Reserved - always 0,
+    checksum: true,
+}
+FrameSendPack {
+    header: [
+        64,
+        52,
+        16,
+        1,
+    ],
+    draw_instructions: [],
+}
+Projector command received
+Projector command received
+MessageSendPack {
+    header: HeaderPack {
+        projector_id: 2,
+        point_count: 1,
+        home: false,
+        enable: true,
+        configuration_mode: false,
+        draw_boundary: false,
+        oneshot: false,
+        speed_profile: 0,
+        _reserved: Reserved - always 0,
+        checksum: false,
+    },
+    draw_instructions: [],
+}
+HeaderPack {
+    projector_id: 2,
+    point_count: 1,
+    home: false,
+    enable: true,
+    configuration_mode: false,
+    draw_boundary: false,
+    oneshot: false,
+    speed_profile: 0,
+    _reserved: Reserved - always 0,
+    checksum: true,
+}
+FrameSendPack {
+    header: [
+        32,
+        20,
+        0,
+        1,
+    ],
+    draw_instructions: [],
+}
+MessageSendPack {
+    header: HeaderPack {
+        projector_id: 4,
+        point_count: 1,
+        home: false,
+        enable: true,
+        configuration_mode: false,
+        draw_boundary: false,
+        oneshot: false,
+        speed_profile: 0,
+        _reserved: Reserved - always 0,
+        checksum: false,
+    },
+    draw_instructions: [],
+}
+HeaderPack {
+    projector_id: 4,
+    point_count: 1,
+    home: false,
+    enable: true,
+    configuration_mode: false,
+    draw_boundary: false,
+    oneshot: false,
+    speed_profile: 0,
+    _reserved: Reserved - always 0,
+    checksum: true,
+}
+FrameSendPack {
+    header: [
+        64,
+        20,
+        0,
+        1,
+    ],
+    draw_instructions: [],
+}
+Projector command received
+Projector command received
+MessageSendPack {
+    header: HeaderPack {
+        projector_id: 3,
+        point_count: 13,
+        home: false,
+        enable: true,
+        configuration_mode: false,
+        draw_boundary: false,
+        oneshot: false,
+        speed_profile: 0,
+        _reserved: Reserved - always 0,
+        checksum: false,
+    },
+    draw_instructions: [],
+}
+HeaderPack {
+    projector_id: 3,
+    point_count: 13,
+    home: false,
+    enable: true,
+    configuration_mode: false,
+    draw_boundary: false,
+    oneshot: false,
+    speed_profile: 0,
+    _reserved: Reserved - always 0,
+    checksum: false,
+}
+FrameSendPack {
+    header: [
+        48,
+        212,
+        0,
+        0,
+    ],
+    draw_instructions: [],
+}
+Projector command received
+MessageSendPack {
+    header: HeaderPack {
+        projector_id: 3,
+        point_count: 1,
+        home: false,
+        enable: true,
+        configuration_mode: false,
+        draw_boundary: false,
+        oneshot: false,
+        speed_profile: 0,
+        _reserved: Reserved - always 0,
+        checksum: false,
+    },
+    draw_instructions: [],
+}
+HeaderPack {
+    projector_id: 3,
+    point_count: 1,
+    home: false,
+    enable: true,
+    configuration_mode: false,
+    draw_boundary: false,
+    oneshot: false,
+    speed_profile: 0,
+    _reserved: Reserved - always 0,
+    checksum: false,
+}
+FrameSendPack {
+    header: [
+        48,
+        20,
+        0,
+        0,
+    ],
+    draw_instructions: [],
+}
+Projector command received
+MessageSendPack {
+    header: HeaderPack {
+        projector_id: 1,
+        point_count: 4,
+        home: false,
+        enable: true,
+        configuration_mode: false,
+        draw_boundary: false,
+        oneshot: false,
+        speed_profile: 1,
+        _reserved: Reserved - always 0,
+        checksum: false,
+    },
+    draw_instructions: [],
+}
+HeaderPack {
+    projector_id: 1,
+    point_count: 4,
+    home: false,
+    enable: true,
+    configuration_mode: false,
+    draw_boundary: false,
+    oneshot: false,
+    speed_profile: 1,
+    _reserved: Reserved - always 0,
+    checksum: false,
+}
+FrameSendPack {
+    header: [
+        16,
+        68,
+        16,
+        0,
+    ],
+    draw_instructions: [],
+}
+MessageSendPack {
+    header: HeaderPack {
+        projector_id: 3,
+        point_count: 12,
+        home: false,
+        enable: true,
+        configuration_mode: false,
+        draw_boundary: false,
+        oneshot: false,
+        speed_profile: 0,
+        _reserved: Reserved - always 0,
+        checksum: false,
+    },
+    draw_instructions: [],
+}
+HeaderPack {
+    projector_id: 3,
+    point_count: 12,
+    home: false,
+    enable: true,
+    configuration_mode: false,
+    draw_boundary: false,
+    oneshot: false,
+    speed_profile: 0,
+    _reserved: Reserved - always 0,
+    checksum: true,
+}
+FrameSendPack {
+    header: [
+        48,
+        196,
+        0,
+        1,
+    ],
+    draw_instructions: [],
+}
+Projector command received
+Projector command received

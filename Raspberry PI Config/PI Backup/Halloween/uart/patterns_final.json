@@ -1,0 +1,1106 @@
+{
+    "Large_Square": [
+      "0x00",
+      "0x0c"
+    ],
+    "Hourglass": [
+      "0x00",
+      "0x01"
+    ],
+    "Saw_Blade": [
+      "0x00",
+      "0x02"
+    ],
+    "Diamond": [
+      "0x00",
+      "0x03"
+    ],
+    "Inverted_Club": [
+      "0x00",
+      "0x04"
+    ],
+    "Inverted_Heart": [
+      "0x00",
+      "0x05"
+    ],
+    "Play_Button": [
+      "0x00",
+      "0x06"
+    ],
+    "Windmill": [
+      "0x00",
+      "0x07"
+    ],
+    "Leaf": [
+      "0x00",
+      "0x08"
+    ],
+    "Large_Triangle": [
+      "0x00",
+      "0x09"
+    ],
+    "Minimalist_Flower": [
+      "0x00",
+      "0x0a"
+    ],
+    "Rainbow_Ovals": [
+      "0x00",
+      "0x0b"
+    ],
+    "Chevron_Arrow": [
+      "0x00",
+      "0x0d"
+    ],
+    "Round_Bow": [
+      "0x00",
+      "0x0e"
+    ],
+    "Disjoint_Square": [
+      "0x00",
+      "0x0f"
+    ],
+    "Disjoint_Steps": [
+      "0x00",
+      "0x10"
+    ],
+    "Disjoint_Verticals": [
+      "0x00",
+      "0x11"
+    ],
+    "Small_Diamond": [
+      "0x00",
+      "0x14"
+    ],
+    "Line_With_Points": [
+      "0x00",
+      "0x15"
+    ],
+    "Line": [
+      "0x00",
+      "0x16"
+    ],
+    "Disjoint_Line": [
+      "0x00",
+      "0x17"
+    ],
+    "Disjoint_Line_Smaller_Segments": [
+      "0x00",
+      "0x18"
+    ],
+    "Vertical_Line": [
+      "0x00",
+      "0x19"
+    ],
+    "Open_Bottom_Rectangle": [
+      "0x00",
+      "0x1a"
+    ],
+    "Large_Circle": [
+      "0x00",
+      "0x3c"
+    ],
+    "Large_Half_Circle": [
+      "0x00",
+      "0x1c"
+    ],
+    "Medium_Triangle": [
+      "0x00",
+      "0x1d"
+    ],
+    "Delta_Pattern": [
+      "0x00",
+      "0x1e"
+    ],
+    "Large_Pentagon": [
+      "0x00",
+      "0x1f"
+    ],
+    "Large_Star": [
+      "0x00",
+      "0x20"
+    ],
+    "Large_Star_Defined": [
+      "0x00",
+      "0x21"
+    ],
+    "Large_Star_More_Defined": [
+      "0x00",
+      "0x22"
+    ],
+    "Large_Star_Narrow_Body": [
+      "0x00",
+      "0x25"
+    ],
+    "Medium_Square": [
+      "0x00",
+      "0x26"
+    ],
+    "Simplistic_Flower_Segmented": [
+      "0x00",
+      "0x27"
+    ],
+    "Segmented_Boxy_Circle": [
+      "0x00",
+      "0x2a"
+    ],
+    "Rainbow_Circle_Ring": [
+      "0x00",
+      "0x2b"
+    ],
+    "Three_Circles_Horiontal_Line": [
+      "0x00",
+      "0x2c"
+    ],
+    "Four_Triangles_Square_Pattern": [
+      "0x00",
+      "0x2d"
+    ],
+    "Saw_Blade_Rectangles": [
+      "0x00",
+      "0x2e"
+    ],
+    "Two_Vertical_Lines": [
+      "0x00",
+      "0x2f"
+    ],
+    "Two_Horizontal_Lines": [
+      "0x00",
+      "0x62"
+    ],
+    "Stylized_Windmill": [
+      "0x00",
+      "0x31"
+    ],
+    "Triangular_Segments_Circle_Pattern": [
+      "0x00",
+      "0x32"
+    ],
+    "Skewed_Cube": [
+      "0x00",
+      "0x33"
+    ],
+    "Medium_And_Small_Circle": [
+      "0x00",
+      "0x34"
+    ],
+    "Medium_Square_Disconnected": [
+      "0x00",
+      "0x35"
+    ],
+    "Ring_Of_Stars": [
+      "0x00",
+      "0x36"
+    ],
+    "Triangles_With_Middle_Circle": [
+      "0x00",
+      "0x37"
+    ],
+    "Three_Blade_Windmill_Stylized": [
+      "0x00",
+      "0x38"
+    ],
+    "Three_Hurricanes_Star": [
+      "0x00",
+      "0x39"
+    ],
+    "Diamond_Corners_Only": [
+      "0x00",
+      "0x3a"
+    ],
+    "Diamond_Disconnected_Rectangles": [
+      "0x00",
+      "0x3b"
+    ],
+    "Bottom_Half_Circle_With_Points": [
+      "0x00",
+      "0x3d"
+    ],
+    "Large_Circle_Disjointed": [
+      "0x00",
+      "0x3e"
+    ],
+    "Maze": [
+      "0x00",
+      "0x3f"
+    ],
+    "Four_Segment_Square": [
+      "0x00",
+      "0x41"
+    ],
+    "Inverted_Christmas_Tree": [
+      "0x00",
+      "0x42"
+    ],
+    "Medium_Circle_Disjointed": [
+      "0x00",
+      "0x44"
+    ],
+    "Medium_Star": [
+      "0x00",
+      "0x45"
+    ],
+    "Squares_Connected_By_Line": [
+      "0x00",
+      "0x47"
+    ],
+    "Rectangular_Prism": [
+      "0x00",
+      "0x48"
+    ],
+    "Inverted_Apple": [
+      "0x00",
+      "0x49"
+    ],
+    "Music_Note": [
+      "0x00",
+      "0x4a"
+    ],
+    "Arrow": [
+      "0x00",
+      "0x4b"
+    ],
+    "Four_Lightning_Bolts": [
+      "0x00",
+      "0x4c"
+    ],
+    "Spiral": [
+      "0x00",
+      "0x4e"
+    ],
+    "Letter_V": [
+      "0x00",
+      "0x4f"
+    ],
+    "Spade": [
+      "0x00",
+      "0x50"
+    ],
+    "Leaf_No_Detail": [
+      "0x00",
+      "0x53"
+    ],
+    "Double_Triangle_Windmill": [
+      "0x00",
+      "0x55"
+    ],
+    "Five_Point_Windmill": [
+      "0x00",
+      "0x57"
+    ],
+    "Two_Stars": [
+      "0x00",
+      "0x58"
+    ],
+    "Traingular_Prism_Top_POV": [
+      "0x00",
+      "0x59"
+    ],
+    "Circle_Of_Pistons": [
+      "0x00",
+      "0x5a"
+    ],
+    "Splat": [
+      "0x00",
+      "0x5b"
+    ],
+    "ISO_View_Squiggle_Circle": [
+      "0x00",
+      "0x5c"
+    ],
+    "Circle_Of_Diamonds": [
+      "0x00",
+      "0x5d"
+    ],
+    "Flower_No_Center": [
+      "0x00",
+      "0x5e"
+    ],
+    "Spirograph": [
+      "0x00",
+      "0x5f"
+    ],
+    "Octagon_Large": [
+      "0x00",
+      "0x60"
+    ],
+    "Half_Diamond_To_Side": [
+      "0x00",
+      "0x61"
+    ],
+    "Three_Horizontal_Lines": [
+      "0x00",
+      "0x63"
+    ],
+    "Nested_Triangles": [
+      "0x00",
+      "0x64"
+    ],
+    "Three_Segment_Circle": [
+      "0x00",
+      "0xa2"
+    ],
+    "Five_Line_Star_Pattern": [
+      "0x00",
+      "0x66"
+    ],
+    "Pong_Lines": [
+      "0x00",
+      "0x67"
+    ],
+    "Cross_Rotated_Disjoint": [
+      "0x00",
+      "0x68"
+    ],
+    "Two_Circles": [
+      "0x00",
+      "0x69"
+    ],
+    "Two_Circles_Vertical": [
+      "0x00",
+      "0x6a"
+    ],
+    "Line_And_Circle": [
+      "0x00",
+      "0x6b"
+    ],
+    "Diagonal_Line": [
+      "0x00",
+      "0x6c"
+    ],
+    "Line_Medium_Segments": [
+      "0x00",
+      "0x6d"
+    ],
+    "Line_Small_Segments": [
+      "0x00",
+      "0x6e"
+    ],
+    "Half_Diamond_Top_Skew": [
+      "0x00",
+      "0x6f"
+    ],
+    "Modified_Sine_Wave": [
+      "0x00",
+      "0x70"
+    ],
+    "Cross_Hatch_Star": [
+      "0x00",
+      "0x71"
+    ],
+    "Two_Stars_Diagonal": [
+      "0x00",
+      "0x72"
+    ],
+    "Medium_Circle_In_Corner": [
+      "0x00",
+      "0x75"
+    ],
+    "Letter_W_Lines": [
+      "0x00",
+      "0x76"
+    ],
+    "Medium_Circle_Mixed_Segments": [
+      "0x00",
+      "0x78"
+    ],
+    "Two_Horizontal_Lines_Close": [
+      "0x00",
+      "0x7a"
+    ],
+    "Decagon": [
+      "0x00",
+      "0x7b"
+    ],
+    "Clock_Lines": [
+      "0x00",
+      "0x7c"
+    ],
+    "Nested_Circles": [
+      "0x00",
+      "0x7d"
+    ],
+    "Star_Of_David": [
+      "0x00",
+      "0x7e"
+    ],
+    "Five_Arm_Stylized_Wn=indmill": [
+      "0x00",
+      "0x7f"
+    ],
+    "Three_Segment_Spiral": [
+      "0x00",
+      "0x80"
+    ],
+    "Three_Vertical_Lines_Diagonal": [
+      "0x00",
+      "0x81"
+    ],
+    "Five_Points_Horizontal_Line": [
+      "0x00",
+      "0xb7"
+    ],
+    "Nine_Points_Horizontal_Line": [
+      "0x00",
+      "0xb8"
+    ],
+    "Two_Stars_Close_Diagonal": [
+      "0x00",
+      "0x84"
+    ],
+    "Sine_Wave": [
+      "0x00",
+      "0x86"
+    ],
+    "Loopy_Octagon": [
+      "0x00",
+      "0x87"
+    ],
+    "Disjoint_Star": [
+      "0x00",
+      "0x88"
+    ],
+    "Two_Vertical_Lines_Far_Medium_Segments": [
+      "0x00",
+      "0x89"
+    ],
+    "Large_Square_Medium_Segments": [
+      "0x00",
+      "0x8a"
+    ],
+    "Horizontal_Line_Medium_Segments": [
+      "0x00",
+      "0x8b"
+    ],
+    "Sine_Wave_Single_Period": [
+      "0x00",
+      "0x8c"
+    ],
+    "Delta_Configuration_Circles": [
+      "0x00",
+      "0x8d"
+    ],
+    "Small_Squares_In_Corners": [
+      "0x00",
+      "0x8e"
+    ],
+    "Large_Segmented_Square": [
+      "0x00",
+      "0x8f"
+    ],
+    "Two_Horizontal_Lines_Top_And_Bottom": [
+      "0x00",
+      "0x90"
+    ],
+    "Cross_Line_Segments": [
+      "0x00",
+      "0x91"
+    ],
+    "Vertical_Line_Two_Colours": [
+      "0x00",
+      "0x92"
+    ],
+    "Star_Joined_Three_Colours": [
+      "0x00",
+      "0x93"
+    ],
+    "Seven_Segment_Horizontal_Line_Disjoint": [
+      "0x00",
+      "0x94"
+    ],
+    "Two_Horizontal_Lines_Opposite_Corners": [
+      "0x00",
+      "0x95"
+    ],
+    "Two_Vertical_Lines_Left_And_Right": [
+      "0x00",
+      "0x96"
+    ],
+    "Medium_Square_Disconnected_Corners": [
+      "0x00",
+      "0x97"
+    ],
+    "Medium_Triangle_Medium_Segments": [
+      "0x00",
+      "0x98"
+    ],
+    "Large_Square_With_Points": [
+      "0x00",
+      "0x99"
+    ],
+    "Horizontal_Line_Bottom": [
+      "0x00",
+      "0x9a"
+    ],
+    "Vertical_Line_Left": [
+      "0x00",
+      "0x9b"
+    ],
+    "Horizontal_Line_White_Purple_Green_Pattern": [
+      "0x00",
+      "0x9c"
+    ],
+    "Vertical_Line_White_Purple_Blue_Green_Pattern": [
+      "0x00",
+      "0x9d"
+    ],
+    "Medium_Circle_With_Colour_Segments": [
+      "0x00",
+      "0x9e"
+    ],
+    "Two_Multicolour_Circles_Opposite_Corners": [
+      "0x00",
+      "0x9f"
+    ],
+    "Curved_Line_Octagon": [
+      "0x00",
+      "0xa0"
+    ],
+    "Eight_Colour_Square": [
+      "0x00",
+      "0xa1"
+    ],
+    "Clock_Lines_Three_Colours": [
+      "0x00",
+      "0xa4"
+    ],
+    "Five_Arm_Windmill_Five_Colours": [
+      "0x00",
+      "0xa5"
+    ],
+    "Lens_Flare": [
+      "0x00",
+      "0xa7"
+    ],
+    "Big_And_Small_Circle_Opposite_Corners": [
+      "0x00",
+      "0xa8"
+    ],
+    "Seven_Small_Circles_Horizontal_Line": [
+      "0x00",
+      "0xa9"
+    ],
+    "Four_Lines_Horizontal_Top": [
+      "0x00",
+      "0xaa"
+    ],
+    "Spiral_Reverse": [
+      "0x00",
+      "0xab"
+    ],
+    "Welcome": [
+      "0x00",
+      "0xac"
+    ],
+    "Two_Squares_Bottom": [
+      "0x00",
+      "0xad"
+    ],
+    "Two_Horizontal_Lines_Top_And_Bottom_Two_Colours": [
+      "0x00",
+      "0xae"
+    ],
+    "Large_Circle_Two_Colours": [
+      "0x00",
+      "0xaf"
+    ],
+    "Elongated_And_Normal_Diamonds_Joined": [
+      "0x00",
+      "0xb0"
+    ],
+    "Lens_Flare_Redtangles": [
+      "0x00",
+      "0xb1"
+    ],
+    "Five_Points_Rectangular_Pattern": [
+      "0x00",
+      "0xb2"
+    ],
+    "Five_Points_Vertical_Pattern": [
+      "0x00",
+      "0xb3"
+    ],
+    "Three_Points_Diagonal_Line": [
+      "0x00",
+      "0xb4"
+    ],
+    "Three_Points_Triangle": [
+      "0x00",
+      "0xb5"
+    ],
+    "Nested_Pentagon_Points_Only": [
+      "0x00",
+      "0xb6"
+    ],
+    "Many_Points_Horizontal_Line": [
+      "0x00",
+      "0xb9"
+    ],
+    "Many_Points_Circle": [
+      "0x00",
+      "0xba"
+    ],
+    "Sine_Wave_Points_Only": [
+      "0x00",
+      "0xbb"
+    ],
+    "Six_Points_Horizontal_Line": [
+      "0x00",
+      "0xbc"
+    ],
+    "Eight_Point_Circle": [
+      "0x00",
+      "0xbd"
+    ],
+    "Two_Points_Horizontal_Line": [
+      "0x00",
+      "0xbe"
+    ],
+    "Three_Points_Horizontal_Line": [
+      "0x00",
+      "0xbf"
+    ],
+    "Four_Points_Horizontal_Line": [
+      "0x00",
+      "0xc0"
+    ],
+    "Five_Points_Horizontal_Line_White": [
+      "0x00",
+      "0xc1"
+    ],
+    "Six_Points_Horizontal_Line_White": [
+      "0x00",
+      "0xc2"
+    ],
+    "Seven_Points_Horizontal_Line_White": [
+      "0x00",
+      "0xc3"
+    ],
+    "Eight_Points_Horizontal_Line_White": [
+      "0x00",
+      "0xc4"
+    ],
+    "Nine_Points_Horizontal_Line_White": [
+      "0x00",
+      "0xc5"
+    ],
+    "Ten_Points_Horizontal_Line_White": [
+      "0x00",
+      "0xc6"
+    ],
+    "Eleven_Points_Horizontal_Line_White": [
+      "0x00",
+      "0xc7"
+    ],
+    "Twelve_Points_Horizontal_Line_White": [
+      "0x00",
+      "0xc8"
+    ],
+    "Thirteen_Points_Horizontal_Line_White": [
+      "0x00",
+      "0xc9"
+    ],
+    "ignore": [
+      "0xff",
+      "0xff"
+    ],
+    "Zeus_Scene": [
+      "0xff",
+      "0x00"
+    ],
+    "Eagle_Scene": [
+      "0xff",
+      "0x02"
+    ],
+    "Breakdance_Scene": [
+      "0xff",
+      "0x04"
+    ],
+    "Spiral_To_Orb": [
+      "0xff",
+      "0x06"
+    ],
+    "Moving_Sine_Wave": [
+      "0xff",
+      "0x0a"
+    ],
+    "Dolphin": [
+      "0xff",
+      "0x0c"
+    ],
+    "Moving_Squiggle": [
+      "0xff",
+      "0x0e"
+    ],
+    "Pigeon_Olive_Branch": [
+      "0xff",
+      "0x10"
+    ],
+    "Slower_Moving_Squiggle": [
+      "0xff",
+      "0x12"
+    ],
+    "Cowboy": [
+      "0xff",
+      "0x14"
+    ],
+    "Growing_Spiral": [
+      "0xff",
+      "0x16"
+    ],
+    "Robber": [
+      "0xff",
+      "0x18"
+    ],
+    "Partial_Squiggle": [
+      "0xff",
+      "0x1a"
+    ],
+    "Ostrich": [
+      "0xff",
+      "0x1c"
+    ],
+    "Wireframe_Tunnel": [
+      "0xff",
+      "0x1e"
+    ],
+    "Double_Sine": [
+      "0xff",
+      "0x20"
+    ],
+    "Wind": [
+      "0xff",
+      "0x22"
+    ],
+    "Spinner": [
+      "0xff",
+      "0x24"
+    ],
+    "Outward_Squiggle_Circle": [
+      "0xff",
+      "0x26"
+    ],
+    "Cop": [
+      "0xff",
+      "0x28"
+    ],
+    "Deer": [
+      "0xff",
+      "0x2e"
+    ],
+    "Reindeer": [
+      "0xff",
+      "0x30"
+    ],
+    "Poker": [
+      "0xff",
+      "0x32"
+    ],
+    "Girl_Jump": [
+      "0xff",
+      "0x34"
+    ],
+    "Children": [
+      "0xff",
+      "0x36"
+    ],
+    "Moon": [
+      "0xff",
+      "0x38"
+    ],
+    "Yawn": [
+      "0xff",
+      "0x3a"
+    ],
+    "Palm_Tree_Wind": [
+      "0xff",
+      "0x3e"
+    ],
+    "Dino_Run": [
+      "0xff",
+      "0x42"
+    ],
+    "Orca": [
+      "0xff",
+      "0x46"
+    ],
+    "Bear": [
+      "0xff",
+      "0x48"
+    ],
+    "Cheetah": [
+      "0xff",
+      "0x4a"
+    ],
+    "Fish": [
+      "0xff",
+      "0x4c"
+    ],
+    "Flamingo": [
+      "0xff",
+      "0x4e"
+    ],
+    "Elf": [
+      "0xff",
+      "0x50"
+    ],
+    "Starburst": [
+      "0xff",
+      "0x54"
+    ],
+    "Archery": [
+      "0xff",
+      "0x56"
+    ],
+    "Firework": [
+      "0xff",
+      "0x58"
+    ],
+    "Lightning": [
+      "0xff",
+      "0x5a"
+    ],
+    "Spinning_Spiral": [
+      "0xff",
+      "0x5c"
+    ],
+    "Orbiting_Lines": [
+      "0xff",
+      "0x5e"
+    ],
+    "Growing_Circle": [
+      "0xff",
+      "0x62"
+    ],
+    "Confetti": [
+      "0xff",
+      "0x64"
+    ],
+    "Fireworks_Show": [
+      "0xff",
+      "0x66"
+    ],
+    "Batman": [
+      "0xff",
+      "0x68"
+    ],
+    "Cocktail": [
+      "0xff",
+      "0x6a"
+    ],
+    "Hockey": [
+      "0xff",
+      "0x6c"
+    ],
+    "Eye": [
+      "0xff",
+      "0x6e"
+    ],
+    "Waltz": [
+      "0xff",
+      "0x70"
+    ],
+    "Mermaid": [
+      "0xff",
+      "0x72"
+    ],
+    "Heart_Tattoo": [
+      "0xff",
+      "0x74"
+    ],
+    "Clap": [
+      "0xff",
+      "0x76"
+    ],
+    "Conductor": [
+      "0xff",
+      "0x7a"
+    ],
+    "Walk": [
+      "0xff",
+      "0x7e"
+    ],
+    "Strut": [
+      "0xff",
+      "0x80"
+    ],
+    "Scandalous": [
+      "0xff",
+      "0x84"
+    ],
+    "Dance": [
+      "0xff",
+      "0x88"
+    ],
+    "Hip_Hop": [
+      "0xff",
+      "0x8a"
+    ],
+    "Airplane": [
+      "0xff",
+      "0x8c"
+    ],
+    "Hearts_Fly": [
+      "0xff",
+      "0x90"
+    ],
+    "Whorl": [
+      "0xff",
+      "0x94"
+    ],
+    "Ring": [
+      "0xff",
+      "0x96"
+    ],
+    "Penguin": [
+      "0xff",
+      "0x98"
+    ],
+    "Parrot": [
+      "0xff",
+      "0x9a"
+    ],
+    "Hummingbird": [
+      "0xff",
+      "0x9c"
+    ],
+    "Bird_Dies": [
+      "0xff",
+      "0x9e"
+    ],
+    "Iguana": [
+      "0xff",
+      "0xa0"
+    ],
+    "Horse_Towards": [
+      "0xff",
+      "0xa4"
+    ],
+    "Kangaroo": [
+      "0xff",
+      "0xa6"
+    ],
+    "IT": [
+      "0xff",
+      "0xa8"
+    ],
+    "Rose": [
+      "0xff",
+      "0xaa"
+    ],
+    "Implosion": [
+      "0xff",
+      "0xac"
+    ],
+    "Lines_Intersect": [
+      "0xff",
+      "0xae"
+    ],
+    "Spinning_Fun": [
+      "0xff",
+      "0xb4"
+    ],
+    "Book": [
+      "0xff",
+      "0xb6"
+    ],
+    "Book_Slow": [
+      "0xff",
+      "0xb8"
+    ],
+    "Bottle_Spin": [
+      "0xff",
+      "0xba"
+    ],
+    "Gull": [
+      "0xff",
+      "0xbc"
+    ],
+    "Countdown": [
+      "0xff",
+      "0xbe"
+    ],
+    "Circles_In_And_Out": [
+      "0xff",
+      "0xc0"
+    ],
+    "Spinning_Circle_Horizontal_Tween": [
+      "0xff",
+      "0xc4"
+    ],
+    "Spinning_Circle_Slow_Horizontal_Tween": [
+      "0xff",
+      "0xc6"
+    ],
+    "Circle_Horizontal_Tween": [
+      "0xff",
+      "0xc8"
+    ],
+    "Circle_DVD": [
+      "0xff",
+      "0xca"
+    ],
+    "Nested_Circles_Oscillating": [
+      "0xff",
+      "0xcc"
+    ],
+    "Circles_Spiral_In": [
+      "0xff",
+      "0xce"
+    ],
+    "Circles_Breathe_Horizontal_Tween": [
+      "0xff",
+      "0xd0"
+    ],
+    "Line_Segments_Sine_Wave": [
+      "0xff",
+      "0xd2"
+    ],
+    "Line_Segments_Sine_Wave_Centered": [
+      "0xff",
+      "0xd4"
+    ],
+    "Nested_Circles_Colour_Flash": [
+      "0xff",
+      "0xd6"
+    ],
+    "Spinning_Rainbow_Circles": [
+      "0xff",
+      "0xd8"
+    ],
+    "Line_Segments_Oval": [
+      "0xff",
+      "0xda"
+    ],
+    "Explosion": [
+      "0xff",
+      "0xdc"
+    ],
+    "Lines_Animation": [
+      "0xff",
+      "0xde"
+    ],
+    "Small_Line_Segments_Animation": [
+      "0xff",
+      "0xe0"
+    ],
+    "Circles_Orbit": [
+      "0xff",
+      "0xe2"
+    ],
+    "Circles_Sine_Wave": [
+      "0xff",
+      "0xe4"
+    ],
+    "Circles_Sine_Wave_Skewed_Top": [
+      "0xff",
+      "0xe6"
+    ],
+    "Lines_Jump": [
+      "0xff",
+      "0xe8"
+    ],
+    "": [
+      "0xff",
+      "0xf7"
+    ]
+  }

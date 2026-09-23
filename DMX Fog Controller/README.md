@@ -1,0 +1,1 @@
+This device utilizes my standardized ATMega8 based DMX fixture layout. It accepts 12V power via the Halloween Board shared UART/Power bus. DMX is galvanically isolated, and an internal termination resistor/header are provided to avoid needing a terminator.

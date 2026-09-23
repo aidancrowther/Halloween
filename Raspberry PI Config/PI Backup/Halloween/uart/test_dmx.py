@@ -1,0 +1,41 @@
+import serial
+import struct
+import time
+
+ser = serial.Serial(
+    port='/dev/serial0',
+    baudrate=57600,
+    parity=serial.PARITY_NONE,
+    stopbits=serial.STOPBITS_ONE,
+    bytesize=serial.EIGHTBITS
+)
+
+print(ser.isOpen())
+time.sleep(1)
+
+# Draw large triangle pattern on projector 3
+for i in range(0, 32):
+	if(i == 0):
+		ser.write([
+			0xA0, 0x00, 0x00, 0x00,
+			0x00, 0x00, 0x00, 0x00
+		])
+	elif(i == 1):
+		ser.write([
+			0, 0x00, 0x00, 6,
+			0x00, 0x00, 0x00, 0x00
+		])
+	elif(i == 3):
+		ser.write([
+			0x00, 0x00, 0x00, 0x00,
+			0x01, 0x00, 0x00, 0x00
+		])
+	else:
+		ser.write([
+			0x00, 0x00, 0x00, 0x00,
+			0x00, 0x00, 0x00, 0x00
+		])
+
+
+ser.write([0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00])
+ser.close()
