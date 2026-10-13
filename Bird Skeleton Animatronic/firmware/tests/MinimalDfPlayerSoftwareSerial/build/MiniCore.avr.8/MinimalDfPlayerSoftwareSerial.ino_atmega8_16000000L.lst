@@ -1,0 +1,3505 @@
+
+/home/aidancrowther/.cache/arduino/sketches/2A81D6D0CF0E73D1A28EBEF5451A1C18/MinimalDfPlayerSoftwareSerial.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	94 c0       	rjmp	.+296    	; 0x12a <__dtors_end>
+   2:	53 c4       	rjmp	.+2214   	; 0x8aa <__vector_1>
+   4:	2b c4       	rjmp	.+2134   	; 0x85c <__vector_2>
+   6:	b6 c0       	rjmp	.+364    	; 0x174 <__bad_interrupt>
+   8:	b5 c0       	rjmp	.+362    	; 0x174 <__bad_interrupt>
+   a:	b4 c0       	rjmp	.+360    	; 0x174 <__bad_interrupt>
+   c:	b3 c0       	rjmp	.+358    	; 0x174 <__bad_interrupt>
+   e:	b2 c0       	rjmp	.+356    	; 0x174 <__bad_interrupt>
+  10:	b1 c0       	rjmp	.+354    	; 0x174 <__bad_interrupt>
+  12:	da c3       	rjmp	.+1972   	; 0x7c8 <__vector_9>
+  14:	af c0       	rjmp	.+350    	; 0x174 <__bad_interrupt>
+  16:	95 c4       	rjmp	.+2346   	; 0x942 <__vector_11>
+  18:	6f c4       	rjmp	.+2270   	; 0x8f8 <__vector_12>
+  1a:	ac c0       	rjmp	.+344    	; 0x174 <__bad_interrupt>
+  1c:	ab c0       	rjmp	.+342    	; 0x174 <__bad_interrupt>
+  1e:	aa c0       	rjmp	.+340    	; 0x174 <__bad_interrupt>
+  20:	a9 c0       	rjmp	.+338    	; 0x174 <__bad_interrupt>
+  22:	a8 c0       	rjmp	.+336    	; 0x174 <__bad_interrupt>
+  24:	a7 c0       	rjmp	.+334    	; 0x174 <__bad_interrupt>
+
+00000026 <__trampolines_end>:
+__trampolines_start():
+  26:	20 70       	andi	r18, 0x00	; 0
+  28:	61 72       	andi	r22, 0x21	; 33
+  2a:	61 6d       	ori	r22, 0xD1	; 209
+  2c:	65 74       	andi	r22, 0x45	; 69
+  2e:	65 72       	andi	r22, 0x25	; 37
+  30:	3d 30       	cpi	r19, 0x0D	; 13
+  32:	78 00       	.word	0x0078	; ????
+
+00000034 <(anonymous namespace)::sendCommand(unsigned char, unsigned int)::__c>:
+  34:	54 58 20 63 6f 6d 6d 61 6e 64 3d 30 78 00           TX command=0x.
+
+00000042 <setup::__c>:
+  42:	44 46 50 6c 61 79 65 72 20 52 58 3a 20 41 54 6d     DFPlayer RX: ATm
+  52:	65 67 61 38 20 50 44 32 2f 44 32 3b 20 44 46 50     ega8 PD2/D2; DFP
+  62:	6c 61 79 65 72 20 54 58 3a 20 41 54 6d 65 67 61     layer TX: ATmega
+  72:	38 20 50 44 36 2f 44 36 00                          8 PD6/D6.
+
+0000007b <setup::__c>:
+  7b:	4d 69 6e 69 6d 61 6c 20 44 46 50 6c 61 79 65 72     Minimal DFPlayer
+  8b:	20 53 6f 66 74 77 61 72 65 53 65 72 69 61 6c 20      SoftwareSerial 
+  9b:	74 65 73 74 20 73 74 61 72 74 69 6e 67 00           test starting.
+
+000000a9 <(anonymous namespace)::readResponses()::__c>:
+  a9:	6e 6f 00                                            no.
+
+000000ac <(anonymous namespace)::readResponses()::__c>:
+  ac:	79 65 73 00                                         yes.
+
+000000b0 <(anonymous namespace)::readResponses()::__c>:
+  b0:	20 76 61 6c 69 64 3d 00                              valid=.
+
+000000b8 <(anonymous namespace)::readResponses()::__c>:
+  b8:	52 58 20 66 72 61 6d 65 3a 20 00                    RX frame: .
+
+000000c3 <digital_pin_to_timer_PGM>:
+	...
+  cb:	00 04 05 07 00 00 00 00 00 00 00 00 00 00 00        ...............
+
+000000da <port_to_input_PGM>:
+  da:	00 00 00 00 36 00 33 00 30 00                       ....6.3.0.
+
+000000e4 <port_to_mode_PGM>:
+  e4:	00 00 00 00 37 00 34 00 31 00                       ....7.4.1.
+
+000000ee <port_to_output_PGM>:
+  ee:	00 00 00 00 38 00 35 00 32 00                       ....8.5.2.
+
+000000f8 <digital_pin_to_port_PGM>:
+  f8:	04 04 04 04 04 04 04 04 02 02 02 02 02 02 03 03     ................
+ 108:	03 03 03 03 02 02 03                                .......
+
+0000010f <digital_pin_to_bit_mask_PGM>:
+ 10f:	01 02 04 08 10 20 40 80 01 02 04 08 10 20 01 02     ..... @...... ..
+ 11f:	04 08 10 20 40 80 40                                ... @.@
+
+00000126 <__ctors_start>:
+__ctors_start():
+ 126:	09 05       	cpc	r16, r9
+
+00000128 <__ctors_end>:
+__dtors_start():
+ 128:	84 07       	cpc	r24, r20
+
+0000012a <__dtors_end>:
+__dtors_end():
+ 12a:	11 24       	eor	r1, r1
+ 12c:	1f be       	out	0x3f, r1	; 63
+ 12e:	cf e5       	ldi	r28, 0x5F	; 95
+ 130:	d4 e0       	ldi	r29, 0x04	; 4
+ 132:	de bf       	out	0x3e, r29	; 62
+ 134:	cd bf       	out	0x3d, r28	; 61
+
+00000136 <__do_copy_data>:
+__do_copy_data():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2409
+ 136:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2410
+ 138:	a0 e6       	ldi	r26, 0x60	; 96
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2411
+ 13a:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2412
+ 13c:	e4 e6       	ldi	r30, 0x64	; 100
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2413
+ 13e:	ff e0       	ldi	r31, 0x0F	; 15
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2414
+ 140:	02 c0       	rjmp	.+4      	; 0x146 <__do_copy_data+0x10>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2417
+ 142:	05 90       	lpm	r0, Z+
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2422
+ 144:	0d 92       	st	X+, r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2424
+ 146:	ac 38       	cpi	r26, 0x8C	; 140
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2425
+ 148:	b1 07       	cpc	r27, r17
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2426
+ 14a:	d9 f7       	brne	.-10     	; 0x142 <__do_copy_data+0xc>
+
+0000014c <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+ 14c:	21 e0       	ldi	r18, 0x01	; 1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+ 14e:	ac e8       	ldi	r26, 0x8C	; 140
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+ 150:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+ 152:	01 c0       	rjmp	.+2      	; 0x156 <.do_clear_bss_start>
+
+00000154 <.do_clear_bss_loop>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+ 154:	1d 92       	st	X+, r1
+
+00000156 <.do_clear_bss_start>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+ 156:	a4 3a       	cpi	r26, 0xA4	; 164
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+ 158:	b2 07       	cpc	r27, r18
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+ 15a:	e1 f7       	brne	.-8      	; 0x154 <.do_clear_bss_loop>
+
+0000015c <__do_global_ctors>:
+__do_global_ctors():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2466
+ 15c:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2467
+ 15e:	c4 e9       	ldi	r28, 0x94	; 148
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2468
+ 160:	d0 e0       	ldi	r29, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2472
+ 162:	03 c0       	rjmp	.+6      	; 0x16a <__do_global_ctors+0xe>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2474
+ 164:	21 97       	sbiw	r28, 0x01	; 1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2480
+ 166:	fe 01       	movw	r30, r28
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2481
+ 168:	eb d6       	rcall	.+3542   	; 0xf40 <__tablejump2__>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2483
+ 16a:	c3 39       	cpi	r28, 0x93	; 147
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2484
+ 16c:	d1 07       	cpc	r29, r17
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2489
+ 16e:	d1 f7       	brne	.-12     	; 0x164 <__do_global_ctors+0x8>
+ 170:	35 d5       	rcall	.+2666   	; 0xbdc <main>
+ 172:	ec c6       	rjmp	.+3544   	; 0xf4c <__do_global_dtors>
+
+00000174 <__bad_interrupt>:
+__bad_interrupt():
+ 174:	45 cf       	rjmp	.-374    	; 0x0 <__vectors>
+
+00000176 <micros>:
+micros():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:237
+  unsigned char f; // temporary storage for millis fraction counter
+  unsigned char q = 0; // record whether an overflow is flagged
+#endif
+  // t will be the number where the timer0 counter stopped
+  uint8_t t;
+  uint8_t oldSREG = SREG;
+ 176:	3f b7       	in	r19, 0x3f	; 63
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:240
+
+  // Stop all interrupts
+  cli();
+ 178:	f8 94       	cli
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:247
+#ifdef CORRECT_EXACT_MICROS
+  // combine exact millisec and 8usec counters
+  m = timer0_millis;
+  f = timer0_fract;
+#else
+  m = timer0_overflow_count;
+ 17a:	80 91 e4 00 	lds	r24, 0x00E4	; 0x8000e4 <timer0_overflow_count>
+ 17e:	90 91 e5 00 	lds	r25, 0x00E5	; 0x8000e5 <timer0_overflow_count+0x1>
+ 182:	a0 91 e6 00 	lds	r26, 0x00E6	; 0x8000e6 <timer0_overflow_count+0x2>
+ 186:	b0 91 e7 00 	lds	r27, 0x00E7	; 0x8000e7 <timer0_overflow_count+0x3>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:252
+#endif
+
+  // TCNT0 : The Timer Counter Register
+#if defined(TCNT0)
+  t = TCNT0;
+ 18a:	22 b7       	in	r18, 0x32	; 50
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:268
+    m++;
+#else
+    q = 1;
+#endif
+#else
+  if ((TIFR & _BV(TOV0)) && (t < 255))
+ 18c:	08 b6       	in	r0, 0x38	; 56
+ 18e:	00 fe       	sbrs	r0, 0
+ 190:	05 c0       	rjmp	.+10     	; 0x19c <micros+0x26>
+ 192:	2f 3f       	cpi	r18, 0xFF	; 255
+ 194:	19 f0       	breq	.+6      	; 0x19c <micros+0x26>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:270
+#ifndef CORRECT_EXACT_MICROS
+    m++;
+ 196:	01 96       	adiw	r24, 0x01	; 1
+ 198:	a1 1d       	adc	r26, r1
+ 19a:	b1 1d       	adc	r27, r1
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:276
+#else
+    q = 1;
+#endif
+#endif
+  // Restore SREG
+  SREG = oldSREG;
+ 19c:	3f bf       	out	0x3f, r19	; 63
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:292
+      ((t * MICROSECONDS_PER_TIMER0_OVERFLOW) >> 8);
+  return q ? m + MICROSECONDS_PER_TIMER0_OVERFLOW : m;
+#elif 1
+  /* All power-of-two Megahertz frequencies enter here, as well as 12.8 MHz.
+     We only end up here if right shift before multiplication is exact. */
+  return ((m << 8) + t) * (MICROSECONDS_PER_TIMER0_OVERFLOW >> 8);
+ 19e:	ba 2f       	mov	r27, r26
+ 1a0:	a9 2f       	mov	r26, r25
+ 1a2:	98 2f       	mov	r25, r24
+ 1a4:	88 27       	eor	r24, r24
+ 1a6:	bc 01       	movw	r22, r24
+ 1a8:	cd 01       	movw	r24, r26
+ 1aa:	62 0f       	add	r22, r18
+ 1ac:	71 1d       	adc	r23, r1
+ 1ae:	81 1d       	adc	r24, r1
+ 1b0:	91 1d       	adc	r25, r1
+ 1b2:	42 e0       	ldi	r20, 0x02	; 2
+ 1b4:	66 0f       	add	r22, r22
+ 1b6:	77 1f       	adc	r23, r23
+ 1b8:	88 1f       	adc	r24, r24
+ 1ba:	99 1f       	adc	r25, r25
+ 1bc:	4a 95       	dec	r20
+ 1be:	d1 f7       	brne	.-12     	; 0x1b4 <micros+0x3e>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:393
+  // m & t are multiplied by 4 (since it was already multiplied by 256)
+  // t is multiplied by 4
+  return ((m << 8) + t) * (64 / clockCyclesPerMicrosecond());
+#endif
+#endif // 0
+}
+ 1c0:	08 95       	ret
+
+000001c2 <delay>:
+delay():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:396
+
+void delay(unsigned long ms)
+{
+ 1c2:	8f 92       	push	r8
+ 1c4:	9f 92       	push	r9
+ 1c6:	af 92       	push	r10
+ 1c8:	bf 92       	push	r11
+ 1ca:	cf 92       	push	r12
+ 1cc:	df 92       	push	r13
+ 1ce:	ef 92       	push	r14
+ 1d0:	ff 92       	push	r15
+ 1d2:	4b 01       	movw	r8, r22
+ 1d4:	5c 01       	movw	r10, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:397
+  unsigned long start = micros();
+ 1d6:	cf df       	rcall	.-98     	; 0x176 <micros>
+ 1d8:	6b 01       	movw	r12, r22
+ 1da:	7c 01       	movw	r14, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:401
+
+  while (ms > 0UL) {
+    yield();
+    while (ms > 0UL && (micros() - start) >= 1000UL) {
+ 1dc:	cc df       	rcall	.-104    	; 0x176 <micros>
+ 1de:	6c 19       	sub	r22, r12
+ 1e0:	7d 09       	sbc	r23, r13
+ 1e2:	8e 09       	sbc	r24, r14
+ 1e4:	9f 09       	sbc	r25, r15
+ 1e6:	68 3e       	cpi	r22, 0xE8	; 232
+ 1e8:	73 40       	sbci	r23, 0x03	; 3
+ 1ea:	81 05       	cpc	r24, r1
+ 1ec:	91 05       	cpc	r25, r1
+ 1ee:	b0 f3       	brcs	.-20     	; 0x1dc <delay+0x1a>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:402
+      ms--;
+ 1f0:	21 e0       	ldi	r18, 0x01	; 1
+ 1f2:	82 1a       	sub	r8, r18
+ 1f4:	91 08       	sbc	r9, r1
+ 1f6:	a1 08       	sbc	r10, r1
+ 1f8:	b1 08       	sbc	r11, r1
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:403
+      start += 1000UL;
+ 1fa:	88 ee       	ldi	r24, 0xE8	; 232
+ 1fc:	c8 0e       	add	r12, r24
+ 1fe:	83 e0       	ldi	r24, 0x03	; 3
+ 200:	d8 1e       	adc	r13, r24
+ 202:	e1 1c       	adc	r14, r1
+ 204:	f1 1c       	adc	r15, r1
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:401
+{
+  unsigned long start = micros();
+
+  while (ms > 0UL) {
+    yield();
+    while (ms > 0UL && (micros() - start) >= 1000UL) {
+ 206:	81 14       	cp	r8, r1
+ 208:	91 04       	cpc	r9, r1
+ 20a:	a1 04       	cpc	r10, r1
+ 20c:	b1 04       	cpc	r11, r1
+ 20e:	31 f7       	brne	.-52     	; 0x1dc <delay+0x1a>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:406
+      ms--;
+      start += 1000UL;
+    }
+  }
+}
+ 210:	ff 90       	pop	r15
+ 212:	ef 90       	pop	r14
+ 214:	df 90       	pop	r13
+ 216:	cf 90       	pop	r12
+ 218:	bf 90       	pop	r11
+ 21a:	af 90       	pop	r10
+ 21c:	9f 90       	pop	r9
+ 21e:	8f 90       	pop	r8
+ 220:	08 95       	ret
+
+00000222 <isr()>:
+_ZN14SoftwareSerial16handle_interruptEv():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:231
+#endif
+
+/* static */
+inline void SoftwareSerial::handle_interrupt()
+{
+  if (active_object)
+ 222:	e0 91 ce 00 	lds	r30, 0x00CE	; 0x8000ce <SoftwareSerial::active_object>
+ 226:	f0 91 cf 00 	lds	r31, 0x00CF	; 0x8000cf <SoftwareSerial::active_object+0x1>
+ 22a:	30 97       	sbiw	r30, 0x00	; 0
+ 22c:	09 f4       	brne	.+2      	; 0x230 <isr()+0xe>
+ 22e:	4d c0       	rjmp	.+154    	; 0x2ca <isr()+0xa8>
+ 230:	a6 85       	ldd	r26, Z+14	; 0x0e
+ 232:	b7 85       	ldd	r27, Z+15	; 0x0f
+ 234:	85 85       	ldd	r24, Z+13	; 0x0d
+_ZN14SoftwareSerial4recvEv():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:148
+
+  uint8_t d = 0;
+
+  // If RX line is high, then we don't see any start bit
+  // so interrupt is probably not for us
+  if (_inverse_logic ? rx_pin_read() : !rx_pin_read())
+ 236:	96 8d       	ldd	r25, Z+30	; 0x1e
+ 238:	91 ff       	sbrs	r25, 1
+ 23a:	04 c0       	rjmp	.+8      	; 0x244 <isr()+0x22>
+rx_pin_read():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:213
+#endif
+}
+
+uint8_t SoftwareSerial::rx_pin_read()
+{
+  return *_receivePortRegister & _receiveBitMask;
+ 23c:	9c 91       	ld	r25, X
+ 23e:	89 23       	and	r24, r25
+_ZN14SoftwareSerial4recvEv():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:148
+
+  uint8_t d = 0;
+
+  // If RX line is high, then we don't see any start bit
+  // so interrupt is probably not for us
+  if (_inverse_logic ? rx_pin_read() : !rx_pin_read())
+ 240:	29 f4       	brne	.+10     	; 0x24c <isr()+0x2a>
+ 242:	08 95       	ret
+rx_pin_read():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:213
+#endif
+}
+
+uint8_t SoftwareSerial::rx_pin_read()
+{
+  return *_receivePortRegister & _receiveBitMask;
+ 244:	9c 91       	ld	r25, X
+ 246:	89 23       	and	r24, r25
+_ZN14SoftwareSerial4recvEv():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:148
+
+  uint8_t d = 0;
+
+  // If RX line is high, then we don't see any start bit
+  // so interrupt is probably not for us
+  if (_inverse_logic ? rx_pin_read() : !rx_pin_read())
+ 248:	09 f0       	breq	.+2      	; 0x24c <isr()+0x2a>
+ 24a:	3f c0       	rjmp	.+126    	; 0x2ca <isr()+0xa8>
+_ZN14SoftwareSerial11setRxIntMskEb():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:442
+void SoftwareSerial::setRxIntMsk(bool enable)
+{
+    if (enable)
+      *_pcint_maskreg |= _pcint_maskvalue;
+    else
+      *_pcint_maskreg &= ~_pcint_maskvalue;
+ 24c:	a3 89       	ldd	r26, Z+19	; 0x13
+ 24e:	b4 89       	ldd	r27, Z+20	; 0x14
+ 250:	9c 91       	ld	r25, X
+ 252:	85 89       	ldd	r24, Z+21	; 0x15
+ 254:	80 95       	com	r24
+ 256:	89 23       	and	r24, r25
+ 258:	8c 93       	st	X, r24
+_delay_loop_2():
+/home/aidancrowther/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/util/delay_basic.h:110
+	__asm__ volatile (
+		"1: sbiw %0,1" "\n\t"
+		"brne 1b"
+		: "=w" (__count)
+		: "0" (__count)
+	);
+ 25a:	86 89       	ldd	r24, Z+22	; 0x16
+ 25c:	97 89       	ldd	r25, Z+23	; 0x17
+ 25e:	01 97       	sbiw	r24, 0x01	; 1
+ 260:	f1 f7       	brne	.-4      	; 0x25e <isr()+0x3c>
+_ZN14SoftwareSerial4recvEv():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:162
+    DebugPulse(_DEBUG_PIN2, 1);
+
+    // Read each of the 8 bits
+    for (uint8_t i=8; i > 0; --i)
+    {
+      tunedDelay(_rx_delay_intrabit);
+ 262:	60 8d       	ldd	r22, Z+24	; 0x18
+ 264:	71 8d       	ldd	r23, Z+25	; 0x19
+rx_pin_read():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:213
+#endif
+}
+
+uint8_t SoftwareSerial::rx_pin_read()
+{
+  return *_receivePortRegister & _receiveBitMask;
+ 266:	a6 85       	ldd	r26, Z+14	; 0x0e
+ 268:	b7 85       	ldd	r27, Z+15	; 0x0f
+ 26a:	55 85       	ldd	r21, Z+13	; 0x0d
+ 26c:	38 e0       	ldi	r19, 0x08	; 8
+isr():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:144
+    "push r26 \n\t"
+    "push r27 \n\t"
+    ::);
+#endif
+
+  uint8_t d = 0;
+ 26e:	20 e0       	ldi	r18, 0x00	; 0
+_delay_loop_2():
+/home/aidancrowther/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/util/delay_basic.h:110
+ 270:	cb 01       	movw	r24, r22
+ 272:	01 97       	sbiw	r24, 0x01	; 1
+ 274:	f1 f7       	brne	.-4      	; 0x272 <isr()+0x50>
+_ZN14SoftwareSerial4recvEv():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:163
+
+    // Read each of the 8 bits
+    for (uint8_t i=8; i > 0; --i)
+    {
+      tunedDelay(_rx_delay_intrabit);
+      d >>= 1;
+ 276:	82 2f       	mov	r24, r18
+ 278:	90 e0       	ldi	r25, 0x00	; 0
+ 27a:	95 95       	asr	r25
+ 27c:	87 95       	ror	r24
+ 27e:	28 2f       	mov	r18, r24
+rx_pin_read():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:213
+#endif
+}
+
+uint8_t SoftwareSerial::rx_pin_read()
+{
+  return *_receivePortRegister & _receiveBitMask;
+ 280:	4c 91       	ld	r20, X
+ 282:	45 23       	and	r20, r21
+_ZN14SoftwareSerial4recvEv():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:165
+    for (uint8_t i=8; i > 0; --i)
+    {
+      tunedDelay(_rx_delay_intrabit);
+      d >>= 1;
+      DebugPulse(_DEBUG_PIN2, 1);
+      if (rx_pin_read())
+ 284:	09 f0       	breq	.+2      	; 0x288 <isr()+0x66>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:166
+        d |= 0x80;
+ 286:	20 68       	ori	r18, 0x80	; 128
+ 288:	31 50       	subi	r19, 0x01	; 1
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:160
+    // Wait approximately 1/2 of a bit width to "center" the sample
+    tunedDelay(_rx_delay_centering);
+    DebugPulse(_DEBUG_PIN2, 1);
+
+    // Read each of the 8 bits
+    for (uint8_t i=8; i > 0; --i)
+ 28a:	91 f7       	brne	.-28     	; 0x270 <isr()+0x4e>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:169
+      DebugPulse(_DEBUG_PIN2, 1);
+      if (rx_pin_read())
+        d |= 0x80;
+    }
+
+    if (_inverse_logic)
+ 28c:	86 8d       	ldd	r24, Z+30	; 0x1e
+ 28e:	81 fd       	sbrc	r24, 1
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:170
+      d = ~d;
+ 290:	20 95       	com	r18
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:173
+
+    // if buffer full, set the overflow flag and return
+    uint8_t next = (_receive_buffer_tail + 1) % _SS_MAX_RX_BUFF;
+ 292:	80 91 cd 00 	lds	r24, 0x00CD	; 0x8000cd <SoftwareSerial::_receive_buffer_tail>
+ 296:	90 e0       	ldi	r25, 0x00	; 0
+ 298:	01 96       	adiw	r24, 0x01	; 1
+ 29a:	8f 73       	andi	r24, 0x3F	; 63
+ 29c:	99 27       	eor	r25, r25
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:174
+    if (next != _receive_buffer_head)
+ 29e:	30 91 cc 00 	lds	r19, 0x00CC	; 0x8000cc <SoftwareSerial::_receive_buffer_head>
+ 2a2:	38 17       	cp	r19, r24
+ 2a4:	99 f0       	breq	.+38     	; 0x2cc <isr()+0xaa>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:177
+    {
+      // save new data in buffer: tail points to where byte goes
+      _receive_buffer[_receive_buffer_tail] = d; // save new byte
+ 2a6:	a0 91 cd 00 	lds	r26, 0x00CD	; 0x8000cd <SoftwareSerial::_receive_buffer_tail>
+ 2aa:	b0 e0       	ldi	r27, 0x00	; 0
+ 2ac:	a4 57       	subi	r26, 0x74	; 116
+ 2ae:	bf 4f       	sbci	r27, 0xFF	; 255
+ 2b0:	2c 93       	st	X, r18
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:178
+      _receive_buffer_tail = next;
+ 2b2:	80 93 cd 00 	sts	0x00CD, r24	; 0x8000cd <SoftwareSerial::_receive_buffer_tail>
+_delay_loop_2():
+/home/aidancrowther/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/util/delay_basic.h:110
+ 2b6:	82 8d       	ldd	r24, Z+26	; 0x1a
+ 2b8:	93 8d       	ldd	r25, Z+27	; 0x1b
+ 2ba:	01 97       	sbiw	r24, 0x01	; 1
+ 2bc:	f1 f7       	brne	.-4      	; 0x2ba <isr()+0x98>
+_ZN14SoftwareSerial11setRxIntMskEb():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:440
+}
+
+void SoftwareSerial::setRxIntMsk(bool enable)
+{
+    if (enable)
+      *_pcint_maskreg |= _pcint_maskvalue;
+ 2be:	a3 89       	ldd	r26, Z+19	; 0x13
+ 2c0:	b4 89       	ldd	r27, Z+20	; 0x14
+ 2c2:	8c 91       	ld	r24, X
+ 2c4:	95 89       	ldd	r25, Z+21	; 0x15
+ 2c6:	89 2b       	or	r24, r25
+ 2c8:	8c 93       	st	X, r24
+isr():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:225
+// Gets called from attachInterrupt
+#if defined(INT_ONLY) || defined(INT_AND_PCINT)
+static void isr()
+{
+  SoftwareSerial::handle_interrupt();
+}
+ 2ca:	08 95       	ret
+_ZN14SoftwareSerial4recvEv():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:183
+      _receive_buffer_tail = next;
+    }
+    else
+    {
+      DebugPulse(_DEBUG_PIN1, 1);
+      _buffer_overflow = true;
+ 2cc:	86 8d       	ldd	r24, Z+30	; 0x1e
+ 2ce:	81 60       	ori	r24, 0x01	; 1
+ 2d0:	86 8f       	std	Z+30, r24	; 0x1e
+ 2d2:	f1 cf       	rjmp	.-30     	; 0x2b6 <isr()+0x94>
+
+000002d4 <nothing>:
+nothing():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/WInterrupts.c:36
+
+#include "wiring_private.h"
+
+static void nothing(void)
+{
+}
+ 2d4:	08 95       	ret
+
+000002d6 <Print::write(unsigned char const*, unsigned int)>:
+write():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:35
+
+// Public Methods //////////////////////////////////////////////////////////////
+
+/* default implementation: may be overridden */
+size_t Print::write(const uint8_t *buffer, size_t size)
+{
+ 2d6:	af 92       	push	r10
+ 2d8:	bf 92       	push	r11
+ 2da:	cf 92       	push	r12
+ 2dc:	df 92       	push	r13
+ 2de:	ef 92       	push	r14
+ 2e0:	ff 92       	push	r15
+ 2e2:	0f 93       	push	r16
+ 2e4:	1f 93       	push	r17
+ 2e6:	cf 93       	push	r28
+ 2e8:	df 93       	push	r29
+ 2ea:	6c 01       	movw	r12, r24
+ 2ec:	7b 01       	movw	r14, r22
+ 2ee:	8b 01       	movw	r16, r22
+ 2f0:	04 0f       	add	r16, r20
+ 2f2:	15 1f       	adc	r17, r21
+ 2f4:	eb 01       	movw	r28, r22
+ 2f6:	5e 01       	movw	r10, r28
+ 2f8:	ae 18       	sub	r10, r14
+ 2fa:	bf 08       	sbc	r11, r15
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:37
+  size_t n = 0;
+  while (size--) {
+ 2fc:	c0 17       	cp	r28, r16
+ 2fe:	d1 07       	cpc	r29, r17
+ 300:	59 f0       	breq	.+22     	; 0x318 <Print::write(unsigned char const*, unsigned int)+0x42>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:38
+    if (write(*buffer++)) n++;
+ 302:	69 91       	ld	r22, Y+
+ 304:	d6 01       	movw	r26, r12
+ 306:	ed 91       	ld	r30, X+
+ 308:	fc 91       	ld	r31, X
+ 30a:	01 90       	ld	r0, Z+
+ 30c:	f0 81       	ld	r31, Z
+ 30e:	e0 2d       	mov	r30, r0
+ 310:	c6 01       	movw	r24, r12
+ 312:	09 95       	icall
+ 314:	89 2b       	or	r24, r25
+ 316:	79 f7       	brne	.-34     	; 0x2f6 <Print::write(unsigned char const*, unsigned int)+0x20>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:42
+    else break;
+  }
+  return n;
+}
+ 318:	c5 01       	movw	r24, r10
+ 31a:	df 91       	pop	r29
+ 31c:	cf 91       	pop	r28
+ 31e:	1f 91       	pop	r17
+ 320:	0f 91       	pop	r16
+ 322:	ff 90       	pop	r15
+ 324:	ef 90       	pop	r14
+ 326:	df 90       	pop	r13
+ 328:	cf 90       	pop	r12
+ 32a:	bf 90       	pop	r11
+ 32c:	af 90       	pop	r10
+ 32e:	08 95       	ret
+
+00000330 <HardwareSerial::availableForWrite()>:
+availableForWrite():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:195
+{
+  tx_buffer_index_t head;
+  tx_buffer_index_t tail;
+
+  TX_BUFFER_ATOMIC {
+    head = _tx_buffer_head;
+ 330:	fc 01       	movw	r30, r24
+ 332:	53 8d       	ldd	r21, Z+27	; 0x1b
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:196
+    tail = _tx_buffer_tail;
+ 334:	44 8d       	ldd	r20, Z+28	; 0x1c
+ 336:	25 2f       	mov	r18, r21
+ 338:	30 e0       	ldi	r19, 0x00	; 0
+ 33a:	84 2f       	mov	r24, r20
+ 33c:	90 e0       	ldi	r25, 0x00	; 0
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:198
+  }
+  if (head >= tail) return SERIAL_TX_BUFFER_SIZE - 1 - head + tail;
+ 33e:	82 1b       	sub	r24, r18
+ 340:	93 0b       	sbc	r25, r19
+ 342:	54 17       	cp	r21, r20
+ 344:	10 f0       	brcs	.+4      	; 0x34a <HardwareSerial::availableForWrite()+0x1a>
+ 346:	cf 96       	adiw	r24, 0x3f	; 63
+ 348:	08 95       	ret
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:199
+  return tail - head - 1;
+ 34a:	01 97       	sbiw	r24, 0x01	; 1
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:200
+}
+ 34c:	08 95       	ret
+
+0000034e <HardwareSerial::read()>:
+read():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:178
+    return _rx_buffer[_rx_buffer_tail];
+  }
+}
+
+int HardwareSerial::read(void)
+{
+ 34e:	fc 01       	movw	r30, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:180
+  // if the head isn't ahead of the tail, we don't have any characters
+  if (_rx_buffer_head == _rx_buffer_tail) {
+ 350:	91 8d       	ldd	r25, Z+25	; 0x19
+ 352:	82 8d       	ldd	r24, Z+26	; 0x1a
+ 354:	98 17       	cp	r25, r24
+ 356:	61 f0       	breq	.+24     	; 0x370 <HardwareSerial::read()+0x22>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:183
+    return -1;
+  } else {
+    unsigned char c = _rx_buffer[_rx_buffer_tail];
+ 358:	a2 8d       	ldd	r26, Z+26	; 0x1a
+ 35a:	ae 0f       	add	r26, r30
+ 35c:	bf 2f       	mov	r27, r31
+ 35e:	b1 1d       	adc	r27, r1
+ 360:	5d 96       	adiw	r26, 0x1d	; 29
+ 362:	8c 91       	ld	r24, X
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:184
+    _rx_buffer_tail = (rx_buffer_index_t)(_rx_buffer_tail + 1) % SERIAL_RX_BUFFER_SIZE;
+ 364:	92 8d       	ldd	r25, Z+26	; 0x1a
+ 366:	9f 5f       	subi	r25, 0xFF	; 255
+ 368:	9f 73       	andi	r25, 0x3F	; 63
+ 36a:	92 8f       	std	Z+26, r25	; 0x1a
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:185
+    return c;
+ 36c:	90 e0       	ldi	r25, 0x00	; 0
+ 36e:	08 95       	ret
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:181
+
+int HardwareSerial::read(void)
+{
+  // if the head isn't ahead of the tail, we don't have any characters
+  if (_rx_buffer_head == _rx_buffer_tail) {
+    return -1;
+ 370:	8f ef       	ldi	r24, 0xFF	; 255
+ 372:	9f ef       	ldi	r25, 0xFF	; 255
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:187
+  } else {
+    unsigned char c = _rx_buffer[_rx_buffer_tail];
+    _rx_buffer_tail = (rx_buffer_index_t)(_rx_buffer_tail + 1) % SERIAL_RX_BUFFER_SIZE;
+    return c;
+  }
+}
+ 374:	08 95       	ret
+
+00000376 <HardwareSerial::peek()>:
+peek():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:169
+{
+  return ((unsigned int)(SERIAL_RX_BUFFER_SIZE + _rx_buffer_head - _rx_buffer_tail)) % SERIAL_RX_BUFFER_SIZE;
+}
+
+int HardwareSerial::peek(void)
+{
+ 376:	fc 01       	movw	r30, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:170
+  if (_rx_buffer_head == _rx_buffer_tail) {
+ 378:	91 8d       	ldd	r25, Z+25	; 0x19
+ 37a:	82 8d       	ldd	r24, Z+26	; 0x1a
+ 37c:	98 17       	cp	r25, r24
+ 37e:	31 f0       	breq	.+12     	; 0x38c <HardwareSerial::peek()+0x16>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:173
+    return -1;
+  } else {
+    return _rx_buffer[_rx_buffer_tail];
+ 380:	82 8d       	ldd	r24, Z+26	; 0x1a
+ 382:	e8 0f       	add	r30, r24
+ 384:	f1 1d       	adc	r31, r1
+ 386:	85 8d       	ldd	r24, Z+29	; 0x1d
+ 388:	90 e0       	ldi	r25, 0x00	; 0
+ 38a:	08 95       	ret
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:171
+}
+
+int HardwareSerial::peek(void)
+{
+  if (_rx_buffer_head == _rx_buffer_tail) {
+    return -1;
+ 38c:	8f ef       	ldi	r24, 0xFF	; 255
+ 38e:	9f ef       	ldi	r25, 0xFF	; 255
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:175
+  } else {
+    return _rx_buffer[_rx_buffer_tail];
+  }
+}
+ 390:	08 95       	ret
+
+00000392 <HardwareSerial::available()>:
+available():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:164
+  // clear any received data
+  _rx_buffer_head = _rx_buffer_tail;
+}
+
+int HardwareSerial::available(void)
+{
+ 392:	fc 01       	movw	r30, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:165
+  return ((unsigned int)(SERIAL_RX_BUFFER_SIZE + _rx_buffer_head - _rx_buffer_tail)) % SERIAL_RX_BUFFER_SIZE;
+ 394:	91 8d       	ldd	r25, Z+25	; 0x19
+ 396:	22 8d       	ldd	r18, Z+26	; 0x1a
+ 398:	89 2f       	mov	r24, r25
+ 39a:	90 e0       	ldi	r25, 0x00	; 0
+ 39c:	80 5c       	subi	r24, 0xC0	; 192
+ 39e:	9f 4f       	sbci	r25, 0xFF	; 255
+ 3a0:	82 1b       	sub	r24, r18
+ 3a2:	91 09       	sbc	r25, r1
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:166
+}
+ 3a4:	8f 73       	andi	r24, 0x3F	; 63
+ 3a6:	99 27       	eor	r25, r25
+ 3a8:	08 95       	ret
+
+000003aa <Serial0_available()>:
+Serial0_available():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial0.cpp:76
+#endif
+
+// Function that can be weakly referenced by serialEventRun to prevent
+// pulling in this file if it's not otherwise used.
+bool Serial0_available() {
+  return Serial.available();
+ 3aa:	88 ee       	ldi	r24, 0xE8	; 232
+ 3ac:	90 e0       	ldi	r25, 0x00	; 0
+ 3ae:	f1 df       	rcall	.-30     	; 0x392 <HardwareSerial::available()>
+ 3b0:	21 e0       	ldi	r18, 0x01	; 1
+ 3b2:	89 2b       	or	r24, r25
+ 3b4:	09 f4       	brne	.+2      	; 0x3b8 <Serial0_available()+0xe>
+ 3b6:	20 e0       	ldi	r18, 0x00	; 0
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial0.cpp:77
+}
+ 3b8:	82 2f       	mov	r24, r18
+ 3ba:	08 95       	ret
+
+000003bc <serialEventRun()>:
+serialEventRun():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:67
+#endif
+
+void serialEventRun(void)
+{
+#if defined(HAVE_HWSERIAL0)
+  if (Serial0_available && serialEvent && Serial0_available()) serialEvent();
+ 3bc:	80 e0       	ldi	r24, 0x00	; 0
+ 3be:	90 e0       	ldi	r25, 0x00	; 0
+ 3c0:	89 2b       	or	r24, r25
+ 3c2:	19 f0       	breq	.+6      	; 0x3ca <serialEventRun()+0xe>
+ 3c4:	f2 df       	rcall	.-28     	; 0x3aa <Serial0_available()>
+ 3c6:	81 11       	cpse	r24, r1
+ 3c8:	1b ce       	rjmp	.-970    	; 0x0 <__vectors>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:78
+  if (Serial2_available && serialEvent2 && Serial2_available()) serialEvent2();
+#endif
+#if defined(HAVE_HWSERIAL3)
+  if (Serial3_available && serialEvent3 && Serial3_available()) serialEvent3();
+#endif
+}
+ 3ca:	08 95       	ret
+
+000003cc <HardwareSerial::_tx_udr_empty_irq()>:
+_tx_udr_empty_irq():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:90
+#endif
+
+// Actual interrupt handlers //////////////////////////////////////////////////////////////
+
+void HardwareSerial::_tx_udr_empty_irq(void)
+{
+ 3cc:	fc 01       	movw	r30, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:93
+  // If interrupts are enabled, there must be more data in the output
+  // buffer. Send the next byte
+  unsigned char c = _tx_buffer[_tx_buffer_tail];
+ 3ce:	a4 8d       	ldd	r26, Z+28	; 0x1c
+ 3d0:	a8 0f       	add	r26, r24
+ 3d2:	b9 2f       	mov	r27, r25
+ 3d4:	b1 1d       	adc	r27, r1
+ 3d6:	a3 5a       	subi	r26, 0xA3	; 163
+ 3d8:	bf 4f       	sbci	r27, 0xFF	; 255
+ 3da:	2c 91       	ld	r18, X
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:94
+  _tx_buffer_tail = (_tx_buffer_tail + 1) % SERIAL_TX_BUFFER_SIZE;
+ 3dc:	84 8d       	ldd	r24, Z+28	; 0x1c
+ 3de:	90 e0       	ldi	r25, 0x00	; 0
+ 3e0:	01 96       	adiw	r24, 0x01	; 1
+ 3e2:	8f 73       	andi	r24, 0x3F	; 63
+ 3e4:	99 27       	eor	r25, r25
+ 3e6:	84 8f       	std	Z+28, r24	; 0x1c
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:96
+
+  *_udr = c;
+ 3e8:	a6 89       	ldd	r26, Z+22	; 0x16
+ 3ea:	b7 89       	ldd	r27, Z+23	; 0x17
+ 3ec:	2c 93       	st	X, r18
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:106
+  // written to the rest.
+
+  #ifdef MPCM0
+    *_ucsra = ((*_ucsra) & ((1 << U2X0) | (1 << MPCM0))) | (1 << TXC0);
+  #else
+    *_ucsra = ((*_ucsra) & ((1 << U2X0) | (1 << TXC0)));
+ 3ee:	a0 89       	ldd	r26, Z+16	; 0x10
+ 3f0:	b1 89       	ldd	r27, Z+17	; 0x11
+ 3f2:	8c 91       	ld	r24, X
+ 3f4:	82 74       	andi	r24, 0x42	; 66
+ 3f6:	8c 93       	st	X, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:109
+  #endif
+
+  if (_tx_buffer_head == _tx_buffer_tail) {
+ 3f8:	93 8d       	ldd	r25, Z+27	; 0x1b
+ 3fa:	84 8d       	ldd	r24, Z+28	; 0x1c
+ 3fc:	98 13       	cpse	r25, r24
+ 3fe:	06 c0       	rjmp	.+12     	; 0x40c <__LOCK_REGION_LENGTH__+0xc>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:111
+    // Buffer empty, so disable interrupts
+    *_ucsrb &= ~_BV(UDRIE0);
+ 400:	02 88       	ldd	r0, Z+18	; 0x12
+ 402:	f3 89       	ldd	r31, Z+19	; 0x13
+ 404:	e0 2d       	mov	r30, r0
+ 406:	80 81       	ld	r24, Z
+ 408:	8f 7d       	andi	r24, 0xDF	; 223
+ 40a:	80 83       	st	Z, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:113
+  }
+}
+ 40c:	08 95       	ret
+
+0000040e <HardwareSerial::write(unsigned char)>:
+write():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:223
+  // If we get here, nothing is queued anymore (DRIE is disabled) and
+  // the hardware finished tranmission (TXC is set).
+}
+
+size_t HardwareSerial::write(uint8_t c)
+{
+ 40e:	ef 92       	push	r14
+ 410:	ff 92       	push	r15
+ 412:	0f 93       	push	r16
+ 414:	1f 93       	push	r17
+ 416:	cf 93       	push	r28
+ 418:	df 93       	push	r29
+ 41a:	ec 01       	movw	r28, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:224
+  _written = true;
+ 41c:	81 e0       	ldi	r24, 0x01	; 1
+ 41e:	88 8f       	std	Y+24, r24	; 0x18
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:229
+  // If the buffer and the data register is empty, just write the byte
+  // to the data register and be done. This shortcut helps
+  // significantly improve the effective datarate at high (>
+  // 500kbit/s) bitrates, where interrupt overhead becomes a slowdown.
+  if (_tx_buffer_head == _tx_buffer_tail && bit_is_set(*_ucsra, UDRE0)) {
+ 420:	9b 8d       	ldd	r25, Y+27	; 0x1b
+ 422:	8c 8d       	ldd	r24, Y+28	; 0x1c
+ 424:	98 13       	cpse	r25, r24
+ 426:	19 c0       	rjmp	.+50     	; 0x45a <HardwareSerial::write(unsigned char)+0x4c>
+ 428:	e8 89       	ldd	r30, Y+16	; 0x10
+ 42a:	f9 89       	ldd	r31, Y+17	; 0x11
+ 42c:	80 81       	ld	r24, Z
+ 42e:	85 ff       	sbrs	r24, 5
+ 430:	14 c0       	rjmp	.+40     	; 0x45a <HardwareSerial::write(unsigned char)+0x4c>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:238
+    // So writing UDR must happen first.
+    // Writing UDR and clearing TC must be done atomically, otherwise
+    // interrupts might delay the TXC clear so the byte written to UDR
+    // is transmitted (setting TXC) before clearing TXC. Then TXC will
+    // be cleared when no bytes are left, causing flush() to hang
+    ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
+ 432:	9f b7       	in	r25, 0x3f	; 63
+__iCliRetVal():
+/home/aidancrowther/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/util/atomic.h:50
+    return 1;
+}
+
+static __inline__ uint8_t __iCliRetVal(void)
+{
+    cli();
+ 434:	f8 94       	cli
+write():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:239
+      *_udr = c;
+ 436:	ee 89       	ldd	r30, Y+22	; 0x16
+ 438:	ff 89       	ldd	r31, Y+23	; 0x17
+ 43a:	60 83       	st	Z, r22
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:243
+      #ifdef MPCM0
+        *_ucsra = ((*_ucsra) & ((1 << U2X0) | (1 << MPCM0))) | (1 << TXC0);
+      #else
+        *_ucsra = ((*_ucsra) & ((1 << U2X0) | (1 << TXC0)));
+ 43c:	e8 89       	ldd	r30, Y+16	; 0x10
+ 43e:	f9 89       	ldd	r31, Y+17	; 0x11
+ 440:	80 81       	ld	r24, Z
+ 442:	82 74       	andi	r24, 0x42	; 66
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:271
+  // make atomic to prevent execution of ISR between setting the
+  // head pointer and setting the interrupt flag resulting in buffer
+  // retransmission
+  ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
+    _tx_buffer_head = i;
+    *_ucsrb |= _BV(UDRIE0);
+ 444:	80 83       	st	Z, r24
+__iRestore():
+/home/aidancrowther/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/util/atomic.h:70
+    (void)__s;
+}
+
+static __inline__ void __iRestore(const  uint8_t *__s)
+{
+    SREG = *__s;
+ 446:	9f bf       	out	0x3f, r25	; 63
+write():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:275
+  }
+  
+  return 1;
+}
+ 448:	81 e0       	ldi	r24, 0x01	; 1
+ 44a:	90 e0       	ldi	r25, 0x00	; 0
+ 44c:	df 91       	pop	r29
+ 44e:	cf 91       	pop	r28
+ 450:	1f 91       	pop	r17
+ 452:	0f 91       	pop	r16
+ 454:	ff 90       	pop	r15
+ 456:	ef 90       	pop	r14
+ 458:	08 95       	ret
+ 45a:	f6 2e       	mov	r15, r22
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:248
+        *_ucsra = ((*_ucsra) & ((1 << U2X0) | (1 << TXC0)));
+      #endif
+    }
+    return 1;
+  }
+  tx_buffer_index_t i = (_tx_buffer_head + 1) % SERIAL_TX_BUFFER_SIZE;
+ 45c:	0b 8d       	ldd	r16, Y+27	; 0x1b
+ 45e:	10 e0       	ldi	r17, 0x00	; 0
+ 460:	0f 5f       	subi	r16, 0xFF	; 255
+ 462:	1f 4f       	sbci	r17, 0xFF	; 255
+ 464:	0f 73       	andi	r16, 0x3F	; 63
+ 466:	11 27       	eor	r17, r17
+ 468:	e0 2e       	mov	r14, r16
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:252
+
+  // If the output buffer is full, there's nothing for it other than to 
+  // wait for the interrupt handler to empty it a bit
+  while (i == _tx_buffer_tail) {
+ 46a:	8c 8d       	ldd	r24, Y+28	; 0x1c
+ 46c:	8e 11       	cpse	r24, r14
+ 46e:	0b c0       	rjmp	.+22     	; 0x486 <__stack+0x27>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:253
+    if (bit_is_clear(SREG, SREG_I)) {
+ 470:	0f b6       	in	r0, 0x3f	; 63
+ 472:	07 fc       	sbrc	r0, 7
+ 474:	fa cf       	rjmp	.-12     	; 0x46a <__stack+0xb>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:258
+      // Interrupts are disabled, so we'll have to poll the data
+      // register empty flag ourselves. If it is set, pretend an
+      // interrupt has happened and call the handler to free up
+      // space for us.
+      if(bit_is_set(*_ucsra, UDRE0))
+ 476:	e8 89       	ldd	r30, Y+16	; 0x10
+ 478:	f9 89       	ldd	r31, Y+17	; 0x11
+ 47a:	80 81       	ld	r24, Z
+ 47c:	85 ff       	sbrs	r24, 5
+ 47e:	f5 cf       	rjmp	.-22     	; 0x46a <__stack+0xb>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:259
+        _tx_udr_empty_irq();
+ 480:	ce 01       	movw	r24, r28
+ 482:	a4 df       	rcall	.-184    	; 0x3cc <HardwareSerial::_tx_udr_empty_irq()>
+ 484:	f2 cf       	rjmp	.-28     	; 0x46a <__stack+0xb>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:265
+    } else {
+      // nop, the interrupt handler will free up space for us
+    }
+  }
+
+  _tx_buffer[_tx_buffer_head] = c;
+ 486:	eb 8d       	ldd	r30, Y+27	; 0x1b
+ 488:	ec 0f       	add	r30, r28
+ 48a:	fd 2f       	mov	r31, r29
+ 48c:	f1 1d       	adc	r31, r1
+ 48e:	e3 5a       	subi	r30, 0xA3	; 163
+ 490:	ff 4f       	sbci	r31, 0xFF	; 255
+ 492:	f0 82       	st	Z, r15
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:269
+  // make atomic to prevent execution of ISR between setting the
+  // head pointer and setting the interrupt flag resulting in buffer
+  // retransmission
+  ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
+ 494:	9f b7       	in	r25, 0x3f	; 63
+__iCliRetVal():
+/home/aidancrowther/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/util/atomic.h:50
+    return 1;
+}
+
+static __inline__ uint8_t __iCliRetVal(void)
+{
+    cli();
+ 496:	f8 94       	cli
+write():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:270
+    _tx_buffer_head = i;
+ 498:	0b 8f       	std	Y+27, r16	; 0x1b
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:271
+    *_ucsrb |= _BV(UDRIE0);
+ 49a:	ea 89       	ldd	r30, Y+18	; 0x12
+ 49c:	fb 89       	ldd	r31, Y+19	; 0x13
+ 49e:	80 81       	ld	r24, Z
+ 4a0:	80 62       	ori	r24, 0x20	; 32
+ 4a2:	d0 cf       	rjmp	.-96     	; 0x444 <HardwareSerial::write(unsigned char)+0x36>
+
+000004a4 <Print::print(__FlashStringHelper const*) [clone .constprop.9]>:
+print():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:44
+
+size_t Print::print(const __FlashStringHelper *ifsh)
+ 4a4:	0f 93       	push	r16
+ 4a6:	1f 93       	push	r17
+ 4a8:	cf 93       	push	r28
+ 4aa:	df 93       	push	r29
+ 4ac:	8c 01       	movw	r16, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:47
+{
+  PGM_P p = reinterpret_cast<PGM_P>(ifsh);
+  size_t n = 0;
+ 4ae:	d0 e0       	ldi	r29, 0x00	; 0
+ 4b0:	c0 e0       	ldi	r28, 0x00	; 0
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:49
+  while (1) {
+    unsigned char c = pgm_read_byte(p++);
+ 4b2:	f8 01       	movw	r30, r16
+ 4b4:	ec 0f       	add	r30, r28
+ 4b6:	fd 1f       	adc	r31, r29
+ 4b8:	64 91       	lpm	r22, Z
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:50
+    if (c == 0) break;
+ 4ba:	66 23       	and	r22, r22
+ 4bc:	39 f0       	breq	.+14     	; 0x4cc <Print::print(__FlashStringHelper const*) [clone .constprop.9]+0x28>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:51
+    if (write(c)) n++;
+ 4be:	88 ee       	ldi	r24, 0xE8	; 232
+ 4c0:	90 e0       	ldi	r25, 0x00	; 0
+ 4c2:	a5 df       	rcall	.-182    	; 0x40e <HardwareSerial::write(unsigned char)>
+ 4c4:	89 2b       	or	r24, r25
+ 4c6:	11 f0       	breq	.+4      	; 0x4cc <Print::print(__FlashStringHelper const*) [clone .constprop.9]+0x28>
+ 4c8:	21 96       	adiw	r28, 0x01	; 1
+ 4ca:	f3 cf       	rjmp	.-26     	; 0x4b2 <Print::print(__FlashStringHelper const*) [clone .constprop.9]+0xe>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:55
+    else break;
+  }
+  return n;
+}
+ 4cc:	ce 01       	movw	r24, r28
+ 4ce:	df 91       	pop	r29
+ 4d0:	cf 91       	pop	r28
+ 4d2:	1f 91       	pop	r17
+ 4d4:	0f 91       	pop	r16
+ 4d6:	08 95       	ret
+
+000004d8 <HardwareSerial::flush()>:
+flush():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:203
+  if (head >= tail) return SERIAL_TX_BUFFER_SIZE - 1 - head + tail;
+  return tail - head - 1;
+}
+
+void HardwareSerial::flush()
+{
+ 4d8:	cf 93       	push	r28
+ 4da:	df 93       	push	r29
+ 4dc:	ec 01       	movw	r28, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:207
+  // If we have never written a byte, no need to flush. This special
+  // case is needed since there is no way to force the TXC (transmit
+  // complete) bit to 1 during initialization
+  if (!_written)
+ 4de:	88 8d       	ldd	r24, Y+24	; 0x18
+ 4e0:	88 23       	and	r24, r24
+ 4e2:	b1 f0       	breq	.+44     	; 0x510 <HardwareSerial::flush()+0x38>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:210
+    return;
+
+  while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+ 4e4:	aa 89       	ldd	r26, Y+18	; 0x12
+ 4e6:	bb 89       	ldd	r27, Y+19	; 0x13
+ 4e8:	e8 89       	ldd	r30, Y+16	; 0x10
+ 4ea:	f9 89       	ldd	r31, Y+17	; 0x11
+ 4ec:	8c 91       	ld	r24, X
+ 4ee:	85 fd       	sbrc	r24, 5
+ 4f0:	03 c0       	rjmp	.+6      	; 0x4f8 <HardwareSerial::flush()+0x20>
+ 4f2:	80 81       	ld	r24, Z
+ 4f4:	86 fd       	sbrc	r24, 6
+ 4f6:	0c c0       	rjmp	.+24     	; 0x510 <HardwareSerial::flush()+0x38>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:211
+    if (bit_is_clear(SREG, SREG_I) && bit_is_set(*_ucsrb, UDRIE0))
+ 4f8:	0f b6       	in	r0, 0x3f	; 63
+ 4fa:	07 fc       	sbrc	r0, 7
+ 4fc:	f7 cf       	rjmp	.-18     	; 0x4ec <HardwareSerial::flush()+0x14>
+ 4fe:	8c 91       	ld	r24, X
+ 500:	85 ff       	sbrs	r24, 5
+ 502:	f2 cf       	rjmp	.-28     	; 0x4e8 <HardwareSerial::flush()+0x10>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:215
+      // Interrupts are globally disabled, but the DR empty
+      // interrupt should be enabled, so poll the DR empty flag to
+      // prevent deadlock
+      if (bit_is_set(*_ucsra, UDRE0))
+ 504:	80 81       	ld	r24, Z
+ 506:	85 ff       	sbrs	r24, 5
+ 508:	ed cf       	rjmp	.-38     	; 0x4e4 <HardwareSerial::flush()+0xc>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:216
+        _tx_udr_empty_irq();
+ 50a:	ce 01       	movw	r24, r28
+ 50c:	5f df       	rcall	.-322    	; 0x3cc <HardwareSerial::_tx_udr_empty_irq()>
+ 50e:	ea cf       	rjmp	.-44     	; 0x4e4 <HardwareSerial::flush()+0xc>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:220
+  }
+  // If we get here, nothing is queued anymore (DRIE is disabled) and
+  // the hardware finished tranmission (TXC is set).
+}
+ 510:	df 91       	pop	r29
+ 512:	cf 91       	pop	r28
+ 514:	08 95       	ret
+
+00000516 <SoftwareSerial::peek()>:
+peek():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:537
+  // There is no tx buffering, simply return
+}
+
+int SoftwareSerial::peek()
+{
+  if (!isListening())
+ 516:	20 91 ce 00 	lds	r18, 0x00CE	; 0x8000ce <SoftwareSerial::active_object>
+ 51a:	30 91 cf 00 	lds	r19, 0x00CF	; 0x8000cf <SoftwareSerial::active_object+0x1>
+ 51e:	28 17       	cp	r18, r24
+ 520:	39 07       	cpc	r19, r25
+ 522:	71 f4       	brne	.+28     	; 0x540 <SoftwareSerial::peek()+0x2a>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:541
+    return -1;
+
+  // Empty buffer?
+  if (_receive_buffer_head == _receive_buffer_tail)
+ 524:	90 91 cc 00 	lds	r25, 0x00CC	; 0x8000cc <SoftwareSerial::_receive_buffer_head>
+ 528:	80 91 cd 00 	lds	r24, 0x00CD	; 0x8000cd <SoftwareSerial::_receive_buffer_tail>
+ 52c:	98 17       	cp	r25, r24
+ 52e:	41 f0       	breq	.+16     	; 0x540 <SoftwareSerial::peek()+0x2a>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:545
+    return -1;
+
+  // Read from "head"
+  return _receive_buffer[_receive_buffer_head];
+ 530:	e0 91 cc 00 	lds	r30, 0x00CC	; 0x8000cc <SoftwareSerial::_receive_buffer_head>
+ 534:	f0 e0       	ldi	r31, 0x00	; 0
+ 536:	e4 57       	subi	r30, 0x74	; 116
+ 538:	ff 4f       	sbci	r31, 0xFF	; 255
+ 53a:	80 81       	ld	r24, Z
+ 53c:	90 e0       	ldi	r25, 0x00	; 0
+ 53e:	08 95       	ret
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:538
+}
+
+int SoftwareSerial::peek()
+{
+  if (!isListening())
+    return -1;
+ 540:	8f ef       	ldi	r24, 0xFF	; 255
+ 542:	9f ef       	ldi	r25, 0xFF	; 255
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:546
+  if (_receive_buffer_head == _receive_buffer_tail)
+    return -1;
+
+  // Read from "head"
+  return _receive_buffer[_receive_buffer_head];
+}
+ 544:	08 95       	ret
+
+00000546 <SoftwareSerial::flush()>:
+flush():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:533
+}
+
+void SoftwareSerial::flush()
+{
+  // There is no tx buffering, simply return
+}
+ 546:	08 95       	ret
+
+00000548 <SoftwareSerial::write(unsigned char)>:
+write():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:476
+
+  return ((uint16_t)(_receive_buffer_tail + _SS_MAX_RX_BUFF - _receive_buffer_head)) % _SS_MAX_RX_BUFF;
+}
+
+size_t SoftwareSerial::write(uint8_t b)
+{
+ 548:	ef 92       	push	r14
+ 54a:	ff 92       	push	r15
+ 54c:	0f 93       	push	r16
+ 54e:	1f 93       	push	r17
+ 550:	cf 93       	push	r28
+ 552:	df 93       	push	r29
+ 554:	dc 01       	movw	r26, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:477
+  if (_tx_delay == 0) {
+ 556:	5c 96       	adiw	r26, 0x1c	; 28
+ 558:	ed 90       	ld	r14, X+
+ 55a:	fc 90       	ld	r15, X
+ 55c:	5d 97       	sbiw	r26, 0x1d	; 29
+ 55e:	e1 14       	cp	r14, r1
+ 560:	f1 04       	cpc	r15, r1
+ 562:	79 f4       	brne	.+30     	; 0x582 <SoftwareSerial::write(unsigned char)+0x3a>
+_ZN5Print13setWriteErrorEi():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.h:44
+  private:
+    int write_error;
+    size_t printNumber(unsigned long, uint8_t);
+    size_t printFloat(double, uint8_t);
+  protected:
+    void setWriteError(int err = 1) { write_error = err; }
+ 564:	81 e0       	ldi	r24, 0x01	; 1
+ 566:	90 e0       	ldi	r25, 0x00	; 0
+ 568:	13 96       	adiw	r26, 0x03	; 3
+ 56a:	9c 93       	st	X, r25
+ 56c:	8e 93       	st	-X, r24
+ 56e:	12 97       	sbiw	r26, 0x02	; 2
+write():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:479
+    setWriteError();
+    return 0;
+ 570:	90 e0       	ldi	r25, 0x00	; 0
+ 572:	80 e0       	ldi	r24, 0x00	; 0
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:528
+
+  SREG = oldSREG; // turn interrupts back on
+  tunedDelay(_tx_delay);
+
+  return 1;
+}
+ 574:	df 91       	pop	r29
+ 576:	cf 91       	pop	r28
+ 578:	1f 91       	pop	r17
+ 57a:	0f 91       	pop	r16
+ 57c:	ff 90       	pop	r15
+ 57e:	ef 90       	pop	r14
+ 580:	08 95       	ret
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:486
+
+  // By declaring these as local variables, the compiler will put them
+  // in registers _before_ disabling interrupts and entering the
+  // critical timing sections below, which makes it a lot easier to
+  // verify the cycle timings
+  volatile uint8_t *reg = _transmitPortRegister;
+ 582:	51 96       	adiw	r26, 0x11	; 17
+ 584:	ed 91       	ld	r30, X+
+ 586:	fc 91       	ld	r31, X
+ 588:	52 97       	sbiw	r26, 0x12	; 18
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:487
+  uint8_t reg_mask = _transmitBitMask;
+ 58a:	50 96       	adiw	r26, 0x10	; 16
+ 58c:	8c 91       	ld	r24, X
+ 58e:	50 97       	sbiw	r26, 0x10	; 16
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:488
+  uint8_t inv_mask = ~_transmitBitMask;
+ 590:	98 2f       	mov	r25, r24
+ 592:	90 95       	com	r25
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:489
+  uint8_t oldSREG = SREG;
+ 594:	0f b7       	in	r16, 0x3f	; 63
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:490
+  bool inv = _inverse_logic;
+ 596:	5e 96       	adiw	r26, 0x1e	; 30
+ 598:	2c 91       	ld	r18, X
+ 59a:	5e 97       	sbiw	r26, 0x1e	; 30
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:493
+  uint16_t delay = _tx_delay;
+
+  if (inv)
+ 59c:	12 2f       	mov	r17, r18
+ 59e:	12 70       	andi	r17, 0x02	; 2
+ 5a0:	21 fd       	sbrc	r18, 1
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:494
+    b = ~b;
+ 5a2:	60 95       	com	r22
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:496
+
+  cli();  // turn off interrupts for a clean txmit
+ 5a4:	f8 94       	cli
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:500
+
+  // Write the start bit
+  if (inv)
+    *reg |= reg_mask;
+ 5a6:	20 81       	ld	r18, Z
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:499
+    b = ~b;
+
+  cli();  // turn off interrupts for a clean txmit
+
+  // Write the start bit
+  if (inv)
+ 5a8:	11 23       	and	r17, r17
+ 5aa:	19 f1       	breq	.+70     	; 0x5f2 <SoftwareSerial::write(unsigned char)+0xaa>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:500
+    *reg |= reg_mask;
+ 5ac:	28 2b       	or	r18, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:502
+  else
+    *reg &= inv_mask;
+ 5ae:	20 83       	st	Z, r18
+_delay_loop_2():
+/home/aidancrowther/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/util/delay_basic.h:110
+ 5b0:	e7 01       	movw	r28, r14
+ 5b2:	21 97       	sbiw	r28, 0x01	; 1
+ 5b4:	f1 f7       	brne	.-4      	; 0x5b2 <SoftwareSerial::write(unsigned char)+0x6a>
+ 5b6:	28 e0       	ldi	r18, 0x08	; 8
+write():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:509
+  tunedDelay(delay);
+
+  // Write each of the 8 bits
+  for (uint8_t i = 8; i > 0; --i)
+  {
+    if (b & 1) // choose bit
+ 5b8:	46 2f       	mov	r20, r22
+ 5ba:	50 e0       	ldi	r21, 0x00	; 0
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:510
+      *reg |= reg_mask; // send 1
+ 5bc:	30 81       	ld	r19, Z
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:509
+  tunedDelay(delay);
+
+  // Write each of the 8 bits
+  for (uint8_t i = 8; i > 0; --i)
+  {
+    if (b & 1) // choose bit
+ 5be:	60 ff       	sbrs	r22, 0
+ 5c0:	1a c0       	rjmp	.+52     	; 0x5f6 <SoftwareSerial::write(unsigned char)+0xae>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:510
+      *reg |= reg_mask; // send 1
+ 5c2:	38 2b       	or	r19, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:512
+    else
+      *reg &= inv_mask; // send 0
+ 5c4:	30 83       	st	Z, r19
+_delay_loop_2():
+/home/aidancrowther/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/util/delay_basic.h:110
+ 5c6:	e7 01       	movw	r28, r14
+ 5c8:	21 97       	sbiw	r28, 0x01	; 1
+ 5ca:	f1 f7       	brne	.-4      	; 0x5c8 <SoftwareSerial::write(unsigned char)+0x80>
+write():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:515
+
+    tunedDelay(delay);
+    b >>= 1;
+ 5cc:	ba 01       	movw	r22, r20
+ 5ce:	75 95       	asr	r23
+ 5d0:	67 95       	ror	r22
+ 5d2:	21 50       	subi	r18, 0x01	; 1
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:507
+    *reg &= inv_mask;
+
+  tunedDelay(delay);
+
+  // Write each of the 8 bits
+  for (uint8_t i = 8; i > 0; --i)
+ 5d4:	89 f7       	brne	.-30     	; 0x5b8 <SoftwareSerial::write(unsigned char)+0x70>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:519
+    tunedDelay(delay);
+    b >>= 1;
+  }
+
+  // restore pin to natural state
+  if (inv)
+ 5d6:	11 23       	and	r17, r17
+ 5d8:	81 f0       	breq	.+32     	; 0x5fa <SoftwareSerial::write(unsigned char)+0xb2>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:520
+    *reg &= inv_mask;
+ 5da:	80 81       	ld	r24, Z
+ 5dc:	89 23       	and	r24, r25
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:522
+  else
+    *reg |= reg_mask;
+ 5de:	80 83       	st	Z, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:524
+
+  SREG = oldSREG; // turn interrupts back on
+ 5e0:	0f bf       	out	0x3f, r16	; 63
+_delay_loop_2():
+/home/aidancrowther/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/util/delay_basic.h:110
+ 5e2:	5c 96       	adiw	r26, 0x1c	; 28
+ 5e4:	8d 91       	ld	r24, X+
+ 5e6:	9c 91       	ld	r25, X
+ 5e8:	01 97       	sbiw	r24, 0x01	; 1
+ 5ea:	f1 f7       	brne	.-4      	; 0x5e8 <SoftwareSerial::write(unsigned char)+0xa0>
+write():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:527
+  tunedDelay(_tx_delay);
+
+  return 1;
+ 5ec:	81 e0       	ldi	r24, 0x01	; 1
+ 5ee:	90 e0       	ldi	r25, 0x00	; 0
+ 5f0:	c1 cf       	rjmp	.-126    	; 0x574 <SoftwareSerial::write(unsigned char)+0x2c>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:502
+
+  // Write the start bit
+  if (inv)
+    *reg |= reg_mask;
+  else
+    *reg &= inv_mask;
+ 5f2:	29 23       	and	r18, r25
+ 5f4:	dc cf       	rjmp	.-72     	; 0x5ae <SoftwareSerial::write(unsigned char)+0x66>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:512
+  for (uint8_t i = 8; i > 0; --i)
+  {
+    if (b & 1) // choose bit
+      *reg |= reg_mask; // send 1
+    else
+      *reg &= inv_mask; // send 0
+ 5f6:	39 23       	and	r19, r25
+ 5f8:	e5 cf       	rjmp	.-54     	; 0x5c4 <SoftwareSerial::write(unsigned char)+0x7c>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:522
+
+  // restore pin to natural state
+  if (inv)
+    *reg &= inv_mask;
+  else
+    *reg |= reg_mask;
+ 5fa:	90 81       	ld	r25, Z
+ 5fc:	89 2b       	or	r24, r25
+ 5fe:	ef cf       	rjmp	.-34     	; 0x5de <SoftwareSerial::write(unsigned char)+0x96>
+
+00000600 <SoftwareSerial::available()>:
+available():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:469
+  return d;
+}
+
+int SoftwareSerial::available()
+{
+  if (!isListening())
+ 600:	20 91 ce 00 	lds	r18, 0x00CE	; 0x8000ce <SoftwareSerial::active_object>
+ 604:	30 91 cf 00 	lds	r19, 0x00CF	; 0x8000cf <SoftwareSerial::active_object+0x1>
+ 608:	28 17       	cp	r18, r24
+ 60a:	39 07       	cpc	r19, r25
+ 60c:	61 f4       	brne	.+24     	; 0x626 <SoftwareSerial::available()+0x26>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:472
+    return 0;
+
+  return ((uint16_t)(_receive_buffer_tail + _SS_MAX_RX_BUFF - _receive_buffer_head)) % _SS_MAX_RX_BUFF;
+ 60e:	80 91 cd 00 	lds	r24, 0x00CD	; 0x8000cd <SoftwareSerial::_receive_buffer_tail>
+ 612:	20 91 cc 00 	lds	r18, 0x00CC	; 0x8000cc <SoftwareSerial::_receive_buffer_head>
+ 616:	90 e0       	ldi	r25, 0x00	; 0
+ 618:	80 5c       	subi	r24, 0xC0	; 192
+ 61a:	9f 4f       	sbci	r25, 0xFF	; 255
+ 61c:	82 1b       	sub	r24, r18
+ 61e:	91 09       	sbc	r25, r1
+ 620:	8f 73       	andi	r24, 0x3F	; 63
+ 622:	99 27       	eor	r25, r25
+ 624:	08 95       	ret
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:470
+}
+
+int SoftwareSerial::available()
+{
+  if (!isListening())
+    return 0;
+ 626:	90 e0       	ldi	r25, 0x00	; 0
+ 628:	80 e0       	ldi	r24, 0x00	; 0
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:473
+
+  return ((uint16_t)(_receive_buffer_tail + _SS_MAX_RX_BUFF - _receive_buffer_head)) % _SS_MAX_RX_BUFF;
+}
+ 62a:	08 95       	ret
+
+0000062c <SoftwareSerial::read()>:
+read():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:454
+
+
+// Read data from buffer
+int SoftwareSerial::read()
+{
+  if (!isListening())
+ 62c:	20 91 ce 00 	lds	r18, 0x00CE	; 0x8000ce <SoftwareSerial::active_object>
+ 630:	30 91 cf 00 	lds	r19, 0x00CF	; 0x8000cf <SoftwareSerial::active_object+0x1>
+ 634:	28 17       	cp	r18, r24
+ 636:	39 07       	cpc	r19, r25
+ 638:	b9 f4       	brne	.+46     	; 0x668 <SoftwareSerial::read()+0x3c>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:458
+    return -1;
+
+  // Empty buffer?
+  if (_receive_buffer_head == _receive_buffer_tail)
+ 63a:	90 91 cc 00 	lds	r25, 0x00CC	; 0x8000cc <SoftwareSerial::_receive_buffer_head>
+ 63e:	80 91 cd 00 	lds	r24, 0x00CD	; 0x8000cd <SoftwareSerial::_receive_buffer_tail>
+ 642:	98 17       	cp	r25, r24
+ 644:	89 f0       	breq	.+34     	; 0x668 <SoftwareSerial::read()+0x3c>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:462
+    return -1;
+
+  // Read from "head"
+  uint8_t d = _receive_buffer[_receive_buffer_head]; // grab next byte
+ 646:	e0 91 cc 00 	lds	r30, 0x00CC	; 0x8000cc <SoftwareSerial::_receive_buffer_head>
+ 64a:	f0 e0       	ldi	r31, 0x00	; 0
+ 64c:	e4 57       	subi	r30, 0x74	; 116
+ 64e:	ff 4f       	sbci	r31, 0xFF	; 255
+ 650:	80 81       	ld	r24, Z
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:463
+  _receive_buffer_head = (_receive_buffer_head + 1) % _SS_MAX_RX_BUFF;
+ 652:	20 91 cc 00 	lds	r18, 0x00CC	; 0x8000cc <SoftwareSerial::_receive_buffer_head>
+ 656:	30 e0       	ldi	r19, 0x00	; 0
+ 658:	2f 5f       	subi	r18, 0xFF	; 255
+ 65a:	3f 4f       	sbci	r19, 0xFF	; 255
+ 65c:	2f 73       	andi	r18, 0x3F	; 63
+ 65e:	33 27       	eor	r19, r19
+ 660:	20 93 cc 00 	sts	0x00CC, r18	; 0x8000cc <SoftwareSerial::_receive_buffer_head>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:464
+  return d;
+ 664:	90 e0       	ldi	r25, 0x00	; 0
+ 666:	08 95       	ret
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:455
+
+// Read data from buffer
+int SoftwareSerial::read()
+{
+  if (!isListening())
+    return -1;
+ 668:	8f ef       	ldi	r24, 0xFF	; 255
+ 66a:	9f ef       	ldi	r25, 0xFF	; 255
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:465
+
+  // Read from "head"
+  uint8_t d = _receive_buffer[_receive_buffer_head]; // grab next byte
+  _receive_buffer_head = (_receive_buffer_head + 1) % _SS_MAX_RX_BUFF;
+  return d;
+}
+ 66c:	08 95       	ret
+
+0000066e <Print::availableForWrite()>:
+availableForWrite():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.h:63
+      return write((const uint8_t *)buffer, size);
+    }
+
+    // default to zero, meaning "a single write may block"
+    // should be overriden by subclasses with buffering
+    virtual int availableForWrite() { return 0; }
+ 66e:	90 e0       	ldi	r25, 0x00	; 0
+ 670:	80 e0       	ldi	r24, 0x00	; 0
+ 672:	08 95       	ret
+
+00000674 <(anonymous namespace)::printHexByte(unsigned char)>:
+printHexByte():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:30
+uint8_t responseFrame[10] = {};
+uint8_t responseIndex = 0;
+uint32_t lastCommand = 0;
+
+void printHexByte(uint8_t value)
+{
+ 674:	1f 93       	push	r17
+ 676:	cf 93       	push	r28
+ 678:	df 93       	push	r29
+ 67a:	cd b7       	in	r28, 0x3d	; 61
+ 67c:	de b7       	in	r29, 0x3e	; 62
+ 67e:	a1 97       	sbiw	r28, 0x21	; 33
+ 680:	0f b6       	in	r0, 0x3f	; 63
+ 682:	f8 94       	cli
+ 684:	de bf       	out	0x3e, r29	; 62
+ 686:	0f be       	out	0x3f, r0	; 63
+ 688:	cd bf       	out	0x3d, r28	; 61
+ 68a:	18 2f       	mov	r17, r24
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:31
+  if (value < 0x10) Serial.print('0');
+ 68c:	80 31       	cpi	r24, 0x10	; 16
+ 68e:	20 f4       	brcc	.+8      	; 0x698 <(anonymous namespace)::printHexByte(unsigned char)+0x24>
+print():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:69
+  return write(str);
+}
+
+size_t Print::print(char c)
+{
+  return write(c);
+ 690:	60 e3       	ldi	r22, 0x30	; 48
+ 692:	88 ee       	ldi	r24, 0xE8	; 232
+ 694:	90 e0       	ldi	r25, 0x00	; 0
+ 696:	bb de       	rcall	.-650    	; 0x40e <HardwareSerial::write(unsigned char)>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:74
+}
+
+size_t Print::print(unsigned char b, int base)
+{
+  return print((unsigned long) b, base);
+ 698:	81 2f       	mov	r24, r17
+ 69a:	90 e0       	ldi	r25, 0x00	; 0
+ 69c:	b0 e0       	ldi	r27, 0x00	; 0
+ 69e:	a0 e0       	ldi	r26, 0x00	; 0
+printNumber():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:237
+size_t Print::printNumber(unsigned long n, uint8_t base)
+{
+  char buf[8 * sizeof(long) + 1]; // Assumes 8-bit chars plus zero byte.
+  char *str = &buf[sizeof(buf) - 1];
+
+  *str = '\0';
+ 6a0:	19 a2       	std	Y+33, r1	; 0x21
+ 6a2:	fe 01       	movw	r30, r28
+ 6a4:	b1 96       	adiw	r30, 0x21	; 33
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:243
+
+  // prevent crash if called with base == 1
+  if (base < 2) base = 10;
+
+  do {
+    char c = n % base;
+ 6a6:	ac 01       	movw	r20, r24
+ 6a8:	bd 01       	movw	r22, r26
+ 6aa:	4f 70       	andi	r20, 0x0F	; 15
+ 6ac:	55 27       	eor	r21, r21
+ 6ae:	66 27       	eor	r22, r22
+ 6b0:	77 27       	eor	r23, r23
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:244
+    n /= base;
+ 6b2:	24 e0       	ldi	r18, 0x04	; 4
+ 6b4:	b6 95       	lsr	r27
+ 6b6:	a7 95       	ror	r26
+ 6b8:	97 95       	ror	r25
+ 6ba:	87 95       	ror	r24
+ 6bc:	2a 95       	dec	r18
+ 6be:	d1 f7       	brne	.-12     	; 0x6b4 <(anonymous namespace)::printHexByte(unsigned char)+0x40>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:246
+
+    *--str = c < 10 ? c + '0' : c + 'A' - 10;
+ 6c0:	4a 30       	cpi	r20, 0x0A	; 10
+ 6c2:	f4 f4       	brge	.+60     	; 0x700 <(anonymous namespace)::printHexByte(unsigned char)+0x8c>
+ 6c4:	40 5d       	subi	r20, 0xD0	; 208
+ 6c6:	42 93       	st	-Z, r20
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:247
+  } while(n);
+ 6c8:	00 97       	sbiw	r24, 0x00	; 0
+ 6ca:	a1 05       	cpc	r26, r1
+ 6cc:	b1 05       	cpc	r27, r1
+ 6ce:	59 f7       	brne	.-42     	; 0x6a6 <(anonymous namespace)::printHexByte(unsigned char)+0x32>
+write():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.h:53
+    int getWriteError() { return write_error; }
+    void clearWriteError() { setWriteError(0); }
+
+    virtual size_t write(uint8_t) = 0;
+    size_t write(const char *str) {
+      if (str == NULL) return 0;
+ 6d0:	30 97       	sbiw	r30, 0x00	; 0
+ 6d2:	61 f0       	breq	.+24     	; 0x6ec <(anonymous namespace)::printHexByte(unsigned char)+0x78>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.h:54
+      return write((const uint8_t *)str, strlen(str));
+ 6d4:	df 01       	movw	r26, r30
+ 6d6:	0d 90       	ld	r0, X+
+ 6d8:	00 20       	and	r0, r0
+ 6da:	e9 f7       	brne	.-6      	; 0x6d6 <(anonymous namespace)::printHexByte(unsigned char)+0x62>
+ 6dc:	11 97       	sbiw	r26, 0x01	; 1
+ 6de:	ad 01       	movw	r20, r26
+ 6e0:	4e 1b       	sub	r20, r30
+ 6e2:	5f 0b       	sbc	r21, r31
+ 6e4:	bf 01       	movw	r22, r30
+ 6e6:	88 ee       	ldi	r24, 0xE8	; 232
+ 6e8:	90 e0       	ldi	r25, 0x00	; 0
+ 6ea:	f5 dd       	rcall	.-1046   	; 0x2d6 <Print::write(unsigned char const*, unsigned int)>
+printHexByte():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:33
+  Serial.print(value, HEX);
+}
+ 6ec:	a1 96       	adiw	r28, 0x21	; 33
+ 6ee:	0f b6       	in	r0, 0x3f	; 63
+ 6f0:	f8 94       	cli
+ 6f2:	de bf       	out	0x3e, r29	; 62
+ 6f4:	0f be       	out	0x3f, r0	; 63
+ 6f6:	cd bf       	out	0x3d, r28	; 61
+ 6f8:	df 91       	pop	r29
+ 6fa:	cf 91       	pop	r28
+ 6fc:	1f 91       	pop	r17
+ 6fe:	08 95       	ret
+printNumber():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:246
+
+  do {
+    char c = n % base;
+    n /= base;
+
+    *--str = c < 10 ? c + '0' : c + 'A' - 10;
+ 700:	49 5c       	subi	r20, 0xC9	; 201
+ 702:	e1 cf       	rjmp	.-62     	; 0x6c6 <(anonymous namespace)::printHexByte(unsigned char)+0x52>
+
+00000704 <Print::println() [clone .constprop.10]>:
+write():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.h:54
+ 704:	42 e0       	ldi	r20, 0x02	; 2
+ 706:	50 e0       	ldi	r21, 0x00	; 0
+ 708:	68 e8       	ldi	r22, 0x88	; 136
+ 70a:	70 e0       	ldi	r23, 0x00	; 0
+ 70c:	88 ee       	ldi	r24, 0xE8	; 232
+ 70e:	90 e0       	ldi	r25, 0x00	; 0
+ 710:	e2 cd       	rjmp	.-1084   	; 0x2d6 <Print::write(unsigned char const*, unsigned int)>
+
+00000712 <Print::println(__FlashStringHelper const*) [clone .constprop.3]>:
+println():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:114
+size_t Print::print(double n, int digits)
+{
+  return printFloat(n, digits);
+}
+
+size_t Print::println(const __FlashStringHelper *ifsh)
+ 712:	cf 93       	push	r28
+ 714:	df 93       	push	r29
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:116
+{
+  size_t n = print(ifsh);
+ 716:	c6 de       	rcall	.-628    	; 0x4a4 <Print::print(__FlashStringHelper const*) [clone .constprop.9]>
+ 718:	ec 01       	movw	r28, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:117
+  n += println();
+ 71a:	f4 df       	rcall	.-24     	; 0x704 <Print::println() [clone .constprop.10]>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:119
+  return n;
+}
+ 71c:	8c 0f       	add	r24, r28
+ 71e:	9d 1f       	adc	r25, r29
+ 720:	df 91       	pop	r29
+ 722:	cf 91       	pop	r28
+ 724:	08 95       	ret
+
+00000726 <(anonymous namespace)::sendCommand(unsigned char, unsigned int)>:
+sendCommand():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:36
+
+void sendCommand(uint8_t command, uint16_t parameter)
+{
+ 726:	0f 93       	push	r16
+ 728:	1f 93       	push	r17
+ 72a:	cf 93       	push	r28
+ 72c:	df 93       	push	r29
+ 72e:	cd b7       	in	r28, 0x3d	; 61
+ 730:	de b7       	in	r29, 0x3e	; 62
+ 732:	2a 97       	sbiw	r28, 0x0a	; 10
+ 734:	0f b6       	in	r0, 0x3f	; 63
+ 736:	f8 94       	cli
+ 738:	de bf       	out	0x3e, r29	; 62
+ 73a:	0f be       	out	0x3f, r0	; 63
+ 73c:	cd bf       	out	0x3d, r28	; 61
+ 73e:	08 2f       	mov	r16, r24
+ 740:	16 2f       	mov	r17, r22
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:37
+  uint8_t packet[10] = {
+ 742:	1f 82       	std	Y+7, r1	; 0x07
+ 744:	18 86       	std	Y+8, r1	; 0x08
+ 746:	19 86       	std	Y+9, r1	; 0x09
+ 748:	1a 86       	std	Y+10, r1	; 0x0a
+ 74a:	8e e7       	ldi	r24, 0x7E	; 126
+ 74c:	89 83       	std	Y+1, r24	; 0x01
+ 74e:	8f ef       	ldi	r24, 0xFF	; 255
+ 750:	8a 83       	std	Y+2, r24	; 0x02
+ 752:	86 e0       	ldi	r24, 0x06	; 6
+ 754:	8b 83       	std	Y+3, r24	; 0x03
+ 756:	81 e0       	ldi	r24, 0x01	; 1
+ 758:	8d 83       	std	Y+5, r24	; 0x05
+ 75a:	8f ee       	ldi	r24, 0xEF	; 239
+ 75c:	8a 87       	std	Y+10, r24	; 0x0a
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:42
+    0x7E, 0xFF, 0x06, command, 0x01,
+    static_cast<uint8_t>(parameter >> 8),
+    static_cast<uint8_t>(parameter & 0xFF),
+    0x00, 0x00, 0xEF
+  };
+ 75e:	0c 83       	std	Y+4, r16	; 0x04
+ 760:	1e 82       	std	Y+6, r1	; 0x06
+ 762:	6f 83       	std	Y+7, r22	; 0x07
+ 764:	fe 01       	movw	r30, r28
+ 766:	32 96       	adiw	r30, 0x02	; 2
+ 768:	9e 01       	movw	r18, r28
+ 76a:	28 5f       	subi	r18, 0xF8	; 248
+ 76c:	3f 4f       	sbci	r19, 0xFF	; 255
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:44
+
+  uint16_t checksum = 0;
+ 76e:	90 e0       	ldi	r25, 0x00	; 0
+ 770:	80 e0       	ldi	r24, 0x00	; 0
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:45
+  for (uint8_t i = 1; i < 7; ++i) checksum += packet[i];
+ 772:	41 91       	ld	r20, Z+
+ 774:	84 0f       	add	r24, r20
+ 776:	91 1d       	adc	r25, r1
+ 778:	e2 17       	cp	r30, r18
+ 77a:	f3 07       	cpc	r31, r19
+ 77c:	d1 f7       	brne	.-12     	; 0x772 <(anonymous namespace)::sendCommand(unsigned char, unsigned int)+0x4c>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:46
+  checksum = static_cast<uint16_t>(0U - checksum);
+ 77e:	91 95       	neg	r25
+ 780:	81 95       	neg	r24
+ 782:	91 09       	sbc	r25, r1
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:47
+  packet[7] = static_cast<uint8_t>(checksum >> 8);
+ 784:	98 87       	std	Y+8, r25	; 0x08
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:48
+  packet[8] = static_cast<uint8_t>(checksum & 0xFF);
+ 786:	89 87       	std	Y+9, r24	; 0x09
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:50
+
+  Serial.print(F("TX command=0x"));
+ 788:	84 e3       	ldi	r24, 0x34	; 52
+ 78a:	90 e0       	ldi	r25, 0x00	; 0
+ 78c:	8b de       	rcall	.-746    	; 0x4a4 <Print::print(__FlashStringHelper const*) [clone .constprop.9]>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:51
+  printHexByte(command);
+ 78e:	80 2f       	mov	r24, r16
+ 790:	71 df       	rcall	.-286    	; 0x674 <(anonymous namespace)::printHexByte(unsigned char)>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:52
+  Serial.print(F(" parameter=0x"));
+ 792:	86 e2       	ldi	r24, 0x26	; 38
+ 794:	90 e0       	ldi	r25, 0x00	; 0
+ 796:	86 de       	rcall	.-756    	; 0x4a4 <Print::print(__FlashStringHelper const*) [clone .constprop.9]>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:53
+  printHexByte(static_cast<uint8_t>(parameter >> 8));
+ 798:	80 e0       	ldi	r24, 0x00	; 0
+ 79a:	6c df       	rcall	.-296    	; 0x674 <(anonymous namespace)::printHexByte(unsigned char)>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:54
+  printHexByte(static_cast<uint8_t>(parameter & 0xFF));
+ 79c:	81 2f       	mov	r24, r17
+ 79e:	6a df       	rcall	.-300    	; 0x674 <(anonymous namespace)::printHexByte(unsigned char)>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:55
+  Serial.println();
+ 7a0:	b1 df       	rcall	.-158    	; 0x704 <Print::println() [clone .constprop.10]>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:57
+
+  dfPlayer.write(packet, sizeof(packet));
+ 7a2:	4a e0       	ldi	r20, 0x0A	; 10
+ 7a4:	50 e0       	ldi	r21, 0x00	; 0
+ 7a6:	be 01       	movw	r22, r28
+ 7a8:	6f 5f       	subi	r22, 0xFF	; 255
+ 7aa:	7f 4f       	sbci	r23, 0xFF	; 255
+ 7ac:	85 e8       	ldi	r24, 0x85	; 133
+ 7ae:	91 e0       	ldi	r25, 0x01	; 1
+ 7b0:	92 dd       	rcall	.-1244   	; 0x2d6 <Print::write(unsigned char const*, unsigned int)>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:59
+  dfPlayer.flush();
+}
+ 7b2:	2a 96       	adiw	r28, 0x0a	; 10
+ 7b4:	0f b6       	in	r0, 0x3f	; 63
+ 7b6:	f8 94       	cli
+ 7b8:	de bf       	out	0x3e, r29	; 62
+ 7ba:	0f be       	out	0x3f, r0	; 63
+ 7bc:	cd bf       	out	0x3d, r28	; 61
+ 7be:	df 91       	pop	r29
+ 7c0:	cf 91       	pop	r28
+ 7c2:	1f 91       	pop	r17
+ 7c4:	0f 91       	pop	r16
+ 7c6:	08 95       	ret
+
+000007c8 <__vector_9>:
+__vector_9():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:159
+#if defined(__AVR_ATtiny24__) || defined(__AVR_ATtiny44__) || defined(__AVR_ATtiny84__)
+ISR(TIM0_OVF_vect)
+#else
+ISR(TIMER0_OVF_vect)
+#endif
+{
+ 7c8:	1f 92       	push	r1
+ 7ca:	0f 92       	push	r0
+ 7cc:	0f b6       	in	r0, 0x3f	; 63
+ 7ce:	0f 92       	push	r0
+ 7d0:	11 24       	eor	r1, r1
+ 7d2:	2f 93       	push	r18
+ 7d4:	3f 93       	push	r19
+ 7d6:	8f 93       	push	r24
+ 7d8:	9f 93       	push	r25
+ 7da:	af 93       	push	r26
+ 7dc:	bf 93       	push	r27
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:167
+  static unsigned char timer0_exact = 0;
+#endif
+
+  // copy these to local variables so they can be stored in registers
+  // (volatile variables must be read from memory on every access, so this saves time)
+  unsigned long m = timer0_millis;
+ 7de:	80 91 e0 00 	lds	r24, 0x00E0	; 0x8000e0 <timer0_millis>
+ 7e2:	90 91 e1 00 	lds	r25, 0x00E1	; 0x8000e1 <timer0_millis+0x1>
+ 7e6:	a0 91 e2 00 	lds	r26, 0x00E2	; 0x8000e2 <timer0_millis+0x2>
+ 7ea:	b0 91 e3 00 	lds	r27, 0x00E3	; 0x8000e3 <timer0_millis+0x3>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:168
+  unsigned char f = timer0_fract;
+ 7ee:	30 91 df 00 	lds	r19, 0x00DF	; 0x8000df <timer0_fract>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:170
+
+  f += FRACT_INC FRACT_INC_PLUS;
+ 7f2:	23 e0       	ldi	r18, 0x03	; 3
+ 7f4:	23 0f       	add	r18, r19
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:200
+    ++f;
+  }
+#endif
+#endif // CORRECT_EXACT_MILLIS
+
+  if (f >= FRACT_MAX) {
+ 7f6:	2d 37       	cpi	r18, 0x7D	; 125
+ 7f8:	68 f1       	brcs	.+90     	; 0x854 <__vector_9+0x8c>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:201
+    f -= FRACT_MAX;
+ 7fa:	26 e8       	ldi	r18, 0x86	; 134
+ 7fc:	23 0f       	add	r18, r19
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:202
+    m += MILLIS_INC + 1;
+ 7fe:	02 96       	adiw	r24, 0x02	; 2
+ 800:	a1 1d       	adc	r26, r1
+ 802:	b1 1d       	adc	r27, r1
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:208
+  }
+  else {
+    m += MILLIS_INC;
+  }
+
+  timer0_fract = f;
+ 804:	20 93 df 00 	sts	0x00DF, r18	; 0x8000df <timer0_fract>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:209
+  timer0_millis = m;
+ 808:	80 93 e0 00 	sts	0x00E0, r24	; 0x8000e0 <timer0_millis>
+ 80c:	90 93 e1 00 	sts	0x00E1, r25	; 0x8000e1 <timer0_millis+0x1>
+ 810:	a0 93 e2 00 	sts	0x00E2, r26	; 0x8000e2 <timer0_millis+0x2>
+ 814:	b0 93 e3 00 	sts	0x00E3, r27	; 0x8000e3 <timer0_millis+0x3>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:211
+#ifndef CORRECT_EXACT_MICROS
+  timer0_overflow_count++;
+ 818:	80 91 e4 00 	lds	r24, 0x00E4	; 0x8000e4 <timer0_overflow_count>
+ 81c:	90 91 e5 00 	lds	r25, 0x00E5	; 0x8000e5 <timer0_overflow_count+0x1>
+ 820:	a0 91 e6 00 	lds	r26, 0x00E6	; 0x8000e6 <timer0_overflow_count+0x2>
+ 824:	b0 91 e7 00 	lds	r27, 0x00E7	; 0x8000e7 <timer0_overflow_count+0x3>
+ 828:	01 96       	adiw	r24, 0x01	; 1
+ 82a:	a1 1d       	adc	r26, r1
+ 82c:	b1 1d       	adc	r27, r1
+ 82e:	80 93 e4 00 	sts	0x00E4, r24	; 0x8000e4 <timer0_overflow_count>
+ 832:	90 93 e5 00 	sts	0x00E5, r25	; 0x8000e5 <timer0_overflow_count+0x1>
+ 836:	a0 93 e6 00 	sts	0x00E6, r26	; 0x8000e6 <timer0_overflow_count+0x2>
+ 83a:	b0 93 e7 00 	sts	0x00E7, r27	; 0x8000e7 <timer0_overflow_count+0x3>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:213
+#endif
+}
+ 83e:	bf 91       	pop	r27
+ 840:	af 91       	pop	r26
+ 842:	9f 91       	pop	r25
+ 844:	8f 91       	pop	r24
+ 846:	3f 91       	pop	r19
+ 848:	2f 91       	pop	r18
+ 84a:	0f 90       	pop	r0
+ 84c:	0f be       	out	0x3f, r0	; 63
+ 84e:	0f 90       	pop	r0
+ 850:	1f 90       	pop	r1
+ 852:	18 95       	reti
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:205
+  if (f >= FRACT_MAX) {
+    f -= FRACT_MAX;
+    m += MILLIS_INC + 1;
+  }
+  else {
+    m += MILLIS_INC;
+ 854:	01 96       	adiw	r24, 0x01	; 1
+ 856:	a1 1d       	adc	r26, r1
+ 858:	b1 1d       	adc	r27, r1
+ 85a:	d4 cf       	rjmp	.-88     	; 0x804 <__vector_9+0x3c>
+
+0000085c <__vector_2>:
+__vector_2():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/WInterrupts.c:489
+|| defined(__AVR_ATmega48PB__)  || defined(__AVR_ATmega88__)  || defined(__AVR_ATmega88P__)  \
+|| defined(__AVR_ATmega88PB__)  || defined(__AVR_ATmega168__) || defined(__AVR_ATmega168P__) \
+|| defined(__AVR_ATmega168PB__) || defined(__AVR_ATmega328__) || defined(__AVR_ATmega328P__) \
+|| defined(__AVR_ATmega328PB__)
+  IMPLEMENT_ISR(INT0_vect, EXTERNAL_INT_0)
+  IMPLEMENT_ISR(INT1_vect, EXTERNAL_INT_1)
+ 85c:	1f 92       	push	r1
+ 85e:	0f 92       	push	r0
+ 860:	0f b6       	in	r0, 0x3f	; 63
+ 862:	0f 92       	push	r0
+ 864:	11 24       	eor	r1, r1
+ 866:	2f 93       	push	r18
+ 868:	3f 93       	push	r19
+ 86a:	4f 93       	push	r20
+ 86c:	5f 93       	push	r21
+ 86e:	6f 93       	push	r22
+ 870:	7f 93       	push	r23
+ 872:	8f 93       	push	r24
+ 874:	9f 93       	push	r25
+ 876:	af 93       	push	r26
+ 878:	bf 93       	push	r27
+ 87a:	ef 93       	push	r30
+ 87c:	ff 93       	push	r31
+ 87e:	e0 91 62 00 	lds	r30, 0x0062	; 0x800062 <__DATA_REGION_ORIGIN__+0x2>
+ 882:	f0 91 63 00 	lds	r31, 0x0063	; 0x800063 <__DATA_REGION_ORIGIN__+0x3>
+ 886:	09 95       	icall
+ 888:	ff 91       	pop	r31
+ 88a:	ef 91       	pop	r30
+ 88c:	bf 91       	pop	r27
+ 88e:	af 91       	pop	r26
+ 890:	9f 91       	pop	r25
+ 892:	8f 91       	pop	r24
+ 894:	7f 91       	pop	r23
+ 896:	6f 91       	pop	r22
+ 898:	5f 91       	pop	r21
+ 89a:	4f 91       	pop	r20
+ 89c:	3f 91       	pop	r19
+ 89e:	2f 91       	pop	r18
+ 8a0:	0f 90       	pop	r0
+ 8a2:	0f be       	out	0x3f, r0	; 63
+ 8a4:	0f 90       	pop	r0
+ 8a6:	1f 90       	pop	r1
+ 8a8:	18 95       	reti
+
+000008aa <__vector_1>:
+__vector_1():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/WInterrupts.c:488
+#elif defined(__AVR_ATmega8__)  || defined(__AVR_ATmega48__)  || defined(__AVR_ATmega48P__)  \
+|| defined(__AVR_ATmega48PB__)  || defined(__AVR_ATmega88__)  || defined(__AVR_ATmega88P__)  \
+|| defined(__AVR_ATmega88PB__)  || defined(__AVR_ATmega168__) || defined(__AVR_ATmega168P__) \
+|| defined(__AVR_ATmega168PB__) || defined(__AVR_ATmega328__) || defined(__AVR_ATmega328P__) \
+|| defined(__AVR_ATmega328PB__)
+  IMPLEMENT_ISR(INT0_vect, EXTERNAL_INT_0)
+ 8aa:	1f 92       	push	r1
+ 8ac:	0f 92       	push	r0
+ 8ae:	0f b6       	in	r0, 0x3f	; 63
+ 8b0:	0f 92       	push	r0
+ 8b2:	11 24       	eor	r1, r1
+ 8b4:	2f 93       	push	r18
+ 8b6:	3f 93       	push	r19
+ 8b8:	4f 93       	push	r20
+ 8ba:	5f 93       	push	r21
+ 8bc:	6f 93       	push	r22
+ 8be:	7f 93       	push	r23
+ 8c0:	8f 93       	push	r24
+ 8c2:	9f 93       	push	r25
+ 8c4:	af 93       	push	r26
+ 8c6:	bf 93       	push	r27
+ 8c8:	ef 93       	push	r30
+ 8ca:	ff 93       	push	r31
+ 8cc:	e0 91 60 00 	lds	r30, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 8d0:	f0 91 61 00 	lds	r31, 0x0061	; 0x800061 <__DATA_REGION_ORIGIN__+0x1>
+ 8d4:	09 95       	icall
+ 8d6:	ff 91       	pop	r31
+ 8d8:	ef 91       	pop	r30
+ 8da:	bf 91       	pop	r27
+ 8dc:	af 91       	pop	r26
+ 8de:	9f 91       	pop	r25
+ 8e0:	8f 91       	pop	r24
+ 8e2:	7f 91       	pop	r23
+ 8e4:	6f 91       	pop	r22
+ 8e6:	5f 91       	pop	r21
+ 8e8:	4f 91       	pop	r20
+ 8ea:	3f 91       	pop	r19
+ 8ec:	2f 91       	pop	r18
+ 8ee:	0f 90       	pop	r0
+ 8f0:	0f be       	out	0x3f, r0	; 63
+ 8f2:	0f 90       	pop	r0
+ 8f4:	1f 90       	pop	r1
+ 8f6:	18 95       	reti
+
+000008f8 <__vector_12>:
+__vector_12():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial0.cpp:63
+#elif defined(USART0_UDRE_vect)
+ISR(USART0_UDRE_vect)
+#else
+  #error "Don't know what the Data Register Empty vector is called for Serial"
+#endif
+{
+ 8f8:	1f 92       	push	r1
+ 8fa:	0f 92       	push	r0
+ 8fc:	0f b6       	in	r0, 0x3f	; 63
+ 8fe:	0f 92       	push	r0
+ 900:	11 24       	eor	r1, r1
+ 902:	2f 93       	push	r18
+ 904:	3f 93       	push	r19
+ 906:	4f 93       	push	r20
+ 908:	5f 93       	push	r21
+ 90a:	6f 93       	push	r22
+ 90c:	7f 93       	push	r23
+ 90e:	8f 93       	push	r24
+ 910:	9f 93       	push	r25
+ 912:	af 93       	push	r26
+ 914:	bf 93       	push	r27
+ 916:	ef 93       	push	r30
+ 918:	ff 93       	push	r31
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial0.cpp:64
+  Serial._tx_udr_empty_irq();
+ 91a:	88 ee       	ldi	r24, 0xE8	; 232
+ 91c:	90 e0       	ldi	r25, 0x00	; 0
+ 91e:	56 dd       	rcall	.-1364   	; 0x3cc <HardwareSerial::_tx_udr_empty_irq()>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial0.cpp:65
+}
+ 920:	ff 91       	pop	r31
+ 922:	ef 91       	pop	r30
+ 924:	bf 91       	pop	r27
+ 926:	af 91       	pop	r26
+ 928:	9f 91       	pop	r25
+ 92a:	8f 91       	pop	r24
+ 92c:	7f 91       	pop	r23
+ 92e:	6f 91       	pop	r22
+ 930:	5f 91       	pop	r21
+ 932:	4f 91       	pop	r20
+ 934:	3f 91       	pop	r19
+ 936:	2f 91       	pop	r18
+ 938:	0f 90       	pop	r0
+ 93a:	0f be       	out	0x3f, r0	; 63
+ 93c:	0f 90       	pop	r0
+ 93e:	1f 90       	pop	r1
+ 940:	18 95       	reti
+
+00000942 <__vector_11>:
+__vector_11():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial0.cpp:50
+#elif defined(USART_RX_vect)
+  ISR(USART_RX_vect)
+#else
+  #error "Don't know what the Data Received vector is called for Serial"
+#endif
+  {
+ 942:	1f 92       	push	r1
+ 944:	0f 92       	push	r0
+ 946:	0f b6       	in	r0, 0x3f	; 63
+ 948:	0f 92       	push	r0
+ 94a:	11 24       	eor	r1, r1
+ 94c:	2f 93       	push	r18
+ 94e:	8f 93       	push	r24
+ 950:	9f 93       	push	r25
+ 952:	ef 93       	push	r30
+ 954:	ff 93       	push	r31
+_rx_complete_irq():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial_private.h:100
+
+// Actual interrupt handlers //////////////////////////////////////////////////////////////
+
+void HardwareSerial::_rx_complete_irq(void)
+{
+  if (bit_is_clear(*_ucsra, UPE0)) {
+ 956:	e0 91 f8 00 	lds	r30, 0x00F8	; 0x8000f8 <Serial+0x10>
+ 95a:	f0 91 f9 00 	lds	r31, 0x00F9	; 0x8000f9 <Serial+0x11>
+ 95e:	80 81       	ld	r24, Z
+ 960:	e0 91 fe 00 	lds	r30, 0x00FE	; 0x8000fe <Serial+0x16>
+ 964:	f0 91 ff 00 	lds	r31, 0x00FF	; 0x8000ff <Serial+0x17>
+ 968:	82 fd       	sbrc	r24, 2
+ 96a:	1b c0       	rjmp	.+54     	; 0x9a2 <__vector_11+0x60>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial_private.h:103
+    // No Parity error, read byte and store it in the buffer if there is
+    // room
+    unsigned char c = *_udr;
+ 96c:	90 81       	ld	r25, Z
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial_private.h:104
+    rx_buffer_index_t i = (unsigned int)(_rx_buffer_head + 1) % SERIAL_RX_BUFFER_SIZE;
+ 96e:	80 91 01 01 	lds	r24, 0x0101	; 0x800101 <Serial+0x19>
+ 972:	8f 5f       	subi	r24, 0xFF	; 255
+ 974:	8f 73       	andi	r24, 0x3F	; 63
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial_private.h:110
+
+    // if we should be storing the received character into the location
+    // just before the tail (meaning that the head would advance to the
+    // current location of the tail), we're about to overflow the buffer
+    // and so we don't write the character or advance the head.
+    if (i != _rx_buffer_tail) {
+ 976:	20 91 02 01 	lds	r18, 0x0102	; 0x800102 <Serial+0x1a>
+ 97a:	82 17       	cp	r24, r18
+ 97c:	41 f0       	breq	.+16     	; 0x98e <__vector_11+0x4c>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial_private.h:111
+      _rx_buffer[_rx_buffer_head] = c;
+ 97e:	e0 91 01 01 	lds	r30, 0x0101	; 0x800101 <Serial+0x19>
+ 982:	f0 e0       	ldi	r31, 0x00	; 0
+ 984:	e8 51       	subi	r30, 0x18	; 24
+ 986:	ff 4f       	sbci	r31, 0xFF	; 255
+ 988:	95 8f       	std	Z+29, r25	; 0x1d
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial_private.h:112
+      _rx_buffer_head = i;
+ 98a:	80 93 01 01 	sts	0x0101, r24	; 0x800101 <Serial+0x19>
+__vector_11():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial0.cpp:52
+    Serial._rx_complete_irq();
+  }
+ 98e:	ff 91       	pop	r31
+ 990:	ef 91       	pop	r30
+ 992:	9f 91       	pop	r25
+ 994:	8f 91       	pop	r24
+ 996:	2f 91       	pop	r18
+ 998:	0f 90       	pop	r0
+ 99a:	0f be       	out	0x3f, r0	; 63
+ 99c:	0f 90       	pop	r0
+ 99e:	1f 90       	pop	r1
+ 9a0:	18 95       	reti
+_rx_complete_irq():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial_private.h:116
+    }
+  } else {
+    // Parity error, read byte but discard it
+    *_udr;
+ 9a2:	80 81       	ld	r24, Z
+ 9a4:	f4 cf       	rjmp	.-24     	; 0x98e <__vector_11+0x4c>
+
+000009a6 <digitalWrite>:
+digitalWrite():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring_digital.c:189
+  }
+}
+
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+  uint8_t timer = digitalPinToTimer(pin);
+ 9a6:	90 e0       	ldi	r25, 0x00	; 0
+ 9a8:	fc 01       	movw	r30, r24
+ 9aa:	ed 53       	subi	r30, 0x3D	; 61
+ 9ac:	ff 4f       	sbci	r31, 0xFF	; 255
+ 9ae:	34 91       	lpm	r19, Z
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring_digital.c:190
+  uint8_t bit = digitalPinToBitMask(pin);
+ 9b0:	fc 01       	movw	r30, r24
+ 9b2:	e1 5f       	subi	r30, 0xF1	; 241
+ 9b4:	fe 4f       	sbci	r31, 0xFE	; 254
+ 9b6:	24 91       	lpm	r18, Z
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring_digital.c:191
+  uint8_t port = digitalPinToPort(pin);
+ 9b8:	fc 01       	movw	r30, r24
+ 9ba:	e8 50       	subi	r30, 0x08	; 8
+ 9bc:	ff 4f       	sbci	r31, 0xFF	; 255
+ 9be:	e4 91       	lpm	r30, Z
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring_digital.c:194
+  volatile uint8_t *out;
+
+  if (port == NOT_A_PIN) return;
+ 9c0:	ee 23       	and	r30, r30
+ 9c2:	e1 f0       	breq	.+56     	; 0x9fc <digitalWrite+0x56>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring_digital.c:198
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+ 9c4:	33 23       	and	r19, r19
+ 9c6:	49 f0       	breq	.+18     	; 0x9da <digitalWrite+0x34>
+turnOffPWM():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring_digital.c:77
+//
+//static inline void turnOffPWM(uint8_t timer) __attribute__ ((always_inline));
+//static inline void turnOffPWM(uint8_t timer)
+static void turnOffPWM(uint8_t timer)
+{
+  switch (timer)
+ 9c8:	35 30       	cpi	r19, 0x05	; 5
+ 9ca:	c9 f0       	breq	.+50     	; 0x9fe <digitalWrite+0x58>
+ 9cc:	37 30       	cpi	r19, 0x07	; 7
+ 9ce:	d1 f0       	breq	.+52     	; 0xa04 <digitalWrite+0x5e>
+ 9d0:	34 30       	cpi	r19, 0x04	; 4
+ 9d2:	19 f4       	brne	.+6      	; 0x9da <digitalWrite+0x34>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring_digital.c:82
+  {
+    // Timer1
+    #if defined(TCCR1A) && defined(COM1A1)
+      case TIMER1A:
+        TCCR1A &= ~_BV(COM1A1);
+ 9d4:	8f b5       	in	r24, 0x2f	; 47
+ 9d6:	8f 77       	andi	r24, 0x7F	; 127
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring_digital.c:87
+        break;
+    #endif
+    #if defined(TCCR1A) && defined(COM1B1)
+      case TIMER1B:
+        TCCR1A &= ~_BV(COM1B1);
+ 9d8:	8f bd       	out	0x2f, r24	; 47
+digitalWrite():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring_digital.c:200
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  out = portOutputRegister(port);
+ 9da:	f0 e0       	ldi	r31, 0x00	; 0
+ 9dc:	ee 0f       	add	r30, r30
+ 9de:	ff 1f       	adc	r31, r31
+ 9e0:	e2 51       	subi	r30, 0x12	; 18
+ 9e2:	ff 4f       	sbci	r31, 0xFF	; 255
+ 9e4:	a5 91       	lpm	r26, Z+
+ 9e6:	b4 91       	lpm	r27, Z
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring_digital.c:202
+
+  uint8_t oldSREG = SREG;
+ 9e8:	8f b7       	in	r24, 0x3f	; 63
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring_digital.c:203
+  cli();
+ 9ea:	f8 94       	cli
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring_digital.c:205
+
+  if (val == LOW) {
+ 9ec:	61 11       	cpse	r22, r1
+ 9ee:	0e c0       	rjmp	.+28     	; 0xa0c <digitalWrite+0x66>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring_digital.c:206
+    *out &= ~bit;
+ 9f0:	9c 91       	ld	r25, X
+ 9f2:	e2 2f       	mov	r30, r18
+ 9f4:	e0 95       	com	r30
+ 9f6:	e9 23       	and	r30, r25
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring_digital.c:208
+  } else {
+    *out |= bit;
+ 9f8:	ec 93       	st	X, r30
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring_digital.c:211
+  }
+
+  SREG = oldSREG;
+ 9fa:	8f bf       	out	0x3f, r24	; 63
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring_digital.c:212
+}
+ 9fc:	08 95       	ret
+turnOffPWM():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring_digital.c:87
+        TCCR1A &= ~_BV(COM1A1);
+        break;
+    #endif
+    #if defined(TCCR1A) && defined(COM1B1)
+      case TIMER1B:
+        TCCR1A &= ~_BV(COM1B1);
+ 9fe:	8f b5       	in	r24, 0x2f	; 47
+ a00:	8f 7d       	andi	r24, 0xDF	; 223
+ a02:	ea cf       	rjmp	.-44     	; 0x9d8 <digitalWrite+0x32>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring_digital.c:99
+    #endif
+    
+    // Timer2
+    #if defined(TCCR2) && defined(COM21)
+      case TIMER2:
+        TCCR2 &= ~_BV(COM21);
+ a04:	85 b5       	in	r24, 0x25	; 37
+ a06:	8f 7d       	andi	r24, 0xDF	; 223
+ a08:	85 bd       	out	0x25, r24	; 37
+ a0a:	e7 cf       	rjmp	.-50     	; 0x9da <digitalWrite+0x34>
+digitalWrite():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring_digital.c:208
+  cli();
+
+  if (val == LOW) {
+    *out &= ~bit;
+  } else {
+    *out |= bit;
+ a0c:	ec 91       	ld	r30, X
+ a0e:	e2 2b       	or	r30, r18
+ a10:	f3 cf       	rjmp	.-26     	; 0x9f8 <digitalWrite+0x52>
+
+00000a12 <global constructors keyed to 65535_0_MinimalDfPlayerSoftwareSerial.ino.cpp.o.1943>:
+_GLOBAL__I_65535_0_MinimalDfPlayerSoftwareSerial.ino.cpp.o.1943():
+ a12:	0f 93       	push	r16
+ a14:	1f 93       	push	r17
+ a16:	cf 93       	push	r28
+ a18:	df 93       	push	r29
+ a1a:	10 92 eb 00 	sts	0x00EB, r1	; 0x8000eb <Serial+0x3>
+ a1e:	10 92 ea 00 	sts	0x00EA, r1	; 0x8000ea <Serial+0x2>
+ a22:	88 ee       	ldi	r24, 0xE8	; 232
+ a24:	93 e0       	ldi	r25, 0x03	; 3
+ a26:	a0 e0       	ldi	r26, 0x00	; 0
+ a28:	b0 e0       	ldi	r27, 0x00	; 0
+ a2a:	80 93 ec 00 	sts	0x00EC, r24	; 0x8000ec <Serial+0x4>
+ a2e:	90 93 ed 00 	sts	0x00ED, r25	; 0x8000ed <Serial+0x5>
+ a32:	a0 93 ee 00 	sts	0x00EE, r26	; 0x8000ee <Serial+0x6>
+ a36:	b0 93 ef 00 	sts	0x00EF, r27	; 0x8000ef <Serial+0x7>
+ a3a:	28 e6       	ldi	r18, 0x68	; 104
+ a3c:	30 e0       	ldi	r19, 0x00	; 0
+ a3e:	30 93 e9 00 	sts	0x00E9, r19	; 0x8000e9 <Serial+0x1>
+ a42:	20 93 e8 00 	sts	0x00E8, r18	; 0x8000e8 <Serial>
+ a46:	20 e4       	ldi	r18, 0x40	; 64
+ a48:	30 e0       	ldi	r19, 0x00	; 0
+ a4a:	30 93 f5 00 	sts	0x00F5, r19	; 0x8000f5 <Serial+0xd>
+ a4e:	20 93 f4 00 	sts	0x00F4, r18	; 0x8000f4 <Serial+0xc>
+ a52:	49 e2       	ldi	r20, 0x29	; 41
+ a54:	50 e0       	ldi	r21, 0x00	; 0
+ a56:	50 93 f7 00 	sts	0x00F7, r21	; 0x8000f7 <Serial+0xf>
+ a5a:	40 93 f6 00 	sts	0x00F6, r20	; 0x8000f6 <Serial+0xe>
+ a5e:	4b e2       	ldi	r20, 0x2B	; 43
+ a60:	50 e0       	ldi	r21, 0x00	; 0
+ a62:	50 93 f9 00 	sts	0x00F9, r21	; 0x8000f9 <Serial+0x11>
+ a66:	40 93 f8 00 	sts	0x00F8, r20	; 0x8000f8 <Serial+0x10>
+ a6a:	4a e2       	ldi	r20, 0x2A	; 42
+ a6c:	50 e0       	ldi	r21, 0x00	; 0
+ a6e:	50 93 fb 00 	sts	0x00FB, r21	; 0x8000fb <Serial+0x13>
+ a72:	40 93 fa 00 	sts	0x00FA, r20	; 0x8000fa <Serial+0x12>
+ a76:	30 93 fd 00 	sts	0x00FD, r19	; 0x8000fd <Serial+0x15>
+ a7a:	20 93 fc 00 	sts	0x00FC, r18	; 0x8000fc <Serial+0x14>
+ a7e:	2c e2       	ldi	r18, 0x2C	; 44
+ a80:	30 e0       	ldi	r19, 0x00	; 0
+ a82:	30 93 ff 00 	sts	0x00FF, r19	; 0x8000ff <Serial+0x17>
+ a86:	20 93 fe 00 	sts	0x00FE, r18	; 0x8000fe <Serial+0x16>
+ a8a:	10 92 01 01 	sts	0x0101, r1	; 0x800101 <Serial+0x19>
+ a8e:	10 92 02 01 	sts	0x0102, r1	; 0x800102 <Serial+0x1a>
+ a92:	10 92 03 01 	sts	0x0103, r1	; 0x800103 <Serial+0x1b>
+ a96:	10 92 04 01 	sts	0x0104, r1	; 0x800104 <Serial+0x1c>
+ a9a:	10 92 88 01 	sts	0x0188, r1	; 0x800188 <(anonymous namespace)::dfPlayer+0x3>
+ a9e:	10 92 87 01 	sts	0x0187, r1	; 0x800187 <(anonymous namespace)::dfPlayer+0x2>
+ aa2:	80 93 89 01 	sts	0x0189, r24	; 0x800189 <(anonymous namespace)::dfPlayer+0x4>
+ aa6:	90 93 8a 01 	sts	0x018A, r25	; 0x80018a <(anonymous namespace)::dfPlayer+0x5>
+ aaa:	a0 93 8b 01 	sts	0x018B, r26	; 0x80018b <(anonymous namespace)::dfPlayer+0x6>
+ aae:	b0 93 8c 01 	sts	0x018C, r27	; 0x80018c <(anonymous namespace)::dfPlayer+0x7>
+ ab2:	8a e7       	ldi	r24, 0x7A	; 122
+ ab4:	90 e0       	ldi	r25, 0x00	; 0
+ ab6:	90 93 86 01 	sts	0x0186, r25	; 0x800186 <(anonymous namespace)::dfPlayer+0x1>
+ aba:	80 93 85 01 	sts	0x0185, r24	; 0x800185 <(anonymous namespace)::dfPlayer>
+ abe:	10 92 9c 01 	sts	0x019C, r1	; 0x80019c <(anonymous namespace)::dfPlayer+0x17>
+ ac2:	10 92 9b 01 	sts	0x019B, r1	; 0x80019b <(anonymous namespace)::dfPlayer+0x16>
+ ac6:	10 92 9e 01 	sts	0x019E, r1	; 0x80019e <(anonymous namespace)::dfPlayer+0x19>
+ aca:	10 92 9d 01 	sts	0x019D, r1	; 0x80019d <(anonymous namespace)::dfPlayer+0x18>
+ ace:	10 92 a0 01 	sts	0x01A0, r1	; 0x8001a0 <(anonymous namespace)::dfPlayer+0x1b>
+ ad2:	10 92 9f 01 	sts	0x019F, r1	; 0x80019f <(anonymous namespace)::dfPlayer+0x1a>
+ ad6:	10 92 a2 01 	sts	0x01A2, r1	; 0x8001a2 <(anonymous namespace)::dfPlayer+0x1d>
+ ada:	10 92 a1 01 	sts	0x01A1, r1	; 0x8001a1 <(anonymous namespace)::dfPlayer+0x1c>
+ ade:	60 91 a3 01 	lds	r22, 0x01A3	; 0x8001a3 <(anonymous namespace)::dfPlayer+0x1e>
+ ae2:	6e 7f       	andi	r22, 0xFE	; 254
+ ae4:	6d 7f       	andi	r22, 0xFD	; 253
+ ae6:	60 93 a3 01 	sts	0x01A3, r22	; 0x8001a3 <(anonymous namespace)::dfPlayer+0x1e>
+ aea:	66 95       	lsr	r22
+ aec:	61 70       	andi	r22, 0x01	; 1
+ aee:	81 e0       	ldi	r24, 0x01	; 1
+ af0:	68 27       	eor	r22, r24
+ af2:	86 e0       	ldi	r24, 0x06	; 6
+ af4:	58 df       	rcall	.-336    	; 0x9a6 <digitalWrite>
+ af6:	45 e1       	ldi	r20, 0x15	; 21
+ af8:	51 e0       	ldi	r21, 0x01	; 1
+ afa:	fa 01       	movw	r30, r20
+ afc:	64 91       	lpm	r22, Z
+ afe:	8e ef       	ldi	r24, 0xFE	; 254
+ b00:	90 e0       	ldi	r25, 0x00	; 0
+ b02:	fc 01       	movw	r30, r24
+ b04:	24 91       	lpm	r18, Z
+ b06:	22 23       	and	r18, r18
+ b08:	99 f0       	breq	.+38     	; 0xb30 <global constructors keyed to 65535_0_MinimalDfPlayerSoftwareSerial.ino.cpp.o.1943+0x11e>
+ b0a:	30 e0       	ldi	r19, 0x00	; 0
+ b0c:	22 0f       	add	r18, r18
+ b0e:	33 1f       	adc	r19, r19
+ b10:	f9 01       	movw	r30, r18
+ b12:	ec 51       	subi	r30, 0x1C	; 28
+ b14:	ff 4f       	sbci	r31, 0xFF	; 255
+ b16:	a5 91       	lpm	r26, Z+
+ b18:	b4 91       	lpm	r27, Z
+ b1a:	f9 01       	movw	r30, r18
+ b1c:	e2 51       	subi	r30, 0x12	; 18
+ b1e:	ff 4f       	sbci	r31, 0xFF	; 255
+ b20:	25 91       	lpm	r18, Z+
+ b22:	34 91       	lpm	r19, Z
+ b24:	2f b7       	in	r18, 0x3f	; 63
+ b26:	f8 94       	cli
+ b28:	3c 91       	ld	r19, X
+ b2a:	63 2b       	or	r22, r19
+ b2c:	6c 93       	st	X, r22
+ b2e:	2f bf       	out	0x3f, r18	; 63
+ b30:	fa 01       	movw	r30, r20
+ b32:	44 91       	lpm	r20, Z
+ b34:	40 93 95 01 	sts	0x0195, r20	; 0x800195 <(anonymous namespace)::dfPlayer+0x10>
+ b38:	fc 01       	movw	r30, r24
+ b3a:	84 91       	lpm	r24, Z
+ b3c:	e8 2f       	mov	r30, r24
+ b3e:	f0 e0       	ldi	r31, 0x00	; 0
+ b40:	ee 0f       	add	r30, r30
+ b42:	ff 1f       	adc	r31, r31
+ b44:	e2 51       	subi	r30, 0x12	; 18
+ b46:	ff 4f       	sbci	r31, 0xFF	; 255
+ b48:	85 91       	lpm	r24, Z+
+ b4a:	94 91       	lpm	r25, Z
+ b4c:	90 93 97 01 	sts	0x0197, r25	; 0x800197 <(anonymous namespace)::dfPlayer+0x12>
+ b50:	80 93 96 01 	sts	0x0196, r24	; 0x800196 <(anonymous namespace)::dfPlayer+0x11>
+ b54:	01 e1       	ldi	r16, 0x11	; 17
+ b56:	11 e0       	ldi	r17, 0x01	; 1
+ b58:	f8 01       	movw	r30, r16
+ b5a:	24 91       	lpm	r18, Z
+ b5c:	ca ef       	ldi	r28, 0xFA	; 250
+ b5e:	d0 e0       	ldi	r29, 0x00	; 0
+ b60:	fe 01       	movw	r30, r28
+ b62:	84 91       	lpm	r24, Z
+ b64:	88 23       	and	r24, r24
+ b66:	c9 f0       	breq	.+50     	; 0xb9a <global constructors keyed to 65535_0_MinimalDfPlayerSoftwareSerial.ino.cpp.o.1943+0x188>
+ b68:	90 e0       	ldi	r25, 0x00	; 0
+ b6a:	88 0f       	add	r24, r24
+ b6c:	99 1f       	adc	r25, r25
+ b6e:	fc 01       	movw	r30, r24
+ b70:	ec 51       	subi	r30, 0x1C	; 28
+ b72:	ff 4f       	sbci	r31, 0xFF	; 255
+ b74:	a5 91       	lpm	r26, Z+
+ b76:	b4 91       	lpm	r27, Z
+ b78:	fc 01       	movw	r30, r24
+ b7a:	e2 51       	subi	r30, 0x12	; 18
+ b7c:	ff 4f       	sbci	r31, 0xFF	; 255
+ b7e:	45 91       	lpm	r20, Z+
+ b80:	54 91       	lpm	r21, Z
+ b82:	3f b7       	in	r19, 0x3f	; 63
+ b84:	f8 94       	cli
+ b86:	9c 91       	ld	r25, X
+ b88:	82 2f       	mov	r24, r18
+ b8a:	80 95       	com	r24
+ b8c:	98 23       	and	r25, r24
+ b8e:	9c 93       	st	X, r25
+ b90:	fa 01       	movw	r30, r20
+ b92:	90 81       	ld	r25, Z
+ b94:	89 23       	and	r24, r25
+ b96:	80 83       	st	Z, r24
+ b98:	3f bf       	out	0x3f, r19	; 63
+ b9a:	80 91 a3 01 	lds	r24, 0x01A3	; 0x8001a3 <(anonymous namespace)::dfPlayer+0x1e>
+ b9e:	81 fd       	sbrc	r24, 1
+ ba0:	03 c0       	rjmp	.+6      	; 0xba8 <global constructors keyed to 65535_0_MinimalDfPlayerSoftwareSerial.ino.cpp.o.1943+0x196>
+ ba2:	61 e0       	ldi	r22, 0x01	; 1
+ ba4:	82 e0       	ldi	r24, 0x02	; 2
+ ba6:	ff de       	rcall	.-514    	; 0x9a6 <digitalWrite>
+ ba8:	82 e0       	ldi	r24, 0x02	; 2
+ baa:	80 93 91 01 	sts	0x0191, r24	; 0x800191 <(anonymous namespace)::dfPlayer+0xc>
+ bae:	f8 01       	movw	r30, r16
+ bb0:	04 91       	lpm	r16, Z
+ bb2:	00 93 92 01 	sts	0x0192, r16	; 0x800192 <(anonymous namespace)::dfPlayer+0xd>
+ bb6:	fe 01       	movw	r30, r28
+ bb8:	c4 91       	lpm	r28, Z
+ bba:	ec 2f       	mov	r30, r28
+ bbc:	f0 e0       	ldi	r31, 0x00	; 0
+ bbe:	ee 0f       	add	r30, r30
+ bc0:	ff 1f       	adc	r31, r31
+ bc2:	e6 52       	subi	r30, 0x26	; 38
+ bc4:	ff 4f       	sbci	r31, 0xFF	; 255
+ bc6:	85 91       	lpm	r24, Z+
+ bc8:	94 91       	lpm	r25, Z
+ bca:	90 93 94 01 	sts	0x0194, r25	; 0x800194 <(anonymous namespace)::dfPlayer+0xf>
+ bce:	80 93 93 01 	sts	0x0193, r24	; 0x800193 <(anonymous namespace)::dfPlayer+0xe>
+ bd2:	df 91       	pop	r29
+ bd4:	cf 91       	pop	r28
+ bd6:	1f 91       	pop	r17
+ bd8:	0f 91       	pop	r16
+ bda:	08 95       	ret
+
+00000bdc <main>:
+init():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:945
+
+void init()
+{
+  // this needs to be called before setup() or some functions won't
+  // work there
+  sei();
+ bdc:	78 94       	sei
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:966
+#if defined(__AVR_ATmega64__) || defined(__AVR_ATmega128__)
+  // CPU specific: different values for the ATmega64/128
+  TCCR0 |= _BV(WGM01) | _BV(WGM00) | _BV(CS02);
+#elif defined(TCCR0) && defined(CS01) && defined(CS00)
+  // This combination is for the ATmega8535, ATmega8, ATmega16, ATmega32, ATmega8515, ATmega162
+  TCCR0 |= _BV(CS01) | _BV(CS00);
+ bde:	83 b7       	in	r24, 0x33	; 51
+ be0:	83 60       	ori	r24, 0x03	; 3
+ be2:	83 bf       	out	0x33, r24	; 51
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:982
+  #error Timer 0 prescale factor 64 not set correctly
+#endif
+
+// Enable timer 0 overflow interrupt
+#if defined(TIMSK) && defined(TOIE0)
+  TIMSK |= _BV(TOIE0);
+ be4:	89 b7       	in	r24, 0x39	; 57
+ be6:	81 60       	ori	r24, 0x01	; 1
+ be8:	89 bf       	out	0x39, r24	; 57
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:995
+// this is better for motors as it ensures an even waveform
+// note, however, that fast pwm mode can achieve a frequency of up
+// 8 MHz (with a 16 MHz clock) at 50% duty cycle
+
+#if defined(TCCR1B) && defined(CS11) && defined(CS10)
+  TCCR1B = _BV(CS11); // Set timer 1 prescale factor to 64
+ bea:	92 e0       	ldi	r25, 0x02	; 2
+ bec:	9e bd       	out	0x2e, r25	; 46
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:997
+#if F_CPU >= 8000000L
+  TCCR1B |= _BV(CS10);
+ bee:	8e b5       	in	r24, 0x2e	; 46
+ bf0:	81 60       	ori	r24, 0x01	; 1
+ bf2:	8e bd       	out	0x2e, r24	; 46
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:1006
+#if F_CPU >= 8000000L
+  TCCR1 |= _BV(CS10);
+#endif
+#endif
+#if defined(TCCR1A) && defined(WGM10)
+  TCCR1A |= _BV(WGM10); // Put timer 1 in 8-bit phase correct pwm mode
+ bf4:	8f b5       	in	r24, 0x2f	; 47
+ bf6:	81 60       	ori	r24, 0x01	; 1
+ bf8:	8f bd       	out	0x2f, r24	; 47
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:1011
+#endif
+
+// Set timer 2 prescale factor to 64
+#if defined(TCCR2) && defined(CS22)
+  TCCR2 |= _BV(CS22);
+ bfa:	85 b5       	in	r24, 0x25	; 37
+ bfc:	84 60       	ori	r24, 0x04	; 4
+ bfe:	85 bd       	out	0x25, r24	; 37
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:1020
+  TCCR2A |= _BV(CS22);
+#endif
+
+// Configure timer 2 for phase correct pwm (8-bit)
+#if defined(TCCR2) && defined(WGM20)
+  TCCR2 |= _BV(WGM20);
+ c00:	85 b5       	in	r24, 0x25	; 37
+ c02:	80 64       	ori	r24, 0x40	; 64
+ c04:	85 bd       	out	0x25, r24	; 37
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:1050
+#endif
+
+#if defined(ADCSRA)
+  // set a2d prescaler so we are inside the desired 50-200 KHz range.
+  #if F_CPU >= 16000000 // 16 MHz / 128 = 125 KHz
+    ADCSRA = _BV(ADPS2) | _BV(ADPS1) | _BV(ADPS0) | _BV(ADEN);
+ c06:	87 e8       	ldi	r24, 0x87	; 135
+ c08:	86 b9       	out	0x06, r24	; 6
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:1068
+
+  // The bootloader connects pins 0 and 1 to the USART; disconnect them
+  // here so they can be used as normal digital i/o; they will be
+  // reconnected in Serial.begin()
+#if defined(UCSRB)
+  UCSRB = 0;
+ c0a:	1a b8       	out	0x0a, r1	; 10
+begin():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:121
+
+void HardwareSerial::begin(unsigned long baud, byte config)
+{
+  // Try u2x mode first
+  uint16_t baud_setting = (F_CPU / 4 / baud - 1) / 2;
+  *_ucsra = 1 << U2X0;
+ c0c:	e0 91 f8 00 	lds	r30, 0x00F8	; 0x8000f8 <Serial+0x10>
+ c10:	f0 91 f9 00 	lds	r31, 0x00F9	; 0x8000f9 <Serial+0x11>
+ c14:	90 83       	st	Z, r25
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:135
+    *_ucsra = 0;
+    baud_setting = (F_CPU / 8 / baud - 1) / 2;
+  }
+
+  // assign the baud_setting, a.k.a. ubrr (USART Baud Rate Register)
+  *_ubrrh = baud_setting >> 8;
+ c16:	e0 91 f4 00 	lds	r30, 0x00F4	; 0x8000f4 <Serial+0xc>
+ c1a:	f0 91 f5 00 	lds	r31, 0x00F5	; 0x8000f5 <Serial+0xd>
+ c1e:	10 82       	st	Z, r1
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:136
+  *_ubrrl = baud_setting;
+ c20:	e0 91 f6 00 	lds	r30, 0x00F6	; 0x8000f6 <Serial+0xe>
+ c24:	f0 91 f7 00 	lds	r31, 0x00F7	; 0x8000f7 <Serial+0xf>
+ c28:	80 e1       	ldi	r24, 0x10	; 16
+ c2a:	80 83       	st	Z, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:138
+
+  _written = false;
+ c2c:	10 92 00 01 	sts	0x0100, r1	; 0x800100 <Serial+0x18>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:146
+#if defined(__AVR_ATmega8__) || defined(__AVR_ATmega8515__) || defined(__AVR_ATmega162__) \
+|| defined(__AVR_ATmega8535__) || defined(__AVR_ATmega16__)|| defined(__AVR_ATmega32__)   \
+|| defined(__AVR_ATmega162__)
+  config |= 0x80; // select UCSRC register (shared with UBRRH)
+#endif
+  *_ucsrc = config;
+ c30:	e0 91 fc 00 	lds	r30, 0x00FC	; 0x8000fc <Serial+0x14>
+ c34:	f0 91 fd 00 	lds	r31, 0x00FD	; 0x8000fd <Serial+0x15>
+ c38:	86 e8       	ldi	r24, 0x86	; 134
+ c3a:	80 83       	st	Z, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:148
+  
+  *_ucsrb |= _BV(RXEN0) | _BV(TXEN0) | _BV(RXCIE0);
+ c3c:	e0 91 fa 00 	lds	r30, 0x00FA	; 0x8000fa <Serial+0x12>
+ c40:	f0 91 fb 00 	lds	r31, 0x00FB	; 0x8000fb <Serial+0x13>
+ c44:	80 81       	ld	r24, Z
+ c46:	88 69       	ori	r24, 0x98	; 152
+ c48:	80 83       	st	Z, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:149
+  *_ucsrb &= ~_BV(UDRIE0);
+ c4a:	e0 91 fa 00 	lds	r30, 0x00FA	; 0x8000fa <Serial+0x12>
+ c4e:	f0 91 fb 00 	lds	r31, 0x00FB	; 0x8000fb <Serial+0x13>
+ c52:	80 81       	ld	r24, Z
+ c54:	8f 7d       	andi	r24, 0xDF	; 223
+ c56:	80 83       	st	Z, r24
+setup():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:101
+}
+
+void setup()
+{
+  Serial.begin(115200);
+  Serial.println(F("Minimal DFPlayer SoftwareSerial test starting"));
+ c58:	8b e7       	ldi	r24, 0x7B	; 123
+ c5a:	90 e0       	ldi	r25, 0x00	; 0
+ c5c:	5a dd       	rcall	.-1356   	; 0x712 <Print::println(__FlashStringHelper const*) [clone .constprop.3]>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:102
+  Serial.println(F("DFPlayer RX: ATmega8 PD2/D2; DFPlayer TX: ATmega8 PD6/D6"));
+ c5e:	82 e4       	ldi	r24, 0x42	; 66
+ c60:	90 e0       	ldi	r25, 0x00	; 0
+ c62:	57 dd       	rcall	.-1362   	; 0x712 <Print::println(__FlashStringHelper const*) [clone .constprop.3]>
+begin():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:316
+// Public methods
+//
+
+void SoftwareSerial::begin(long speed)
+{
+  _rx_delay_centering = _rx_delay_intrabit = _rx_delay_stopbit = _tx_delay = 0;
+ c64:	10 92 a0 01 	sts	0x01A0, r1	; 0x8001a0 <(anonymous namespace)::dfPlayer+0x1b>
+ c68:	10 92 9f 01 	sts	0x019F, r1	; 0x80019f <(anonymous namespace)::dfPlayer+0x1a>
+ c6c:	10 92 9e 01 	sts	0x019E, r1	; 0x80019e <(anonymous namespace)::dfPlayer+0x19>
+ c70:	10 92 9d 01 	sts	0x019D, r1	; 0x80019d <(anonymous namespace)::dfPlayer+0x18>
+ c74:	10 92 9c 01 	sts	0x019C, r1	; 0x80019c <(anonymous namespace)::dfPlayer+0x17>
+ c78:	10 92 9b 01 	sts	0x019B, r1	; 0x80019b <(anonymous namespace)::dfPlayer+0x16>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:326
+  // 12 (gcc 4.8.2) or 13 (gcc 4.3.2) cycles from start bit to first bit,
+  // 15 (gcc 4.8.2) or 16 (gcc 4.3.2) cycles between bits,
+  // 12 (gcc 4.8.2) or 14 (gcc 4.3.2) cycles from last bit to stop bit
+  // These are all close enough to just use 15 cycles, since the inter-bit
+  // timings are the most critical (deviations stack 8 times)
+  _tx_delay = subtract_cap(bit_delay, 15 / 4);
+ c7c:	8d e9       	ldi	r24, 0x9D	; 157
+ c7e:	91 e0       	ldi	r25, 0x01	; 1
+ c80:	90 93 a2 01 	sts	0x01A2, r25	; 0x8001a2 <(anonymous namespace)::dfPlayer+0x1d>
+ c84:	80 93 a1 01 	sts	0x01A1, r24	; 0x8001a1 <(anonymous namespace)::dfPlayer+0x1c>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:387
+  else
+#endif
+#if defined(INT_ONLY) || defined(INT_AND_PCINT)
+  {
+     // Direct interrupts
+     attachInterrupt(digitalPinToInterrupt(_receivePin), isr, CHANGE);
+ c88:	80 91 91 01 	lds	r24, 0x0191	; 0x800191 <(anonymous namespace)::dfPlayer+0xc>
+ c8c:	82 30       	cpi	r24, 0x02	; 2
+ c8e:	09 f4       	brne	.+2      	; 0xc92 <main+0xb6>
+ c90:	e5 c0       	rjmp	.+458    	; 0xe5c <main+0x280>
+ c92:	83 30       	cpi	r24, 0x03	; 3
+ c94:	69 f4       	brne	.+26     	; 0xcb0 <main+0xd4>
+attachInterrupt():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/WInterrupts.c:66
+
+void attachInterrupt(uint8_t interruptNum, void (*userFunc)(void), int mode)
+{
+  if(interruptNum < EXTERNAL_NUM_INTERRUPTS)
+  {
+    intFunc[interruptNum] = userFunc;
+ c96:	81 e1       	ldi	r24, 0x11	; 17
+ c98:	91 e0       	ldi	r25, 0x01	; 1
+ c9a:	90 93 63 00 	sts	0x0063, r25	; 0x800063 <__DATA_REGION_ORIGIN__+0x3>
+ c9e:	80 93 62 00 	sts	0x0062, r24	; 0x800062 <__DATA_REGION_ORIGIN__+0x2>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/WInterrupts.c:193
+        case 0:
+          MCUCR = (MCUCR & ~((1 << ISC00) | (1 << ISC01))) | (mode << ISC00);
+          GICR |= (1 << INT0);
+          break;
+        case 1:
+          MCUCR = (MCUCR & ~((1 << ISC10) | (1 << ISC11))) | (mode << ISC10);
+ ca2:	85 b7       	in	r24, 0x35	; 53
+ ca4:	83 7f       	andi	r24, 0xF3	; 243
+ ca6:	84 60       	ori	r24, 0x04	; 4
+ ca8:	85 bf       	out	0x35, r24	; 53
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/WInterrupts.c:194
+          GICR |= (1 << INT1);
+ caa:	8b b7       	in	r24, 0x3b	; 59
+ cac:	80 68       	ori	r24, 0x80	; 128
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/WInterrupts.c:190
+// ATmega8, ATmega8515, ATmega8535, ATmega16, ATmega32, ATmega162
+      #elif defined(__AVR_ATmega8__) || defined(__AVR_ATmega8515__) || defined(__AVR_ATmega8535__) \
+      || defined(__AVR_ATmega16__) || defined(__AVR_ATmega32__) || defined(__AVR_ATmega162__)
+        case 0:
+          MCUCR = (MCUCR & ~((1 << ISC00) | (1 << ISC01))) | (mode << ISC00);
+          GICR |= (1 << INT0);
+ cae:	8b bf       	out	0x3b, r24	; 59
+begin():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:403
+    // are 17 more cycles until the pin value is read (excluding the
+    // delay in the loop).
+    // We want to have a total delay of 1.5 bit time. Inside the loop,
+    // we already wait for 1 bit time - 23 cycles, so here we wait for
+    // 0.5 bit time - (71 + 18 - 22) cycles.
+    _rx_delay_centering = subtract_cap(bit_delay / 2, (4 + 4 + 75 + 17 - 23) / 4);
+ cb0:	8d eb       	ldi	r24, 0xBD	; 189
+ cb2:	90 e0       	ldi	r25, 0x00	; 0
+ cb4:	90 93 9c 01 	sts	0x019C, r25	; 0x80019c <(anonymous namespace)::dfPlayer+0x17>
+ cb8:	80 93 9b 01 	sts	0x019B, r24	; 0x80019b <(anonymous namespace)::dfPlayer+0x16>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:406
+
+    // There are 23 cycles in each loop iteration (excluding the delay)
+    _rx_delay_intrabit = subtract_cap(bit_delay, 23 / 4);
+ cbc:	8b e9       	ldi	r24, 0x9B	; 155
+ cbe:	91 e0       	ldi	r25, 0x01	; 1
+ cc0:	90 93 9e 01 	sts	0x019E, r25	; 0x80019e <(anonymous namespace)::dfPlayer+0x19>
+ cc4:	80 93 9d 01 	sts	0x019D, r24	; 0x80019d <(anonymous namespace)::dfPlayer+0x18>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:415
+    // mask is enabled again (which _must_ happen during the stopbit).
+    // This delay aims at 3/4 of a bit time, meaning the end of the
+    // delay will be at 1/4th of the stopbit. This allows some extra
+    // time for ISR cleanup, which makes 115200 baud at 16Mhz work more
+    // reliably
+    _rx_delay_stopbit = subtract_cap(bit_delay * 3 / 4, (37 + 11) / 4);
+ cc8:	8c e2       	ldi	r24, 0x2C	; 44
+ cca:	91 e0       	ldi	r25, 0x01	; 1
+ ccc:	90 93 a0 01 	sts	0x01A0, r25	; 0x8001a0 <(anonymous namespace)::dfPlayer+0x1b>
+ cd0:	80 93 9f 01 	sts	0x019F, r24	; 0x80019f <(anonymous namespace)::dfPlayer+0x1a>
+_delay_loop_2():
+/home/aidancrowther/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/util/delay_basic.h:110
+ cd4:	80 91 a1 01 	lds	r24, 0x01A1	; 0x8001a1 <(anonymous namespace)::dfPlayer+0x1c>
+ cd8:	90 91 a2 01 	lds	r25, 0x01A2	; 0x8001a2 <(anonymous namespace)::dfPlayer+0x1d>
+ cdc:	01 97       	sbiw	r24, 0x01	; 1
+ cde:	f1 f7       	brne	.-4      	; 0xcdc <main+0x100>
+listen():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:94
+bool SoftwareSerial::listen()
+{
+  if (!_rx_delay_stopbit)
+    return false;
+
+  if (active_object != this)
+ ce0:	e0 91 ce 00 	lds	r30, 0x00CE	; 0x8000ce <SoftwareSerial::active_object>
+ ce4:	f0 91 cf 00 	lds	r31, 0x00CF	; 0x8000cf <SoftwareSerial::active_object+0x1>
+ ce8:	21 e0       	ldi	r18, 0x01	; 1
+ cea:	e5 38       	cpi	r30, 0x85	; 133
+ cec:	f2 07       	cpc	r31, r18
+ cee:	09 f1       	breq	.+66     	; 0xd32 <main+0x156>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:96
+  {
+    if (active_object)
+ cf0:	30 97       	sbiw	r30, 0x00	; 0
+ cf2:	39 f0       	breq	.+14     	; 0xd02 <main+0x126>
+_ZN14SoftwareSerial11setRxIntMskEb():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:442
+void SoftwareSerial::setRxIntMsk(bool enable)
+{
+    if (enable)
+      *_pcint_maskreg |= _pcint_maskvalue;
+    else
+      *_pcint_maskreg &= ~_pcint_maskvalue;
+ cf4:	a3 89       	ldd	r26, Z+19	; 0x13
+ cf6:	b4 89       	ldd	r27, Z+20	; 0x14
+ cf8:	9c 91       	ld	r25, X
+ cfa:	85 89       	ldd	r24, Z+21	; 0x15
+ cfc:	80 95       	com	r24
+ cfe:	89 23       	and	r24, r25
+ d00:	8c 93       	st	X, r24
+listen():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:99
+  if (active_object != this)
+  {
+    if (active_object)
+      active_object->stopListening();
+
+    _buffer_overflow = false;
+ d02:	80 91 a3 01 	lds	r24, 0x01A3	; 0x8001a3 <(anonymous namespace)::dfPlayer+0x1e>
+ d06:	8e 7f       	andi	r24, 0xFE	; 254
+ d08:	80 93 a3 01 	sts	0x01A3, r24	; 0x8001a3 <(anonymous namespace)::dfPlayer+0x1e>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:100
+    _receive_buffer_head = _receive_buffer_tail = 0;
+ d0c:	10 92 cd 00 	sts	0x00CD, r1	; 0x8000cd <SoftwareSerial::_receive_buffer_tail>
+ d10:	10 92 cc 00 	sts	0x00CC, r1	; 0x8000cc <SoftwareSerial::_receive_buffer_head>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:101
+    active_object = this;
+ d14:	85 e8       	ldi	r24, 0x85	; 133
+ d16:	91 e0       	ldi	r25, 0x01	; 1
+ d18:	90 93 cf 00 	sts	0x00CF, r25	; 0x8000cf <SoftwareSerial::active_object+0x1>
+ d1c:	80 93 ce 00 	sts	0x00CE, r24	; 0x8000ce <SoftwareSerial::active_object>
+_ZN14SoftwareSerial11setRxIntMskEb():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:440
+}
+
+void SoftwareSerial::setRxIntMsk(bool enable)
+{
+    if (enable)
+      *_pcint_maskreg |= _pcint_maskvalue;
+ d20:	e0 91 98 01 	lds	r30, 0x0198	; 0x800198 <(anonymous namespace)::dfPlayer+0x13>
+ d24:	f0 91 99 01 	lds	r31, 0x0199	; 0x800199 <(anonymous namespace)::dfPlayer+0x14>
+ d28:	80 81       	ld	r24, Z
+ d2a:	90 91 9a 01 	lds	r25, 0x019A	; 0x80019a <(anonymous namespace)::dfPlayer+0x15>
+ d2e:	89 2b       	or	r24, r25
+ d30:	80 83       	st	Z, r24
+setup():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:106
+  dfPlayer.begin(DFPLAYER_BAUD);
+
+  // Allow the DFPlayer to finish its power-up sequence.
+  delay(1000);
+ d32:	68 ee       	ldi	r22, 0xE8	; 232
+ d34:	73 e0       	ldi	r23, 0x03	; 3
+ d36:	80 e0       	ldi	r24, 0x00	; 0
+ d38:	90 e0       	ldi	r25, 0x00	; 0
+ d3a:	43 da       	rcall	.-2938   	; 0x1c2 <delay>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:109
+
+  // Reset, set maximum volume, then request file/track number 1.
+  sendCommand(0x0C, 0);
+ d3c:	70 e0       	ldi	r23, 0x00	; 0
+ d3e:	60 e0       	ldi	r22, 0x00	; 0
+ d40:	8c e0       	ldi	r24, 0x0C	; 12
+ d42:	f1 dc       	rcall	.-1566   	; 0x726 <(anonymous namespace)::sendCommand(unsigned char, unsigned int)>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:110
+  delay(1000);
+ d44:	68 ee       	ldi	r22, 0xE8	; 232
+ d46:	73 e0       	ldi	r23, 0x03	; 3
+ d48:	80 e0       	ldi	r24, 0x00	; 0
+ d4a:	90 e0       	ldi	r25, 0x00	; 0
+ d4c:	3a da       	rcall	.-2956   	; 0x1c2 <delay>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:111
+  sendCommand(0x06, DFPLAYER_MAX_VOLUME);
+ d4e:	6e e1       	ldi	r22, 0x1E	; 30
+ d50:	70 e0       	ldi	r23, 0x00	; 0
+ d52:	86 e0       	ldi	r24, 0x06	; 6
+ d54:	e8 dc       	rcall	.-1584   	; 0x726 <(anonymous namespace)::sendCommand(unsigned char, unsigned int)>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:112
+  delay(250);
+ d56:	6a ef       	ldi	r22, 0xFA	; 250
+ d58:	70 e0       	ldi	r23, 0x00	; 0
+ d5a:	80 e0       	ldi	r24, 0x00	; 0
+ d5c:	90 e0       	ldi	r25, 0x00	; 0
+ d5e:	31 da       	rcall	.-2974   	; 0x1c2 <delay>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:113
+  sendCommand(0x03, 1);
+ d60:	61 e0       	ldi	r22, 0x01	; 1
+ d62:	70 e0       	ldi	r23, 0x00	; 0
+ d64:	83 e0       	ldi	r24, 0x03	; 3
+ d66:	df dc       	rcall	.-1602   	; 0x726 <(anonymous namespace)::sendCommand(unsigned char, unsigned int)>
+millis():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:218
+}
+
+unsigned long millis()
+{
+  unsigned long m;
+  uint8_t oldSREG = SREG;
+ d68:	2f b7       	in	r18, 0x3f	; 63
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:222
+
+  // disable interrupts while we read timer0_millis or we might get an
+  // inconsistent value (e.g. in the middle of a write to timer0_millis)
+  cli();
+ d6a:	f8 94       	cli
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:223
+  m = timer0_millis;
+ d6c:	80 91 e0 00 	lds	r24, 0x00E0	; 0x8000e0 <timer0_millis>
+ d70:	90 91 e1 00 	lds	r25, 0x00E1	; 0x8000e1 <timer0_millis+0x1>
+ d74:	a0 91 e2 00 	lds	r26, 0x00E2	; 0x8000e2 <timer0_millis+0x2>
+ d78:	b0 91 e3 00 	lds	r27, 0x00E3	; 0x8000e3 <timer0_millis+0x3>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:224
+  SREG = oldSREG;
+ d7c:	2f bf       	out	0x3f, r18	; 63
+setup():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:114
+  lastCommand = millis();
+ d7e:	80 93 db 00 	sts	0x00DB, r24	; 0x8000db <(anonymous namespace)::lastCommand>
+ d82:	90 93 dc 00 	sts	0x00DC, r25	; 0x8000dc <(anonymous namespace)::lastCommand+0x1>
+ d86:	a0 93 dd 00 	sts	0x00DD, r26	; 0x8000dd <(anonymous namespace)::lastCommand+0x2>
+ d8a:	b0 93 de 00 	sts	0x00DE, r27	; 0x8000de <(anonymous namespace)::lastCommand+0x3>
+ d8e:	c7 ed       	ldi	r28, 0xD7	; 215
+ d90:	d0 e0       	ldi	r29, 0x00	; 0
+serialEventRun():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:67
+#endif
+
+void serialEventRun(void)
+{
+#if defined(HAVE_HWSERIAL0)
+  if (Serial0_available && serialEvent && Serial0_available()) serialEvent();
+ d92:	00 e0       	ldi	r16, 0x00	; 0
+ d94:	10 e0       	ldi	r17, 0x00	; 0
+readResponses():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:77
+         responseFrame[8] == static_cast<uint8_t>(checksum & 0xFF);
+}
+
+void readResponses()
+{
+  while (dfPlayer.available()) {
+ d96:	85 e8       	ldi	r24, 0x85	; 133
+ d98:	91 e0       	ldi	r25, 0x01	; 1
+ d9a:	32 dc       	rcall	.-1948   	; 0x600 <SoftwareSerial::available()>
+ d9c:	89 2b       	or	r24, r25
+ d9e:	09 f4       	brne	.+2      	; 0xda2 <main+0x1c6>
+ da0:	6d c0       	rjmp	.+218    	; 0xe7c <main+0x2a0>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:78
+    const uint8_t byte = static_cast<uint8_t>(dfPlayer.read());
+ da2:	85 e8       	ldi	r24, 0x85	; 133
+ da4:	91 e0       	ldi	r25, 0x01	; 1
+ da6:	42 dc       	rcall	.-1916   	; 0x62c <SoftwareSerial::read()>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:80
+
+    if (responseIndex == 0 && byte != 0x7E) continue;
+ da8:	e0 91 da 00 	lds	r30, 0x00DA	; 0x8000da <(anonymous namespace)::responseIndex>
+ dac:	e1 11       	cpse	r30, r1
+ dae:	02 c0       	rjmp	.+4      	; 0xdb4 <main+0x1d8>
+ db0:	8e 37       	cpi	r24, 0x7E	; 126
+ db2:	89 f7       	brne	.-30     	; 0xd96 <main+0x1ba>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:81
+    responseFrame[responseIndex++] = byte;
+ db4:	91 e0       	ldi	r25, 0x01	; 1
+ db6:	9e 0f       	add	r25, r30
+ db8:	90 93 da 00 	sts	0x00DA, r25	; 0x8000da <(anonymous namespace)::responseIndex>
+ dbc:	f0 e0       	ldi	r31, 0x00	; 0
+ dbe:	e0 53       	subi	r30, 0x30	; 48
+ dc0:	ff 4f       	sbci	r31, 0xFF	; 255
+ dc2:	80 83       	st	Z, r24
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:83
+
+    if (responseIndex >= sizeof(responseFrame)) {
+ dc4:	9a 30       	cpi	r25, 0x0A	; 10
+ dc6:	38 f3       	brcs	.-50     	; 0xd96 <main+0x1ba>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:84
+      Serial.print(F("RX frame: "));
+ dc8:	88 eb       	ldi	r24, 0xB8	; 184
+ dca:	90 e0       	ldi	r25, 0x00	; 0
+ dcc:	6b db       	rcall	.-2346   	; 0x4a4 <Print::print(__FlashStringHelper const*) [clone .constprop.9]>
+ dce:	80 ed       	ldi	r24, 0xD0	; 208
+ dd0:	c8 2e       	mov	r12, r24
+ dd2:	80 e0       	ldi	r24, 0x00	; 0
+ dd4:	d8 2e       	mov	r13, r24
+ dd6:	f1 2c       	mov	r15, r1
+ dd8:	e1 2c       	mov	r14, r1
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:86
+      for (uint8_t i = 0; i < sizeof(responseFrame); ++i) {
+        printHexByte(responseFrame[i]);
+ dda:	f6 01       	movw	r30, r12
+ ddc:	81 91       	ld	r24, Z+
+ dde:	6f 01       	movw	r12, r30
+ de0:	49 dc       	rcall	.-1902   	; 0x674 <(anonymous namespace)::printHexByte(unsigned char)>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:87
+        if (i + 1 < sizeof(responseFrame)) Serial.print(' ');
+ de2:	f9 e0       	ldi	r31, 0x09	; 9
+ de4:	ef 16       	cp	r14, r31
+ de6:	f1 04       	cpc	r15, r1
+ de8:	21 f0       	breq	.+8      	; 0xdf2 <main+0x216>
+print():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:69
+  return write(str);
+}
+
+size_t Print::print(char c)
+{
+  return write(c);
+ dea:	60 e2       	ldi	r22, 0x20	; 32
+ dec:	88 ee       	ldi	r24, 0xE8	; 232
+ dee:	90 e0       	ldi	r25, 0x00	; 0
+ df0:	0e db       	rcall	.-2532   	; 0x40e <HardwareSerial::write(unsigned char)>
+ df2:	2f ef       	ldi	r18, 0xFF	; 255
+ df4:	e2 1a       	sub	r14, r18
+ df6:	f2 0a       	sbc	r15, r18
+readResponses():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:85
+    if (responseIndex == 0 && byte != 0x7E) continue;
+    responseFrame[responseIndex++] = byte;
+
+    if (responseIndex >= sizeof(responseFrame)) {
+      Serial.print(F("RX frame: "));
+      for (uint8_t i = 0; i < sizeof(responseFrame); ++i) {
+ df8:	8a e0       	ldi	r24, 0x0A	; 10
+ dfa:	e8 16       	cp	r14, r24
+ dfc:	f1 04       	cpc	r15, r1
+ dfe:	69 f7       	brne	.-38     	; 0xdda <main+0x1fe>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:89
+        printHexByte(responseFrame[i]);
+        if (i + 1 < sizeof(responseFrame)) Serial.print(' ');
+      }
+      Serial.print(F(" valid="));
+ e00:	80 eb       	ldi	r24, 0xB0	; 176
+ e02:	90 e0       	ldi	r25, 0x00	; 0
+ e04:	4f db       	rcall	.-2402   	; 0x4a4 <Print::print(__FlashStringHelper const*) [clone .constprop.9]>
+validResponse():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:63
+  dfPlayer.flush();
+}
+
+bool validResponse()
+{
+  if (responseFrame[0] != 0x7E || responseFrame[1] != 0xFF ||
+ e06:	80 91 d0 00 	lds	r24, 0x00D0	; 0x8000d0 <(anonymous namespace)::responseFrame>
+ e0a:	8e 37       	cpi	r24, 0x7E	; 126
+ e0c:	a1 f5       	brne	.+104    	; 0xe76 <main+0x29a>
+ e0e:	80 91 d1 00 	lds	r24, 0x00D1	; 0x8000d1 <(anonymous namespace)::responseFrame+0x1>
+ e12:	8f 3f       	cpi	r24, 0xFF	; 255
+ e14:	81 f5       	brne	.+96     	; 0xe76 <main+0x29a>
+ e16:	80 91 d2 00 	lds	r24, 0x00D2	; 0x8000d2 <(anonymous namespace)::responseFrame+0x2>
+ e1a:	86 30       	cpi	r24, 0x06	; 6
+ e1c:	61 f5       	brne	.+88     	; 0xe76 <main+0x29a>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:64
+      responseFrame[2] != 0x06 || responseFrame[9] != 0xEF) {
+ e1e:	80 91 d9 00 	lds	r24, 0x00D9	; 0x8000d9 <(anonymous namespace)::responseFrame+0x9>
+ e22:	8f 3e       	cpi	r24, 0xEF	; 239
+ e24:	41 f5       	brne	.+80     	; 0xe76 <main+0x29a>
+ e26:	e1 ed       	ldi	r30, 0xD1	; 209
+ e28:	f0 e0       	ldi	r31, 0x00	; 0
+main():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:68
+    return false;
+  }
+
+  uint16_t checksum = 0;
+ e2a:	90 e0       	ldi	r25, 0x00	; 0
+ e2c:	80 e0       	ldi	r24, 0x00	; 0
+validResponse():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:69
+  for (uint8_t i = 1; i < 7; ++i) checksum += responseFrame[i];
+ e2e:	21 91       	ld	r18, Z+
+ e30:	82 0f       	add	r24, r18
+ e32:	91 1d       	adc	r25, r1
+ e34:	ce 17       	cp	r28, r30
+ e36:	df 07       	cpc	r29, r31
+ e38:	d1 f7       	brne	.-12     	; 0xe2e <main+0x252>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:70
+  checksum = static_cast<uint16_t>(0U - checksum);
+ e3a:	91 95       	neg	r25
+ e3c:	81 95       	neg	r24
+ e3e:	91 09       	sbc	r25, r1
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:71
+  return responseFrame[7] == static_cast<uint8_t>(checksum >> 8) &&
+ e40:	20 91 d7 00 	lds	r18, 0x00D7	; 0x8000d7 <(anonymous namespace)::responseFrame+0x7>
+ e44:	29 13       	cpse	r18, r25
+ e46:	17 c0       	rjmp	.+46     	; 0xe76 <main+0x29a>
+ e48:	90 91 d8 00 	lds	r25, 0x00D8	; 0x8000d8 <(anonymous namespace)::responseFrame+0x8>
+ e4c:	98 13       	cpse	r25, r24
+ e4e:	13 c0       	rjmp	.+38     	; 0xe76 <main+0x29a>
+main():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:90
+      for (uint8_t i = 0; i < sizeof(responseFrame); ++i) {
+        printHexByte(responseFrame[i]);
+        if (i + 1 < sizeof(responseFrame)) Serial.print(' ');
+      }
+      Serial.print(F(" valid="));
+      Serial.println(validResponse() ? F("yes") : F("no"));
+ e50:	8c ea       	ldi	r24, 0xAC	; 172
+ e52:	90 e0       	ldi	r25, 0x00	; 0
+readResponses():
+ e54:	5e dc       	rcall	.-1860   	; 0x712 <Print::println(__FlashStringHelper const*) [clone .constprop.3]>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:91
+      responseIndex = 0;
+ e56:	10 92 da 00 	sts	0x00DA, r1	; 0x8000da <(anonymous namespace)::responseIndex>
+ e5a:	9d cf       	rjmp	.-198    	; 0xd96 <main+0x1ba>
+attachInterrupt():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/WInterrupts.c:66
+
+void attachInterrupt(uint8_t interruptNum, void (*userFunc)(void), int mode)
+{
+  if(interruptNum < EXTERNAL_NUM_INTERRUPTS)
+  {
+    intFunc[interruptNum] = userFunc;
+ e5c:	81 e1       	ldi	r24, 0x11	; 17
+ e5e:	91 e0       	ldi	r25, 0x01	; 1
+ e60:	90 93 61 00 	sts	0x0061, r25	; 0x800061 <__DATA_REGION_ORIGIN__+0x1>
+ e64:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__DATA_REGION_ORIGIN__>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/WInterrupts.c:189
+
+// ATmega8, ATmega8515, ATmega8535, ATmega16, ATmega32, ATmega162
+      #elif defined(__AVR_ATmega8__) || defined(__AVR_ATmega8515__) || defined(__AVR_ATmega8535__) \
+      || defined(__AVR_ATmega16__) || defined(__AVR_ATmega32__) || defined(__AVR_ATmega162__)
+        case 0:
+          MCUCR = (MCUCR & ~((1 << ISC00) | (1 << ISC01))) | (mode << ISC00);
+ e68:	85 b7       	in	r24, 0x35	; 53
+ e6a:	8c 7f       	andi	r24, 0xFC	; 252
+ e6c:	81 60       	ori	r24, 0x01	; 1
+ e6e:	85 bf       	out	0x35, r24	; 53
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/WInterrupts.c:190
+          GICR |= (1 << INT0);
+ e70:	8b b7       	in	r24, 0x3b	; 59
+ e72:	80 64       	ori	r24, 0x40	; 64
+ e74:	1c cf       	rjmp	.-456    	; 0xcae <main+0xd2>
+main():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:90
+      for (uint8_t i = 0; i < sizeof(responseFrame); ++i) {
+        printHexByte(responseFrame[i]);
+        if (i + 1 < sizeof(responseFrame)) Serial.print(' ');
+      }
+      Serial.print(F(" valid="));
+      Serial.println(validResponse() ? F("yes") : F("no"));
+ e76:	89 ea       	ldi	r24, 0xA9	; 169
+ e78:	90 e0       	ldi	r25, 0x00	; 0
+ e7a:	ec cf       	rjmp	.-40     	; 0xe54 <main+0x278>
+millis():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:218
+}
+
+unsigned long millis()
+{
+  unsigned long m;
+  uint8_t oldSREG = SREG;
+ e7c:	2f b7       	in	r18, 0x3f	; 63
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:222
+
+  // disable interrupts while we read timer0_millis or we might get an
+  // inconsistent value (e.g. in the middle of a write to timer0_millis)
+  cli();
+ e7e:	f8 94       	cli
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:223
+  m = timer0_millis;
+ e80:	80 91 e0 00 	lds	r24, 0x00E0	; 0x8000e0 <timer0_millis>
+ e84:	90 91 e1 00 	lds	r25, 0x00E1	; 0x8000e1 <timer0_millis+0x1>
+ e88:	a0 91 e2 00 	lds	r26, 0x00E2	; 0x8000e2 <timer0_millis+0x2>
+ e8c:	b0 91 e3 00 	lds	r27, 0x00E3	; 0x8000e3 <timer0_millis+0x3>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:224
+  SREG = oldSREG;
+ e90:	2f bf       	out	0x3f, r18	; 63
+loop():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:122
+void loop()
+{
+  readResponses();
+
+  const uint32_t now = millis();
+  if (now - lastCommand >= COMMAND_INTERVAL_MS) {
+ e92:	40 91 db 00 	lds	r20, 0x00DB	; 0x8000db <(anonymous namespace)::lastCommand>
+ e96:	50 91 dc 00 	lds	r21, 0x00DC	; 0x8000dc <(anonymous namespace)::lastCommand+0x1>
+ e9a:	60 91 dd 00 	lds	r22, 0x00DD	; 0x8000dd <(anonymous namespace)::lastCommand+0x2>
+ e9e:	70 91 de 00 	lds	r23, 0x00DE	; 0x8000de <(anonymous namespace)::lastCommand+0x3>
+ ea2:	84 1b       	sub	r24, r20
+ ea4:	95 0b       	sbc	r25, r21
+ ea6:	a6 0b       	sbc	r26, r22
+ ea8:	b7 0b       	sbc	r27, r23
+ eaa:	88 38       	cpi	r24, 0x88	; 136
+ eac:	93 41       	sbci	r25, 0x13	; 19
+ eae:	a1 05       	cpc	r26, r1
+ eb0:	b1 05       	cpc	r27, r1
+ eb2:	00 f1       	brcs	.+64     	; 0xef4 <main+0x318>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:123
+    sendCommand(0x06, DFPLAYER_MAX_VOLUME);
+ eb4:	6e e1       	ldi	r22, 0x1E	; 30
+ eb6:	70 e0       	ldi	r23, 0x00	; 0
+ eb8:	86 e0       	ldi	r24, 0x06	; 6
+ eba:	35 dc       	rcall	.-1942   	; 0x726 <(anonymous namespace)::sendCommand(unsigned char, unsigned int)>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:124
+    delay(100);
+ ebc:	64 e6       	ldi	r22, 0x64	; 100
+ ebe:	70 e0       	ldi	r23, 0x00	; 0
+ ec0:	80 e0       	ldi	r24, 0x00	; 0
+ ec2:	90 e0       	ldi	r25, 0x00	; 0
+ ec4:	7e d9       	rcall	.-3332   	; 0x1c2 <delay>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:125
+    sendCommand(0x03, 1);
+ ec6:	61 e0       	ldi	r22, 0x01	; 1
+ ec8:	70 e0       	ldi	r23, 0x00	; 0
+ eca:	83 e0       	ldi	r24, 0x03	; 3
+ ecc:	2c dc       	rcall	.-1960   	; 0x726 <(anonymous namespace)::sendCommand(unsigned char, unsigned int)>
+millis():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:218
+}
+
+unsigned long millis()
+{
+  unsigned long m;
+  uint8_t oldSREG = SREG;
+ ece:	2f b7       	in	r18, 0x3f	; 63
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:222
+
+  // disable interrupts while we read timer0_millis or we might get an
+  // inconsistent value (e.g. in the middle of a write to timer0_millis)
+  cli();
+ ed0:	f8 94       	cli
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:223
+  m = timer0_millis;
+ ed2:	80 91 e0 00 	lds	r24, 0x00E0	; 0x8000e0 <timer0_millis>
+ ed6:	90 91 e1 00 	lds	r25, 0x00E1	; 0x8000e1 <timer0_millis+0x1>
+ eda:	a0 91 e2 00 	lds	r26, 0x00E2	; 0x8000e2 <timer0_millis+0x2>
+ ede:	b0 91 e3 00 	lds	r27, 0x00E3	; 0x8000e3 <timer0_millis+0x3>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:224
+  SREG = oldSREG;
+ ee2:	2f bf       	out	0x3f, r18	; 63
+loop():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:126
+    lastCommand = millis();
+ ee4:	80 93 db 00 	sts	0x00DB, r24	; 0x8000db <(anonymous namespace)::lastCommand>
+ ee8:	90 93 dc 00 	sts	0x00DC, r25	; 0x8000dc <(anonymous namespace)::lastCommand+0x1>
+ eec:	a0 93 dd 00 	sts	0x00DD, r26	; 0x8000dd <(anonymous namespace)::lastCommand+0x2>
+ ef0:	b0 93 de 00 	sts	0x00DE, r27	; 0x8000de <(anonymous namespace)::lastCommand+0x3>
+serialEventRun():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:67
+ ef4:	01 15       	cp	r16, r1
+ ef6:	11 05       	cpc	r17, r1
+ ef8:	09 f4       	brne	.+2      	; 0xefc <main+0x320>
+ efa:	4d cf       	rjmp	.-358    	; 0xd96 <main+0x1ba>
+ efc:	56 da       	rcall	.-2900   	; 0x3aa <Serial0_available()>
+ efe:	88 23       	and	r24, r24
+ f00:	09 f4       	brne	.+2      	; 0xf04 <main+0x328>
+ f02:	49 cf       	rjmp	.-366    	; 0xd96 <main+0x1ba>
+ f04:	7d d8       	rcall	.-3846   	; 0x0 <__vectors>
+ f06:	47 cf       	rjmp	.-370    	; 0xd96 <main+0x1ba>
+
+00000f08 <_GLOBAL__sub_D_setup>:
+__base_dtor ():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:274
+}
+
+//
+// Destructor
+//
+SoftwareSerial::~SoftwareSerial()
+ f08:	8a e7       	ldi	r24, 0x7A	; 122
+ f0a:	90 e0       	ldi	r25, 0x00	; 0
+ f0c:	90 93 86 01 	sts	0x0186, r25	; 0x800186 <(anonymous namespace)::dfPlayer+0x1>
+ f10:	80 93 85 01 	sts	0x0185, r24	; 0x800185 <(anonymous namespace)::dfPlayer>
+stopListening():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:113
+}
+
+// Stop listening. Returns true if we were actually listening.
+bool SoftwareSerial::stopListening()
+{
+  if (active_object == this)
+ f14:	80 91 ce 00 	lds	r24, 0x00CE	; 0x8000ce <SoftwareSerial::active_object>
+ f18:	90 91 cf 00 	lds	r25, 0x00CF	; 0x8000cf <SoftwareSerial::active_object+0x1>
+ f1c:	85 58       	subi	r24, 0x85	; 133
+ f1e:	91 40       	sbci	r25, 0x01	; 1
+ f20:	71 f4       	brne	.+28     	; 0xf3e <_GLOBAL__sub_D_setup+0x36>
+_ZN14SoftwareSerial11setRxIntMskEb():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:442
+void SoftwareSerial::setRxIntMsk(bool enable)
+{
+    if (enable)
+      *_pcint_maskreg |= _pcint_maskvalue;
+    else
+      *_pcint_maskreg &= ~_pcint_maskvalue;
+ f22:	e0 91 98 01 	lds	r30, 0x0198	; 0x800198 <(anonymous namespace)::dfPlayer+0x13>
+ f26:	f0 91 99 01 	lds	r31, 0x0199	; 0x800199 <(anonymous namespace)::dfPlayer+0x14>
+ f2a:	90 81       	ld	r25, Z
+ f2c:	80 91 9a 01 	lds	r24, 0x019A	; 0x80019a <(anonymous namespace)::dfPlayer+0x15>
+ f30:	80 95       	com	r24
+ f32:	89 23       	and	r24, r25
+ f34:	80 83       	st	Z, r24
+stopListening():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/libraries/SoftwareSerial/src/SoftwareSerial.cpp:116
+bool SoftwareSerial::stopListening()
+{
+  if (active_object == this)
+  {
+    setRxIntMsk(false);
+    active_object = NULL;
+ f36:	10 92 cf 00 	sts	0x00CF, r1	; 0x8000cf <SoftwareSerial::active_object+0x1>
+ f3a:	10 92 ce 00 	sts	0x00CE, r1	; 0x8000ce <SoftwareSerial::active_object>
+_GLOBAL__sub_D_setup():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/MinimalDfPlayerSoftwareSerial/MinimalDfPlayerSoftwareSerial.ino:128
+  }
+ f3e:	08 95       	ret
+
+00000f40 <__tablejump2__>:
+__tablejump2__():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2296
+ f40:	ee 0f       	add	r30, r30
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2297
+ f42:	ff 1f       	adc	r31, r31
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2328
+ f44:	05 90       	lpm	r0, Z+
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2329
+ f46:	f4 91       	lpm	r31, Z
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2330
+ f48:	e0 2d       	mov	r30, r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2331
+ f4a:	09 94       	ijmp
+
+00000f4c <__do_global_dtors>:
+__do_global_dtors():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2496
+ f4c:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2497
+ f4e:	c4 e9       	ldi	r28, 0x94	; 148
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2498
+ f50:	d0 e0       	ldi	r29, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2502
+ f52:	03 c0       	rjmp	.+6      	; 0xf5a <__do_global_dtors+0xe>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2508
+ f54:	fe 01       	movw	r30, r28
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2509
+ f56:	f4 df       	rcall	.-24     	; 0xf40 <__tablejump2__>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2510
+ f58:	21 96       	adiw	r28, 0x01	; 1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2515
+ f5a:	c5 39       	cpi	r28, 0x95	; 149
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2516
+ f5c:	d1 07       	cpc	r29, r17
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2521
+ f5e:	d1 f7       	brne	.-12     	; 0xf54 <__do_global_dtors+0x8>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ f60:	f8 94       	cli
+
+00000f62 <__stop_program>:
+__stop_program():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ f62:	ff cf       	rjmp	.-2      	; 0xf62 <__stop_program>

@@ -1,0 +1,3589 @@
+
+/home/aidancrowther/.cache/arduino/sketches/ECD8398C78CE0617A6040A58DCD32761/ComponentTest.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	6c c0       	rjmp	.+216    	; 0xda <__ctors_end>
+   2:	90 c0       	rjmp	.+288    	; 0x124 <__bad_interrupt>
+   4:	8f c0       	rjmp	.+286    	; 0x124 <__bad_interrupt>
+   6:	33 c4       	rjmp	.+2150   	; 0x86e <__vector_3>
+   8:	8d c0       	rjmp	.+282    	; 0x124 <__bad_interrupt>
+   a:	8c c0       	rjmp	.+280    	; 0x124 <__bad_interrupt>
+   c:	a4 c3       	rjmp	.+1864   	; 0x756 <__vector_6>
+   e:	8a c0       	rjmp	.+276    	; 0x124 <__bad_interrupt>
+  10:	89 c0       	rjmp	.+274    	; 0x124 <__bad_interrupt>
+  12:	00 c3       	rjmp	.+1536   	; 0x614 <__vector_9>
+  14:	87 c0       	rjmp	.+270    	; 0x124 <__bad_interrupt>
+  16:	6d c3       	rjmp	.+1754   	; 0x6f2 <__vector_11>
+  18:	47 c3       	rjmp	.+1678   	; 0x6a8 <__vector_12>
+  1a:	84 c0       	rjmp	.+264    	; 0x124 <__bad_interrupt>
+  1c:	83 c0       	rjmp	.+262    	; 0x124 <__bad_interrupt>
+  1e:	82 c0       	rjmp	.+260    	; 0x124 <__bad_interrupt>
+  20:	81 c0       	rjmp	.+258    	; 0x124 <__bad_interrupt>
+  22:	80 c0       	rjmp	.+256    	; 0x124 <__bad_interrupt>
+  24:	7f c0       	rjmp	.+254    	; 0x124 <__bad_interrupt>
+
+00000026 <__trampolines_end>:
+__trampolines_start():
+  26:	50 72       	andi	r21, 0x20	; 32
+  28:	6f 64       	ori	r22, 0x4F	; 79
+  2a:	75 63       	ori	r23, 0x35	; 53
+  2c:	74 69       	ori	r23, 0x94	; 148
+  2e:	6f 6e       	ori	r22, 0xEF	; 239
+  30:	20 53       	subi	r18, 0x30	; 48
+  32:	65 72       	andi	r22, 0x25	; 37
+  34:	76 6f       	ori	r23, 0xF6	; 246
+  36:	45 6e       	ori	r20, 0xE5	; 229
+  38:	67 69       	ori	r22, 0x97	; 151
+  3a:	6e 65       	ori	r22, 0x5E	; 94
+  3c:	2c 20       	and	r2, r12
+  3e:	4c 65       	ori	r20, 0x5C	; 92
+  40:	64 45       	sbci	r22, 0x54	; 84
+  42:	6e 67       	ori	r22, 0x7E	; 126
+  44:	69 6e       	ori	r22, 0xE9	; 233
+  46:	65 2c       	mov	r6, r5
+  48:	20 61       	ori	r18, 0x10	; 16
+  4a:	6e 64       	ori	r22, 0x4E	; 78
+  4c:	20 41       	sbci	r18, 0x10	; 16
+  4e:	75 64       	ori	r23, 0x45	; 69
+  50:	69 6f       	ori	r22, 0xF9	; 249
+  52:	45 6e       	ori	r20, 0xE5	; 229
+  54:	67 69       	ori	r22, 0x97	; 151
+  56:	6e 65       	ori	r22, 0x5E	; 94
+  58:	20 69       	ori	r18, 0x90	; 144
+  5a:	6e 69       	ori	r22, 0x9E	; 158
+  5c:	74 69       	ori	r23, 0x94	; 148
+  5e:	61 6c       	ori	r22, 0xC1	; 193
+  60:	69 7a       	andi	r22, 0xA9	; 169
+  62:	65 64       	ori	r22, 0x45	; 69
+	...
+
+00000065 <setup::__c>:
+  65:	42 69 72 64 20 53 6b 65 6c 65 74 6f 6e 20 63 6f     Bird Skeleton co
+  75:	6d 70 6f 6e 65 6e 74 20 74 65 73 74 3a 20 70 72     mponent test: pr
+  85:	6f 64 75 63 74 69 6f 6e 20 64 72 69 76 65 72 73     oduction drivers
+  95:	2c 20 6e 6f 20 44 4d 58 00                          , no DMX.
+
+0000009e <(anonymous namespace)::updateAudioTest(unsigned long)::__c>:
+  9e:	44 46 50 6c 61 79 65 72 3a 20 71 75 65 75 65 64     DFPlayer: queued
+  ae:	20 76 6f 6c 75 6d 65 20 00                           volume .
+
+000000b7 <(anonymous namespace)::updateAudioTest(unsigned long)::__c>:
+  b7:	44 46 50 6c 61 79 65 72 3a 20 72 65 71 75 65 73     DFPlayer: reques
+  c7:	74 65 64 20 66 69 6c 65 2f 74 72 61 63 6b 20 31     ted file/track 1
+	...
+
+000000d8 <__ctors_start>:
+__ctors_start():
+  d8:	10 07       	cpc	r17, r16
+
+000000da <__ctors_end>:
+__dtors_end():
+  da:	11 24       	eor	r1, r1
+  dc:	1f be       	out	0x3f, r1	; 63
+  de:	cf e5       	ldi	r28, 0x5F	; 95
+  e0:	d4 e0       	ldi	r29, 0x04	; 4
+  e2:	de bf       	out	0x3e, r29	; 62
+  e4:	cd bf       	out	0x3d, r28	; 61
+
+000000e6 <__do_copy_data>:
+__do_copy_data():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2409
+  e6:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2410
+  e8:	a0 e6       	ldi	r26, 0x60	; 96
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2411
+  ea:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2412
+  ec:	ea e0       	ldi	r30, 0x0A	; 10
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2413
+  ee:	ff e0       	ldi	r31, 0x0F	; 15
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2414
+  f0:	02 c0       	rjmp	.+4      	; 0xf6 <__do_copy_data+0x10>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2417
+  f2:	05 90       	lpm	r0, Z+
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2422
+  f4:	0d 92       	st	X+, r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2424
+  f6:	a4 38       	cpi	r26, 0x84	; 132
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2425
+  f8:	b1 07       	cpc	r27, r17
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2426
+  fa:	d9 f7       	brne	.-10     	; 0xf2 <__do_copy_data+0xc>
+
+000000fc <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  fc:	21 e0       	ldi	r18, 0x01	; 1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  fe:	a4 e8       	ldi	r26, 0x84	; 132
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+ 100:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+ 102:	01 c0       	rjmp	.+2      	; 0x106 <.do_clear_bss_start>
+
+00000104 <.do_clear_bss_loop>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+ 104:	1d 92       	st	X+, r1
+
+00000106 <.do_clear_bss_start>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+ 106:	a4 38       	cpi	r26, 0x84	; 132
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+ 108:	b2 07       	cpc	r27, r18
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+ 10a:	e1 f7       	brne	.-8      	; 0x104 <.do_clear_bss_loop>
+
+0000010c <__do_global_ctors>:
+__do_global_ctors():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2466
+ 10c:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2467
+ 10e:	cd e6       	ldi	r28, 0x6D	; 109
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2468
+ 110:	d0 e0       	ldi	r29, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2472
+ 112:	03 c0       	rjmp	.+6      	; 0x11a <__do_global_ctors+0xe>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2474
+ 114:	21 97       	sbiw	r28, 0x01	; 1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2480
+ 116:	fe 01       	movw	r30, r28
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2481
+ 118:	f0 d6       	rcall	.+3552   	; 0xefa <__tablejump2__>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2483
+ 11a:	cc 36       	cpi	r28, 0x6C	; 108
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2484
+ 11c:	d1 07       	cpc	r29, r17
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2489
+ 11e:	d1 f7       	brne	.-12     	; 0x114 <__do_global_ctors+0x8>
+ 120:	e8 d3       	rcall	.+2000   	; 0x8f2 <main>
+ 122:	f1 c6       	rjmp	.+3554   	; 0xf06 <_exit>
+
+00000124 <__bad_interrupt>:
+__vector_1():
+ 124:	6d cf       	rjmp	.-294    	; 0x0 <__vectors>
+
+00000126 <Print::write(unsigned char const*, unsigned int)>:
+write():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:35
+
+// Public Methods //////////////////////////////////////////////////////////////
+
+/* default implementation: may be overridden */
+size_t Print::write(const uint8_t *buffer, size_t size)
+{
+ 126:	af 92       	push	r10
+ 128:	bf 92       	push	r11
+ 12a:	cf 92       	push	r12
+ 12c:	df 92       	push	r13
+ 12e:	ef 92       	push	r14
+ 130:	ff 92       	push	r15
+ 132:	0f 93       	push	r16
+ 134:	1f 93       	push	r17
+ 136:	cf 93       	push	r28
+ 138:	df 93       	push	r29
+ 13a:	6c 01       	movw	r12, r24
+ 13c:	7b 01       	movw	r14, r22
+ 13e:	8b 01       	movw	r16, r22
+ 140:	04 0f       	add	r16, r20
+ 142:	15 1f       	adc	r17, r21
+ 144:	eb 01       	movw	r28, r22
+ 146:	5e 01       	movw	r10, r28
+ 148:	ae 18       	sub	r10, r14
+ 14a:	bf 08       	sbc	r11, r15
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:37
+  size_t n = 0;
+  while (size--) {
+ 14c:	c0 17       	cp	r28, r16
+ 14e:	d1 07       	cpc	r29, r17
+ 150:	59 f0       	breq	.+22     	; 0x168 <Print::write(unsigned char const*, unsigned int)+0x42>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:38
+    if (write(*buffer++)) n++;
+ 152:	69 91       	ld	r22, Y+
+ 154:	d6 01       	movw	r26, r12
+ 156:	ed 91       	ld	r30, X+
+ 158:	fc 91       	ld	r31, X
+ 15a:	01 90       	ld	r0, Z+
+ 15c:	f0 81       	ld	r31, Z
+ 15e:	e0 2d       	mov	r30, r0
+ 160:	c6 01       	movw	r24, r12
+ 162:	09 95       	icall
+ 164:	89 2b       	or	r24, r25
+ 166:	79 f7       	brne	.-34     	; 0x146 <Print::write(unsigned char const*, unsigned int)+0x20>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:42
+    else break;
+  }
+  return n;
+}
+ 168:	c5 01       	movw	r24, r10
+ 16a:	df 91       	pop	r29
+ 16c:	cf 91       	pop	r28
+ 16e:	1f 91       	pop	r17
+ 170:	0f 91       	pop	r16
+ 172:	ff 90       	pop	r15
+ 174:	ef 90       	pop	r14
+ 176:	df 90       	pop	r13
+ 178:	cf 90       	pop	r12
+ 17a:	bf 90       	pop	r11
+ 17c:	af 90       	pop	r10
+ 17e:	08 95       	ret
+
+00000180 <HardwareSerial::availableForWrite()>:
+availableForWrite():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:195
+{
+  tx_buffer_index_t head;
+  tx_buffer_index_t tail;
+
+  TX_BUFFER_ATOMIC {
+    head = _tx_buffer_head;
+ 180:	fc 01       	movw	r30, r24
+ 182:	53 8d       	ldd	r21, Z+27	; 0x1b
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:196
+    tail = _tx_buffer_tail;
+ 184:	44 8d       	ldd	r20, Z+28	; 0x1c
+ 186:	25 2f       	mov	r18, r21
+ 188:	30 e0       	ldi	r19, 0x00	; 0
+ 18a:	84 2f       	mov	r24, r20
+ 18c:	90 e0       	ldi	r25, 0x00	; 0
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:198
+  }
+  if (head >= tail) return SERIAL_TX_BUFFER_SIZE - 1 - head + tail;
+ 18e:	82 1b       	sub	r24, r18
+ 190:	93 0b       	sbc	r25, r19
+ 192:	54 17       	cp	r21, r20
+ 194:	10 f0       	brcs	.+4      	; 0x19a <HardwareSerial::availableForWrite()+0x1a>
+ 196:	cf 96       	adiw	r24, 0x3f	; 63
+ 198:	08 95       	ret
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:199
+  return tail - head - 1;
+ 19a:	01 97       	sbiw	r24, 0x01	; 1
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:200
+}
+ 19c:	08 95       	ret
+
+0000019e <HardwareSerial::read()>:
+read():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:178
+    return _rx_buffer[_rx_buffer_tail];
+  }
+}
+
+int HardwareSerial::read(void)
+{
+ 19e:	fc 01       	movw	r30, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:180
+  // if the head isn't ahead of the tail, we don't have any characters
+  if (_rx_buffer_head == _rx_buffer_tail) {
+ 1a0:	91 8d       	ldd	r25, Z+25	; 0x19
+ 1a2:	82 8d       	ldd	r24, Z+26	; 0x1a
+ 1a4:	98 17       	cp	r25, r24
+ 1a6:	61 f0       	breq	.+24     	; 0x1c0 <HardwareSerial::read()+0x22>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:183
+    return -1;
+  } else {
+    unsigned char c = _rx_buffer[_rx_buffer_tail];
+ 1a8:	a2 8d       	ldd	r26, Z+26	; 0x1a
+ 1aa:	ae 0f       	add	r26, r30
+ 1ac:	bf 2f       	mov	r27, r31
+ 1ae:	b1 1d       	adc	r27, r1
+ 1b0:	5d 96       	adiw	r26, 0x1d	; 29
+ 1b2:	8c 91       	ld	r24, X
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:184
+    _rx_buffer_tail = (rx_buffer_index_t)(_rx_buffer_tail + 1) % SERIAL_RX_BUFFER_SIZE;
+ 1b4:	92 8d       	ldd	r25, Z+26	; 0x1a
+ 1b6:	9f 5f       	subi	r25, 0xFF	; 255
+ 1b8:	9f 73       	andi	r25, 0x3F	; 63
+ 1ba:	92 8f       	std	Z+26, r25	; 0x1a
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:185
+    return c;
+ 1bc:	90 e0       	ldi	r25, 0x00	; 0
+ 1be:	08 95       	ret
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:181
+
+int HardwareSerial::read(void)
+{
+  // if the head isn't ahead of the tail, we don't have any characters
+  if (_rx_buffer_head == _rx_buffer_tail) {
+    return -1;
+ 1c0:	8f ef       	ldi	r24, 0xFF	; 255
+ 1c2:	9f ef       	ldi	r25, 0xFF	; 255
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:187
+  } else {
+    unsigned char c = _rx_buffer[_rx_buffer_tail];
+    _rx_buffer_tail = (rx_buffer_index_t)(_rx_buffer_tail + 1) % SERIAL_RX_BUFFER_SIZE;
+    return c;
+  }
+}
+ 1c4:	08 95       	ret
+
+000001c6 <HardwareSerial::peek()>:
+peek():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:169
+{
+  return ((unsigned int)(SERIAL_RX_BUFFER_SIZE + _rx_buffer_head - _rx_buffer_tail)) % SERIAL_RX_BUFFER_SIZE;
+}
+
+int HardwareSerial::peek(void)
+{
+ 1c6:	fc 01       	movw	r30, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:170
+  if (_rx_buffer_head == _rx_buffer_tail) {
+ 1c8:	91 8d       	ldd	r25, Z+25	; 0x19
+ 1ca:	82 8d       	ldd	r24, Z+26	; 0x1a
+ 1cc:	98 17       	cp	r25, r24
+ 1ce:	31 f0       	breq	.+12     	; 0x1dc <HardwareSerial::peek()+0x16>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:173
+    return -1;
+  } else {
+    return _rx_buffer[_rx_buffer_tail];
+ 1d0:	82 8d       	ldd	r24, Z+26	; 0x1a
+ 1d2:	e8 0f       	add	r30, r24
+ 1d4:	f1 1d       	adc	r31, r1
+ 1d6:	85 8d       	ldd	r24, Z+29	; 0x1d
+ 1d8:	90 e0       	ldi	r25, 0x00	; 0
+ 1da:	08 95       	ret
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:171
+}
+
+int HardwareSerial::peek(void)
+{
+  if (_rx_buffer_head == _rx_buffer_tail) {
+    return -1;
+ 1dc:	8f ef       	ldi	r24, 0xFF	; 255
+ 1de:	9f ef       	ldi	r25, 0xFF	; 255
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:175
+  } else {
+    return _rx_buffer[_rx_buffer_tail];
+  }
+}
+ 1e0:	08 95       	ret
+
+000001e2 <HardwareSerial::available()>:
+available():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:164
+  // clear any received data
+  _rx_buffer_head = _rx_buffer_tail;
+}
+
+int HardwareSerial::available(void)
+{
+ 1e2:	fc 01       	movw	r30, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:165
+  return ((unsigned int)(SERIAL_RX_BUFFER_SIZE + _rx_buffer_head - _rx_buffer_tail)) % SERIAL_RX_BUFFER_SIZE;
+ 1e4:	91 8d       	ldd	r25, Z+25	; 0x19
+ 1e6:	22 8d       	ldd	r18, Z+26	; 0x1a
+ 1e8:	89 2f       	mov	r24, r25
+ 1ea:	90 e0       	ldi	r25, 0x00	; 0
+ 1ec:	80 5c       	subi	r24, 0xC0	; 192
+ 1ee:	9f 4f       	sbci	r25, 0xFF	; 255
+ 1f0:	82 1b       	sub	r24, r18
+ 1f2:	91 09       	sbc	r25, r1
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:166
+}
+ 1f4:	8f 73       	andi	r24, 0x3F	; 63
+ 1f6:	99 27       	eor	r25, r25
+ 1f8:	08 95       	ret
+
+000001fa <Serial0_available()>:
+Serial0_available():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial0.cpp:76
+#endif
+
+// Function that can be weakly referenced by serialEventRun to prevent
+// pulling in this file if it's not otherwise used.
+bool Serial0_available() {
+  return Serial.available();
+ 1fa:	87 ee       	ldi	r24, 0xE7	; 231
+ 1fc:	90 e0       	ldi	r25, 0x00	; 0
+ 1fe:	f1 df       	rcall	.-30     	; 0x1e2 <HardwareSerial::available()>
+ 200:	21 e0       	ldi	r18, 0x01	; 1
+ 202:	89 2b       	or	r24, r25
+ 204:	09 f4       	brne	.+2      	; 0x208 <Serial0_available()+0xe>
+ 206:	20 e0       	ldi	r18, 0x00	; 0
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial0.cpp:77
+}
+ 208:	82 2f       	mov	r24, r18
+ 20a:	08 95       	ret
+
+0000020c <serialEventRun()>:
+serialEventRun():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:67
+#endif
+
+void serialEventRun(void)
+{
+#if defined(HAVE_HWSERIAL0)
+  if (Serial0_available && serialEvent && Serial0_available()) serialEvent();
+ 20c:	80 e0       	ldi	r24, 0x00	; 0
+ 20e:	90 e0       	ldi	r25, 0x00	; 0
+ 210:	89 2b       	or	r24, r25
+ 212:	19 f0       	breq	.+6      	; 0x21a <serialEventRun()+0xe>
+ 214:	f2 df       	rcall	.-28     	; 0x1fa <Serial0_available()>
+ 216:	81 11       	cpse	r24, r1
+ 218:	f3 ce       	rjmp	.-538    	; 0x0 <__vectors>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:78
+  if (Serial2_available && serialEvent2 && Serial2_available()) serialEvent2();
+#endif
+#if defined(HAVE_HWSERIAL3)
+  if (Serial3_available && serialEvent3 && Serial3_available()) serialEvent3();
+#endif
+}
+ 21a:	08 95       	ret
+
+0000021c <HardwareSerial::_tx_udr_empty_irq()>:
+_tx_udr_empty_irq():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:90
+#endif
+
+// Actual interrupt handlers //////////////////////////////////////////////////////////////
+
+void HardwareSerial::_tx_udr_empty_irq(void)
+{
+ 21c:	fc 01       	movw	r30, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:93
+  // If interrupts are enabled, there must be more data in the output
+  // buffer. Send the next byte
+  unsigned char c = _tx_buffer[_tx_buffer_tail];
+ 21e:	a4 8d       	ldd	r26, Z+28	; 0x1c
+ 220:	a8 0f       	add	r26, r24
+ 222:	b9 2f       	mov	r27, r25
+ 224:	b1 1d       	adc	r27, r1
+ 226:	a3 5a       	subi	r26, 0xA3	; 163
+ 228:	bf 4f       	sbci	r27, 0xFF	; 255
+ 22a:	2c 91       	ld	r18, X
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:94
+  _tx_buffer_tail = (_tx_buffer_tail + 1) % SERIAL_TX_BUFFER_SIZE;
+ 22c:	84 8d       	ldd	r24, Z+28	; 0x1c
+ 22e:	90 e0       	ldi	r25, 0x00	; 0
+ 230:	01 96       	adiw	r24, 0x01	; 1
+ 232:	8f 73       	andi	r24, 0x3F	; 63
+ 234:	99 27       	eor	r25, r25
+ 236:	84 8f       	std	Z+28, r24	; 0x1c
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:96
+
+  *_udr = c;
+ 238:	a6 89       	ldd	r26, Z+22	; 0x16
+ 23a:	b7 89       	ldd	r27, Z+23	; 0x17
+ 23c:	2c 93       	st	X, r18
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:106
+  // written to the rest.
+
+  #ifdef MPCM0
+    *_ucsra = ((*_ucsra) & ((1 << U2X0) | (1 << MPCM0))) | (1 << TXC0);
+  #else
+    *_ucsra = ((*_ucsra) & ((1 << U2X0) | (1 << TXC0)));
+ 23e:	a0 89       	ldd	r26, Z+16	; 0x10
+ 240:	b1 89       	ldd	r27, Z+17	; 0x11
+ 242:	8c 91       	ld	r24, X
+ 244:	82 74       	andi	r24, 0x42	; 66
+ 246:	8c 93       	st	X, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:109
+  #endif
+
+  if (_tx_buffer_head == _tx_buffer_tail) {
+ 248:	93 8d       	ldd	r25, Z+27	; 0x1b
+ 24a:	84 8d       	ldd	r24, Z+28	; 0x1c
+ 24c:	98 13       	cpse	r25, r24
+ 24e:	06 c0       	rjmp	.+12     	; 0x25c <HardwareSerial::_tx_udr_empty_irq()+0x40>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:111
+    // Buffer empty, so disable interrupts
+    *_ucsrb &= ~_BV(UDRIE0);
+ 250:	02 88       	ldd	r0, Z+18	; 0x12
+ 252:	f3 89       	ldd	r31, Z+19	; 0x13
+ 254:	e0 2d       	mov	r30, r0
+ 256:	80 81       	ld	r24, Z
+ 258:	8f 7d       	andi	r24, 0xDF	; 223
+ 25a:	80 83       	st	Z, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:113
+  }
+}
+ 25c:	08 95       	ret
+
+0000025e <HardwareSerial::write(unsigned char)>:
+write():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:223
+  // If we get here, nothing is queued anymore (DRIE is disabled) and
+  // the hardware finished tranmission (TXC is set).
+}
+
+size_t HardwareSerial::write(uint8_t c)
+{
+ 25e:	ef 92       	push	r14
+ 260:	ff 92       	push	r15
+ 262:	0f 93       	push	r16
+ 264:	1f 93       	push	r17
+ 266:	cf 93       	push	r28
+ 268:	df 93       	push	r29
+ 26a:	ec 01       	movw	r28, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:224
+  _written = true;
+ 26c:	81 e0       	ldi	r24, 0x01	; 1
+ 26e:	88 8f       	std	Y+24, r24	; 0x18
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:229
+  // If the buffer and the data register is empty, just write the byte
+  // to the data register and be done. This shortcut helps
+  // significantly improve the effective datarate at high (>
+  // 500kbit/s) bitrates, where interrupt overhead becomes a slowdown.
+  if (_tx_buffer_head == _tx_buffer_tail && bit_is_set(*_ucsra, UDRE0)) {
+ 270:	9b 8d       	ldd	r25, Y+27	; 0x1b
+ 272:	8c 8d       	ldd	r24, Y+28	; 0x1c
+ 274:	98 13       	cpse	r25, r24
+ 276:	19 c0       	rjmp	.+50     	; 0x2aa <HardwareSerial::write(unsigned char)+0x4c>
+ 278:	e8 89       	ldd	r30, Y+16	; 0x10
+ 27a:	f9 89       	ldd	r31, Y+17	; 0x11
+ 27c:	80 81       	ld	r24, Z
+ 27e:	85 ff       	sbrs	r24, 5
+ 280:	14 c0       	rjmp	.+40     	; 0x2aa <HardwareSerial::write(unsigned char)+0x4c>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:238
+    // So writing UDR must happen first.
+    // Writing UDR and clearing TC must be done atomically, otherwise
+    // interrupts might delay the TXC clear so the byte written to UDR
+    // is transmitted (setting TXC) before clearing TXC. Then TXC will
+    // be cleared when no bytes are left, causing flush() to hang
+    ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
+ 282:	9f b7       	in	r25, 0x3f	; 63
+__iCliRetVal():
+/home/aidancrowther/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/util/atomic.h:50
+    return 1;
+}
+
+static __inline__ uint8_t __iCliRetVal(void)
+{
+    cli();
+ 284:	f8 94       	cli
+write():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:239
+      *_udr = c;
+ 286:	ee 89       	ldd	r30, Y+22	; 0x16
+ 288:	ff 89       	ldd	r31, Y+23	; 0x17
+ 28a:	60 83       	st	Z, r22
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:243
+      #ifdef MPCM0
+        *_ucsra = ((*_ucsra) & ((1 << U2X0) | (1 << MPCM0))) | (1 << TXC0);
+      #else
+        *_ucsra = ((*_ucsra) & ((1 << U2X0) | (1 << TXC0)));
+ 28c:	e8 89       	ldd	r30, Y+16	; 0x10
+ 28e:	f9 89       	ldd	r31, Y+17	; 0x11
+ 290:	80 81       	ld	r24, Z
+ 292:	82 74       	andi	r24, 0x42	; 66
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:271
+  // make atomic to prevent execution of ISR between setting the
+  // head pointer and setting the interrupt flag resulting in buffer
+  // retransmission
+  ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
+    _tx_buffer_head = i;
+    *_ucsrb |= _BV(UDRIE0);
+ 294:	80 83       	st	Z, r24
+__iRestore():
+/home/aidancrowther/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/util/atomic.h:70
+    (void)__s;
+}
+
+static __inline__ void __iRestore(const  uint8_t *__s)
+{
+    SREG = *__s;
+ 296:	9f bf       	out	0x3f, r25	; 63
+write():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:275
+  }
+  
+  return 1;
+}
+ 298:	81 e0       	ldi	r24, 0x01	; 1
+ 29a:	90 e0       	ldi	r25, 0x00	; 0
+ 29c:	df 91       	pop	r29
+ 29e:	cf 91       	pop	r28
+ 2a0:	1f 91       	pop	r17
+ 2a2:	0f 91       	pop	r16
+ 2a4:	ff 90       	pop	r15
+ 2a6:	ef 90       	pop	r14
+ 2a8:	08 95       	ret
+ 2aa:	f6 2e       	mov	r15, r22
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:248
+        *_ucsra = ((*_ucsra) & ((1 << U2X0) | (1 << TXC0)));
+      #endif
+    }
+    return 1;
+  }
+  tx_buffer_index_t i = (_tx_buffer_head + 1) % SERIAL_TX_BUFFER_SIZE;
+ 2ac:	0b 8d       	ldd	r16, Y+27	; 0x1b
+ 2ae:	10 e0       	ldi	r17, 0x00	; 0
+ 2b0:	0f 5f       	subi	r16, 0xFF	; 255
+ 2b2:	1f 4f       	sbci	r17, 0xFF	; 255
+ 2b4:	0f 73       	andi	r16, 0x3F	; 63
+ 2b6:	11 27       	eor	r17, r17
+ 2b8:	e0 2e       	mov	r14, r16
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:252
+
+  // If the output buffer is full, there's nothing for it other than to 
+  // wait for the interrupt handler to empty it a bit
+  while (i == _tx_buffer_tail) {
+ 2ba:	8c 8d       	ldd	r24, Y+28	; 0x1c
+ 2bc:	8e 11       	cpse	r24, r14
+ 2be:	0b c0       	rjmp	.+22     	; 0x2d6 <HardwareSerial::write(unsigned char)+0x78>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:253
+    if (bit_is_clear(SREG, SREG_I)) {
+ 2c0:	0f b6       	in	r0, 0x3f	; 63
+ 2c2:	07 fc       	sbrc	r0, 7
+ 2c4:	fa cf       	rjmp	.-12     	; 0x2ba <HardwareSerial::write(unsigned char)+0x5c>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:258
+      // Interrupts are disabled, so we'll have to poll the data
+      // register empty flag ourselves. If it is set, pretend an
+      // interrupt has happened and call the handler to free up
+      // space for us.
+      if(bit_is_set(*_ucsra, UDRE0))
+ 2c6:	e8 89       	ldd	r30, Y+16	; 0x10
+ 2c8:	f9 89       	ldd	r31, Y+17	; 0x11
+ 2ca:	80 81       	ld	r24, Z
+ 2cc:	85 ff       	sbrs	r24, 5
+ 2ce:	f5 cf       	rjmp	.-22     	; 0x2ba <HardwareSerial::write(unsigned char)+0x5c>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:259
+        _tx_udr_empty_irq();
+ 2d0:	ce 01       	movw	r24, r28
+ 2d2:	a4 df       	rcall	.-184    	; 0x21c <HardwareSerial::_tx_udr_empty_irq()>
+ 2d4:	f2 cf       	rjmp	.-28     	; 0x2ba <HardwareSerial::write(unsigned char)+0x5c>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:265
+    } else {
+      // nop, the interrupt handler will free up space for us
+    }
+  }
+
+  _tx_buffer[_tx_buffer_head] = c;
+ 2d6:	eb 8d       	ldd	r30, Y+27	; 0x1b
+ 2d8:	ec 0f       	add	r30, r28
+ 2da:	fd 2f       	mov	r31, r29
+ 2dc:	f1 1d       	adc	r31, r1
+ 2de:	e3 5a       	subi	r30, 0xA3	; 163
+ 2e0:	ff 4f       	sbci	r31, 0xFF	; 255
+ 2e2:	f0 82       	st	Z, r15
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:269
+  // make atomic to prevent execution of ISR between setting the
+  // head pointer and setting the interrupt flag resulting in buffer
+  // retransmission
+  ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
+ 2e4:	9f b7       	in	r25, 0x3f	; 63
+__iCliRetVal():
+/home/aidancrowther/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/util/atomic.h:50
+    return 1;
+}
+
+static __inline__ uint8_t __iCliRetVal(void)
+{
+    cli();
+ 2e6:	f8 94       	cli
+write():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:270
+    _tx_buffer_head = i;
+ 2e8:	0b 8f       	std	Y+27, r16	; 0x1b
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:271
+    *_ucsrb |= _BV(UDRIE0);
+ 2ea:	ea 89       	ldd	r30, Y+18	; 0x12
+ 2ec:	fb 89       	ldd	r31, Y+19	; 0x13
+ 2ee:	80 81       	ld	r24, Z
+ 2f0:	80 62       	ori	r24, 0x20	; 32
+ 2f2:	d0 cf       	rjmp	.-96     	; 0x294 <HardwareSerial::write(unsigned char)+0x36>
+
+000002f4 <Print::print(__FlashStringHelper const*) [clone .constprop.7]>:
+print():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:44
+
+size_t Print::print(const __FlashStringHelper *ifsh)
+ 2f4:	0f 93       	push	r16
+ 2f6:	1f 93       	push	r17
+ 2f8:	cf 93       	push	r28
+ 2fa:	df 93       	push	r29
+ 2fc:	8c 01       	movw	r16, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:47
+{
+  PGM_P p = reinterpret_cast<PGM_P>(ifsh);
+  size_t n = 0;
+ 2fe:	d0 e0       	ldi	r29, 0x00	; 0
+ 300:	c0 e0       	ldi	r28, 0x00	; 0
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:49
+  while (1) {
+    unsigned char c = pgm_read_byte(p++);
+ 302:	f8 01       	movw	r30, r16
+ 304:	ec 0f       	add	r30, r28
+ 306:	fd 1f       	adc	r31, r29
+ 308:	64 91       	lpm	r22, Z
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:50
+    if (c == 0) break;
+ 30a:	66 23       	and	r22, r22
+ 30c:	39 f0       	breq	.+14     	; 0x31c <Print::print(__FlashStringHelper const*) [clone .constprop.7]+0x28>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:51
+    if (write(c)) n++;
+ 30e:	87 ee       	ldi	r24, 0xE7	; 231
+ 310:	90 e0       	ldi	r25, 0x00	; 0
+ 312:	a5 df       	rcall	.-182    	; 0x25e <HardwareSerial::write(unsigned char)>
+ 314:	89 2b       	or	r24, r25
+ 316:	11 f0       	breq	.+4      	; 0x31c <Print::print(__FlashStringHelper const*) [clone .constprop.7]+0x28>
+ 318:	21 96       	adiw	r28, 0x01	; 1
+ 31a:	f3 cf       	rjmp	.-26     	; 0x302 <Print::print(__FlashStringHelper const*) [clone .constprop.7]+0xe>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:55
+    else break;
+  }
+  return n;
+}
+ 31c:	ce 01       	movw	r24, r28
+ 31e:	df 91       	pop	r29
+ 320:	cf 91       	pop	r28
+ 322:	1f 91       	pop	r17
+ 324:	0f 91       	pop	r16
+ 326:	08 95       	ret
+
+00000328 <HardwareSerial::flush()>:
+flush():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:203
+  if (head >= tail) return SERIAL_TX_BUFFER_SIZE - 1 - head + tail;
+  return tail - head - 1;
+}
+
+void HardwareSerial::flush()
+{
+ 328:	cf 93       	push	r28
+ 32a:	df 93       	push	r29
+ 32c:	ec 01       	movw	r28, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:207
+  // If we have never written a byte, no need to flush. This special
+  // case is needed since there is no way to force the TXC (transmit
+  // complete) bit to 1 during initialization
+  if (!_written)
+ 32e:	88 8d       	ldd	r24, Y+24	; 0x18
+ 330:	88 23       	and	r24, r24
+ 332:	b1 f0       	breq	.+44     	; 0x360 <HardwareSerial::flush()+0x38>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:210
+    return;
+
+  while (bit_is_set(*_ucsrb, UDRIE0) || bit_is_clear(*_ucsra, TXC0)) {
+ 334:	aa 89       	ldd	r26, Y+18	; 0x12
+ 336:	bb 89       	ldd	r27, Y+19	; 0x13
+ 338:	e8 89       	ldd	r30, Y+16	; 0x10
+ 33a:	f9 89       	ldd	r31, Y+17	; 0x11
+ 33c:	8c 91       	ld	r24, X
+ 33e:	85 fd       	sbrc	r24, 5
+ 340:	03 c0       	rjmp	.+6      	; 0x348 <HardwareSerial::flush()+0x20>
+ 342:	80 81       	ld	r24, Z
+ 344:	86 fd       	sbrc	r24, 6
+ 346:	0c c0       	rjmp	.+24     	; 0x360 <HardwareSerial::flush()+0x38>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:211
+    if (bit_is_clear(SREG, SREG_I) && bit_is_set(*_ucsrb, UDRIE0))
+ 348:	0f b6       	in	r0, 0x3f	; 63
+ 34a:	07 fc       	sbrc	r0, 7
+ 34c:	f7 cf       	rjmp	.-18     	; 0x33c <HardwareSerial::flush()+0x14>
+ 34e:	8c 91       	ld	r24, X
+ 350:	85 ff       	sbrs	r24, 5
+ 352:	f2 cf       	rjmp	.-28     	; 0x338 <HardwareSerial::flush()+0x10>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:215
+      // Interrupts are globally disabled, but the DR empty
+      // interrupt should be enabled, so poll the DR empty flag to
+      // prevent deadlock
+      if (bit_is_set(*_ucsra, UDRE0))
+ 354:	80 81       	ld	r24, Z
+ 356:	85 ff       	sbrs	r24, 5
+ 358:	ed cf       	rjmp	.-38     	; 0x334 <HardwareSerial::flush()+0xc>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:216
+        _tx_udr_empty_irq();
+ 35a:	ce 01       	movw	r24, r28
+ 35c:	5f df       	rcall	.-322    	; 0x21c <HardwareSerial::_tx_udr_empty_irq()>
+ 35e:	ea cf       	rjmp	.-44     	; 0x334 <HardwareSerial::flush()+0xc>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:220
+  }
+  // If we get here, nothing is queued anymore (DRIE is disabled) and
+  // the hardware finished tranmission (TXC is set).
+}
+ 360:	df 91       	pop	r29
+ 362:	cf 91       	pop	r28
+ 364:	08 95       	ret
+
+00000366 <(anonymous namespace)::schedulePulse(unsigned int)>:
+schedulePulse():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:29
+
+inline void schedulePulse(uint16_t us)
+{
+  // Timer1 runs in normal mode. Schedule relative to the current counter so
+  // every edge remains correct regardless of the previous pulse duration.
+  OCR1A = static_cast<uint16_t>(TCNT1 + pulseTicks(us));
+ 366:	2c b5       	in	r18, 0x2c	; 44
+ 368:	3d b5       	in	r19, 0x2d	; 45
+pulseTicks():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:22
+constexpr uint8_t BEAK_MASK = _BV(PD4);
+constexpr uint16_t TICKS_PER_US = 2; // Timer1 prescaler 8 at 16 MHz
+
+inline uint16_t pulseTicks(uint16_t us)
+{
+  return us * TICKS_PER_US;
+ 36a:	88 0f       	add	r24, r24
+ 36c:	99 1f       	adc	r25, r25
+schedulePulse():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:29
+
+inline void schedulePulse(uint16_t us)
+{
+  // Timer1 runs in normal mode. Schedule relative to the current counter so
+  // every edge remains correct regardless of the previous pulse duration.
+  OCR1A = static_cast<uint16_t>(TCNT1 + pulseTicks(us));
+ 36e:	82 0f       	add	r24, r18
+ 370:	93 1f       	adc	r25, r19
+ 372:	9b bd       	out	0x2b, r25	; 43
+ 374:	8a bd       	out	0x2a, r24	; 42
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:30
+}
+ 376:	08 95       	ret
+
+00000378 <(anonymous namespace)::sendByte(unsigned char)>:
+sendByte():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:58
+         [offCycles] "I" (NS_TO_CYCLES(800) - 2));
+  }
+}
+
+inline void sendByte(uint8_t value)
+{
+ 378:	98 e0       	ldi	r25, 0x08	; 8
+sendBit():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:28
+#define NS_PER_CYCLE (NS_PER_SEC / F_CPU)
+#define NS_TO_CYCLES(value) ((value) / NS_PER_CYCLE)
+
+inline void sendBit(bool value)
+{
+  if (value) {
+ 37a:	87 ff       	sbrs	r24, 7
+ 37c:	14 c0       	rjmp	.+40     	; 0x3a6 <(anonymous namespace)::sendByte(unsigned char)+0x2e>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:40
+      ".rept %[offCycles] \n\t"
+      "nop \n\t"
+      ".endr \n\t"
+      :: [port] "I" (_SFR_IO_ADDR(PORTD)), [bit] "I" (PD5),
+         [onCycles] "I" (NS_TO_CYCLES(800) - 2),
+         [offCycles] "I" (NS_TO_CYCLES(400) - 2));
+ 37e:	95 9a       	sbi	0x12, 5	; 18
+	...
+ 394:	95 98       	cbi	0x12, 5	; 18
+	...
+sendByte():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:61
+
+inline void sendByte(uint8_t value)
+{
+  for (uint8_t bit = 0; bit < 8; ++bit) {
+    sendBit(value & 0x80);
+    value <<= 1;
+ 39e:	88 0f       	add	r24, r24
+ 3a0:	91 50       	subi	r25, 0x01	; 1
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:59
+  }
+}
+
+inline void sendByte(uint8_t value)
+{
+  for (uint8_t bit = 0; bit < 8; ++bit) {
+ 3a2:	59 f7       	brne	.-42     	; 0x37a <(anonymous namespace)::sendByte(unsigned char)+0x2>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:63
+    sendBit(value & 0x80);
+    value <<= 1;
+  }
+}
+ 3a4:	08 95       	ret
+sendBit():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:53
+      ".rept %[offCycles] \n\t"
+      "nop \n\t"
+      ".endr \n\t"
+      :: [port] "I" (_SFR_IO_ADDR(PORTD)), [bit] "I" (PD5),
+         [onCycles] "I" (NS_TO_CYCLES(400) - 2),
+         [offCycles] "I" (NS_TO_CYCLES(800) - 2));
+ 3a6:	95 9a       	sbi	0x12, 5	; 18
+	...
+ 3b0:	95 98       	cbi	0x12, 5	; 18
+	...
+ 3c6:	eb cf       	rjmp	.-42     	; 0x39e <(anonymous namespace)::sendByte(unsigned char)+0x26>
+
+000003c8 <(anonymous namespace)::emitCurrentBit()>:
+emitCurrentBit():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:33
+  TIFR |= _BV(OCF2);
+}
+
+inline void emitCurrentBit()
+{
+  if (packetBit == 0) {
+ 3c8:	80 91 8e 00 	lds	r24, 0x008E	; 0x80008e <(anonymous namespace)::packetBit>
+ 3cc:	81 11       	cpse	r24, r1
+ 3ce:	05 c0       	rjmp	.+10     	; 0x3da <(anonymous namespace)::emitCurrentBit()+0x12>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:34
+    PORTD &= static_cast<uint8_t>(~TX_MASK);
+ 3d0:	96 98       	cbi	0x12, 6	; 18
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:35
+    packetBit = 1;
+ 3d2:	81 e0       	ldi	r24, 0x01	; 1
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:39
+  } else if (packetBit <= 8) {
+    if (packet[packetByte] & _BV(packetBit - 1U)) PORTD |= TX_MASK;
+    else PORTD &= static_cast<uint8_t>(~TX_MASK);
+    ++packetBit;
+ 3d4:	80 93 8e 00 	sts	0x008E, r24	; 0x80008e <(anonymous namespace)::packetBit>
+ 3d8:	08 95       	ret
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:36
+inline void emitCurrentBit()
+{
+  if (packetBit == 0) {
+    PORTD &= static_cast<uint8_t>(~TX_MASK);
+    packetBit = 1;
+  } else if (packetBit <= 8) {
+ 3da:	80 91 8e 00 	lds	r24, 0x008E	; 0x80008e <(anonymous namespace)::packetBit>
+ 3de:	89 30       	cpi	r24, 0x09	; 9
+ 3e0:	c8 f4       	brcc	.+50     	; 0x414 <__LOCK_REGION_LENGTH__+0x14>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:37
+    if (packet[packetByte] & _BV(packetBit - 1U)) PORTD |= TX_MASK;
+ 3e2:	e0 91 8f 00 	lds	r30, 0x008F	; 0x80008f <(anonymous namespace)::packetByte>
+ 3e6:	f0 e0       	ldi	r31, 0x00	; 0
+ 3e8:	ec 57       	subi	r30, 0x7C	; 124
+ 3ea:	ff 4f       	sbci	r31, 0xFF	; 255
+ 3ec:	80 81       	ld	r24, Z
+ 3ee:	20 91 8e 00 	lds	r18, 0x008E	; 0x80008e <(anonymous namespace)::packetBit>
+ 3f2:	90 e0       	ldi	r25, 0x00	; 0
+ 3f4:	21 50       	subi	r18, 0x01	; 1
+ 3f6:	33 0b       	sbc	r19, r19
+ 3f8:	02 c0       	rjmp	.+4      	; 0x3fe <(anonymous namespace)::emitCurrentBit()+0x36>
+ 3fa:	95 95       	asr	r25
+ 3fc:	87 95       	ror	r24
+ 3fe:	2a 95       	dec	r18
+ 400:	e2 f7       	brpl	.-8      	; 0x3fa <(anonymous namespace)::emitCurrentBit()+0x32>
+ 402:	80 ff       	sbrs	r24, 0
+ 404:	05 c0       	rjmp	.+10     	; 0x410 <__LOCK_REGION_LENGTH__+0x10>
+ 406:	96 9a       	sbi	0x12, 6	; 18
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:39
+    else PORTD &= static_cast<uint8_t>(~TX_MASK);
+    ++packetBit;
+ 408:	80 91 8e 00 	lds	r24, 0x008E	; 0x80008e <(anonymous namespace)::packetBit>
+ 40c:	8f 5f       	subi	r24, 0xFF	; 255
+ 40e:	e2 cf       	rjmp	.-60     	; 0x3d4 <(anonymous namespace)::emitCurrentBit()+0xc>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:38
+  if (packetBit == 0) {
+    PORTD &= static_cast<uint8_t>(~TX_MASK);
+    packetBit = 1;
+  } else if (packetBit <= 8) {
+    if (packet[packetByte] & _BV(packetBit - 1U)) PORTD |= TX_MASK;
+    else PORTD &= static_cast<uint8_t>(~TX_MASK);
+ 410:	96 98       	cbi	0x12, 6	; 18
+ 412:	fa cf       	rjmp	.-12     	; 0x408 <__LOCK_REGION_LENGTH__+0x8>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:41
+    ++packetBit;
+  } else {
+    PORTD |= TX_MASK;
+ 414:	96 9a       	sbi	0x12, 6	; 18
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:42
+    ++packetByte;
+ 416:	80 91 8f 00 	lds	r24, 0x008F	; 0x80008f <(anonymous namespace)::packetByte>
+ 41a:	8f 5f       	subi	r24, 0xFF	; 255
+ 41c:	80 93 8f 00 	sts	0x008F, r24	; 0x80008f <(anonymous namespace)::packetByte>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:43
+    if (packetByte >= packetLength) finishingStopBit = true;
+ 420:	90 91 8f 00 	lds	r25, 0x008F	; 0x80008f <(anonymous namespace)::packetByte>
+ 424:	80 91 90 00 	lds	r24, 0x0090	; 0x800090 <(anonymous namespace)::packetLength>
+ 428:	98 17       	cp	r25, r24
+ 42a:	20 f0       	brcs	.+8      	; 0x434 <__LOCK_REGION_LENGTH__+0x34>
+ 42c:	81 e0       	ldi	r24, 0x01	; 1
+ 42e:	80 93 91 00 	sts	0x0091, r24	; 0x800091 <(anonymous namespace)::finishingStopBit>
+ 432:	08 95       	ret
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:44
+    else packetBit = 0;
+ 434:	10 92 8e 00 	sts	0x008E, r1	; 0x80008e <(anonymous namespace)::packetBit>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:46
+  }
+}
+ 438:	08 95       	ret
+
+0000043a <(anonymous namespace)::sendPacket(unsigned char, unsigned int) [clone .part.0]>:
+_ZN12_GLOBAL__N_110sendPacketEhj.part.0():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:17
+bool trackInFlight = false;
+bool pendingPresetTrack = false;
+uint8_t requestedVolume = 0;
+uint8_t sentVolume = 255;
+
+bool sendPacket(uint8_t command, uint16_t parameter)
+ 43a:	1f 93       	push	r17
+ 43c:	cf 93       	push	r28
+ 43e:	df 93       	push	r29
+ 440:	cd b7       	in	r28, 0x3d	; 61
+ 442:	de b7       	in	r29, 0x3e	; 62
+ 444:	2a 97       	sbiw	r28, 0x0a	; 10
+ 446:	0f b6       	in	r0, 0x3f	; 63
+ 448:	f8 94       	cli
+ 44a:	de bf       	out	0x3e, r29	; 62
+ 44c:	0f be       	out	0x3f, r0	; 63
+ 44e:	cd bf       	out	0x3d, r28	; 61
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:21
+{
+  if (DfPlayerSerial::busy()) return false;
+
+  uint8_t packet[10] = {0x7E, 0xFF, 0x06, command, 0x01,
+ 450:	1f 82       	std	Y+7, r1	; 0x07
+ 452:	18 86       	std	Y+8, r1	; 0x08
+ 454:	19 86       	std	Y+9, r1	; 0x09
+ 456:	1a 86       	std	Y+10, r1	; 0x0a
+ 458:	9e e7       	ldi	r25, 0x7E	; 126
+ 45a:	99 83       	std	Y+1, r25	; 0x01
+ 45c:	9f ef       	ldi	r25, 0xFF	; 255
+ 45e:	9a 83       	std	Y+2, r25	; 0x02
+ 460:	96 e0       	ldi	r25, 0x06	; 6
+ 462:	9b 83       	std	Y+3, r25	; 0x03
+ 464:	91 e0       	ldi	r25, 0x01	; 1
+ 466:	9d 83       	std	Y+5, r25	; 0x05
+ 468:	9f ee       	ldi	r25, 0xEF	; 239
+ 46a:	9a 87       	std	Y+10, r25	; 0x0a
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:23
+                        static_cast<uint8_t>(parameter >> 8),
+                        static_cast<uint8_t>(parameter & 0xFF), 0x00, 0x00, 0xEF};
+ 46c:	8c 83       	std	Y+4, r24	; 0x04
+ 46e:	7e 83       	std	Y+6, r23	; 0x06
+ 470:	6f 83       	std	Y+7, r22	; 0x07
+ 472:	fe 01       	movw	r30, r28
+ 474:	32 96       	adiw	r30, 0x02	; 2
+ 476:	de 01       	movw	r26, r28
+ 478:	11 96       	adiw	r26, 0x01	; 1
+ 47a:	9e 01       	movw	r18, r28
+ 47c:	28 5f       	subi	r18, 0xF8	; 248
+ 47e:	3f 4f       	sbci	r19, 0xFF	; 255
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:24
+  uint16_t checksum = 0;
+ 480:	90 e0       	ldi	r25, 0x00	; 0
+ 482:	80 e0       	ldi	r24, 0x00	; 0
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:25
+  for (uint8_t i = 1; i < 7; ++i) checksum += packet[i];
+ 484:	41 91       	ld	r20, Z+
+ 486:	84 0f       	add	r24, r20
+ 488:	91 1d       	adc	r25, r1
+ 48a:	e2 17       	cp	r30, r18
+ 48c:	f3 07       	cpc	r31, r19
+ 48e:	d1 f7       	brne	.-12     	; 0x484 <__stack+0x25>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:26
+  checksum = static_cast<uint16_t>(0U - checksum);
+ 490:	91 95       	neg	r25
+ 492:	81 95       	neg	r24
+ 494:	91 09       	sbc	r25, r1
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:27
+  packet[7] = static_cast<uint8_t>(checksum >> 8);
+ 496:	98 87       	std	Y+8, r25	; 0x08
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:28
+  packet[8] = static_cast<uint8_t>(checksum & 0xFF);
+ 498:	89 87       	std	Y+9, r24	; 0x09
+beginPacket():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:66
+
+bool beginPacket(const uint8_t *data, uint8_t length)
+{
+  if (data == nullptr || length == 0 || length > PACKET_BUFFER_SIZE) return false;
+
+  uint8_t oldSreg = SREG;
+ 49a:	1f b7       	in	r17, 0x3f	; 63
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:67
+  cli();
+ 49c:	f8 94       	cli
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:68
+  if (transmitting) {
+ 49e:	80 91 cd 00 	lds	r24, 0x00CD	; 0x8000cd <(anonymous namespace)::transmitting>
+ 4a2:	88 23       	and	r24, r24
+ 4a4:	61 f0       	breq	.+24     	; 0x4be <__stack+0x5f>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:69
+    SREG = oldSreg;
+ 4a6:	1f bf       	out	0x3f, r17	; 63
+_ZN12_GLOBAL__N_110sendPacketEhj.part.0():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:30
+
+  if (!DfPlayerSerial::beginPacket(packet, sizeof(packet))) return false;
+ 4a8:	80 e0       	ldi	r24, 0x00	; 0
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:32
+  return true;
+}
+ 4aa:	2a 96       	adiw	r28, 0x0a	; 10
+ 4ac:	0f b6       	in	r0, 0x3f	; 63
+ 4ae:	f8 94       	cli
+ 4b0:	de bf       	out	0x3e, r29	; 62
+ 4b2:	0f be       	out	0x3f, r0	; 63
+ 4b4:	cd bf       	out	0x3d, r28	; 61
+ 4b6:	df 91       	pop	r29
+ 4b8:	cf 91       	pop	r28
+ 4ba:	1f 91       	pop	r17
+ 4bc:	08 95       	ret
+beginPacket():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:68
+{
+  if (data == nullptr || length == 0 || length > PACKET_BUFFER_SIZE) return false;
+
+  uint8_t oldSreg = SREG;
+  cli();
+  if (transmitting) {
+ 4be:	90 e0       	ldi	r25, 0x00	; 0
+ 4c0:	80 e0       	ldi	r24, 0x00	; 0
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:73
+    SREG = oldSreg;
+    return false;
+  }
+
+  for (uint8_t i = 0; i < length; ++i) packet[i] = data[i];
+ 4c2:	2d 91       	ld	r18, X+
+ 4c4:	fc 01       	movw	r30, r24
+ 4c6:	ec 57       	subi	r30, 0x7C	; 124
+ 4c8:	ff 4f       	sbci	r31, 0xFF	; 255
+ 4ca:	20 83       	st	Z, r18
+ 4cc:	01 96       	adiw	r24, 0x01	; 1
+ 4ce:	8a 30       	cpi	r24, 0x0A	; 10
+ 4d0:	91 05       	cpc	r25, r1
+ 4d2:	b9 f7       	brne	.-18     	; 0x4c2 <__stack+0x63>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:74
+  packetLength = length;
+ 4d4:	8a e0       	ldi	r24, 0x0A	; 10
+ 4d6:	80 93 90 00 	sts	0x0090, r24	; 0x800090 <(anonymous namespace)::packetLength>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:75
+  packetByte = 0;
+ 4da:	10 92 8f 00 	sts	0x008F, r1	; 0x80008f <(anonymous namespace)::packetByte>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:76
+  packetBit = 0;
+ 4de:	10 92 8e 00 	sts	0x008E, r1	; 0x80008e <(anonymous namespace)::packetBit>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:77
+  transmitting = true;
+ 4e2:	81 e0       	ldi	r24, 0x01	; 1
+ 4e4:	80 93 cd 00 	sts	0x00CD, r24	; 0x8000cd <(anonymous namespace)::transmitting>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:78
+  finishingStopBit = false;
+ 4e8:	10 92 91 00 	sts	0x0091, r1	; 0x800091 <(anonymous namespace)::finishingStopBit>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:79
+  packetCompleted = false;
+ 4ec:	10 92 ce 00 	sts	0x00CE, r1	; 0x8000ce <(anonymous namespace)::packetCompleted>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:80
+  PORTD |= TX_MASK;
+ 4f0:	96 9a       	sbi	0x12, 6	; 18
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:83
+  DmxInput::pauseReception();
+  // TX is timer-driven on PD6. The UART RX interrupt is paused for the packet.
+  emitCurrentBit();
+ 4f2:	6a df       	rcall	.-300    	; 0x3c8 <(anonymous namespace)::emitCurrentBit()>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:84
+  TIFR |= _BV(OCF2);
+ 4f4:	88 b7       	in	r24, 0x38	; 56
+ 4f6:	80 68       	ori	r24, 0x80	; 128
+ 4f8:	88 bf       	out	0x38, r24	; 56
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:85
+  TIMSK |= _BV(OCIE2);
+ 4fa:	89 b7       	in	r24, 0x39	; 57
+ 4fc:	80 68       	ori	r24, 0x80	; 128
+ 4fe:	89 bf       	out	0x39, r24	; 57
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:86
+  SREG = oldSreg;
+ 500:	1f bf       	out	0x3f, r17	; 63
+_ZN12_GLOBAL__N_110sendPacketEhj.part.0():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:31
+  checksum = static_cast<uint16_t>(0U - checksum);
+  packet[7] = static_cast<uint8_t>(checksum >> 8);
+  packet[8] = static_cast<uint8_t>(checksum & 0xFF);
+
+  if (!DfPlayerSerial::beginPacket(packet, sizeof(packet))) return false;
+  return true;
+ 502:	81 e0       	ldi	r24, 0x01	; 1
+ 504:	d2 cf       	rjmp	.-92     	; 0x4aa <__stack+0x4b>
+
+00000506 <Print::println() [clone .constprop.14]>:
+write():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.h:54
+    void clearWriteError() { setWriteError(0); }
+
+    virtual size_t write(uint8_t) = 0;
+    size_t write(const char *str) {
+      if (str == NULL) return 0;
+      return write((const uint8_t *)str, strlen(str));
+ 506:	42 e0       	ldi	r20, 0x02	; 2
+ 508:	50 e0       	ldi	r21, 0x00	; 0
+ 50a:	61 e8       	ldi	r22, 0x81	; 129
+ 50c:	70 e0       	ldi	r23, 0x00	; 0
+ 50e:	87 ee       	ldi	r24, 0xE7	; 231
+ 510:	90 e0       	ldi	r25, 0x00	; 0
+ 512:	09 ce       	rjmp	.-1006   	; 0x126 <Print::write(unsigned char const*, unsigned int)>
+
+00000514 <Print::println(__FlashStringHelper const*) [clone .constprop.6]>:
+println():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:114
+size_t Print::print(double n, int digits)
+{
+  return printFloat(n, digits);
+}
+
+size_t Print::println(const __FlashStringHelper *ifsh)
+ 514:	cf 93       	push	r28
+ 516:	df 93       	push	r29
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:116
+{
+  size_t n = print(ifsh);
+ 518:	ed de       	rcall	.-550    	; 0x2f4 <Print::print(__FlashStringHelper const*) [clone .constprop.7]>
+ 51a:	ec 01       	movw	r28, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:117
+  n += println();
+ 51c:	f4 df       	rcall	.-24     	; 0x506 <Print::println() [clone .constprop.14]>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:119
+  return n;
+}
+ 51e:	8c 0f       	add	r24, r28
+ 520:	9d 1f       	adc	r25, r29
+ 522:	df 91       	pop	r29
+ 524:	cf 91       	pop	r28
+ 526:	08 95       	ret
+
+00000528 <(anonymous namespace)::writeIfChanged()>:
+writeIfChanged():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:84
+  _delay_us(6);
+  DmxInput::resumeReception();
+}
+
+bool writeIfChanged()
+{
+ 528:	cf 92       	push	r12
+ 52a:	df 92       	push	r13
+ 52c:	ef 92       	push	r14
+ 52e:	ff 92       	push	r15
+ 530:	0f 93       	push	r16
+ 532:	1f 93       	push	r17
+ 534:	cf 93       	push	r28
+ 536:	df 93       	push	r29
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:85
+  bool changed = !hasPreviousFrame;
+ 538:	80 91 a7 00 	lds	r24, 0x00A7	; 0x8000a7 <(anonymous namespace)::hasPreviousFrame>
+ 53c:	91 e0       	ldi	r25, 0x01	; 1
+ 53e:	89 27       	eor	r24, r25
+ 540:	9e ea       	ldi	r25, 0xAE	; 174
+ 542:	c9 2e       	mov	r12, r25
+ 544:	90 e0       	ldi	r25, 0x00	; 0
+ 546:	d9 2e       	mov	r13, r25
+ 548:	22 e9       	ldi	r18, 0x92	; 146
+ 54a:	e2 2e       	mov	r14, r18
+ 54c:	20 e0       	ldi	r18, 0x00	; 0
+ 54e:	f2 2e       	mov	r15, r18
+ 550:	d7 01       	movw	r26, r14
+ 552:	f6 01       	movw	r30, r12
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:87
+  for (uint8_t i = 0; i < LED_COUNT; ++i) {
+    if (pixels[i].red != previousPixels[i].red ||
+ 554:	20 81       	ld	r18, Z
+ 556:	9c 91       	ld	r25, X
+ 558:	29 13       	cpse	r18, r25
+ 55a:	58 c0       	rjmp	.+176    	; 0x60c <(anonymous namespace)::writeIfChanged()+0xe4>
+ 55c:	21 81       	ldd	r18, Z+1	; 0x01
+ 55e:	11 96       	adiw	r26, 0x01	; 1
+ 560:	9c 91       	ld	r25, X
+ 562:	11 97       	sbiw	r26, 0x01	; 1
+ 564:	29 13       	cpse	r18, r25
+ 566:	52 c0       	rjmp	.+164    	; 0x60c <(anonymous namespace)::writeIfChanged()+0xe4>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:88
+        pixels[i].green != previousPixels[i].green ||
+ 568:	22 81       	ldd	r18, Z+2	; 0x02
+ 56a:	12 96       	adiw	r26, 0x02	; 2
+ 56c:	9c 91       	ld	r25, X
+ 56e:	12 97       	sbiw	r26, 0x02	; 2
+ 570:	29 13       	cpse	r18, r25
+ 572:	4c c0       	rjmp	.+152    	; 0x60c <(anonymous namespace)::writeIfChanged()+0xe4>
+ 574:	33 96       	adiw	r30, 0x03	; 3
+ 576:	13 96       	adiw	r26, 0x03	; 3
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:86
+}
+
+bool writeIfChanged()
+{
+  bool changed = !hasPreviousFrame;
+  for (uint8_t i = 0; i < LED_COUNT; ++i) {
+ 578:	30 e0       	ldi	r19, 0x00	; 0
+ 57a:	e3 3c       	cpi	r30, 0xC3	; 195
+ 57c:	f3 07       	cpc	r31, r19
+ 57e:	51 f7       	brne	.-44     	; 0x554 <(anonymous namespace)::writeIfChanged()+0x2c>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:93
+        pixels[i].green != previousPixels[i].green ||
+        pixels[i].blue != previousPixels[i].blue) {
+      changed = true;
+    }
+  }
+  if (!changed) return true;
+ 580:	11 e0       	ldi	r17, 0x01	; 1
+ 582:	88 23       	and	r24, r24
+ 584:	c9 f1       	breq	.+114    	; 0x5f8 <(anonymous namespace)::writeIfChanged()+0xd0>
+busy():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:92
+  return true;
+}
+
+bool busy()
+{
+  return transmitting;
+ 586:	80 91 cd 00 	lds	r24, 0x00CD	; 0x8000cd <(anonymous namespace)::transmitting>
+canTransmitNow():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:120
+
+namespace LedEngine {
+
+bool canTransmitNow()
+{
+  return !AudioEngine::busy() && ServoEngine::canBlockFor(300);
+ 58a:	81 11       	cpse	r24, r1
+ 58c:	41 c0       	rjmp	.+130    	; 0x610 <(anonymous namespace)::writeIfChanged()+0xe8>
+canBlockFor():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:79
+  return quietPeriod;
+}
+
+bool canBlockFor(uint16_t durationUs)
+{
+  uint8_t oldSreg = SREG;
+ 58e:	2f b7       	in	r18, 0x3f	; 63
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:80
+  cli();
+ 590:	f8 94       	cli
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:81
+  const uint16_t remainingTicks = static_cast<uint16_t>(OCR1A - TCNT1);
+ 592:	8a b5       	in	r24, 0x2a	; 42
+ 594:	9b b5       	in	r25, 0x2b	; 43
+ 596:	4c b5       	in	r20, 0x2c	; 44
+ 598:	5d b5       	in	r21, 0x2d	; 45
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:82
+  const bool safe = quietPeriod && remainingTicks < 0x8000U &&
+ 59a:	10 91 a8 00 	lds	r17, 0x00A8	; 0x8000a8 <(anonymous namespace)::quietPeriod>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:84
+      remainingTicks > static_cast<uint32_t>(durationUs + 40U) * TICKS_PER_US;
+  SREG = oldSreg;
+ 59e:	2f bf       	out	0x3f, r18	; 63
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:82
+bool canBlockFor(uint16_t durationUs)
+{
+  uint8_t oldSreg = SREG;
+  cli();
+  const uint16_t remainingTicks = static_cast<uint16_t>(OCR1A - TCNT1);
+  const bool safe = quietPeriod && remainingTicks < 0x8000U &&
+ 5a0:	11 23       	and	r17, r17
+ 5a2:	b1 f1       	breq	.+108    	; 0x610 <(anonymous namespace)::writeIfChanged()+0xe8>
+ 5a4:	89 5a       	subi	r24, 0xA9	; 169
+ 5a6:	92 40       	sbci	r25, 0x02	; 2
+ 5a8:	84 1b       	sub	r24, r20
+ 5aa:	95 0b       	sbc	r25, r21
+ 5ac:	87 35       	cpi	r24, 0x57	; 87
+ 5ae:	9d 47       	sbci	r25, 0x7D	; 125
+ 5b0:	78 f5       	brcc	.+94     	; 0x610 <(anonymous namespace)::writeIfChanged()+0xe8>
+showPixels():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:70
+void showPixels()
+{
+  // Once the first WS2812 bit is emitted, preserve the entire waveform. Keep
+  // Timer1's compare flag pending while interrupts are masked; its servo ISR
+  // runs immediately after the frame and resumes the scheduled servo edges.
+  uint8_t oldSreg = SREG;
+ 5b2:	0f b7       	in	r16, 0x3f	; 63
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:72
+  DmxInput::pauseReception();
+  cli();
+ 5b4:	f8 94       	cli
+ 5b6:	ce ea       	ldi	r28, 0xAE	; 174
+ 5b8:	d0 e0       	ldi	r29, 0x00	; 0
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:74
+  for (uint8_t i = 0; i < LED_COUNT; ++i) {
+    sendByte(pixels[i].green);
+ 5ba:	89 81       	ldd	r24, Y+1	; 0x01
+ 5bc:	dd de       	rcall	.-582    	; 0x378 <(anonymous namespace)::sendByte(unsigned char)>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:75
+    sendByte(pixels[i].red);
+ 5be:	88 81       	ld	r24, Y
+ 5c0:	db de       	rcall	.-586    	; 0x378 <(anonymous namespace)::sendByte(unsigned char)>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:76
+    sendByte(pixels[i].blue);
+ 5c2:	8a 81       	ldd	r24, Y+2	; 0x02
+ 5c4:	d9 de       	rcall	.-590    	; 0x378 <(anonymous namespace)::sendByte(unsigned char)>
+ 5c6:	23 96       	adiw	r28, 0x03	; 3
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:73
+  // Timer1's compare flag pending while interrupts are masked; its servo ISR
+  // runs immediately after the frame and resumes the scheduled servo edges.
+  uint8_t oldSreg = SREG;
+  DmxInput::pauseReception();
+  cli();
+  for (uint8_t i = 0; i < LED_COUNT; ++i) {
+ 5c8:	f0 e0       	ldi	r31, 0x00	; 0
+ 5ca:	c3 3c       	cpi	r28, 0xC3	; 195
+ 5cc:	df 07       	cpc	r29, r31
+ 5ce:	a9 f7       	brne	.-22     	; 0x5ba <(anonymous namespace)::writeIfChanged()+0x92>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:78
+    sendByte(pixels[i].green);
+    sendByte(pixels[i].red);
+    sendByte(pixels[i].blue);
+  }
+  SREG = oldSreg;
+ 5d0:	0f bf       	out	0x3f, r16	; 63
+_delay_us():
+/home/aidancrowther/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/util/delay.h:276
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 5d2:	30 e2       	ldi	r19, 0x20	; 32
+ 5d4:	3a 95       	dec	r19
+ 5d6:	f1 f7       	brne	.-4      	; 0x5d4 <(anonymous namespace)::writeIfChanged()+0xac>
+writeIfChanged():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:96
+    }
+  }
+  if (!changed) return true;
+  if (LedEngine::canTransmitNow()) {
+    showPixels();
+    for (uint8_t i = 0; i < LED_COUNT; ++i) previousPixels[i] = pixels[i];
+ 5d8:	f6 01       	movw	r30, r12
+ 5da:	81 91       	ld	r24, Z+
+ 5dc:	91 91       	ld	r25, Z+
+ 5de:	a1 91       	ld	r26, Z+
+ 5e0:	6f 01       	movw	r12, r30
+ 5e2:	f7 01       	movw	r30, r14
+ 5e4:	81 93       	st	Z+, r24
+ 5e6:	91 93       	st	Z+, r25
+ 5e8:	a1 93       	st	Z+, r26
+ 5ea:	7f 01       	movw	r14, r30
+ 5ec:	cc 15       	cp	r28, r12
+ 5ee:	dd 05       	cpc	r29, r13
+ 5f0:	99 f7       	brne	.-26     	; 0x5d8 <(anonymous namespace)::writeIfChanged()+0xb0>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:97
+    hasPreviousFrame = true;
+ 5f2:	81 e0       	ldi	r24, 0x01	; 1
+ 5f4:	80 93 a7 00 	sts	0x00A7, r24	; 0x8000a7 <(anonymous namespace)::hasPreviousFrame>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:101
+    return true;
+  }
+  return false;
+}
+ 5f8:	81 2f       	mov	r24, r17
+ 5fa:	df 91       	pop	r29
+ 5fc:	cf 91       	pop	r28
+ 5fe:	1f 91       	pop	r17
+ 600:	0f 91       	pop	r16
+ 602:	ff 90       	pop	r15
+ 604:	ef 90       	pop	r14
+ 606:	df 90       	pop	r13
+ 608:	cf 90       	pop	r12
+ 60a:	08 95       	ret
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:90
+  bool changed = !hasPreviousFrame;
+  for (uint8_t i = 0; i < LED_COUNT; ++i) {
+    if (pixels[i].red != previousPixels[i].red ||
+        pixels[i].green != previousPixels[i].green ||
+        pixels[i].blue != previousPixels[i].blue) {
+      changed = true;
+ 60c:	81 e0       	ldi	r24, 0x01	; 1
+ 60e:	b2 cf       	rjmp	.-156    	; 0x574 <(anonymous namespace)::writeIfChanged()+0x4c>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:100
+    showPixels();
+    for (uint8_t i = 0; i < LED_COUNT; ++i) previousPixels[i] = pixels[i];
+    hasPreviousFrame = true;
+    return true;
+  }
+  return false;
+ 610:	10 e0       	ldi	r17, 0x00	; 0
+ 612:	f2 cf       	rjmp	.-28     	; 0x5f8 <(anonymous namespace)::writeIfChanged()+0xd0>
+
+00000614 <__vector_9>:
+__vector_9():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:159
+#if defined(__AVR_ATtiny24__) || defined(__AVR_ATtiny44__) || defined(__AVR_ATtiny84__)
+ISR(TIM0_OVF_vect)
+#else
+ISR(TIMER0_OVF_vect)
+#endif
+{
+ 614:	1f 92       	push	r1
+ 616:	0f 92       	push	r0
+ 618:	0f b6       	in	r0, 0x3f	; 63
+ 61a:	0f 92       	push	r0
+ 61c:	11 24       	eor	r1, r1
+ 61e:	2f 93       	push	r18
+ 620:	3f 93       	push	r19
+ 622:	8f 93       	push	r24
+ 624:	9f 93       	push	r25
+ 626:	af 93       	push	r26
+ 628:	bf 93       	push	r27
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:167
+  static unsigned char timer0_exact = 0;
+#endif
+
+  // copy these to local variables so they can be stored in registers
+  // (volatile variables must be read from memory on every access, so this saves time)
+  unsigned long m = timer0_millis;
+ 62a:	80 91 e3 00 	lds	r24, 0x00E3	; 0x8000e3 <timer0_millis>
+ 62e:	90 91 e4 00 	lds	r25, 0x00E4	; 0x8000e4 <timer0_millis+0x1>
+ 632:	a0 91 e5 00 	lds	r26, 0x00E5	; 0x8000e5 <timer0_millis+0x2>
+ 636:	b0 91 e6 00 	lds	r27, 0x00E6	; 0x8000e6 <timer0_millis+0x3>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:168
+  unsigned char f = timer0_fract;
+ 63a:	30 91 e2 00 	lds	r19, 0x00E2	; 0x8000e2 <timer0_fract>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:170
+
+  f += FRACT_INC FRACT_INC_PLUS;
+ 63e:	23 e0       	ldi	r18, 0x03	; 3
+ 640:	23 0f       	add	r18, r19
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:200
+    ++f;
+  }
+#endif
+#endif // CORRECT_EXACT_MILLIS
+
+  if (f >= FRACT_MAX) {
+ 642:	2d 37       	cpi	r18, 0x7D	; 125
+ 644:	68 f1       	brcs	.+90     	; 0x6a0 <__vector_9+0x8c>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:201
+    f -= FRACT_MAX;
+ 646:	26 e8       	ldi	r18, 0x86	; 134
+ 648:	23 0f       	add	r18, r19
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:202
+    m += MILLIS_INC + 1;
+ 64a:	02 96       	adiw	r24, 0x02	; 2
+ 64c:	a1 1d       	adc	r26, r1
+ 64e:	b1 1d       	adc	r27, r1
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:208
+  }
+  else {
+    m += MILLIS_INC;
+  }
+
+  timer0_fract = f;
+ 650:	20 93 e2 00 	sts	0x00E2, r18	; 0x8000e2 <timer0_fract>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:209
+  timer0_millis = m;
+ 654:	80 93 e3 00 	sts	0x00E3, r24	; 0x8000e3 <timer0_millis>
+ 658:	90 93 e4 00 	sts	0x00E4, r25	; 0x8000e4 <timer0_millis+0x1>
+ 65c:	a0 93 e5 00 	sts	0x00E5, r26	; 0x8000e5 <timer0_millis+0x2>
+ 660:	b0 93 e6 00 	sts	0x00E6, r27	; 0x8000e6 <timer0_millis+0x3>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:211
+#ifndef CORRECT_EXACT_MICROS
+  timer0_overflow_count++;
+ 664:	80 91 de 00 	lds	r24, 0x00DE	; 0x8000de <timer0_overflow_count>
+ 668:	90 91 df 00 	lds	r25, 0x00DF	; 0x8000df <timer0_overflow_count+0x1>
+ 66c:	a0 91 e0 00 	lds	r26, 0x00E0	; 0x8000e0 <timer0_overflow_count+0x2>
+ 670:	b0 91 e1 00 	lds	r27, 0x00E1	; 0x8000e1 <timer0_overflow_count+0x3>
+ 674:	01 96       	adiw	r24, 0x01	; 1
+ 676:	a1 1d       	adc	r26, r1
+ 678:	b1 1d       	adc	r27, r1
+ 67a:	80 93 de 00 	sts	0x00DE, r24	; 0x8000de <timer0_overflow_count>
+ 67e:	90 93 df 00 	sts	0x00DF, r25	; 0x8000df <timer0_overflow_count+0x1>
+ 682:	a0 93 e0 00 	sts	0x00E0, r26	; 0x8000e0 <timer0_overflow_count+0x2>
+ 686:	b0 93 e1 00 	sts	0x00E1, r27	; 0x8000e1 <timer0_overflow_count+0x3>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:213
+#endif
+}
+ 68a:	bf 91       	pop	r27
+ 68c:	af 91       	pop	r26
+ 68e:	9f 91       	pop	r25
+ 690:	8f 91       	pop	r24
+ 692:	3f 91       	pop	r19
+ 694:	2f 91       	pop	r18
+ 696:	0f 90       	pop	r0
+ 698:	0f be       	out	0x3f, r0	; 63
+ 69a:	0f 90       	pop	r0
+ 69c:	1f 90       	pop	r1
+ 69e:	18 95       	reti
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:205
+  if (f >= FRACT_MAX) {
+    f -= FRACT_MAX;
+    m += MILLIS_INC + 1;
+  }
+  else {
+    m += MILLIS_INC;
+ 6a0:	01 96       	adiw	r24, 0x01	; 1
+ 6a2:	a1 1d       	adc	r26, r1
+ 6a4:	b1 1d       	adc	r27, r1
+ 6a6:	d4 cf       	rjmp	.-88     	; 0x650 <__vector_9+0x3c>
+
+000006a8 <__vector_12>:
+__vector_12():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial0.cpp:63
+#elif defined(USART0_UDRE_vect)
+ISR(USART0_UDRE_vect)
+#else
+  #error "Don't know what the Data Register Empty vector is called for Serial"
+#endif
+{
+ 6a8:	1f 92       	push	r1
+ 6aa:	0f 92       	push	r0
+ 6ac:	0f b6       	in	r0, 0x3f	; 63
+ 6ae:	0f 92       	push	r0
+ 6b0:	11 24       	eor	r1, r1
+ 6b2:	2f 93       	push	r18
+ 6b4:	3f 93       	push	r19
+ 6b6:	4f 93       	push	r20
+ 6b8:	5f 93       	push	r21
+ 6ba:	6f 93       	push	r22
+ 6bc:	7f 93       	push	r23
+ 6be:	8f 93       	push	r24
+ 6c0:	9f 93       	push	r25
+ 6c2:	af 93       	push	r26
+ 6c4:	bf 93       	push	r27
+ 6c6:	ef 93       	push	r30
+ 6c8:	ff 93       	push	r31
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial0.cpp:64
+  Serial._tx_udr_empty_irq();
+ 6ca:	87 ee       	ldi	r24, 0xE7	; 231
+ 6cc:	90 e0       	ldi	r25, 0x00	; 0
+ 6ce:	a6 dd       	rcall	.-1204   	; 0x21c <HardwareSerial::_tx_udr_empty_irq()>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial0.cpp:65
+}
+ 6d0:	ff 91       	pop	r31
+ 6d2:	ef 91       	pop	r30
+ 6d4:	bf 91       	pop	r27
+ 6d6:	af 91       	pop	r26
+ 6d8:	9f 91       	pop	r25
+ 6da:	8f 91       	pop	r24
+ 6dc:	7f 91       	pop	r23
+ 6de:	6f 91       	pop	r22
+ 6e0:	5f 91       	pop	r21
+ 6e2:	4f 91       	pop	r20
+ 6e4:	3f 91       	pop	r19
+ 6e6:	2f 91       	pop	r18
+ 6e8:	0f 90       	pop	r0
+ 6ea:	0f be       	out	0x3f, r0	; 63
+ 6ec:	0f 90       	pop	r0
+ 6ee:	1f 90       	pop	r1
+ 6f0:	18 95       	reti
+
+000006f2 <__vector_11>:
+__vector_11():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial0.cpp:50
+#elif defined(USART_RX_vect)
+  ISR(USART_RX_vect)
+#else
+  #error "Don't know what the Data Received vector is called for Serial"
+#endif
+  {
+ 6f2:	1f 92       	push	r1
+ 6f4:	0f 92       	push	r0
+ 6f6:	0f b6       	in	r0, 0x3f	; 63
+ 6f8:	0f 92       	push	r0
+ 6fa:	11 24       	eor	r1, r1
+ 6fc:	2f 93       	push	r18
+ 6fe:	8f 93       	push	r24
+ 700:	9f 93       	push	r25
+ 702:	ef 93       	push	r30
+ 704:	ff 93       	push	r31
+_rx_complete_irq():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial_private.h:100
+
+// Actual interrupt handlers //////////////////////////////////////////////////////////////
+
+void HardwareSerial::_rx_complete_irq(void)
+{
+  if (bit_is_clear(*_ucsra, UPE0)) {
+ 706:	e0 91 f7 00 	lds	r30, 0x00F7	; 0x8000f7 <Serial+0x10>
+ 70a:	f0 91 f8 00 	lds	r31, 0x00F8	; 0x8000f8 <Serial+0x11>
+ 70e:	80 81       	ld	r24, Z
+ 710:	e0 91 fd 00 	lds	r30, 0x00FD	; 0x8000fd <Serial+0x16>
+ 714:	f0 91 fe 00 	lds	r31, 0x00FE	; 0x8000fe <Serial+0x17>
+ 718:	82 fd       	sbrc	r24, 2
+ 71a:	1b c0       	rjmp	.+54     	; 0x752 <__vector_11+0x60>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial_private.h:103
+    // No Parity error, read byte and store it in the buffer if there is
+    // room
+    unsigned char c = *_udr;
+ 71c:	90 81       	ld	r25, Z
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial_private.h:104
+    rx_buffer_index_t i = (unsigned int)(_rx_buffer_head + 1) % SERIAL_RX_BUFFER_SIZE;
+ 71e:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <Serial+0x19>
+ 722:	8f 5f       	subi	r24, 0xFF	; 255
+ 724:	8f 73       	andi	r24, 0x3F	; 63
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial_private.h:110
+
+    // if we should be storing the received character into the location
+    // just before the tail (meaning that the head would advance to the
+    // current location of the tail), we're about to overflow the buffer
+    // and so we don't write the character or advance the head.
+    if (i != _rx_buffer_tail) {
+ 726:	20 91 01 01 	lds	r18, 0x0101	; 0x800101 <Serial+0x1a>
+ 72a:	82 17       	cp	r24, r18
+ 72c:	41 f0       	breq	.+16     	; 0x73e <__vector_11+0x4c>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial_private.h:111
+      _rx_buffer[_rx_buffer_head] = c;
+ 72e:	e0 91 00 01 	lds	r30, 0x0100	; 0x800100 <Serial+0x19>
+ 732:	f0 e0       	ldi	r31, 0x00	; 0
+ 734:	e9 51       	subi	r30, 0x19	; 25
+ 736:	ff 4f       	sbci	r31, 0xFF	; 255
+ 738:	95 8f       	std	Z+29, r25	; 0x1d
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial_private.h:112
+      _rx_buffer_head = i;
+ 73a:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <Serial+0x19>
+__vector_11():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial0.cpp:52
+    Serial._rx_complete_irq();
+  }
+ 73e:	ff 91       	pop	r31
+ 740:	ef 91       	pop	r30
+ 742:	9f 91       	pop	r25
+ 744:	8f 91       	pop	r24
+ 746:	2f 91       	pop	r18
+ 748:	0f 90       	pop	r0
+ 74a:	0f be       	out	0x3f, r0	; 63
+ 74c:	0f 90       	pop	r0
+ 74e:	1f 90       	pop	r1
+ 750:	18 95       	reti
+_rx_complete_irq():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial_private.h:116
+    }
+  } else {
+    // Parity error, read byte but discard it
+    *_udr;
+ 752:	80 81       	ld	r24, Z
+ 754:	f4 cf       	rjmp	.-24     	; 0x73e <__vector_11+0x4c>
+
+00000756 <__vector_6>:
+__vector_6():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:91
+}
+
+}
+
+ISR(TIMER1_COMPA_vect)
+{
+ 756:	1f 92       	push	r1
+ 758:	0f 92       	push	r0
+ 75a:	0f b6       	in	r0, 0x3f	; 63
+ 75c:	0f 92       	push	r0
+ 75e:	11 24       	eor	r1, r1
+ 760:	2f 93       	push	r18
+ 762:	3f 93       	push	r19
+ 764:	4f 93       	push	r20
+ 766:	5f 93       	push	r21
+ 768:	6f 93       	push	r22
+ 76a:	7f 93       	push	r23
+ 76c:	8f 93       	push	r24
+ 76e:	9f 93       	push	r25
+ 770:	af 93       	push	r26
+ 772:	bf 93       	push	r27
+ 774:	ef 93       	push	r30
+ 776:	ff 93       	push	r31
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:92
+  switch (sequenceStep) {
+ 778:	80 91 a9 00 	lds	r24, 0x00A9	; 0x8000a9 <(anonymous namespace)::sequenceStep>
+ 77c:	81 30       	cpi	r24, 0x01	; 1
+ 77e:	09 f4       	brne	.+2      	; 0x782 <__vector_6+0x2c>
+ 780:	61 c0       	rjmp	.+194    	; 0x844 <__vector_6+0xee>
+ 782:	60 f1       	brcs	.+88     	; 0x7dc <__vector_6+0x86>
+ 784:	82 30       	cpi	r24, 0x02	; 2
+ 786:	09 f4       	brne	.+2      	; 0x78a <__vector_6+0x34>
+ 788:	66 c0       	rjmp	.+204    	; 0x856 <__vector_6+0x100>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:118
+      schedulePulse(framePulseUs[2]);
+      sequenceStep = 3;
+      break;
+
+    default: {
+      PORTD &= static_cast<uint8_t>(~_BV(PD4));
+ 78a:	94 98       	cbi	0x12, 4	; 18
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:119
+      uint32_t usedUs = static_cast<uint32_t>(framePulseUs[0]) +
+ 78c:	20 91 60 00 	lds	r18, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 790:	30 91 61 00 	lds	r19, 0x0061	; 0x800061 <__DATA_REGION_ORIGIN__+0x1>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:120
+          framePulseUs[1] + framePulseUs[2];
+ 794:	40 91 62 00 	lds	r20, 0x0062	; 0x800062 <__DATA_REGION_ORIGIN__+0x2>
+ 798:	50 91 63 00 	lds	r21, 0x0063	; 0x800063 <__DATA_REGION_ORIGIN__+0x3>
+ 79c:	80 91 64 00 	lds	r24, 0x0064	; 0x800064 <__DATA_REGION_ORIGIN__+0x4>
+ 7a0:	90 91 65 00 	lds	r25, 0x0065	; 0x800065 <__DATA_REGION_ORIGIN__+0x5>
+ 7a4:	70 e0       	ldi	r23, 0x00	; 0
+ 7a6:	60 e0       	ldi	r22, 0x00	; 0
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:119
+      sequenceStep = 3;
+      break;
+
+    default: {
+      PORTD &= static_cast<uint8_t>(~_BV(PD4));
+      uint32_t usedUs = static_cast<uint32_t>(framePulseUs[0]) +
+ 7a8:	42 0f       	add	r20, r18
+ 7aa:	53 1f       	adc	r21, r19
+ 7ac:	61 1d       	adc	r22, r1
+ 7ae:	71 1d       	adc	r23, r1
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:120
+          framePulseUs[1] + framePulseUs[2];
+ 7b0:	48 0f       	add	r20, r24
+ 7b2:	59 1f       	adc	r21, r25
+ 7b4:	61 1d       	adc	r22, r1
+ 7b6:	71 1d       	adc	r23, r1
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:122
+      uint16_t quietUs = (usedUs < SERVO_REFRESH_US)
+          ? static_cast<uint16_t>(SERVO_REFRESH_US - usedUs) : 1;
+ 7b8:	40 32       	cpi	r20, 0x20	; 32
+ 7ba:	8e e4       	ldi	r24, 0x4E	; 78
+ 7bc:	58 07       	cpc	r21, r24
+ 7be:	61 05       	cpc	r22, r1
+ 7c0:	71 05       	cpc	r23, r1
+ 7c2:	08 f0       	brcs	.+2      	; 0x7c6 <__vector_6+0x70>
+ 7c4:	51 c0       	rjmp	.+162    	; 0x868 <__vector_6+0x112>
+ 7c6:	80 e2       	ldi	r24, 0x20	; 32
+ 7c8:	9e e4       	ldi	r25, 0x4E	; 78
+ 7ca:	84 1b       	sub	r24, r20
+ 7cc:	95 0b       	sbc	r25, r21
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:123
+      schedulePulse(quietUs);
+ 7ce:	cb dd       	rcall	.-1130   	; 0x366 <(anonymous namespace)::schedulePulse(unsigned int)>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:124
+      quietPeriod = true;
+ 7d0:	81 e0       	ldi	r24, 0x01	; 1
+ 7d2:	80 93 a8 00 	sts	0x00A8, r24	; 0x8000a8 <(anonymous namespace)::quietPeriod>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:125
+      sequenceStep = 0;
+ 7d6:	10 92 a9 00 	sts	0x00A9, r1	; 0x8000a9 <(anonymous namespace)::sequenceStep>
+ 7da:	23 c0       	rjmp	.+70     	; 0x822 <__vector_6+0xcc>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:94
+
+ISR(TIMER1_COMPA_vect)
+{
+  switch (sequenceStep) {
+    case 0:
+      quietPeriod = false;
+ 7dc:	10 92 a8 00 	sts	0x00A8, r1	; 0x8000a8 <(anonymous namespace)::quietPeriod>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:95
+      framePulseUs[0] = pulseUs[0];
+ 7e0:	80 91 66 00 	lds	r24, 0x0066	; 0x800066 <(anonymous namespace)::pulseUs>
+ 7e4:	90 91 67 00 	lds	r25, 0x0067	; 0x800067 <(anonymous namespace)::pulseUs+0x1>
+ 7e8:	90 93 61 00 	sts	0x0061, r25	; 0x800061 <__DATA_REGION_ORIGIN__+0x1>
+ 7ec:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__DATA_REGION_ORIGIN__>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:96
+      framePulseUs[1] = pulseUs[1];
+ 7f0:	80 91 68 00 	lds	r24, 0x0068	; 0x800068 <(anonymous namespace)::pulseUs+0x2>
+ 7f4:	90 91 69 00 	lds	r25, 0x0069	; 0x800069 <(anonymous namespace)::pulseUs+0x3>
+ 7f8:	90 93 63 00 	sts	0x0063, r25	; 0x800063 <__DATA_REGION_ORIGIN__+0x3>
+ 7fc:	80 93 62 00 	sts	0x0062, r24	; 0x800062 <__DATA_REGION_ORIGIN__+0x2>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:97
+      framePulseUs[2] = pulseUs[2];
+ 800:	80 91 6a 00 	lds	r24, 0x006A	; 0x80006a <(anonymous namespace)::pulseUs+0x4>
+ 804:	90 91 6b 00 	lds	r25, 0x006B	; 0x80006b <(anonymous namespace)::pulseUs+0x5>
+ 808:	90 93 65 00 	sts	0x0065, r25	; 0x800065 <__DATA_REGION_ORIGIN__+0x5>
+ 80c:	80 93 64 00 	sts	0x0064, r24	; 0x800064 <__DATA_REGION_ORIGIN__+0x4>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:98
+      PORTD |= _BV(PD2);
+ 810:	92 9a       	sbi	0x12, 2	; 18
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:99
+      schedulePulse(framePulseUs[0]);
+ 812:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 816:	90 91 61 00 	lds	r25, 0x0061	; 0x800061 <__DATA_REGION_ORIGIN__+0x1>
+ 81a:	a5 dd       	rcall	.-1206   	; 0x366 <(anonymous namespace)::schedulePulse(unsigned int)>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:100
+      sequenceStep = 1;
+ 81c:	81 e0       	ldi	r24, 0x01	; 1
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:114
+
+    case 2:
+      PORTD &= static_cast<uint8_t>(~_BV(PD3));
+      PORTD |= _BV(PD4);
+      schedulePulse(framePulseUs[2]);
+      sequenceStep = 3;
+ 81e:	80 93 a9 00 	sts	0x00A9, r24	; 0x8000a9 <(anonymous namespace)::sequenceStep>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:129
+      quietPeriod = true;
+      sequenceStep = 0;
+      break;
+    }
+  }
+}
+ 822:	ff 91       	pop	r31
+ 824:	ef 91       	pop	r30
+ 826:	bf 91       	pop	r27
+ 828:	af 91       	pop	r26
+ 82a:	9f 91       	pop	r25
+ 82c:	8f 91       	pop	r24
+ 82e:	7f 91       	pop	r23
+ 830:	6f 91       	pop	r22
+ 832:	5f 91       	pop	r21
+ 834:	4f 91       	pop	r20
+ 836:	3f 91       	pop	r19
+ 838:	2f 91       	pop	r18
+ 83a:	0f 90       	pop	r0
+ 83c:	0f be       	out	0x3f, r0	; 63
+ 83e:	0f 90       	pop	r0
+ 840:	1f 90       	pop	r1
+ 842:	18 95       	reti
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:104
+      schedulePulse(framePulseUs[0]);
+      sequenceStep = 1;
+      break;
+
+    case 1:
+      PORTD &= static_cast<uint8_t>(~_BV(PD2));
+ 844:	92 98       	cbi	0x12, 2	; 18
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:105
+      PORTD |= _BV(PD3);
+ 846:	93 9a       	sbi	0x12, 3	; 18
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:106
+      schedulePulse(framePulseUs[1]);
+ 848:	80 91 62 00 	lds	r24, 0x0062	; 0x800062 <__DATA_REGION_ORIGIN__+0x2>
+ 84c:	90 91 63 00 	lds	r25, 0x0063	; 0x800063 <__DATA_REGION_ORIGIN__+0x3>
+ 850:	8a dd       	rcall	.-1260   	; 0x366 <(anonymous namespace)::schedulePulse(unsigned int)>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:107
+      sequenceStep = 2;
+ 852:	82 e0       	ldi	r24, 0x02	; 2
+ 854:	e4 cf       	rjmp	.-56     	; 0x81e <__vector_6+0xc8>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:111
+      break;
+
+    case 2:
+      PORTD &= static_cast<uint8_t>(~_BV(PD3));
+ 856:	93 98       	cbi	0x12, 3	; 18
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:112
+      PORTD |= _BV(PD4);
+ 858:	94 9a       	sbi	0x12, 4	; 18
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:113
+      schedulePulse(framePulseUs[2]);
+ 85a:	80 91 64 00 	lds	r24, 0x0064	; 0x800064 <__DATA_REGION_ORIGIN__+0x4>
+ 85e:	90 91 65 00 	lds	r25, 0x0065	; 0x800065 <__DATA_REGION_ORIGIN__+0x5>
+ 862:	81 dd       	rcall	.-1278   	; 0x366 <(anonymous namespace)::schedulePulse(unsigned int)>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:114
+      sequenceStep = 3;
+ 864:	83 e0       	ldi	r24, 0x03	; 3
+ 866:	db cf       	rjmp	.-74     	; 0x81e <__vector_6+0xc8>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:122
+    default: {
+      PORTD &= static_cast<uint8_t>(~_BV(PD4));
+      uint32_t usedUs = static_cast<uint32_t>(framePulseUs[0]) +
+          framePulseUs[1] + framePulseUs[2];
+      uint16_t quietUs = (usedUs < SERVO_REFRESH_US)
+          ? static_cast<uint16_t>(SERVO_REFRESH_US - usedUs) : 1;
+ 868:	81 e0       	ldi	r24, 0x01	; 1
+ 86a:	90 e0       	ldi	r25, 0x00	; 0
+ 86c:	b0 cf       	rjmp	.-160    	; 0x7ce <__vector_6+0x78>
+
+0000086e <__vector_3>:
+__vector_3():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:108
+}
+
+}
+
+ISR(TIMER2_COMP_vect)
+{
+ 86e:	1f 92       	push	r1
+ 870:	0f 92       	push	r0
+ 872:	0f b6       	in	r0, 0x3f	; 63
+ 874:	0f 92       	push	r0
+ 876:	11 24       	eor	r1, r1
+ 878:	2f 93       	push	r18
+ 87a:	3f 93       	push	r19
+ 87c:	4f 93       	push	r20
+ 87e:	5f 93       	push	r21
+ 880:	6f 93       	push	r22
+ 882:	7f 93       	push	r23
+ 884:	8f 93       	push	r24
+ 886:	9f 93       	push	r25
+ 888:	af 93       	push	r26
+ 88a:	bf 93       	push	r27
+ 88c:	ef 93       	push	r30
+ 88e:	ff 93       	push	r31
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:109
+  if (finishingStopBit) {
+ 890:	80 91 91 00 	lds	r24, 0x0091	; 0x800091 <(anonymous namespace)::finishingStopBit>
+ 894:	88 23       	and	r24, r24
+ 896:	11 f1       	breq	.+68     	; 0x8dc <__vector_3+0x6e>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:110
+    finishingStopBit = false;
+ 898:	10 92 91 00 	sts	0x0091, r1	; 0x800091 <(anonymous namespace)::finishingStopBit>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:111
+    transmitting = false;
+ 89c:	10 92 cd 00 	sts	0x00CD, r1	; 0x8000cd <(anonymous namespace)::transmitting>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:112
+    TIMSK &= static_cast<uint8_t>(~_BV(OCIE2));
+ 8a0:	89 b7       	in	r24, 0x39	; 57
+ 8a2:	8f 77       	andi	r24, 0x7F	; 127
+ 8a4:	89 bf       	out	0x39, r24	; 57
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:113
+    packetLength = 0;
+ 8a6:	10 92 90 00 	sts	0x0090, r1	; 0x800090 <(anonymous namespace)::packetLength>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:114
+    packetByte = 0;
+ 8aa:	10 92 8f 00 	sts	0x008F, r1	; 0x80008f <(anonymous namespace)::packetByte>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:115
+    packetBit = 0;
+ 8ae:	10 92 8e 00 	sts	0x008E, r1	; 0x80008e <(anonymous namespace)::packetBit>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:116
+    PORTD |= TX_MASK;
+ 8b2:	96 9a       	sbi	0x12, 6	; 18
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:117
+    packetCompleted = true;
+ 8b4:	81 e0       	ldi	r24, 0x01	; 1
+ 8b6:	80 93 ce 00 	sts	0x00CE, r24	; 0x8000ce <(anonymous namespace)::packetCompleted>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:129
+    PORTD |= _BV(PD6);
+    return;
+  }
+
+  emitCurrentBit();
+ 8ba:	ff 91       	pop	r31
+ 8bc:	ef 91       	pop	r30
+ 8be:	bf 91       	pop	r27
+ 8c0:	af 91       	pop	r26
+ 8c2:	9f 91       	pop	r25
+ 8c4:	8f 91       	pop	r24
+ 8c6:	7f 91       	pop	r23
+ 8c8:	6f 91       	pop	r22
+ 8ca:	5f 91       	pop	r21
+ 8cc:	4f 91       	pop	r20
+ 8ce:	3f 91       	pop	r19
+ 8d0:	2f 91       	pop	r18
+ 8d2:	0f 90       	pop	r0
+ 8d4:	0f be       	out	0x3f, r0	; 63
+ 8d6:	0f 90       	pop	r0
+ 8d8:	1f 90       	pop	r1
+ 8da:	18 95       	reti
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:122
+    packetCompleted = true;
+    DmxInput::resumeReception();
+    return;
+  }
+
+  if (!transmitting) {
+ 8dc:	80 91 cd 00 	lds	r24, 0x00CD	; 0x8000cd <(anonymous namespace)::transmitting>
+ 8e0:	81 11       	cpse	r24, r1
+ 8e2:	05 c0       	rjmp	.+10     	; 0x8ee <__vector_3+0x80>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:123
+    TIMSK &= static_cast<uint8_t>(~_BV(OCIE2));
+ 8e4:	89 b7       	in	r24, 0x39	; 57
+ 8e6:	8f 77       	andi	r24, 0x7F	; 127
+ 8e8:	89 bf       	out	0x39, r24	; 57
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:124
+    PORTD |= _BV(PD6);
+ 8ea:	96 9a       	sbi	0x12, 6	; 18
+ 8ec:	e6 cf       	rjmp	.-52     	; 0x8ba <__vector_3+0x4c>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:128
+    return;
+  }
+
+  emitCurrentBit();
+ 8ee:	6c dd       	rcall	.-1320   	; 0x3c8 <(anonymous namespace)::emitCurrentBit()>
+ 8f0:	e4 cf       	rjmp	.-56     	; 0x8ba <__vector_3+0x4c>
+
+000008f2 <main>:
+main():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/main.cpp:34
+
+//void setupUSB() __attribute__((weak));
+//void setupUSB() { }
+
+int main(void)
+{
+ 8f2:	cf 93       	push	r28
+ 8f4:	df 93       	push	r29
+ 8f6:	cd b7       	in	r28, 0x3d	; 61
+ 8f8:	de b7       	in	r29, 0x3e	; 62
+ 8fa:	a1 97       	sbiw	r28, 0x21	; 33
+ 8fc:	0f b6       	in	r0, 0x3f	; 63
+ 8fe:	f8 94       	cli
+ 900:	de bf       	out	0x3e, r29	; 62
+ 902:	0f be       	out	0x3f, r0	; 63
+ 904:	cd bf       	out	0x3d, r28	; 61
+init():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:945
+
+void init()
+{
+  // this needs to be called before setup() or some functions won't
+  // work there
+  sei();
+ 906:	78 94       	sei
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:966
+#if defined(__AVR_ATmega64__) || defined(__AVR_ATmega128__)
+  // CPU specific: different values for the ATmega64/128
+  TCCR0 |= _BV(WGM01) | _BV(WGM00) | _BV(CS02);
+#elif defined(TCCR0) && defined(CS01) && defined(CS00)
+  // This combination is for the ATmega8535, ATmega8, ATmega16, ATmega32, ATmega8515, ATmega162
+  TCCR0 |= _BV(CS01) | _BV(CS00);
+ 908:	83 b7       	in	r24, 0x33	; 51
+ 90a:	83 60       	ori	r24, 0x03	; 3
+ 90c:	83 bf       	out	0x33, r24	; 51
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:982
+  #error Timer 0 prescale factor 64 not set correctly
+#endif
+
+// Enable timer 0 overflow interrupt
+#if defined(TIMSK) && defined(TOIE0)
+  TIMSK |= _BV(TOIE0);
+ 90e:	89 b7       	in	r24, 0x39	; 57
+ 910:	81 60       	ori	r24, 0x01	; 1
+ 912:	89 bf       	out	0x39, r24	; 57
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:995
+// this is better for motors as it ensures an even waveform
+// note, however, that fast pwm mode can achieve a frequency of up
+// 8 MHz (with a 16 MHz clock) at 50% duty cycle
+
+#if defined(TCCR1B) && defined(CS11) && defined(CS10)
+  TCCR1B = _BV(CS11); // Set timer 1 prescale factor to 64
+ 914:	12 e0       	ldi	r17, 0x02	; 2
+ 916:	1e bd       	out	0x2e, r17	; 46
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:997
+#if F_CPU >= 8000000L
+  TCCR1B |= _BV(CS10);
+ 918:	8e b5       	in	r24, 0x2e	; 46
+ 91a:	81 60       	ori	r24, 0x01	; 1
+ 91c:	8e bd       	out	0x2e, r24	; 46
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:1006
+#if F_CPU >= 8000000L
+  TCCR1 |= _BV(CS10);
+#endif
+#endif
+#if defined(TCCR1A) && defined(WGM10)
+  TCCR1A |= _BV(WGM10); // Put timer 1 in 8-bit phase correct pwm mode
+ 91e:	8f b5       	in	r24, 0x2f	; 47
+ 920:	81 60       	ori	r24, 0x01	; 1
+ 922:	8f bd       	out	0x2f, r24	; 47
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:1011
+#endif
+
+// Set timer 2 prescale factor to 64
+#if defined(TCCR2) && defined(CS22)
+  TCCR2 |= _BV(CS22);
+ 924:	85 b5       	in	r24, 0x25	; 37
+ 926:	84 60       	ori	r24, 0x04	; 4
+ 928:	85 bd       	out	0x25, r24	; 37
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:1020
+  TCCR2A |= _BV(CS22);
+#endif
+
+// Configure timer 2 for phase correct pwm (8-bit)
+#if defined(TCCR2) && defined(WGM20)
+  TCCR2 |= _BV(WGM20);
+ 92a:	85 b5       	in	r24, 0x25	; 37
+ 92c:	80 64       	ori	r24, 0x40	; 64
+ 92e:	85 bd       	out	0x25, r24	; 37
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:1050
+#endif
+
+#if defined(ADCSRA)
+  // set a2d prescaler so we are inside the desired 50-200 KHz range.
+  #if F_CPU >= 16000000 // 16 MHz / 128 = 125 KHz
+    ADCSRA = _BV(ADPS2) | _BV(ADPS1) | _BV(ADPS0) | _BV(ADEN);
+ 930:	87 e8       	ldi	r24, 0x87	; 135
+ 932:	86 b9       	out	0x06, r24	; 6
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:1068
+
+  // The bootloader connects pins 0 and 1 to the USART; disconnect them
+  // here so they can be used as normal digital i/o; they will be
+  // reconnected in Serial.begin()
+#if defined(UCSRB)
+  UCSRB = 0;
+ 934:	1a b8       	out	0x0a, r1	; 10
+begin():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:121
+
+void HardwareSerial::begin(unsigned long baud, byte config)
+{
+  // Try u2x mode first
+  uint16_t baud_setting = (F_CPU / 4 / baud - 1) / 2;
+  *_ucsra = 1 << U2X0;
+ 936:	e0 91 f7 00 	lds	r30, 0x00F7	; 0x8000f7 <Serial+0x10>
+ 93a:	f0 91 f8 00 	lds	r31, 0x00F8	; 0x8000f8 <Serial+0x11>
+ 93e:	10 83       	st	Z, r17
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:135
+    *_ucsra = 0;
+    baud_setting = (F_CPU / 8 / baud - 1) / 2;
+  }
+
+  // assign the baud_setting, a.k.a. ubrr (USART Baud Rate Register)
+  *_ubrrh = baud_setting >> 8;
+ 940:	e0 91 f3 00 	lds	r30, 0x00F3	; 0x8000f3 <Serial+0xc>
+ 944:	f0 91 f4 00 	lds	r31, 0x00F4	; 0x8000f4 <Serial+0xd>
+ 948:	10 82       	st	Z, r1
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:136
+  *_ubrrl = baud_setting;
+ 94a:	e0 91 f5 00 	lds	r30, 0x00F5	; 0x8000f5 <Serial+0xe>
+ 94e:	f0 91 f6 00 	lds	r31, 0x00F6	; 0x8000f6 <Serial+0xf>
+ 952:	8f ec       	ldi	r24, 0xCF	; 207
+ 954:	80 83       	st	Z, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:138
+
+  _written = false;
+ 956:	10 92 ff 00 	sts	0x00FF, r1	; 0x8000ff <Serial+0x18>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:146
+#if defined(__AVR_ATmega8__) || defined(__AVR_ATmega8515__) || defined(__AVR_ATmega162__) \
+|| defined(__AVR_ATmega8535__) || defined(__AVR_ATmega16__)|| defined(__AVR_ATmega32__)   \
+|| defined(__AVR_ATmega162__)
+  config |= 0x80; // select UCSRC register (shared with UBRRH)
+#endif
+  *_ucsrc = config;
+ 95a:	e0 91 fb 00 	lds	r30, 0x00FB	; 0x8000fb <Serial+0x14>
+ 95e:	f0 91 fc 00 	lds	r31, 0x00FC	; 0x8000fc <Serial+0x15>
+ 962:	86 e8       	ldi	r24, 0x86	; 134
+ 964:	80 83       	st	Z, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:148
+  
+  *_ucsrb |= _BV(RXEN0) | _BV(TXEN0) | _BV(RXCIE0);
+ 966:	e0 91 f9 00 	lds	r30, 0x00F9	; 0x8000f9 <Serial+0x12>
+ 96a:	f0 91 fa 00 	lds	r31, 0x00FA	; 0x8000fa <Serial+0x13>
+ 96e:	80 81       	ld	r24, Z
+ 970:	88 69       	ori	r24, 0x98	; 152
+ 972:	80 83       	st	Z, r24
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:149
+  *_ucsrb &= ~_BV(UDRIE0);
+ 974:	e0 91 f9 00 	lds	r30, 0x00F9	; 0x8000f9 <Serial+0x12>
+ 978:	f0 91 fa 00 	lds	r31, 0x00FA	; 0x8000fa <Serial+0x13>
+ 97c:	80 81       	ld	r24, Z
+ 97e:	8f 7d       	andi	r24, 0xDF	; 223
+ 980:	80 83       	st	Z, r24
+setup():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:107
+}
+
+void setup()
+{
+  Serial.begin(9600);
+  Serial.println(F("Bird Skeleton component test: production drivers, no DMX"));
+ 982:	85 e6       	ldi	r24, 0x65	; 101
+ 984:	90 e0       	ldi	r25, 0x00	; 0
+ 986:	c6 dd       	rcall	.-1140   	; 0x514 <Print::println(__FlashStringHelper const*) [clone .constprop.6]>
+begin():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:38
+
+namespace ServoEngine {
+
+void begin(uint16_t leftUs, uint16_t rightUs, uint16_t beakUs)
+{
+  DDRD |= LEFT_MASK | RIGHT_MASK | BEAK_MASK;
+ 988:	81 b3       	in	r24, 0x11	; 17
+ 98a:	8c 61       	ori	r24, 0x1C	; 28
+ 98c:	81 bb       	out	0x11, r24	; 17
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:39
+  PORTD &= static_cast<uint8_t>(~(LEFT_MASK | RIGHT_MASK | BEAK_MASK));
+ 98e:	82 b3       	in	r24, 0x12	; 18
+ 990:	83 7e       	andi	r24, 0xE3	; 227
+ 992:	82 bb       	out	0x12, r24	; 18
+setPulseWidths():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:59
+void setPulseWidths(uint16_t leftUs, uint16_t rightUs, uint16_t beakUs)
+{
+  if (leftUs > SERVO_FRAME_US) leftUs = SERVO_FRAME_US;
+  if (rightUs > SERVO_FRAME_US) rightUs = SERVO_FRAME_US;
+  if (beakUs > SERVO_FRAME_US) beakUs = SERVO_FRAME_US;
+  uint8_t oldSreg = SREG;
+ 994:	2f b7       	in	r18, 0x3f	; 63
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:60
+  cli();
+ 996:	f8 94       	cli
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:61
+  pulseUs[0] = leftUs;
+ 998:	8d e0       	ldi	r24, 0x0D	; 13
+ 99a:	99 e0       	ldi	r25, 0x09	; 9
+ 99c:	90 93 67 00 	sts	0x0067, r25	; 0x800067 <(anonymous namespace)::pulseUs+0x1>
+ 9a0:	80 93 66 00 	sts	0x0066, r24	; 0x800066 <(anonymous namespace)::pulseUs>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:62
+  pulseUs[1] = rightUs;
+ 9a4:	90 93 69 00 	sts	0x0069, r25	; 0x800069 <(anonymous namespace)::pulseUs+0x3>
+ 9a8:	80 93 68 00 	sts	0x0068, r24	; 0x800068 <(anonymous namespace)::pulseUs+0x2>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:63
+  pulseUs[2] = beakUs;
+ 9ac:	8d ea       	ldi	r24, 0xAD	; 173
+ 9ae:	96 e0       	ldi	r25, 0x06	; 6
+ 9b0:	90 93 6b 00 	sts	0x006B, r25	; 0x80006b <(anonymous namespace)::pulseUs+0x5>
+ 9b4:	80 93 6a 00 	sts	0x006A, r24	; 0x80006a <(anonymous namespace)::pulseUs+0x4>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:64
+  SREG = oldSreg;
+ 9b8:	2f bf       	out	0x3f, r18	; 63
+begin():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:45
+
+  setPulseWidths(leftUs, rightUs, beakUs);
+
+  // Timer1 normal mode, prescaler /8: 0.5 us per timer tick. Its interrupt
+  // remains active during Timer2 DFPlayer packet transmission.
+  TCCR1A = 0;
+ 9ba:	1f bc       	out	0x2f, r1	; 47
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:46
+  TCCR1B = _BV(CS11);
+ 9bc:	1e bd       	out	0x2e, r17	; 46
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:47
+  TCNT1 = 0;
+ 9be:	1d bc       	out	0x2d, r1	; 45
+ 9c0:	1c bc       	out	0x2c, r1	; 44
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:48
+  OCR1A = 1;
+ 9c2:	81 e0       	ldi	r24, 0x01	; 1
+ 9c4:	90 e0       	ldi	r25, 0x00	; 0
+ 9c6:	9b bd       	out	0x2b, r25	; 43
+ 9c8:	8a bd       	out	0x2a, r24	; 42
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:49
+  sequenceStep = 0;
+ 9ca:	10 92 a9 00 	sts	0x00A9, r1	; 0x8000a9 <(anonymous namespace)::sequenceStep>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:50
+  quietPeriod = false;
+ 9ce:	10 92 a8 00 	sts	0x00A8, r1	; 0x8000a8 <(anonymous namespace)::quietPeriod>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:51
+  TIMSK |= _BV(OCIE1A);
+ 9d2:	89 b7       	in	r24, 0x39	; 57
+ 9d4:	80 61       	ori	r24, 0x10	; 16
+ 9d6:	89 bf       	out	0x39, r24	; 57
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:125
+  return !AudioEngine::busy() && ServoEngine::canBlockFor(300);
+}
+
+void begin()
+{
+  DDRD |= _BV(PD5);
+ 9d8:	8d 9a       	sbi	0x11, 5	; 17
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:126
+  PORTD &= static_cast<uint8_t>(~_BV(PD5));
+ 9da:	95 98       	cbi	0x12, 5	; 18
+ 9dc:	0e ea       	ldi	r16, 0xAE	; 174
+ 9de:	10 e0       	ldi	r17, 0x00	; 0
+clear():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:167
+  writeIfChanged();
+}
+
+void clear()
+{
+  for (uint8_t i = 0; i < LED_COUNT; ++i) pixels[i] = {0, 0, 0};
+ 9e0:	f8 01       	movw	r30, r16
+ 9e2:	10 82       	st	Z, r1
+ 9e4:	11 82       	std	Z+1, r1	; 0x01
+ 9e6:	12 82       	std	Z+2, r1	; 0x02
+ 9e8:	0d 5f       	subi	r16, 0xFD	; 253
+ 9ea:	1f 4f       	sbci	r17, 0xFF	; 255
+ 9ec:	f0 e0       	ldi	r31, 0x00	; 0
+ 9ee:	03 3c       	cpi	r16, 0xC3	; 195
+ 9f0:	1f 07       	cpc	r17, r31
+ 9f2:	b1 f7       	brne	.-20     	; 0x9e0 <main+0xee>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:168
+  writeIfChanged();
+ 9f4:	99 dd       	rcall	.-1230   	; 0x528 <(anonymous namespace)::writeIfChanged()>
+begin():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:54
+
+namespace DfPlayerSerial {
+
+void begin()
+{
+  uint8_t oldSreg = SREG;
+ 9f6:	9f b7       	in	r25, 0x3f	; 63
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:55
+  cli();
+ 9f8:	f8 94       	cli
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:56
+  DDRD |= TX_MASK;
+ 9fa:	8e 9a       	sbi	0x11, 6	; 17
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:57
+  PORTD |= TX_MASK;
+ 9fc:	96 9a       	sbi	0x12, 6	; 18
+configureTimer():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:25
+volatile bool packetCompleted = false;
+
+void configureTimer()
+{
+  // Timer2 CTC, /8 prescaler: 16 MHz / 8 / (207 + 1) = 9615 baud.
+  TCCR2 = _BV(WGM21) | _BV(CS21);
+ 9fe:	8a e0       	ldi	r24, 0x0A	; 10
+ a00:	85 bd       	out	0x25, r24	; 37
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:26
+  OCR2 = 207;
+ a02:	8f ec       	ldi	r24, 0xCF	; 207
+ a04:	83 bd       	out	0x23, r24	; 35
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:27
+  TIMSK &= static_cast<uint8_t>(~_BV(OCIE2));
+ a06:	89 b7       	in	r24, 0x39	; 57
+ a08:	8f 77       	andi	r24, 0x7F	; 127
+ a0a:	89 bf       	out	0x39, r24	; 57
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:28
+  TIFR |= _BV(OCF2);
+ a0c:	88 b7       	in	r24, 0x38	; 56
+ a0e:	80 68       	ori	r24, 0x80	; 128
+ a10:	88 bf       	out	0x38, r24	; 56
+begin():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:59
+  uint8_t oldSreg = SREG;
+  cli();
+  DDRD |= TX_MASK;
+  PORTD |= TX_MASK;
+  configureTimer();
+  SREG = oldSreg;
+ a12:	9f bf       	out	0x3f, r25	; 63
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:41
+namespace AudioEngine {
+
+void begin()
+{
+  DfPlayerSerial::begin();
+  pendingCommand = 0;
+ a14:	10 92 cf 00 	sts	0x00CF, r1	; 0x8000cf <(anonymous namespace)::pendingCommand>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:42
+  pendingParameter = 0;
+ a18:	10 92 d1 00 	sts	0x00D1, r1	; 0x8000d1 <(anonymous namespace)::pendingParameter+0x1>
+ a1c:	10 92 d0 00 	sts	0x00D0, r1	; 0x8000d0 <(anonymous namespace)::pendingParameter>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:43
+  commandPending = false;
+ a20:	10 92 d3 00 	sts	0x00D3, r1	; 0x8000d3 <(anonymous namespace)::commandPending>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:45
+  trackTransmitted = false;
+  trackInFlight = false;
+ a24:	10 92 d4 00 	sts	0x00D4, r1	; 0x8000d4 <(anonymous namespace)::trackInFlight>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:46
+  pendingPresetTrack = false;
+ a28:	10 92 d2 00 	sts	0x00D2, r1	; 0x8000d2 <(anonymous namespace)::pendingPresetTrack>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:47
+  requestedVolume = 0;
+ a2c:	10 92 cc 00 	sts	0x00CC, r1	; 0x8000cc <(anonymous namespace)::requestedVolume>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:48
+  sentVolume = 255;
+ a30:	8f ef       	ldi	r24, 0xFF	; 255
+ a32:	80 93 6e 00 	sts	0x006E, r24	; 0x80006e <(anonymous namespace)::sentVolume>
+millis():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:218
+}
+
+unsigned long millis()
+{
+  unsigned long m;
+  uint8_t oldSREG = SREG;
+ a36:	2f b7       	in	r18, 0x3f	; 63
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:222
+
+  // disable interrupts while we read timer0_millis or we might get an
+  // inconsistent value (e.g. in the middle of a write to timer0_millis)
+  cli();
+ a38:	f8 94       	cli
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:223
+  m = timer0_millis;
+ a3a:	80 91 e3 00 	lds	r24, 0x00E3	; 0x8000e3 <timer0_millis>
+ a3e:	90 91 e4 00 	lds	r25, 0x00E4	; 0x8000e4 <timer0_millis+0x1>
+ a42:	a0 91 e5 00 	lds	r26, 0x00E5	; 0x8000e5 <timer0_millis+0x2>
+ a46:	b0 91 e6 00 	lds	r27, 0x00E6	; 0x8000e6 <timer0_millis+0x3>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:224
+  SREG = oldSREG;
+ a4a:	2f bf       	out	0x3f, r18	; 63
+setup():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:113
+
+  ServoEngine::begin(LEFT_WING_PARK_US, RIGHT_WING_PARK_US, BEAK_PARK_US);
+  LedEngine::begin();
+  AudioEngine::begin();
+
+  lastTrackTest = millis() - TRACK_TEST_INTERVAL_MS;
+ a4c:	80 51       	subi	r24, 0x10	; 16
+ a4e:	97 42       	sbci	r25, 0x27	; 39
+ a50:	a1 09       	sbc	r26, r1
+ a52:	b1 09       	sbc	r27, r1
+ a54:	80 93 da 00 	sts	0x00DA, r24	; 0x8000da <(anonymous namespace)::lastTrackTest>
+ a58:	90 93 db 00 	sts	0x00DB, r25	; 0x8000db <(anonymous namespace)::lastTrackTest+0x1>
+ a5c:	a0 93 dc 00 	sts	0x00DC, r26	; 0x8000dc <(anonymous namespace)::lastTrackTest+0x2>
+ a60:	b0 93 dd 00 	sts	0x00DD, r27	; 0x8000dd <(anonymous namespace)::lastTrackTest+0x3>
+millis():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:218
+}
+
+unsigned long millis()
+{
+  unsigned long m;
+  uint8_t oldSREG = SREG;
+ a64:	2f b7       	in	r18, 0x3f	; 63
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:222
+
+  // disable interrupts while we read timer0_millis or we might get an
+  // inconsistent value (e.g. in the middle of a write to timer0_millis)
+  cli();
+ a66:	f8 94       	cli
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:223
+  m = timer0_millis;
+ a68:	80 91 e3 00 	lds	r24, 0x00E3	; 0x8000e3 <timer0_millis>
+ a6c:	90 91 e4 00 	lds	r25, 0x00E4	; 0x8000e4 <timer0_millis+0x1>
+ a70:	a0 91 e5 00 	lds	r26, 0x00E5	; 0x8000e5 <timer0_millis+0x2>
+ a74:	b0 91 e6 00 	lds	r27, 0x00E6	; 0x8000e6 <timer0_millis+0x3>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:224
+  SREG = oldSREG;
+ a78:	2f bf       	out	0x3f, r18	; 63
+setup():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:114
+  lastVolumeTest = millis() - VOLUME_TEST_INTERVAL_MS;
+ a7a:	84 5f       	subi	r24, 0xF4	; 244
+ a7c:	91 40       	sbci	r25, 0x01	; 1
+ a7e:	a1 09       	sbc	r26, r1
+ a80:	b1 09       	sbc	r27, r1
+ a82:	80 93 d6 00 	sts	0x00D6, r24	; 0x8000d6 <(anonymous namespace)::lastVolumeTest>
+ a86:	90 93 d7 00 	sts	0x00D7, r25	; 0x8000d7 <(anonymous namespace)::lastVolumeTest+0x1>
+ a8a:	a0 93 d8 00 	sts	0x00D8, r26	; 0x8000d8 <(anonymous namespace)::lastVolumeTest+0x2>
+ a8e:	b0 93 d9 00 	sts	0x00D9, r27	; 0x8000d9 <(anonymous namespace)::lastVolumeTest+0x3>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:115
+  Serial.println(F("Production ServoEngine, LedEngine, and AudioEngine initialized"));
+ a92:	86 e2       	ldi	r24, 0x26	; 38
+ a94:	90 e0       	ldi	r25, 0x00	; 0
+ a96:	3e dd       	rcall	.-1412   	; 0x514 <Print::println(__FlashStringHelper const*) [clone .constprop.6]>
+_Z19angleToMicrosecondsh():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/Config.h:42
+constexpr uint16_t SERVO_MAX_US = 2400;
+
+constexpr uint16_t angleToMicroseconds(uint8_t angle)
+{
+  return SERVO_MIN_US +
+         (static_cast<uint32_t>(SERVO_MAX_US - SERVO_MIN_US) * angle) / 180UL;
+ a98:	54 eb       	ldi	r21, 0xB4	; 180
+ a9a:	45 2e       	mov	r4, r21
+ a9c:	51 2c       	mov	r5, r1
+ a9e:	61 2c       	mov	r6, r1
+ aa0:	71 2c       	mov	r7, r1
+scale():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:111
+                     : static_cast<uint8_t>(255 - ((phase - 128) << 1));
+}
+
+uint8_t scale(uint8_t value, uint8_t amount)
+{
+  return static_cast<uint8_t>((static_cast<uint16_t>(value) * amount) / 255U);
+ aa2:	22 24       	eor	r2, r2
+ aa4:	2a 94       	dec	r2
+ aa6:	31 2c       	mov	r3, r1
+millis():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:218
+}
+
+unsigned long millis()
+{
+  unsigned long m;
+  uint8_t oldSREG = SREG;
+ aa8:	8f b7       	in	r24, 0x3f	; 63
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:222
+
+  // disable interrupts while we read timer0_millis or we might get an
+  // inconsistent value (e.g. in the middle of a write to timer0_millis)
+  cli();
+ aaa:	f8 94       	cli
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:223
+  m = timer0_millis;
+ aac:	c0 90 e3 00 	lds	r12, 0x00E3	; 0x8000e3 <timer0_millis>
+ ab0:	d0 90 e4 00 	lds	r13, 0x00E4	; 0x8000e4 <timer0_millis+0x1>
+ ab4:	e0 90 e5 00 	lds	r14, 0x00E5	; 0x8000e5 <timer0_millis+0x2>
+ ab8:	f0 90 e6 00 	lds	r15, 0x00E6	; 0x8000e6 <timer0_millis+0x3>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/wiring.c:224
+  SREG = oldSREG;
+ abc:	8f bf       	out	0x3f, r24	; 63
+updateServoTest():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:37
+uint32_t lastVolumeTest = 0;
+uint32_t lastTrackTest = 0;
+
+void updateServoTest(uint32_t now)
+{
+  if (now - lastServoTest < SERVO_TEST_INTERVAL_MS) return;
+ abe:	80 91 aa 00 	lds	r24, 0x00AA	; 0x8000aa <(anonymous namespace)::lastServoTest>
+ ac2:	90 91 ab 00 	lds	r25, 0x00AB	; 0x8000ab <(anonymous namespace)::lastServoTest+0x1>
+ ac6:	a0 91 ac 00 	lds	r26, 0x00AC	; 0x8000ac <(anonymous namespace)::lastServoTest+0x2>
+ aca:	b0 91 ad 00 	lds	r27, 0x00AD	; 0x8000ad <(anonymous namespace)::lastServoTest+0x3>
+ ace:	a7 01       	movw	r20, r14
+ ad0:	96 01       	movw	r18, r12
+ ad2:	28 1b       	sub	r18, r24
+ ad4:	39 0b       	sbc	r19, r25
+ ad6:	4a 0b       	sbc	r20, r26
+ ad8:	5b 0b       	sbc	r21, r27
+ ada:	da 01       	movw	r26, r20
+ adc:	c9 01       	movw	r24, r18
+ ade:	49 97       	sbiw	r24, 0x19	; 25
+ ae0:	a1 05       	cpc	r26, r1
+ ae2:	b1 05       	cpc	r27, r1
+ ae4:	08 f4       	brcc	.+2      	; 0xae8 <main+0x1f6>
+ ae6:	45 c0       	rjmp	.+138    	; 0xb72 <main+0x280>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:38
+  lastServoTest = now;
+ ae8:	c0 92 aa 00 	sts	0x00AA, r12	; 0x8000aa <(anonymous namespace)::lastServoTest>
+ aec:	d0 92 ab 00 	sts	0x00AB, r13	; 0x8000ab <(anonymous namespace)::lastServoTest+0x1>
+ af0:	e0 92 ac 00 	sts	0x00AC, r14	; 0x8000ac <(anonymous namespace)::lastServoTest+0x2>
+ af4:	f0 92 ad 00 	sts	0x00AD, r15	; 0x8000ad <(anonymous namespace)::lastServoTest+0x3>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:40
+
+  const uint16_t wingPulse = angleToMicroseconds(servoAngle);
+ af8:	90 90 6d 00 	lds	r9, 0x006D	; 0x80006d <(anonymous namespace)::servoAngle>
+_Z19angleToMicrosecondsh():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/Config.h:42
+ afc:	29 2d       	mov	r18, r9
+ afe:	30 e0       	ldi	r19, 0x00	; 0
+ b00:	a0 e4       	ldi	r26, 0x40	; 64
+ b02:	b7 e0       	ldi	r27, 0x07	; 7
+ b04:	ee d1       	rcall	.+988    	; 0xee2 <__umulhisi3>
+ b06:	a3 01       	movw	r20, r6
+ b08:	92 01       	movw	r18, r4
+ b0a:	c9 d1       	rcall	.+914    	; 0xe9e <__udivmodsi4>
+ b0c:	59 01       	movw	r10, r18
+ b0e:	60 ee       	ldi	r22, 0xE0	; 224
+ b10:	a6 1a       	sub	r10, r22
+ b12:	6d ef       	ldi	r22, 0xFD	; 253
+ b14:	b6 0a       	sbc	r11, r22
+updateServoTest():
+  const uint16_t beakAngle = static_cast<uint16_t>(BEAK_MIN_ANGLE) +
+                             (static_cast<uint16_t>(BEAK_MAX_ANGLE - BEAK_MIN_ANGLE) *
+ b16:	73 e4       	ldi	r23, 0x43	; 67
+ b18:	97 9e       	mul	r9, r23
+ b1a:	c0 01       	movw	r24, r0
+ b1c:	11 24       	eor	r1, r1
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:43
+                              servoAngle) / 180U;
+ b1e:	64 eb       	ldi	r22, 0xB4	; 180
+ b20:	70 e0       	ldi	r23, 0x00	; 0
+ b22:	a9 d1       	rcall	.+850    	; 0xe76 <__udivmodhi4>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:41
+{
+  if (now - lastServoTest < SERVO_TEST_INTERVAL_MS) return;
+  lastServoTest = now;
+
+  const uint16_t wingPulse = angleToMicroseconds(servoAngle);
+  const uint16_t beakAngle = static_cast<uint16_t>(BEAK_MIN_ANGLE) +
+ b24:	9b 01       	movw	r18, r22
+ b26:	2f 58       	subi	r18, 0x8F	; 143
+ b28:	3f 4f       	sbci	r19, 0xFF	; 255
+_Z19angleToMicrosecondsh():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/Config.h:42
+ b2a:	a0 e4       	ldi	r26, 0x40	; 64
+ b2c:	b7 e0       	ldi	r27, 0x07	; 7
+ b2e:	d9 d1       	rcall	.+946    	; 0xee2 <__umulhisi3>
+ b30:	a3 01       	movw	r20, r6
+ b32:	92 01       	movw	r18, r4
+ b34:	b4 d1       	rcall	.+872    	; 0xe9e <__udivmodsi4>
+ b36:	20 5e       	subi	r18, 0xE0	; 224
+ b38:	3d 4f       	sbci	r19, 0xFD	; 253
+setPulseWidths():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:59
+void setPulseWidths(uint16_t leftUs, uint16_t rightUs, uint16_t beakUs)
+{
+  if (leftUs > SERVO_FRAME_US) leftUs = SERVO_FRAME_US;
+  if (rightUs > SERVO_FRAME_US) rightUs = SERVO_FRAME_US;
+  if (beakUs > SERVO_FRAME_US) beakUs = SERVO_FRAME_US;
+  uint8_t oldSreg = SREG;
+ b3a:	8f b7       	in	r24, 0x3f	; 63
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:60
+  cli();
+ b3c:	f8 94       	cli
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:61
+  pulseUs[0] = leftUs;
+ b3e:	b0 92 67 00 	sts	0x0067, r11	; 0x800067 <(anonymous namespace)::pulseUs+0x1>
+ b42:	a0 92 66 00 	sts	0x0066, r10	; 0x800066 <(anonymous namespace)::pulseUs>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:62
+  pulseUs[1] = rightUs;
+ b46:	b0 92 69 00 	sts	0x0069, r11	; 0x800069 <(anonymous namespace)::pulseUs+0x3>
+ b4a:	a0 92 68 00 	sts	0x0068, r10	; 0x800068 <(anonymous namespace)::pulseUs+0x2>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:63
+  pulseUs[2] = beakUs;
+ b4e:	30 93 6b 00 	sts	0x006B, r19	; 0x80006b <(anonymous namespace)::pulseUs+0x5>
+ b52:	20 93 6a 00 	sts	0x006A, r18	; 0x80006a <(anonymous namespace)::pulseUs+0x4>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/ServoEngine.cpp:64
+  SREG = oldSreg;
+ b56:	8f bf       	out	0x3f, r24	; 63
+updateServoTest():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:47
+                             (static_cast<uint16_t>(BEAK_MAX_ANGLE - BEAK_MIN_ANGLE) *
+                              servoAngle) / 180U;
+  const uint16_t beakPulse = angleToMicroseconds(static_cast<uint8_t>(beakAngle));
+  ServoEngine::setPulseWidths(wingPulse, wingPulse, beakPulse);
+
+  if (servoDirection > 0) {
+ b58:	90 91 6c 00 	lds	r25, 0x006C	; 0x80006c <(anonymous namespace)::servoDirection>
+ b5c:	80 91 6d 00 	lds	r24, 0x006D	; 0x80006d <(anonymous namespace)::servoAngle>
+ b60:	19 16       	cp	r1, r25
+ b62:	0c f0       	brlt	.+2      	; 0xb66 <main+0x274>
+ b64:	50 c1       	rjmp	.+672    	; 0xe06 <main+0x514>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:48
+    if (servoAngle >= LEFT_WING_MAX_ANGLE) {
+ b66:	8c 3a       	cpi	r24, 0xAC	; 172
+ b68:	08 f4       	brcc	.+2      	; 0xb6c <main+0x27a>
+ b6a:	49 c1       	rjmp	.+658    	; 0xdfe <main+0x50c>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:49
+      servoDirection = -1;
+ b6c:	8f ef       	ldi	r24, 0xFF	; 255
+ b6e:	80 93 6c 00 	sts	0x006C, r24	; 0x80006c <(anonymous namespace)::servoDirection>
+updateLedTest():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:62
+  }
+}
+
+void updateLedTest(uint32_t now)
+{
+  if (now - lastLedTest < LED_TEST_INTERVAL_MS) return;
+ b72:	80 91 c8 00 	lds	r24, 0x00C8	; 0x8000c8 <(anonymous namespace)::lastLedTest>
+ b76:	90 91 c9 00 	lds	r25, 0x00C9	; 0x8000c9 <(anonymous namespace)::lastLedTest+0x1>
+ b7a:	a0 91 ca 00 	lds	r26, 0x00CA	; 0x8000ca <(anonymous namespace)::lastLedTest+0x2>
+ b7e:	b0 91 cb 00 	lds	r27, 0x00CB	; 0x8000cb <(anonymous namespace)::lastLedTest+0x3>
+ b82:	a7 01       	movw	r20, r14
+ b84:	96 01       	movw	r18, r12
+ b86:	28 1b       	sub	r18, r24
+ b88:	39 0b       	sbc	r19, r25
+ b8a:	4a 0b       	sbc	r20, r26
+ b8c:	5b 0b       	sbc	r21, r27
+ b8e:	da 01       	movw	r26, r20
+ b90:	c9 01       	movw	r24, r18
+ b92:	88 3e       	cpi	r24, 0xE8	; 232
+ b94:	93 40       	sbci	r25, 0x03	; 3
+ b96:	a1 05       	cpc	r26, r1
+ b98:	b1 05       	cpc	r27, r1
+ b9a:	08 f4       	brcc	.+2      	; 0xb9e <main+0x2ac>
+ b9c:	5e c0       	rjmp	.+188    	; 0xc5a <main+0x368>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:63
+  lastLedTest = now;
+ b9e:	c0 92 c8 00 	sts	0x00C8, r12	; 0x8000c8 <(anonymous namespace)::lastLedTest>
+ ba2:	d0 92 c9 00 	sts	0x00C9, r13	; 0x8000c9 <(anonymous namespace)::lastLedTest+0x1>
+ ba6:	e0 92 ca 00 	sts	0x00CA, r14	; 0x8000ca <(anonymous namespace)::lastLedTest+0x2>
+ baa:	f0 92 cb 00 	sts	0x00CB, r15	; 0x8000cb <(anonymous namespace)::lastLedTest+0x3>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:70
+  LedEngine::Frame frame = {};
+  frame.dimmer = LED_TEST_BRIGHTNESS;
+  frame.effect = 0; // production LedEngine static RGB mode
+  frame.rate = 0;
+
+  if (ledColor == 0) {
+ bae:	20 91 c7 00 	lds	r18, 0x00C7	; 0x8000c7 <(anonymous namespace)::ledColor>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:65
+void updateLedTest(uint32_t now)
+{
+  if (now - lastLedTest < LED_TEST_INTERVAL_MS) return;
+  lastLedTest = now;
+
+  LedEngine::Frame frame = {};
+ bb2:	e0 e0       	ldi	r30, 0x00	; 0
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:71
+  frame.dimmer = LED_TEST_BRIGHTNESS;
+  frame.effect = 0; // production LedEngine static RGB mode
+  frame.rate = 0;
+
+  if (ledColor == 0) {
+    frame.red = 255;
+ bb4:	8f ef       	ldi	r24, 0xFF	; 255
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:70
+  LedEngine::Frame frame = {};
+  frame.dimmer = LED_TEST_BRIGHTNESS;
+  frame.effect = 0; // production LedEngine static RGB mode
+  frame.rate = 0;
+
+  if (ledColor == 0) {
+ bb6:	22 23       	and	r18, r18
+ bb8:	31 f0       	breq	.+12     	; 0xbc6 <main+0x2d4>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:72
+    frame.red = 255;
+  } else if (ledColor == 1) {
+ bba:	21 30       	cpi	r18, 0x01	; 1
+ bbc:	09 f4       	brne	.+2      	; 0xbc0 <main+0x2ce>
+ bbe:	2b c1       	rjmp	.+598    	; 0xe16 <main+0x524>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:75
+    frame.green = 255;
+  } else {
+    frame.blue = 255;
+ bc0:	ef ef       	ldi	r30, 0xFF	; 255
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:65
+void updateLedTest(uint32_t now)
+{
+  if (now - lastLedTest < LED_TEST_INTERVAL_MS) return;
+  lastLedTest = now;
+
+  LedEngine::Frame frame = {};
+ bc2:	20 e0       	ldi	r18, 0x00	; 0
+ bc4:	80 e0       	ldi	r24, 0x00	; 0
+update():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:132
+  clear();
+}
+
+void update(const Frame &frame, uint32_t now)
+{
+  if (now - lastUpdate >= LED_UPDATE_INTERVAL_MS) {
+ bc6:	80 90 c3 00 	lds	r8, 0x00C3	; 0x8000c3 <(anonymous namespace)::lastUpdate>
+ bca:	90 90 c4 00 	lds	r9, 0x00C4	; 0x8000c4 <(anonymous namespace)::lastUpdate+0x1>
+ bce:	a0 90 c5 00 	lds	r10, 0x00C5	; 0x8000c5 <(anonymous namespace)::lastUpdate+0x2>
+ bd2:	b0 90 c6 00 	lds	r11, 0x00C6	; 0x8000c6 <(anonymous namespace)::lastUpdate+0x3>
+ bd6:	b7 01       	movw	r22, r14
+ bd8:	a6 01       	movw	r20, r12
+ bda:	48 19       	sub	r20, r8
+ bdc:	59 09       	sbc	r21, r9
+ bde:	6a 09       	sbc	r22, r10
+ be0:	7b 09       	sbc	r23, r11
+ be2:	4a 01       	movw	r8, r20
+ be4:	5b 01       	movw	r10, r22
+ be6:	58 e2       	ldi	r21, 0x28	; 40
+ be8:	85 16       	cp	r8, r21
+ bea:	91 04       	cpc	r9, r1
+ bec:	a1 04       	cpc	r10, r1
+ bee:	b1 04       	cpc	r11, r1
+ bf0:	50 f1       	brcs	.+84     	; 0xc46 <main+0x354>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:133
+    lastUpdate = now;
+ bf2:	c0 92 c3 00 	sts	0x00C3, r12	; 0x8000c3 <(anonymous namespace)::lastUpdate>
+ bf6:	d0 92 c4 00 	sts	0x00C4, r13	; 0x8000c4 <(anonymous namespace)::lastUpdate+0x1>
+ bfa:	e0 92 c5 00 	sts	0x00C5, r14	; 0x8000c5 <(anonymous namespace)::lastUpdate+0x2>
+ bfe:	f0 92 c6 00 	sts	0x00C6, r15	; 0x8000c6 <(anonymous namespace)::lastUpdate+0x3>
+scale():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:111
+                     : static_cast<uint8_t>(255 - ((phase - 128) << 1));
+}
+
+uint8_t scale(uint8_t value, uint8_t amount)
+{
+  return static_cast<uint8_t>((static_cast<uint16_t>(value) * amount) / 255U);
+ c02:	90 e0       	ldi	r25, 0x00	; 0
+ c04:	36 e0       	ldi	r19, 0x06	; 6
+ c06:	88 0f       	add	r24, r24
+ c08:	99 1f       	adc	r25, r25
+ c0a:	3a 95       	dec	r19
+ c0c:	e1 f7       	brne	.-8      	; 0xc06 <main+0x314>
+ c0e:	b1 01       	movw	r22, r2
+ c10:	32 d1       	rcall	.+612    	; 0xe76 <__udivmodhi4>
+ c12:	36 2f       	mov	r19, r22
+ c14:	60 e4       	ldi	r22, 0x40	; 64
+ c16:	26 9f       	mul	r18, r22
+ c18:	c0 01       	movw	r24, r0
+ c1a:	11 24       	eor	r1, r1
+ c1c:	b1 01       	movw	r22, r2
+ c1e:	2b d1       	rcall	.+598    	; 0xe76 <__udivmodhi4>
+ c20:	26 2f       	mov	r18, r22
+ c22:	8e 2f       	mov	r24, r30
+ c24:	90 e0       	ldi	r25, 0x00	; 0
+ c26:	46 e0       	ldi	r20, 0x06	; 6
+ c28:	88 0f       	add	r24, r24
+ c2a:	99 1f       	adc	r25, r25
+ c2c:	4a 95       	dec	r20
+ c2e:	e1 f7       	brne	.-8      	; 0xc28 <main+0x336>
+ c30:	b1 01       	movw	r22, r2
+ c32:	21 d1       	rcall	.+578    	; 0xe76 <__udivmodhi4>
+ c34:	ee ea       	ldi	r30, 0xAE	; 174
+ c36:	f0 e0       	ldi	r31, 0x00	; 0
+update():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:155
+      } else if (frame.effect < 80) {
+        uint8_t position = static_cast<uint8_t>((phase >> 4) % LED_COUNT);
+        if (i != position) { r >>= 2; g >>= 2; b >>= 2; }
+      }
+
+      pixels[i].red = r;
+ c38:	30 83       	st	Z, r19
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:156
+      pixels[i].green = g;
+ c3a:	21 83       	std	Z+1, r18	; 0x01
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:157
+      pixels[i].blue = b;
+ c3c:	62 83       	std	Z+2, r22	; 0x02
+ c3e:	33 96       	adiw	r30, 0x03	; 3
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:140
+    uint8_t red = scale(frame.red, frame.dimmer);
+    uint8_t green = scale(frame.green, frame.dimmer);
+    uint8_t blue = scale(frame.blue, frame.dimmer);
+    uint8_t phase = static_cast<uint8_t>((now * (1UL + frame.rate / 32U)) >> 4);
+
+    for (uint8_t i = 0; i < LED_COUNT; ++i) {
+ c40:	0e 17       	cp	r16, r30
+ c42:	1f 07       	cpc	r17, r31
+ c44:	c9 f7       	brne	.-14     	; 0xc38 <main+0x346>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/LedEngine.cpp:162
+      pixels[i].blue = b;
+    }
+  }
+  // Retry a changed frame on every scheduler pass. The update interval controls
+  // animation rendering, not whether a pending WS2812 write gets another chance.
+  writeIfChanged();
+ c46:	70 dc       	rcall	.-1824   	; 0x528 <(anonymous namespace)::writeIfChanged()>
+updateLedTest():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:79
+  } else {
+    frame.blue = 255;
+  }
+
+  LedEngine::update(frame, now);
+  ledColor = static_cast<uint8_t>((ledColor + 1U) % 3U);
+ c48:	80 91 c7 00 	lds	r24, 0x00C7	; 0x8000c7 <(anonymous namespace)::ledColor>
+ c4c:	90 e0       	ldi	r25, 0x00	; 0
+ c4e:	01 96       	adiw	r24, 0x01	; 1
+ c50:	63 e0       	ldi	r22, 0x03	; 3
+ c52:	70 e0       	ldi	r23, 0x00	; 0
+ c54:	10 d1       	rcall	.+544    	; 0xe76 <__udivmodhi4>
+ c56:	80 93 c7 00 	sts	0x00C7, r24	; 0x8000c7 <(anonymous namespace)::ledColor>
+updateAudioTest():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:84
+}
+
+void updateAudioTest(uint32_t now)
+{
+  if (now - lastTrackTest >= TRACK_TEST_INTERVAL_MS) {
+ c5a:	80 91 da 00 	lds	r24, 0x00DA	; 0x8000da <(anonymous namespace)::lastTrackTest>
+ c5e:	90 91 db 00 	lds	r25, 0x00DB	; 0x8000db <(anonymous namespace)::lastTrackTest+0x1>
+ c62:	a0 91 dc 00 	lds	r26, 0x00DC	; 0x8000dc <(anonymous namespace)::lastTrackTest+0x2>
+ c66:	b0 91 dd 00 	lds	r27, 0x00DD	; 0x8000dd <(anonymous namespace)::lastTrackTest+0x3>
+ c6a:	a7 01       	movw	r20, r14
+ c6c:	96 01       	movw	r18, r12
+ c6e:	28 1b       	sub	r18, r24
+ c70:	39 0b       	sbc	r19, r25
+ c72:	4a 0b       	sbc	r20, r26
+ c74:	5b 0b       	sbc	r21, r27
+ c76:	da 01       	movw	r26, r20
+ c78:	c9 01       	movw	r24, r18
+ c7a:	80 31       	cpi	r24, 0x10	; 16
+ c7c:	97 42       	sbci	r25, 0x27	; 39
+ c7e:	a1 05       	cpc	r26, r1
+ c80:	b1 05       	cpc	r27, r1
+ c82:	e8 f0       	brcs	.+58     	; 0xcbe <main+0x3cc>
+requestCommand():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:76
+  return true;
+}
+
+bool requestCommand(uint8_t command, uint16_t parameter)
+{
+  if (commandPending) return false;
+ c84:	80 91 d3 00 	lds	r24, 0x00D3	; 0x8000d3 <(anonymous namespace)::commandPending>
+ c88:	81 11       	cpse	r24, r1
+ c8a:	0e c0       	rjmp	.+28     	; 0xca8 <main+0x3b6>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:77
+  pendingCommand = command;
+ c8c:	43 e0       	ldi	r20, 0x03	; 3
+ c8e:	40 93 cf 00 	sts	0x00CF, r20	; 0x8000cf <(anonymous namespace)::pendingCommand>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:78
+  pendingParameter = parameter;
+ c92:	61 e0       	ldi	r22, 0x01	; 1
+ c94:	70 e0       	ldi	r23, 0x00	; 0
+ c96:	70 93 d1 00 	sts	0x00D1, r23	; 0x8000d1 <(anonymous namespace)::pendingParameter+0x1>
+ c9a:	60 93 d0 00 	sts	0x00D0, r22	; 0x8000d0 <(anonymous namespace)::pendingParameter>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:79
+  pendingPresetTrack = false;
+ c9e:	10 92 d2 00 	sts	0x00D2, r1	; 0x8000d2 <(anonymous namespace)::pendingPresetTrack>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:80
+  commandPending = true;
+ ca2:	71 e0       	ldi	r23, 0x01	; 1
+ ca4:	70 93 d3 00 	sts	0x00D3, r23	; 0x8000d3 <(anonymous namespace)::commandPending>
+updateAudioTest():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:87
+    // Request track 1, corresponding to the root-level /0001.mp3 file.
+    AudioEngine::requestCommand(0x03, 1);
+    lastTrackTest = now;
+ ca8:	c0 92 da 00 	sts	0x00DA, r12	; 0x8000da <(anonymous namespace)::lastTrackTest>
+ cac:	d0 92 db 00 	sts	0x00DB, r13	; 0x8000db <(anonymous namespace)::lastTrackTest+0x1>
+ cb0:	e0 92 dc 00 	sts	0x00DC, r14	; 0x8000dc <(anonymous namespace)::lastTrackTest+0x2>
+ cb4:	f0 92 dd 00 	sts	0x00DD, r15	; 0x8000dd <(anonymous namespace)::lastTrackTest+0x3>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:88
+    Serial.println(F("DFPlayer: requested file/track 1"));
+ cb8:	87 eb       	ldi	r24, 0xB7	; 183
+ cba:	90 e0       	ldi	r25, 0x00	; 0
+ cbc:	2b dc       	rcall	.-1962   	; 0x514 <Print::println(__FlashStringHelper const*) [clone .constprop.6]>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:91
+  }
+
+  if (now - lastVolumeTest >= VOLUME_TEST_INTERVAL_MS) {
+ cbe:	80 91 d6 00 	lds	r24, 0x00D6	; 0x8000d6 <(anonymous namespace)::lastVolumeTest>
+ cc2:	90 91 d7 00 	lds	r25, 0x00D7	; 0x8000d7 <(anonymous namespace)::lastVolumeTest+0x1>
+ cc6:	a0 91 d8 00 	lds	r26, 0x00D8	; 0x8000d8 <(anonymous namespace)::lastVolumeTest+0x2>
+ cca:	b0 91 d9 00 	lds	r27, 0x00D9	; 0x8000d9 <(anonymous namespace)::lastVolumeTest+0x3>
+ cce:	a7 01       	movw	r20, r14
+ cd0:	96 01       	movw	r18, r12
+ cd2:	28 1b       	sub	r18, r24
+ cd4:	39 0b       	sbc	r19, r25
+ cd6:	4a 0b       	sbc	r20, r26
+ cd8:	5b 0b       	sbc	r21, r27
+ cda:	da 01       	movw	r26, r20
+ cdc:	c9 01       	movw	r24, r18
+ cde:	84 3f       	cpi	r24, 0xF4	; 244
+ ce0:	91 40       	sbci	r25, 0x01	; 1
+ ce2:	a1 05       	cpc	r26, r1
+ ce4:	b1 05       	cpc	r27, r1
+ ce6:	08 f4       	brcc	.+2      	; 0xcea <main+0x3f8>
+ ce8:	43 c0       	rjmp	.+134    	; 0xd70 <main+0x47e>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:92
+    AudioEngine::setVolume(volume);
+ cea:	b0 90 d5 00 	lds	r11, 0x00D5	; 0x8000d5 <(anonymous namespace)::volume>
+setVolume():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:86
+  return true;
+}
+
+void setVolume(uint8_t volume)
+{
+  requestedVolume = volume > 30 ? 30 : volume;
+ cee:	8b 2d       	mov	r24, r11
+ cf0:	4e e1       	ldi	r20, 0x1E	; 30
+ cf2:	4b 15       	cp	r20, r11
+ cf4:	08 f4       	brcc	.+2      	; 0xcf8 <main+0x406>
+ cf6:	8e e1       	ldi	r24, 0x1E	; 30
+ cf8:	80 93 cc 00 	sts	0x00CC, r24	; 0x8000cc <(anonymous namespace)::requestedVolume>
+updateAudioTest():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:93
+    Serial.print(F("DFPlayer: queued volume "));
+ cfc:	8e e9       	ldi	r24, 0x9E	; 158
+ cfe:	90 e0       	ldi	r25, 0x00	; 0
+ d00:	f9 da       	rcall	.-2574   	; 0x2f4 <Print::print(__FlashStringHelper const*) [clone .constprop.7]>
+print():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:74
+  return write(c);
+}
+
+size_t Print::print(unsigned char b, int base)
+{
+  return print((unsigned long) b, base);
+ d02:	2b 2d       	mov	r18, r11
+ d04:	30 e0       	ldi	r19, 0x00	; 0
+ d06:	50 e0       	ldi	r21, 0x00	; 0
+ d08:	40 e0       	ldi	r20, 0x00	; 0
+printNumber():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:237
+size_t Print::printNumber(unsigned long n, uint8_t base)
+{
+  char buf[8 * sizeof(long) + 1]; // Assumes 8-bit chars plus zero byte.
+  char *str = &buf[sizeof(buf) - 1];
+
+  *str = '\0';
+ d0a:	19 a2       	std	Y+33, r1	; 0x21
+ d0c:	5e 01       	movw	r10, r28
+ d0e:	61 e2       	ldi	r22, 0x21	; 33
+ d10:	a6 0e       	add	r10, r22
+ d12:	b1 1c       	adc	r11, r1
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:244
+  // prevent crash if called with base == 1
+  if (base < 2) base = 10;
+
+  do {
+    char c = n % base;
+    n /= base;
+ d14:	ca 01       	movw	r24, r20
+ d16:	b9 01       	movw	r22, r18
+ d18:	2a e0       	ldi	r18, 0x0A	; 10
+ d1a:	30 e0       	ldi	r19, 0x00	; 0
+ d1c:	40 e0       	ldi	r20, 0x00	; 0
+ d1e:	50 e0       	ldi	r21, 0x00	; 0
+ d20:	be d0       	rcall	.+380    	; 0xe9e <__udivmodsi4>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:246
+
+    *--str = c < 10 ? c + '0' : c + 'A' - 10;
+ d22:	60 5d       	subi	r22, 0xD0	; 208
+ d24:	f5 01       	movw	r30, r10
+ d26:	62 93       	st	-Z, r22
+ d28:	5f 01       	movw	r10, r30
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:247
+  } while(n);
+ d2a:	21 15       	cp	r18, r1
+ d2c:	31 05       	cpc	r19, r1
+ d2e:	41 05       	cpc	r20, r1
+ d30:	51 05       	cpc	r21, r1
+ d32:	81 f7       	brne	.-32     	; 0xd14 <main+0x422>
+write():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.h:53
+    int getWriteError() { return write_error; }
+    void clearWriteError() { setWriteError(0); }
+
+    virtual size_t write(uint8_t) = 0;
+    size_t write(const char *str) {
+      if (str == NULL) return 0;
+ d34:	30 97       	sbiw	r30, 0x00	; 0
+ d36:	59 f0       	breq	.+22     	; 0xd4e <main+0x45c>
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.h:54
+      return write((const uint8_t *)str, strlen(str));
+ d38:	01 90       	ld	r0, Z+
+ d3a:	00 20       	and	r0, r0
+ d3c:	e9 f7       	brne	.-6      	; 0xd38 <main+0x446>
+ d3e:	31 97       	sbiw	r30, 0x01	; 1
+ d40:	af 01       	movw	r20, r30
+ d42:	4a 19       	sub	r20, r10
+ d44:	5b 09       	sbc	r21, r11
+ d46:	b5 01       	movw	r22, r10
+ d48:	87 ee       	ldi	r24, 0xE7	; 231
+ d4a:	90 e0       	ldi	r25, 0x00	; 0
+ d4c:	ec d9       	rcall	.-3112   	; 0x126 <Print::write(unsigned char const*, unsigned int)>
+println():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.cpp:155
+}
+
+size_t Print::println(unsigned char b, int base)
+{
+  size_t n = print(b, base);
+  n += println();
+ d4e:	db db       	rcall	.-2122   	; 0x506 <Print::println() [clone .constprop.14]>
+updateAudioTest():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:95
+    Serial.println(volume);
+    volume = (volume >= 30) ? 0 : static_cast<uint8_t>(volume + 1);
+ d50:	80 91 d5 00 	lds	r24, 0x00D5	; 0x8000d5 <(anonymous namespace)::volume>
+ d54:	8e 31       	cpi	r24, 0x1E	; 30
+ d56:	08 f0       	brcs	.+2      	; 0xd5a <main+0x468>
+ d58:	61 c0       	rjmp	.+194    	; 0xe1c <main+0x52a>
+ d5a:	8f 5f       	subi	r24, 0xFF	; 255
+ d5c:	80 93 d5 00 	sts	0x00D5, r24	; 0x8000d5 <(anonymous namespace)::volume>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:96
+    lastVolumeTest = now;
+ d60:	c0 92 d6 00 	sts	0x00D6, r12	; 0x8000d6 <(anonymous namespace)::lastVolumeTest>
+ d64:	d0 92 d7 00 	sts	0x00D7, r13	; 0x8000d7 <(anonymous namespace)::lastVolumeTest+0x1>
+ d68:	e0 92 d8 00 	sts	0x00D8, r14	; 0x8000d8 <(anonymous namespace)::lastVolumeTest+0x2>
+ d6c:	f0 92 d9 00 	sts	0x00D9, r15	; 0x8000d9 <(anonymous namespace)::lastVolumeTest+0x3>
+update():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:91
+}
+
+bool update(bool allowStart, bool allowManualAudio)
+{
+  if (trackInFlight && DfPlayerSerial::completed()) {
+ d70:	80 91 d4 00 	lds	r24, 0x00D4	; 0x8000d4 <(anonymous namespace)::trackInFlight>
+ d74:	88 23       	and	r24, r24
+ d76:	51 f0       	breq	.+20     	; 0xd8c <main+0x49a>
+completed():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:97
+  return transmitting;
+}
+
+bool completed()
+{
+  uint8_t oldSreg = SREG;
+ d78:	9f b7       	in	r25, 0x3f	; 63
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:98
+  cli();
+ d7a:	f8 94       	cli
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:99
+  const bool result = packetCompleted;
+ d7c:	80 91 ce 00 	lds	r24, 0x00CE	; 0x8000ce <(anonymous namespace)::packetCompleted>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:100
+  packetCompleted = false;
+ d80:	10 92 ce 00 	sts	0x00CE, r1	; 0x8000ce <(anonymous namespace)::packetCompleted>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:101
+  SREG = oldSreg;
+ d84:	9f bf       	out	0x3f, r25	; 63
+update():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:91
+ d86:	81 11       	cpse	r24, r1
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:92
+    trackInFlight = false;
+ d88:	10 92 d4 00 	sts	0x00D4, r1	; 0x8000d4 <(anonymous namespace)::trackInFlight>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:95
+    trackTransmitted = true;
+  }
+  if (commandPending && allowStart && (pendingPresetTrack || allowManualAudio) &&
+ d8c:	80 91 d3 00 	lds	r24, 0x00D3	; 0x8000d3 <(anonymous namespace)::commandPending>
+ d90:	88 23       	and	r24, r24
+ d92:	a9 f0       	breq	.+42     	; 0xdbe <main+0x4cc>
+busy():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:92
+  return true;
+}
+
+bool busy()
+{
+  return transmitting;
+ d94:	80 91 cd 00 	lds	r24, 0x00CD	; 0x8000cd <(anonymous namespace)::transmitting>
+sendPacket():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:19
+uint8_t requestedVolume = 0;
+uint8_t sentVolume = 255;
+
+bool sendPacket(uint8_t command, uint16_t parameter)
+{
+  if (DfPlayerSerial::busy()) return false;
+ d98:	81 11       	cpse	r24, r1
+ d9a:	26 c0       	rjmp	.+76     	; 0xde8 <main+0x4f6>
+update():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:95
+{
+  if (trackInFlight && DfPlayerSerial::completed()) {
+    trackInFlight = false;
+    trackTransmitted = true;
+  }
+  if (commandPending && allowStart && (pendingPresetTrack || allowManualAudio) &&
+ d9c:	f0 90 d2 00 	lds	r15, 0x00D2	; 0x8000d2 <(anonymous namespace)::pendingPresetTrack>
+sendPacket():
+ da0:	60 91 d0 00 	lds	r22, 0x00D0	; 0x8000d0 <(anonymous namespace)::pendingParameter>
+ da4:	70 91 d1 00 	lds	r23, 0x00D1	; 0x8000d1 <(anonymous namespace)::pendingParameter+0x1>
+ da8:	80 91 cf 00 	lds	r24, 0x00CF	; 0x8000cf <(anonymous namespace)::pendingCommand>
+ dac:	46 db       	rcall	.-2420   	; 0x43a <(anonymous namespace)::sendPacket(unsigned char, unsigned int) [clone .part.0]>
+update():
+ dae:	88 23       	and	r24, r24
+ db0:	d9 f0       	breq	.+54     	; 0xde8 <main+0x4f6>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:97
+      sendPacket(pendingCommand, pendingParameter)) {
+    trackInFlight = pendingPresetTrack;
+ db2:	f0 92 d4 00 	sts	0x00D4, r15	; 0x8000d4 <(anonymous namespace)::trackInFlight>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:98
+    pendingPresetTrack = false;
+ db6:	10 92 d2 00 	sts	0x00D2, r1	; 0x8000d2 <(anonymous namespace)::pendingPresetTrack>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:99
+    commandPending = false;
+ dba:	10 92 d3 00 	sts	0x00D3, r1	; 0x8000d3 <(anonymous namespace)::commandPending>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:101
+  }
+  if (allowManualAudio && !commandPending && !trackInFlight &&
+ dbe:	80 91 d4 00 	lds	r24, 0x00D4	; 0x8000d4 <(anonymous namespace)::trackInFlight>
+ dc2:	81 11       	cpse	r24, r1
+ dc4:	11 c0       	rjmp	.+34     	; 0xde8 <main+0x4f6>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:102
+      requestedVolume != sentVolume && allowStart &&
+ dc6:	f0 90 cc 00 	lds	r15, 0x00CC	; 0x8000cc <(anonymous namespace)::requestedVolume>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:101
+      sendPacket(pendingCommand, pendingParameter)) {
+    trackInFlight = pendingPresetTrack;
+    pendingPresetTrack = false;
+    commandPending = false;
+  }
+  if (allowManualAudio && !commandPending && !trackInFlight &&
+ dca:	80 91 6e 00 	lds	r24, 0x006E	; 0x80006e <(anonymous namespace)::sentVolume>
+ dce:	f8 16       	cp	r15, r24
+ dd0:	59 f0       	breq	.+22     	; 0xde8 <main+0x4f6>
+busy():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/DfPlayerSerial.cpp:92
+ dd2:	80 91 cd 00 	lds	r24, 0x00CD	; 0x8000cd <(anonymous namespace)::transmitting>
+sendPacket():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:19
+uint8_t requestedVolume = 0;
+uint8_t sentVolume = 255;
+
+bool sendPacket(uint8_t command, uint16_t parameter)
+{
+  if (DfPlayerSerial::busy()) return false;
+ dd6:	81 11       	cpse	r24, r1
+ dd8:	07 c0       	rjmp	.+14     	; 0xde8 <main+0x4f6>
+update():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:103
+    pendingPresetTrack = false;
+    commandPending = false;
+  }
+  if (allowManualAudio && !commandPending && !trackInFlight &&
+      requestedVolume != sentVolume && allowStart &&
+      sendPacket(0x06, requestedVolume)) {
+ dda:	6f 2d       	mov	r22, r15
+ ddc:	70 e0       	ldi	r23, 0x00	; 0
+sendPacket():
+ dde:	86 e0       	ldi	r24, 0x06	; 6
+ de0:	2c db       	rcall	.-2472   	; 0x43a <(anonymous namespace)::sendPacket(unsigned char, unsigned int) [clone .part.0]>
+update():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:102
+    trackInFlight = pendingPresetTrack;
+    pendingPresetTrack = false;
+    commandPending = false;
+  }
+  if (allowManualAudio && !commandPending && !trackInFlight &&
+      requestedVolume != sentVolume && allowStart &&
+ de2:	81 11       	cpse	r24, r1
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/BirdSkeletonFixture/AudioEngine.cpp:104
+      sendPacket(0x06, requestedVolume)) {
+    sentVolume = requestedVolume;
+ de4:	f0 92 6e 00 	sts	0x006E, r15	; 0x80006e <(anonymous namespace)::sentVolume>
+serialEventRun():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial.cpp:67
+#endif
+
+void serialEventRun(void)
+{
+#if defined(HAVE_HWSERIAL0)
+  if (Serial0_available && serialEvent && Serial0_available()) serialEvent();
+ de8:	20 e0       	ldi	r18, 0x00	; 0
+ dea:	30 e0       	ldi	r19, 0x00	; 0
+ dec:	23 2b       	or	r18, r19
+ dee:	09 f4       	brne	.+2      	; 0xdf2 <main+0x500>
+ df0:	5b ce       	rjmp	.-842    	; 0xaa8 <main+0x1b6>
+ df2:	03 da       	rcall	.-3066   	; 0x1fa <Serial0_available()>
+ df4:	88 23       	and	r24, r24
+ df6:	09 f4       	brne	.+2      	; 0xdfa <main+0x508>
+ df8:	57 ce       	rjmp	.-850    	; 0xaa8 <main+0x1b6>
+ dfa:	02 d9       	rcall	.-3580   	; 0x0 <__vectors>
+ dfc:	55 ce       	rjmp	.-854    	; 0xaa8 <main+0x1b6>
+updateServoTest():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:51
+
+  if (servoDirection > 0) {
+    if (servoAngle >= LEFT_WING_MAX_ANGLE) {
+      servoDirection = -1;
+    } else {
+      ++servoAngle;
+ dfe:	8f 5f       	subi	r24, 0xFF	; 255
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:56
+    }
+  } else if (servoAngle <= LEFT_WING_MIN_ANGLE) {
+    servoDirection = 1;
+  } else {
+    --servoAngle;
+ e00:	80 93 6d 00 	sts	0x006D, r24	; 0x80006d <(anonymous namespace)::servoAngle>
+ e04:	b6 ce       	rjmp	.-660    	; 0xb72 <main+0x280>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:53
+    if (servoAngle >= LEFT_WING_MAX_ANGLE) {
+      servoDirection = -1;
+    } else {
+      ++servoAngle;
+    }
+  } else if (servoAngle <= LEFT_WING_MIN_ANGLE) {
+ e06:	89 30       	cpi	r24, 0x09	; 9
+ e08:	20 f4       	brcc	.+8      	; 0xe12 <main+0x520>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:54
+    servoDirection = 1;
+ e0a:	91 e0       	ldi	r25, 0x01	; 1
+ e0c:	90 93 6c 00 	sts	0x006C, r25	; 0x80006c <(anonymous namespace)::servoDirection>
+ e10:	b0 ce       	rjmp	.-672    	; 0xb72 <main+0x280>
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:56
+  } else {
+    --servoAngle;
+ e12:	81 50       	subi	r24, 0x01	; 1
+ e14:	f5 cf       	rjmp	.-22     	; 0xe00 <main+0x50e>
+updateLedTest():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:65
+void updateLedTest(uint32_t now)
+{
+  if (now - lastLedTest < LED_TEST_INTERVAL_MS) return;
+  lastLedTest = now;
+
+  LedEngine::Frame frame = {};
+ e16:	e0 e0       	ldi	r30, 0x00	; 0
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:73
+  frame.rate = 0;
+
+  if (ledColor == 0) {
+    frame.red = 255;
+  } else if (ledColor == 1) {
+    frame.green = 255;
+ e18:	2f ef       	ldi	r18, 0xFF	; 255
+ e1a:	d4 ce       	rjmp	.-600    	; 0xbc4 <main+0x2d2>
+main():
+/home/aidancrowther/Documents/Projects/Bird Skeleton Animatronic/firmware/tests/ComponentTest/ComponentTest.ino:95
+
+  if (now - lastVolumeTest >= VOLUME_TEST_INTERVAL_MS) {
+    AudioEngine::setVolume(volume);
+    Serial.print(F("DFPlayer: queued volume "));
+    Serial.println(volume);
+    volume = (volume >= 30) ? 0 : static_cast<uint8_t>(volume + 1);
+ e1c:	80 e0       	ldi	r24, 0x00	; 0
+ e1e:	9e cf       	rjmp	.-196    	; 0xd5c <main+0x46a>
+
+00000e20 <_GLOBAL__sub_I___vector_11>:
+_ZN5PrintC2Ev():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Print.h:46
+    size_t printNumber(unsigned long, uint8_t);
+    size_t printFloat(double, uint8_t);
+  protected:
+    void setWriteError(int err = 1) { write_error = err; }
+  public:
+    Print() : write_error(0) {}
+ e20:	e7 ee       	ldi	r30, 0xE7	; 231
+ e22:	f0 e0       	ldi	r31, 0x00	; 0
+ e24:	13 82       	std	Z+3, r1	; 0x03
+ e26:	12 82       	std	Z+2, r1	; 0x02
+_ZN6StreamC2Ev():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/Stream.h:63
+  public:
+    virtual int available() = 0;
+    virtual int read() = 0;
+    virtual int peek() = 0;
+
+    Stream() {_timeout=1000;}
+ e28:	88 ee       	ldi	r24, 0xE8	; 232
+ e2a:	93 e0       	ldi	r25, 0x03	; 3
+ e2c:	a0 e0       	ldi	r26, 0x00	; 0
+ e2e:	b0 e0       	ldi	r27, 0x00	; 0
+ e30:	84 83       	std	Z+4, r24	; 0x04
+ e32:	95 83       	std	Z+5, r25	; 0x05
+ e34:	a6 83       	std	Z+6, r26	; 0x06
+ e36:	b7 83       	std	Z+7, r27	; 0x07
+_ZN14HardwareSerialC2EPVhS1_S1_S1_S1_S1_():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial_private.h:92
+  volatile uint8_t *ucsrc, volatile uint8_t *udr) :
+    _ubrrh(ubrrh), _ubrrl(ubrrl),
+    _ucsra(ucsra), _ucsrb(ucsrb), _ucsrc(ucsrc),
+    _udr(udr),
+    _rx_buffer_head(0), _rx_buffer_tail(0),
+    _tx_buffer_head(0), _tx_buffer_tail(0)
+ e38:	83 e7       	ldi	r24, 0x73	; 115
+ e3a:	90 e0       	ldi	r25, 0x00	; 0
+ e3c:	91 83       	std	Z+1, r25	; 0x01
+ e3e:	80 83       	st	Z, r24
+ e40:	80 e4       	ldi	r24, 0x40	; 64
+ e42:	90 e0       	ldi	r25, 0x00	; 0
+ e44:	95 87       	std	Z+13, r25	; 0x0d
+ e46:	84 87       	std	Z+12, r24	; 0x0c
+ e48:	29 e2       	ldi	r18, 0x29	; 41
+ e4a:	30 e0       	ldi	r19, 0x00	; 0
+ e4c:	37 87       	std	Z+15, r19	; 0x0f
+ e4e:	26 87       	std	Z+14, r18	; 0x0e
+ e50:	2b e2       	ldi	r18, 0x2B	; 43
+ e52:	30 e0       	ldi	r19, 0x00	; 0
+ e54:	31 8b       	std	Z+17, r19	; 0x11
+ e56:	20 8b       	std	Z+16, r18	; 0x10
+ e58:	2a e2       	ldi	r18, 0x2A	; 42
+ e5a:	30 e0       	ldi	r19, 0x00	; 0
+ e5c:	33 8b       	std	Z+19, r19	; 0x13
+ e5e:	22 8b       	std	Z+18, r18	; 0x12
+ e60:	95 8b       	std	Z+21, r25	; 0x15
+ e62:	84 8b       	std	Z+20, r24	; 0x14
+ e64:	8c e2       	ldi	r24, 0x2C	; 44
+ e66:	90 e0       	ldi	r25, 0x00	; 0
+ e68:	97 8b       	std	Z+23, r25	; 0x17
+ e6a:	86 8b       	std	Z+22, r24	; 0x16
+ e6c:	11 8e       	std	Z+25, r1	; 0x19
+ e6e:	12 8e       	std	Z+26, r1	; 0x1a
+ e70:	13 8e       	std	Z+27, r1	; 0x1b
+ e72:	14 8e       	std	Z+28, r1	; 0x1c
+_GLOBAL__sub_I___vector_11():
+/home/aidancrowther/.arduino15/packages/MiniCore/hardware/avr/3.0.2/cores/MCUdude_corefiles/HardwareSerial0.cpp:77
+
+// Function that can be weakly referenced by serialEventRun to prevent
+// pulling in this file if it's not otherwise used.
+bool Serial0_available() {
+  return Serial.available();
+}
+ e74:	08 95       	ret
+
+00000e76 <__udivmodhi4>:
+__udivmodhi4():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1408
+ e76:	aa 1b       	sub	r26, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1409
+ e78:	bb 1b       	sub	r27, r27
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1410
+ e7a:	51 e1       	ldi	r21, 0x11	; 17
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1411
+ e7c:	07 c0       	rjmp	.+14     	; 0xe8c <__udivmodhi4_ep>
+
+00000e7e <__udivmodhi4_loop>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1413
+ e7e:	aa 1f       	adc	r26, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1414
+ e80:	bb 1f       	adc	r27, r27
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1415
+ e82:	a6 17       	cp	r26, r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1416
+ e84:	b7 07       	cpc	r27, r23
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1417
+ e86:	10 f0       	brcs	.+4      	; 0xe8c <__udivmodhi4_ep>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1418
+ e88:	a6 1b       	sub	r26, r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1419
+ e8a:	b7 0b       	sbc	r27, r23
+
+00000e8c <__udivmodhi4_ep>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1421
+ e8c:	88 1f       	adc	r24, r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1422
+ e8e:	99 1f       	adc	r25, r25
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1423
+ e90:	5a 95       	dec	r21
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1424
+ e92:	a9 f7       	brne	.-22     	; 0xe7e <__udivmodhi4_loop>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1425
+ e94:	80 95       	com	r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1426
+ e96:	90 95       	com	r25
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1428
+ e98:	bc 01       	movw	r22, r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1430
+ e9a:	cd 01       	movw	r24, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1432
+ e9c:	08 95       	ret
+
+00000e9e <__udivmodsi4>:
+__udivmodsi4():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1638
+ e9e:	a1 e2       	ldi	r26, 0x21	; 33
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1639
+ ea0:	1a 2e       	mov	r1, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1640
+ ea2:	aa 1b       	sub	r26, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1641
+ ea4:	bb 1b       	sub	r27, r27
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1642
+ ea6:	fd 01       	movw	r30, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1644
+ ea8:	0d c0       	rjmp	.+26     	; 0xec4 <__udivmodsi4_ep>
+
+00000eaa <__udivmodsi4_loop>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1646
+ eaa:	aa 1f       	adc	r26, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1647
+ eac:	bb 1f       	adc	r27, r27
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1648
+ eae:	ee 1f       	adc	r30, r30
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1649
+ eb0:	ff 1f       	adc	r31, r31
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1650
+ eb2:	a2 17       	cp	r26, r18
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1651
+ eb4:	b3 07       	cpc	r27, r19
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1652
+ eb6:	e4 07       	cpc	r30, r20
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1653
+ eb8:	f5 07       	cpc	r31, r21
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1654
+ eba:	20 f0       	brcs	.+8      	; 0xec4 <__udivmodsi4_ep>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1655
+ ebc:	a2 1b       	sub	r26, r18
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1656
+ ebe:	b3 0b       	sbc	r27, r19
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1657
+ ec0:	e4 0b       	sbc	r30, r20
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1658
+ ec2:	f5 0b       	sbc	r31, r21
+
+00000ec4 <__udivmodsi4_ep>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1660
+ ec4:	66 1f       	adc	r22, r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1661
+ ec6:	77 1f       	adc	r23, r23
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1662
+ ec8:	88 1f       	adc	r24, r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1663
+ eca:	99 1f       	adc	r25, r25
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1664
+ ecc:	1a 94       	dec	r1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1665
+ ece:	69 f7       	brne	.-38     	; 0xeaa <__udivmodsi4_loop>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1667
+ ed0:	60 95       	com	r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1668
+ ed2:	70 95       	com	r23
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1669
+ ed4:	80 95       	com	r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1670
+ ed6:	90 95       	com	r25
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1672
+ ed8:	9b 01       	movw	r18, r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1674
+ eda:	ac 01       	movw	r20, r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1676
+ edc:	bd 01       	movw	r22, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1678
+ ede:	cf 01       	movw	r24, r30
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1680
+ ee0:	08 95       	ret
+
+00000ee2 <__umulhisi3>:
+__umulhisi3():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:564
+ ee2:	a2 9f       	mul	r26, r18
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:565
+ ee4:	b0 01       	movw	r22, r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:566
+ ee6:	b3 9f       	mul	r27, r19
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:567
+ ee8:	c0 01       	movw	r24, r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:568
+ eea:	a3 9f       	mul	r26, r19
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:578
+ eec:	01 d0       	rcall	.+2      	; 0xef0 <__umulhisi3+0xe>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:580
+ eee:	b2 9f       	mul	r27, r18
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:581
+ ef0:	70 0d       	add	r23, r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:582
+ ef2:	81 1d       	adc	r24, r1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:583
+ ef4:	11 24       	eor	r1, r1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:584
+ ef6:	91 1d       	adc	r25, r1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:585
+ ef8:	08 95       	ret
+
+00000efa <__tablejump2__>:
+__tablejump2__():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2296
+ efa:	ee 0f       	add	r30, r30
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2297
+ efc:	ff 1f       	adc	r31, r31
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2328
+ efe:	05 90       	lpm	r0, Z+
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2329
+ f00:	f4 91       	lpm	r31, Z
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2330
+ f02:	e0 2d       	mov	r30, r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2331
+ f04:	09 94       	ijmp
+
+00000f06 <_exit>:
+exit():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ f06:	f8 94       	cli
+
+00000f08 <__stop_program>:
+__stop_program():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr4/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ f08:	ff cf       	rjmp	.-2      	; 0xf08 <__stop_program>

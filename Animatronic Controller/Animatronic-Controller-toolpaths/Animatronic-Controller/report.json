@@ -1,0 +1,43 @@
+{
+  "source": "Animatronic Controller.svg",
+  "sourceSha256": "253a2c00bbf5fce2e1456f3f53a8d2d854ec1fa12a8e74b8b4f4be10d8ffcbf3",
+  "generatorVersion": 4,
+  "cacheKey": "0df4c384feb6af71353ad4192744f39e018c5cc0c126d8be7eb59ffbb221c766",
+  "ordering": "interlaced-v3",
+  "settings": {
+    "density": 3600,
+    "mirror": "bottom",
+    "beam": {
+      "shape": "ellipse",
+      "widthMm": 0.1,
+      "heightMm": 0.08,
+      "angleDeg": 0
+    },
+    "stepoverX": 0.8,
+    "stepoverY": 0.8,
+    "hatchWidthMinMm": 1,
+    "hatchWidthTargetMm": 1,
+    "hatchBorderWidths": 0,
+    "hatchStepover": 0.8,
+    "studioKerf": false,
+    "skipVerification": true
+  },
+  "sides": {
+    "top": {
+      "status": "skipped",
+      "qaFile": null
+    },
+    "bottom": {
+      "status": "skipped",
+      "qaFile": null
+    }
+  },
+  "warnings": [
+    "top: 1 contour could not be curve-fitted; straight segments retained",
+    "bottom: 1 contour could not be curve-fitted; straight segments retained"
+  ],
+  "artifactSha256": {
+    "top.svg": "c2622d4298ec90b322dd463b82ab39c27df19b923d62c0f4704280e21e77134e",
+    "bottom.svg": "2bc2505577d17286f403044aff47045014c98c0497f7aca01f244142942bce0e"
+  }
+}
