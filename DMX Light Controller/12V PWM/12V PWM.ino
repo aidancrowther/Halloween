@@ -3,14 +3,14 @@
 #include <avr/wdt.h>
 #include <SoftPWM.h>
 
-SOFTPWM_DEFINE_CHANNEL(0, DDRD, PORTD, PORTD7);
-SOFTPWM_DEFINE_CHANNEL(1, DDRD, PORTD, PORTD6);
-SOFTPWM_DEFINE_CHANNEL(2, DDRD, PORTD, PORTD5);
-SOFTPWM_DEFINE_CHANNEL(3, DDRD, PORTD, PORTD4);
-SOFTPWM_DEFINE_CHANNEL(4, DDRD, PORTD, PORTD3);
-SOFTPWM_DEFINE_CHANNEL(5, DDRD, PORTD, PORTD2);
-SOFTPWM_DEFINE_CHANNEL(6, DDRC, PORTC, PORTC4);
-SOFTPWM_DEFINE_CHANNEL(7, DDRC, PORTC, PORTC3);
+SOFTPWM_DEFINE_CHANNEL(0, DDRC, PORTC, PORTC3); // Output 1: PC3
+SOFTPWM_DEFINE_CHANNEL(1, DDRC, PORTC, PORTC4); // Output 2: PC4
+SOFTPWM_DEFINE_CHANNEL(2, DDRD, PORTD, PORTD2); // Output 3: PD2
+SOFTPWM_DEFINE_CHANNEL(3, DDRD, PORTD, PORTD3); // Output 4: PD3
+SOFTPWM_DEFINE_CHANNEL(4, DDRD, PORTD, PORTD4); // Output 5: PD4
+SOFTPWM_DEFINE_CHANNEL(5, DDRD, PORTD, PORTD5); // Output 6: PD5
+SOFTPWM_DEFINE_CHANNEL(6, DDRD, PORTD, PORTD6); // Output 7: PD6
+SOFTPWM_DEFINE_CHANNEL(7, DDRD, PORTD, PORTD7); // Output 8: PD7
 SOFTPWM_DEFINE_OBJECT_WITH_PWM_LEVELS(8, 256);
 
 static const uint8_t OUTPUT_COUNT = 8;
@@ -45,17 +45,31 @@ static uint16_t readStartAddress() {
   DDRC &= (uint8_t)~ADDRESS_C_MASK;
   PORTB |= ADDRESS_B_MASK;
   PORTC |= ADDRESS_C_MASK;
-  const uint8_t selectedB = (uint8_t)~PINB;
-  const uint8_t selectedC = (uint8_t)~PINC;
+  delay(10); // Let the pull-ups and external DIP wiring settle after startup.
+  uint8_t countB1 = 0, countB2 = 0, countB3 = 0, countB4 = 0, countB5 = 0;
+  uint8_t countC0 = 0, countC1 = 0, countC2 = 0;
+  for (uint8_t sample = 0; sample < 9; ++sample) {
+    const uint8_t b = (uint8_t)~PINB;
+    const uint8_t c = (uint8_t)~PINC;
+    if (b & _BV(PB1)) ++countB1;
+    if (b & _BV(PB2)) ++countB2;
+    if (b & _BV(PB3)) ++countB3;
+    if (b & _BV(PB4)) ++countB4;
+    if (b & _BV(PB5)) ++countB5;
+    if (c & _BV(PC0)) ++countC0;
+    if (c & _BV(PC1)) ++countC1;
+    if (c & _BV(PC2)) ++countC2;
+    delay(2);
+  }
   uint16_t address = 1;
-  if (selectedB & _BV(PB1)) address |= _BV(8);
-  if (selectedB & _BV(PB2)) address |= _BV(7);
-  if (selectedB & _BV(PB3)) address |= _BV(6);
-  if (selectedB & _BV(PB4)) address |= _BV(5);
-  if (selectedB & _BV(PB5)) address |= _BV(4);
-  if (selectedC & _BV(PC0)) address |= _BV(3);
-  if (selectedC & _BV(PC1)) address |= _BV(2);
-  if (selectedC & _BV(PC2)) address |= _BV(1);
+  if (countB1 >= 5) address |= _BV(8);
+  if (countB2 >= 5) address |= _BV(7);
+  if (countB3 >= 5) address |= _BV(6);
+  if (countB4 >= 5) address |= _BV(5);
+  if (countB5 >= 5) address |= _BV(4);
+  if (countC0 >= 5) address |= _BV(3);
+  if (countC1 >= 5) address |= _BV(2);
+  if (countC2 >= 5) address |= _BV(1);
   return address;
 }
 
@@ -108,6 +122,23 @@ static void writeStatusLed(bool green) {
   delayMicroseconds(80);
 }
 
+static void showAddressDigit(uint8_t count, uint16_t onMs) {
+  for (uint8_t i = 0; i < count; ++i) {
+    writeStatusLed(true);
+    delay(onMs);
+    writeStatusLed(false);
+    delay(250);
+  }
+  delay(700); // Separate decimal places, including a zero-valued place.
+}
+
+static void showStartAddress() {
+  showAddressDigit((uint8_t)(startAddress / 100), 700);
+  showAddressDigit((uint8_t)((startAddress / 10) % 10), 350);
+  showAddressDigit((uint8_t)(startAddress % 10), 120);
+  delay(1200); // Distinguish the address display from normal status indication.
+}
+
 static void serviceStatus() {
   const uint8_t savedSREG = SREG;
   cli();
@@ -132,6 +163,7 @@ void setup() {
   PORTC &= (uint8_t)~STATUS_LED_MASK;
   Palatis::SoftPWM.begin(PWM_FREQUENCY_HZ);
   setBlackout();
+  showStartAddress();
   UCSRA = 0;
   UBRRH = 0;
   UBRRL = 3;

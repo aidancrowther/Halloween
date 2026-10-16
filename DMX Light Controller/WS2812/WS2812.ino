@@ -2,6 +2,44 @@
 #include <avr/interrupt.h>
 #include <avr/wdt.h>
 
+#if defined(__AVR_ATmega328P__)
+#define DMX_UCSRA UCSR0A
+#define DMX_UCSRB UCSR0B
+#define DMX_UCSRC UCSR0C
+#define DMX_UBRRH UBRR0H
+#define DMX_UBRRL UBRR0L
+#define DMX_UDR UDR0
+#define DMX_RX_VECTOR USART_RX_vect
+#define DMX_RX_ENABLE RXEN0
+#define DMX_RX_INTERRUPT RXCIE0
+#define DMX_RX_COMPLETE RXC0
+#define DMX_FRAME_ERROR FE0
+#define DMX_OVERRUN_ERROR DOR0
+#define DMX_PARITY_ERROR UPE0
+#define DMX_CHAR_SIZE_1 UCSZ01
+#define DMX_CHAR_SIZE_0 UCSZ00
+#define DMX_CONFIGURE_8N1() (DMX_UCSRC = _BV(DMX_CHAR_SIZE_1) | _BV(DMX_CHAR_SIZE_0))
+#elif defined(__AVR_ATmega8__)
+#define DMX_UCSRA UCSRA
+#define DMX_UCSRB UCSRB
+#define DMX_UCSRC UCSRC
+#define DMX_UBRRH UBRRH
+#define DMX_UBRRL UBRRL
+#define DMX_UDR UDR
+#define DMX_RX_VECTOR USART_RXC_vect
+#define DMX_RX_ENABLE RXEN
+#define DMX_RX_INTERRUPT RXCIE
+#define DMX_RX_COMPLETE RXC
+#define DMX_FRAME_ERROR FE
+#define DMX_OVERRUN_ERROR DOR
+#define DMX_PARITY_ERROR PE
+#define DMX_CHAR_SIZE_1 UCSZ1
+#define DMX_CHAR_SIZE_0 UCSZ0
+#define DMX_CONFIGURE_8N1() (DMX_UCSRC = _BV(URSEL) | _BV(DMX_CHAR_SIZE_1) | _BV(DMX_CHAR_SIZE_0))
+#else
+#error "WS2812 firmware supports ATmega8 and ATmega328P targets"
+#endif
+
 // Parallel WS2812 outputs: eight independently controlled bit streams.
 static const uint8_t DATA_D_MASK = 0xFC; // PD2..PD7
 static const uint8_t DATA_C_MASK = _BV(PC3) | _BV(PC4);
@@ -35,17 +73,31 @@ static uint16_t readStartAddress() {
   DDRC &= (uint8_t)~ADDRESS_C_MASK;
   PORTB |= ADDRESS_B_MASK;
   PORTC |= ADDRESS_C_MASK;
-  const uint8_t b = (uint8_t)~PINB;
-  const uint8_t c = (uint8_t)~PINC;
+  delay(10); // Let the pull-ups and external DIP wiring settle after startup.
+  uint8_t countB1 = 0, countB2 = 0, countB3 = 0, countB4 = 0, countB5 = 0;
+  uint8_t countC0 = 0, countC1 = 0, countC2 = 0;
+  for (uint8_t sample = 0; sample < 9; ++sample) {
+    const uint8_t b = (uint8_t)~PINB;
+    const uint8_t c = (uint8_t)~PINC;
+    if (b & _BV(PB1)) ++countB1;
+    if (b & _BV(PB2)) ++countB2;
+    if (b & _BV(PB3)) ++countB3;
+    if (b & _BV(PB4)) ++countB4;
+    if (b & _BV(PB5)) ++countB5;
+    if (c & _BV(PC0)) ++countC0;
+    if (c & _BV(PC1)) ++countC1;
+    if (c & _BV(PC2)) ++countC2;
+    delay(2);
+  }
   uint16_t address = 1;
-  if (b & _BV(PB1)) address |= _BV(8);
-  if (b & _BV(PB2)) address |= _BV(7);
-  if (b & _BV(PB3)) address |= _BV(6);
-  if (b & _BV(PB4)) address |= _BV(5);
-  if (b & _BV(PB5)) address |= _BV(4);
-  if (c & _BV(PC0)) address |= _BV(3);
-  if (c & _BV(PC1)) address |= _BV(2);
-  if (c & _BV(PC2)) address |= _BV(1);
+  if (countB1 >= 5) address |= _BV(8);
+  if (countB2 >= 5) address |= _BV(7);
+  if (countB3 >= 5) address |= _BV(6);
+  if (countB4 >= 5) address |= _BV(5);
+  if (countB5 >= 5) address |= _BV(4);
+  if (countC0 >= 5) address |= _BV(3);
+  if (countC1 >= 5) address |= _BV(2);
+  if (countC2 >= 5) address |= _BV(1);
   return address;
 }
 
@@ -98,6 +150,23 @@ static void writeStatusLed(bool green) {
   delayMicroseconds(80);
 }
 
+static void showAddressDigit(uint8_t count, uint16_t onMs) {
+  for (uint8_t i = 0; i < count; ++i) {
+    writeStatusLed(true);
+    delay(onMs);
+    writeStatusLed(false);
+    delay(250);
+  }
+  delay(700); // Separate decimal places, including a zero-valued place.
+}
+
+static void showStartAddress() {
+  showAddressDigit((uint8_t)(startAddress / 100), 700);
+  showAddressDigit((uint8_t)((startAddress / 10) % 10), 350);
+  showAddressDigit((uint8_t)(startAddress % 10), 120);
+  delay(1200); // Distinguish the address display from normal status indication.
+}
+
 static void serviceStatus() {
   const uint8_t savedSREG = SREG;
   cli();
@@ -119,8 +188,10 @@ static void showSegment(uint8_t segment) {
   cli();
   uint8_t highD = portDIdle;
   uint8_t highC = portCIdle;
-  if (segment < 6) highD |= _BV(7 - segment);
-  else highC |= _BV(segment == 6 ? PC4 : PC3);
+  // Keep group numbering aligned with PWM outputs: 1=PC3, 2=PC4,
+  // then groups 3..8 map to PD2..PD7.
+  if (segment < 2) highC |= _BV(segment == 0 ? PC3 : PC4);
+  else highD |= _BV(segment);
   const uint8_t lowD = portDIdle;
   const uint8_t lowC = portCIdle;
   for (uint8_t led = 0; led < LEDS_PER_SEGMENT; ++led) {
@@ -136,11 +207,11 @@ static void showSegment(uint8_t segment) {
 }
 
 static void configureDmxReceiver() {
-  UCSRA = 0;
-  UBRRH = 0;
-  UBRRL = 3;
-  UCSRB = _BV(RXEN) | _BV(RXCIE);
-  UCSRC = _BV(URSEL) | _BV(UCSZ1) | _BV(UCSZ0);
+  DMX_UCSRA = 0;
+  DMX_UBRRH = 0;
+  DMX_UBRRL = 3;
+  DMX_UCSRB = _BV(DMX_RX_ENABLE) | _BV(DMX_RX_INTERRUPT);
+  DMX_CONFIGURE_8N1();
   rxState = 0;
   channelNumber = 0;
 }
@@ -157,6 +228,7 @@ void setup() {
   PORTC = portCIdle;
   DDRC |= DATA_C_MASK;
   addressValid = startAddress <= 489;
+  showStartAddress();
   configureDmxReceiver();
   lastValidFrameMs = millis();
   writeStatusLed(false);
@@ -191,16 +263,16 @@ void loop() {
   }
 }
 
-ISR(USART_RXC_vect) {
-  const uint8_t status = UCSRA;
-  const uint8_t data = UDR;
-  if (status & _BV(FE)) {
+ISR(DMX_RX_VECTOR) {
+  const uint8_t status = DMX_UCSRA;
+  const uint8_t data = DMX_UDR;
+  if (status & _BV(DMX_FRAME_ERROR)) {
     rxState = 1;
     channelNumber = 0;
     statusReceiverIdle = true;
     return;
   }
-  if (status & (_BV(DOR) | _BV(PE))) {
+  if (status & (_BV(DMX_OVERRUN_ERROR) | _BV(DMX_PARITY_ERROR))) {
     rxState = 4;
     return;
   }

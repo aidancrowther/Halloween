@@ -10,19 +10,22 @@ applied together.
 
 | Fixture-relative slot | Output | ATmega8 pin |
 | ---: | ---: | --- |
-| 1 | PWM output 1 | PD7 |
-| 2 | PWM output 2 | PD6 |
-| 3 | PWM output 3 | PD5 |
-| 4 | PWM output 4 | PD4 |
-| 5 | PWM output 5 | PD3 |
-| 6 | PWM output 6 | PD2 |
-| 7 | PWM output 7 | PC4 |
-| 8 | PWM output 8 | PC3 |
+| 1 | PWM output 1 | PC3 |
+| 2 | PWM output 2 | PC4 |
+| 3 | PWM output 3 | PD2 |
+| 4 | PWM output 4 | PD3 |
+| 5 | PWM output 5 | PD4 |
+| 6 | PWM output 6 | PD5 |
+| 7 | PWM output 7 | PD6 |
+| 8 | PWM output 8 | PD7 |
 
 The start-address DIP switch follows the WS2812 variant: active-low with
 internal pull-ups and reversed bit wiring. The firmware computes
 `start_address = 1 + switch_value`; switch bits map PB1..PB5 to address bits
-8..4 and PC0..PC2 to bits 3..1. Valid start addresses are **1–505**.
+8..4 and PC0..PC2 to bits 3..1. At startup it waits 10 ms after enabling the
+pull-ups, samples the inputs nine times at 2 ms intervals, and majority-votes
+each bit to filter brief startup/contact noise. This cannot correct incorrect
+PCB wiring or a continuously unstable input. Valid start addresses are **1–505**.
 
 ## DMX reception and fail-safe
 
@@ -42,6 +45,12 @@ after the receiver reaches the universe end; if it overlaps trailing slots, the
 parser resynchronizes at the next break. A red timeout update is sent after one
 second without a complete fixture update. This is a coarse activity indicator,
 not a precision DMX monitor.
+
+Before enabling DMX reception at startup, the status pixel counts out the
+DIP-selected start address in decimal digits: long flashes (700 ms) count
+hundreds, medium flashes (350 ms) count tens, and short flashes (120 ms) count
+ones. A zero-valued digit is an empty group pause. For example, address 241 is
+shown as two long, four medium, and one short flash.
 
 All eight DMX slots are staged and copied as a frame before outputs are updated.
 If no complete fixture data is received for 1 second, or the selected address

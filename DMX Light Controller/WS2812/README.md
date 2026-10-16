@@ -38,8 +38,11 @@ decoding. The logical address is `1 + switch_value`; switch bit wiring/order is:
 | 8–4 | PB1, PB2, PB3, PB4, PB5 |
 | 3–1 | PC0, PC1, PC2 |
 
-The selected DIP pin reads low when its switch is ON. Pin mappings should be
-confirmed against the actual PCB schematic before installation.
+The selected DIP pin reads low when its switch is ON. Firmware waits 10 ms after
+enabling the pull-ups, then samples the inputs nine times at 2 ms intervals and
+uses a majority vote for each bit. This filters brief startup/contact noise; it
+cannot correct incorrect PCB wiring or a continuously unstable input. Pin
+mappings should be confirmed against the actual PCB schematic before installation.
 
 DMX reception uses the ATmega8 USART at 250 kbaud, 8N1. As in the reference,
 UART framing error is used to detect the DMX break and only start code zero is
@@ -59,18 +62,28 @@ end; if it overlaps trailing slots, the parser resynchronizes at the next break.
 A red timeout update is sent after one second without a complete fixture update.
 The LED is a coarse activity indicator, not a precision DMX monitor.
 
+At startup, before the DMX UART receiver is enabled, the status pixel counts out
+the DIP-selected start address in decimal digits: long flashes (700 ms) count
+hundreds, medium flashes (350 ms) count tens, and short flashes (120 ms) count
+ones. A zero-valued digit is shown as an empty group pause. For example, address
+241 is two long, four medium, and one short flash. The normal red/green status
+indication begins after this sequence.
+
 ## LED outputs
 
 | Segment | Data output |
 | ---: | --- |
-| 1 | PD7 |
-| 2 | PD6 |
-| 3 | PD5 |
-| 4 | PD4 |
-| 5 | PD3 |
-| 6 | PD2 |
-| 7 | PC4 |
-| 8 | PC3 |
+| 1 | PC3 |
+| 2 | PC4 |
+| 3 | PD2 |
+| 4 | PD3 |
+| 5 | PD4 |
+| 6 | PD5 |
+| 7 | PD6 |
+| 8 | PD7 |
+
+This group-to-pin order matches the 12 V PWM variant's output order, so Light 1
+(Group 1) uses the same MCU pin in either board mode.
 
 The bit timing is emitted with clock-counted AVR `OUT` instructions and expects
 a real 16 MHz clock. To avoid blocking DMX for a full eight-string refresh, the
@@ -85,11 +98,14 @@ them from the Uno/ATmega8 regulator.
 
 ## Build and upload
 
-Select **MiniCore ATmega8**, **16 MHz external clock**, and the installed UART
-bootloader. Example CLI FQBN:
+The sketch supports both the original ATmega8 and ATmega328P. For the known-good
+ATmega328P on an Uno-compatible serial bootloader, select **Arduino Uno** (16 MHz
+external clock). Example CLI FQBN:
 
 ```text
-MiniCore:avr:8:clock=16MHz_external,bootloader=uart0
+arduino:avr:uno
 ```
 
+For the original ATmega8, select **MiniCore ATmega8**, **16 MHz external clock**,
+and the installed UART bootloader (`MiniCore:avr:8:clock=16MHz_external,bootloader=uart0`).
 The sketch is `/WS2812.ino` in this directory; no external libraries are used.
