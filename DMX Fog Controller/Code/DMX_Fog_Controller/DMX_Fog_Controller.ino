@@ -9,13 +9,12 @@ static const uint8_t DMX_DIRECTION_PIN = 2; // PD2 / Arduino D2
 // Relay outputs are active low: PB0, PD5, PD6, PD7.
 static const uint8_t RELAY_PINS[4] = {8, 5, 6, 7};
 
-// Address inputs use the ATmega8 internal pull-ups and are active low.
-static const uint8_t ADDRESS_PINS[8] = {
-  9, 10, 11, 12, 13, 14, 15, 16 // PB1..PB5, PC0..PC2
-};
-static const uint16_t ADDRESS_WEIGHTS[8] = {
-  256, 128, 64, 32, 16, 8, 4, 2
-};
+// Address inputs use the ATmega8 internal pull-ups and are active low. The
+// physical switch order is reversed relative to the logical address bits:
+// PB1..PB5, PC0..PC2 represent bits 8..4, 3..1 respectively.
+static const uint8_t ADDRESS_B_MASK = _BV(PB1) | _BV(PB2) | _BV(PB3) |
+                                      _BV(PB4) | _BV(PB5);
+static const uint8_t ADDRESS_C_MASK = _BV(PC0) | _BV(PC1) | _BV(PC2);
 
 static const uint16_t DMX_CHANNEL_COUNT = 7;
 static const uint16_t MAX_VALID_START_ADDRESS = 512 - DMX_CHANNEL_COUNT + 1;
@@ -66,14 +65,41 @@ static uint32_t cycleOffDurationMs(uint8_t value) {
 }
 
 static uint16_t readStartAddress() {
-  uint16_t address = 1; // Address bit 1 is permanently set by design.
+  // Configure the pins explicitly before sampling. This avoids any transient
+  // output state during startup and matches the board's physical wiring.
+  DDRB &= (uint8_t)~ADDRESS_B_MASK;
+  DDRC &= (uint8_t)~ADDRESS_C_MASK;
+  PORTB |= ADDRESS_B_MASK;
+  PORTC |= ADDRESS_C_MASK;
+  delay(10);
 
-  for (uint8_t i = 0; i < 8; ++i) {
-    if (digitalRead(ADDRESS_PINS[i]) == LOW) {
-      address += ADDRESS_WEIGHTS[i];
-    }
+  // Sample several times so switch bounce or a slowly settling input cannot
+  // produce a different address at startup.
+  uint8_t b1 = 0, b2 = 0, b3 = 0, b4 = 0, b5 = 0;
+  uint8_t c0 = 0, c1 = 0, c2 = 0;
+  for (uint8_t sample = 0; sample < 9; ++sample) {
+    const uint8_t selectedB = (uint8_t)~PINB;
+    const uint8_t selectedC = (uint8_t)~PINC;
+    if (selectedB & _BV(PB1)) ++b1;
+    if (selectedB & _BV(PB2)) ++b2;
+    if (selectedB & _BV(PB3)) ++b3;
+    if (selectedB & _BV(PB4)) ++b4;
+    if (selectedB & _BV(PB5)) ++b5;
+    if (selectedC & _BV(PC0)) ++c0;
+    if (selectedC & _BV(PC1)) ++c1;
+    if (selectedC & _BV(PC2)) ++c2;
+    delay(2);
   }
 
+  uint16_t address = 1; // Address bit 1 is permanently set by design.
+  if (b1 >= 5) address |= _BV(8);
+  if (b2 >= 5) address |= _BV(7);
+  if (b3 >= 5) address |= _BV(6);
+  if (b4 >= 5) address |= _BV(5);
+  if (b5 >= 5) address |= _BV(4);
+  if (c0 >= 5) address |= _BV(3);
+  if (c1 >= 5) address |= _BV(2);
+  if (c2 >= 5) address |= _BV(1);
   return address;
 }
 
@@ -128,14 +154,17 @@ static bool updateMachine(uint8_t index, uint8_t command, uint8_t onValue,
     machine.timer = TIMER_NONE;
   }
 
-  // Automatic modes require a prior visit to the explicit off range.
-  if (machine.timer == TIMER_NONE && machine.automaticArmed) {
-    if (mode == MODE_BURST) {
+  // A burst is edge-triggered and requires a prior visit to the explicit off
+  // range. A cycle is level-triggered: while its command remains in the cycle
+  // range it starts/restarts independently for this machine. This allows a
+  // cycle on one relay to coexist with burst, idle, or continuous modes on the
+  // other relays, and permits a cycle command held high at startup to work.
+  if (machine.timer == TIMER_NONE) {
+    if (mode == MODE_BURST && machine.automaticArmed) {
       machine.automaticArmed = false;
       machine.timer = TIMER_BURST;
       machine.deadline = now + burstDurationMs(onValue);
     } else if (mode == MODE_CYCLE) {
-      machine.automaticArmed = false;
       machine.timer = TIMER_CYCLE_ON;
       machine.deadline = now + burstDurationMs(onValue);
     }
@@ -185,9 +214,7 @@ static void setupPins() {
     digitalWrite(RELAY_PINS[i], HIGH);
   }
 
-  for (uint8_t i = 0; i < 8; ++i) {
-    pinMode(ADDRESS_PINS[i], INPUT_PULLUP);
-  }
+  // Address pins were configured directly in readStartAddress().
 }
 
 void setup() {
